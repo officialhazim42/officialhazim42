@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 50" width="100%" height="50">
+  <defs>
+    <style>
+      .mono-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 16px;
+        font-weight: 500;
+        fill: #38bdf8;
+      }
+      .cursor {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 18px;
+        font-weight: 700;
+        fill: #06b6d4;
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      /* Multi-phrase typing cycle */
+      .phrase {
+        opacity: 0;
+      }
+      .phrase-1 {
+        animation: cyclePhrase1 12s infinite;
+      }
+      .phrase-2 {
+        animation: cyclePhrase2 12s infinite;
+      }
+      .phrase-3 {
+        animation: cyclePhrase3 12s infinite;
+      }
+
+      @keyframes cyclePhrase1 {
+        0%, 30% { opacity: 1; }
+        33%, 100% { opacity: 0; }
+      }
+      @keyframes cyclePhrase2 {
+        0%, 33% { opacity: 0; }
+        36%, 63% { opacity: 1; }
+        66%, 100% { opacity: 0; }
+      }
+      @keyframes cyclePhrase3 {
+        0%, 66% { opacity: 0; }
+        69%, 96% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(10, 32)">
+    <text x="0" y="0" class="mono-text" fill="#64748b" font-weight="700">&gt;&nbsp;</text>
+
+    <!-- Phrase 1 -->
+    <g class="phrase phrase-1">
+      <text x="24" y="0" class="mono-text">Building useful digital products and accessible technology</text>
+    </g>
+
+    <!-- Phrase 2 -->
+    <g class="phrase phrase-2">
+      <text x="24" y="0" class="mono-text">Web development • Android applications • Client-side tools</text>
+    </g>
+
+    <!-- Phrase 3 -->
+    <g class="phrase phrase-3">
+      <text x="24" y="0" class="mono-text">Youth cyber defense • Practical software engineering</text>
+    </g>
+
+    <text x="635" y="0" class="cursor">_</text>
+  </g>
+</svg>

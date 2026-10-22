@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="45%" stop-color="#0a101f" />
+      <stop offset="85%" stop-color="#0d172e" />
+      <stop offset="100%" stop-color="#060a14" />
+    </linearGradient>
+
+    <!-- Glowing Accents -->
+    <radialGradient id="cyan-glow" cx="85%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#06b6d4" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="blue-glow" cx="15%" cy="80%" r="55%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.18" />
+      <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Text Gradients -->
+    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="65%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <linearGradient id="accent-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.45" />
+      <circle cx="40" cy="0" r="1.2" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+
+    <style>
+      .mono-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+      .sans-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.85; }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-4px); }
+      }
+      .pulsing-dot {
+        animation: pulse 3s ease-in-out infinite;
+      }
+      .floating-graphic {
+        animation: float 6s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="100%" height="100%" rx="16" fill="url(#bg-grad)" />
+  <rect width="100%" height="100%" rx="16" fill="url(#cyan-glow)" />
+  <rect width="100%" height="100%" rx="16" fill="url(#blue-glow)" />
+  <rect width="100%" height="100%" rx="16" fill="url(#grid)" />
+
+  <!-- Subtle Outer Border -->
+  <rect x="1" y="1" width="1198" height="338" rx="15" fill="none" stroke="url(#accent-stroke)" stroke-width="1.5" />
+
+  <!-- Top Accent Highlight Line -->
+  <line x1="80" y1="2" x2="360" y2="2" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="840" y1="2" x2="1080" y2="2" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-opacity="0.6" />
+
+  <!-- LEFT CONTENT: IDENTITY & HEADINGS -->
+  <g transform="translate(64, 48)">
+
+    <!-- Top Status Badge -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="310" height="28" rx="14" fill="#0b172a" stroke="#1e3a5f" stroke-width="1.2" />
+      <circle cx="16" cy="14" r="4.5" fill="#10b981" class="pulsing-dot" />
+      <text x="30" y="18" fill="#38bdf8" font-size="11" font-weight="700" letter-spacing="1.8" class="mono-text">SOFTWARE CREATOR  •  DEVELOPER</text>
+    </g>
+
+    <!-- Main Name Title -->
+    <text x="0" y="92" fill="url(#name-grad)" font-size="46" font-weight="800" letter-spacing="1" class="sans-text">
+      HAZIM BASHIR
+    </text>
+
+    <!-- Primary Subtitle -->
+    <text x="0" y="132" fill="#93c5fd" font-size="16" font-weight="600" letter-spacing="2.5" class="mono-text">
+      WEB &amp; ANDROID DEVELOPMENT  |  DIGITAL UTILITIES
+    </text>
+
+    <!-- Vision Statement -->
+    <text x="0" y="168" fill="#94a3b8" font-size="15" font-weight="400" letter-spacing="0.4" class="sans-text">
+      Building useful digital products  •  Making valuable digital tools accessible to everyone
+    </text>
+
+    <!-- Metadata Badges / Chips -->
+    <g transform="translate(0, 206)">
+      <!-- Location Chip -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="220" height="30" rx="8" fill="#0d1b30" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="19" fill="#38bdf8" font-size="13" class="sans-text">📍</text>
+        <text x="32" y="19" fill="#cbd5e1" font-size="12" font-weight="500" class="sans-text">Ganderbal, J&amp;K, India</text>
+      </g>
+
+      <!-- Education Chip -->
+      <g transform="translate(232, 0)">
+        <rect x="0" y="0" width="260" height="30" rx="8" fill="#0d1b30" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="19" fill="#38bdf8" font-size="13" class="sans-text">🎓</text>
+        <text x="32" y="19" fill="#cbd5e1" font-size="12" font-weight="500" class="sans-text">Computer Science Engineering</text>
+      </g>
+
+      <!-- CyberGuard YUVA Chip -->
+      <g transform="translate(504, 0)">
+        <rect x="0" y="0" width="235" height="30" rx="8" fill="#0d1b30" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="19" fill="#38bdf8" font-size="13" class="sans-text">🛡️</text>
+        <text x="32" y="19" fill="#cbd5e1" font-size="12" font-weight="500" class="sans-text">Co-Founder, CyberGuard YUVA</text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- RIGHT GRAPHIC: SOPHISTICATED TECH & CIRCUIT COMPOSITION -->
+  <g transform="translate(980, 168)" class="floating-graphic">
+    <!-- Ambient Tech Glow -->
+    <circle cx="0" cy="0" r="110" fill="#06b6d4" fill-opacity="0.06" />
+    <circle cx="0" cy="0" r="75" fill="#3b82f6" fill-opacity="0.08" />
+
+    <!-- Concentric Target / Tech Circles -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="6 8" stroke-opacity="0.6" />
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.5" />
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="32 12" stroke-opacity="0.8" />
+    <circle cx="0" cy="0" r="45" fill="#0c172e" stroke="#3b82f6" stroke-width="1.5" />
+
+    <!-- Circuit Lines & Nodes -->
+    <path d="M -95 0 L -140 -35 L -175 -35" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.7" />
+    <circle cx="-175" cy="-35" r="3.5" fill="#38bdf8" />
+
+    <path d="M 0 -95 L 35 -130 L 75 -130" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.7" />
+    <circle cx="75" cy="-130" r="3.5" fill="#06b6d4" />
+
+    <path d="M 70 70 L 110 100 L 145 100" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.7" />
+    <circle cx="145" cy="100" r="3.5" fill="#60a5fa" />
+
+    <path d="M -70 70 L -105 95 L -140 95" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.6" />
+    <circle cx="-140" cy="95" r="3" fill="#38bdf8" />
+
+    <!-- Hexagonal Core Anchor -->
+    <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#091428" stroke="#38bdf8" stroke-width="1.5" />
+
+    <!-- Core Terminal Code Symbol -->
+    <text x="0" y="6" text-anchor="middle" fill="#38bdf8" font-size="16" font-weight="700" class="mono-text">&lt;/&gt;</text>
+
+    <!-- Orbiting Satellite Indicator Dots -->
+    <circle cx="85" cy="-40" r="3" fill="#06b6d4" class="pulsing-dot" />
+    <circle cx="-65" cy="-65" r="2.5" fill="#38bdf8" />
+    <circle cx="50" cy="80" r="2.5" fill="#60a5fa" />
+  </g>
+</svg>
