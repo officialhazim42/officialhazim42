@@ -19,11 +19,11 @@
 
 </div>
 
----
+<br />
 
-### About Me
+<img src="assets/section-about.svg" alt="01 / IDENTITY • ABOUT ME" width="100%" />
 
-I am a Computer Science Engineering student at Government Polytechnic College Ganderbal, Jammu & Kashmir, India, and an independent software creator. 
+I am a Computer Science Engineering student at Government Polytechnic College Ganderbal, Jammu & Kashmir, India, and an independent software creator.
 
 My primary focus is building practical web applications, Android tools, and client-side utilities that solve everyday digital problems. I believe the best software operates with zero friction: accessible to everyone, private by design, and engineered to deliver maximum utility directly in the browser or on the device.
 
@@ -31,9 +31,9 @@ My primary focus is building practical web applications, Android tools, and clie
 * **Core Philosophy:** Build useful, reliable software that respects user privacy and runs with zero cost to the end user whenever possible.
 * **Community Leadership:** Co-Founder of **CyberGuard YUVA**, a youth cyber defense club dedicated to student cybersecurity awareness, digital safety education, and defensive technical literacy.
 
----
+<br />
 
-### What I Build
+<img src="assets/section-build.svg" alt="02 / SCOPE • WHAT I BUILD" width="100%" />
 
 ```
   ┌─────────────────────────────────────────────────────────────────────────┐
@@ -53,9 +53,9 @@ My primary focus is building practical web applications, Android tools, and clie
 * **Productivity & Task Management:** Architecting offline-first Progressive Web Apps (PWAs) with local storage resilience and cloud sync capabilities.
 * **Cybersecurity Education & Awareness:** Organizing youth awareness programs and authoring practical handbooks through CyberGuard YUVA.
 
----
+<br />
 
-### Technology Stack
+<img src="assets/section-stack.svg" alt="03 / TOOLKIT • TECHNOLOGY STACK" width="100%" />
 
 All listed technologies represent active tools, languages, and frameworks used across my open-source repositories and development projects:
 
@@ -99,9 +99,9 @@ All listed technologies represent active tools, languages, and frameworks used a
   <img src="https://img.shields.io/badge/Termux-Android_CLI-0B1329?style=flat-square&logo=termux&logoColor=white" alt="Termux" />
 </p>
 
----
+<br />
 
-### Featured Projects
+<img src="assets/section-projects.svg" alt="04 / SHOWCASE • FEATURED PROJECTS" width="100%" />
 
 Here are highlights of my strongest public software projects, detailing their verified capabilities, technologies, and repositories:
 
@@ -178,9 +178,9 @@ Status: Open Reference Handbook
 * **[Client-Side Form Validation & QA](https://github.com/officialhazim42/week-4-testing-quality-assurance):** Interactive test suite and form validation application demonstrating edge-case handling and quality assurance practices.
 * **[Student Task Manager](https://github.com/officialhazim42/week-3-student-task-manager):** Responsive task management web tool with category filtering, completion tracking, and persistent local storage.
 
----
+<br />
 
-### Community Leadership: CyberGuard YUVA
+<img src="assets/section-cyberguard.svg" alt="05 / LEADERSHIP • CYBERGUARD YUVA" width="100%" />
 
 I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense club established to promote cybersecurity literacy, digital safety awareness, and ethical technology practices among students.
 
@@ -200,9 +200,9 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense club estab
 * **Platform:** Engineered an interactive, responsive Progressive Web App platform to deliver clear, accessible security guides.
 * **Official Website:** [cyberguard-yuva.vercel.app](https://cyberguard-yuva.vercel.app/)
 
----
+<br />
 
-### Development Philosophy
+<img src="assets/section-philosophy.svg" alt="06 / APPROACH • DEVELOPMENT JOURNEY" width="100%" />
 
 My journey in software engineering is grounded in practical, iterative development:
 
@@ -211,9 +211,9 @@ My journey in software engineering is grounded in practical, iterative developme
 3. **Accessibility & Zero Cost:** Valuable digital utilities should be accessible to everyone, regardless of budget or high-end hardware.
 4. **Continuous Iteration:** Starting from fundamentals (HTML/CSS/JS) and progressively expanding into TypeScript, WebAssembly, Progressive Web Apps, and mobile ecosystems.
 
----
+<br />
 
-### GitHub Activity & Statistics
+<img src="assets/section-stats.svg" alt="07 / METRICS • GITHUB ACTIVITY &amp; METRICS" width="100%" />
 
 <div align="center">
 
@@ -231,9 +231,9 @@ My journey in software engineering is grounded in practical, iterative developme
 
 </div>
 
----
+<br />
 
-### Connect With Me
+<img src="assets/section-connect.svg" alt="08 / NETWORK • CONNECT WITH ME" width="100%" />
 
 I welcome discussions regarding open-source development, web technologies, accessible software utilities, and student cyber defense initiatives.
 
@@ -252,5 +252,5 @@ I welcome discussions regarding open-source development, web technologies, acces
 <br />
 
 <div align="center">
-  <sub>Designed &amp; Engineered by Hazim Bashir • Built with care for accessible technology and open digital utilities</sub>
+  <img src="assets/profile-footer.svg" alt="Hazim Bashir • Software Creator Footer" width="100%" />
 </div>

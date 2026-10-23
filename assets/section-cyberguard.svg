@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 54" width="100%" height="54">
+  <defs>
+    <linearGradient id="sec-bg-05" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a1329" stop-opacity="0.95" />
+      <stop offset="60%" stop-color="#0c1833" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#081022" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="sec-stroke-05" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="35%" stop-color="#3b82f6" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.25" />
+    </linearGradient>
+    <style>
+      .mono-label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        fill: #38bdf8;
+      }
+      .sec-title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        fill: #ffffff;
+      }
+    </style>
+  </defs>
+
+  <!-- Glass Card Background -->
+  <rect x="1" y="1" width="898" height="52" rx="10" fill="url(#sec-bg-05)" stroke="url(#sec-stroke-05)" stroke-width="1.2" />
+
+  <!-- Left Glowing Accent Indicator -->
+  <rect x="1" y="10" width="4" height="34" rx="2" fill="#38bdf8" />
+
+  <!-- Section Number & Category Badge -->
+  <g transform="translate(22, 33)">
+    <text class="mono-label">◈ 05</text>
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="108" y1="14" x2="108" y2="40" stroke="#1e3a5f" stroke-width="1" />
+
+  <!-- Main Section Title -->
+  <g transform="translate(126, 34)">
+    <text class="sec-title">CYBERGUARD YUVA</text>
+  </g>
+
+  <!-- Right Decorative Tech Traces -->
+  <path d="M 740 27 L 850 27" stroke="#1e3a5f" stroke-width="1" />
+  <circle cx="850" cy="27" r="3" fill="#38bdf8" />
+  <circle cx="865" cy="27" r="2" fill="#06b6d4" />
+</svg>
