@@ -45,12 +45,21 @@
         50% { stroke-opacity: 1; stroke: #38bdf8; }
       }
       .row-card {
-        animation: rowIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.13s both;
+        animation: rowIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
       }
       .p-name { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.3px; }
       .p-handle { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 600; fill: #cbd5e1; }
       .p-btn { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; fill: #38bdf8; letter-spacing: 0.8px; }
       
+      .p-icon {
+        transform-origin: 12px 12px;
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+      }
+      .row-card:hover .p-icon, svg:hover .p-icon {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 3px #38bdf8);
+      }
+
       .btn-action-group {
         cursor: pointer;
         transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
@@ -83,7 +92,7 @@
         outline-offset: 2px;
       }
       @media (prefers-reduced-motion: reduce) {
-        *, .row-card, .btn-action-group, .btn-arrow, .btn-rect {
+        *, .row-card, .btn-action-group, .btn-arrow, .btn-rect, .p-icon {
           animation: none !important;
           opacity: 1 !important;
           transform: none !important;
@@ -103,7 +112,9 @@
     <g transform="translate(8, 5)">
       <rect x="0" y="0" width="222" height="38" rx="6" fill="url(#p-bg-email)" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1" />
       <g transform="translate(14, 9)">
-        <rect x="2" y="4" width="20" height="16" rx="3" fill="none" stroke="#38BDF8" stroke-width="2"/><path d="M2.5 5l9.5 7.5L21.5 5" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <g class="p-icon">
+          <rect x="2" y="4" width="20" height="16" rx="3" fill="none" stroke="#38BDF8" stroke-width="2"/><path d="M2.5 5l9.5 7.5L21.5 5" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
       </g>
       <text x="44" y="24" class="p-name">Email (Direct)</text>
     </g>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 34" width="172" height="34">
   <defs>
-    <linearGradient id="btn-bg-telegram" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg-btn-message-telegram" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#092a40"/>
       <stop offset="100%" stop-color="#0f3d5c"/>
     </linearGradient>
@@ -31,6 +31,10 @@
         animation: borderShimmer 2.8s ease-in-out infinite;
         transition: stroke 0.2s ease, stroke-width 0.2s ease;
       }
+      .btn-icon {
+        transform-origin: 12px 12px;
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+      }
       .btn-root:hover, svg:hover .btn-root {
         transform: translateY(-2px) scale(1.03);
         filter: drop-shadow(0 4px 14px rgba(38, 165, 228, 0.45));
@@ -41,6 +45,10 @@
       }
       .btn-root:hover .btn-arrow-icon, svg:hover .btn-root .btn-arrow-icon {
         transform: translateX(4px);
+      }
+      .btn-root:hover .btn-icon, svg:hover .btn-root .btn-icon {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 4px #26a5e4);
       }
       .btn-root:active, svg:active .btn-root {
         transform: translateY(0.5px) scale(0.98);
@@ -57,7 +65,7 @@
         fill: #38bdf8;
       }
       @media (prefers-reduced-motion: reduce) {
-        *, .btn-root, .btn-arrow-icon, .btn-border {
+        *, .btn-root, .btn-arrow-icon, .btn-border, .btn-icon {
           animation: none !important;
           opacity: 1 !important;
           transform: none !important;
@@ -67,11 +75,13 @@
   </defs>
   <g class="btn-root" tabindex="0" role="button">
     <!-- Base Glass Container -->
-    <rect x="0.75" y="0.75" width="170.5" height="32.5" rx="7" class="btn-border" fill="url(#btn-bg-telegram)" stroke="rgba(38, 165, 228, 0.55)" stroke-width="1.1"/>
+    <rect x="0.75" y="0.75" width="170.5" height="32.5" rx="7" class="btn-border" fill="url(#bg-btn-message-telegram)" stroke="rgba(38, 165, 228, 0.55)" stroke-width="1.1"/>
     
-    <!-- Platform Mini Icon (16x16 scaled) -->
+    <!-- Platform Mini Icon (with coordinated micro-scale on hover) -->
     <g transform="translate(10, 9) scale(0.666)">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="#26A5E4"/>
+      <g class="btn-icon">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="#26A5E4"/>
+      </g>
     </g>
 
     <!-- Action Text -->

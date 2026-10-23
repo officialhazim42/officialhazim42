@@ -1,42 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 132" width="100%" height="132">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 156" width="100%" height="156">
   <defs>
     <linearGradient id="ci-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#081329" stop-opacity="0.96" />
-      <stop offset="50%" stop-color="#0d1f42" stop-opacity="0.92" />
-      <stop offset="100%" stop-color="#071126" stop-opacity="0.96" />
+      <stop offset="0%" stop-color="#081329" stop-opacity="0.98" />
+      <stop offset="50%" stop-color="#0d1f42" stop-opacity="0.94" />
+      <stop offset="100%" stop-color="#071126" stop-opacity="0.98" />
     </linearGradient>
     <linearGradient id="ci-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85" />
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
       <stop offset="40%" stop-color="#1e3a5f" stop-opacity="0.6" />
-      <stop offset="70%" stop-color="#0ea5e9" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#0ea5e9" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.55" />
     </linearGradient>
-    <radialGradient id="ci-glow" cx="18%" cy="32%" r="65%">
+    <radialGradient id="ci-glow" cx="15%" cy="30%" r="70%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14" />
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
     </radialGradient>
-    <filter id="badge-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
     <style>
       @keyframes ciEntrance {
         0% { opacity: 0; transform: translateY(8px); }
         100% { opacity: 1; transform: translateY(0); }
       }
-      @keyframes badgeEntrance {
-        0% { opacity: 0; transform: translateY(5px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFadeIn1 {
+      @keyframes headingEntrance {
         0% { opacity: 0; transform: translateY(6px); }
         100% { opacity: 1; transform: translateY(0); }
       }
-      @keyframes lineFadeIn2 {
-        0% { opacity: 0; transform: translateY(6px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes lineFadeIn3 {
+      @keyframes paragraphEntrance {
         0% { opacity: 0; transform: translateY(6px); }
         100% { opacity: 1; transform: translateY(0); }
       }
@@ -46,22 +34,19 @@
       }
       @keyframes barPulse {
         0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 3px rgba(56, 189, 248, 0.4)); }
-        50% { opacity: 1; filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.85)); }
+        50% { opacity: 1; filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.9)); }
       }
       .card-root {
-        animation: ciEntrance 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation: ciEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .badge-group {
+        animation: headingEntrance 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.06s both;
       }
       .heading-group {
-        animation: badgeEntrance 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+        animation: headingEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
       }
-      .text-l1 {
-        animation: lineFadeIn1 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
-      }
-      .text-l2 {
-        animation: lineFadeIn2 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both;
-      }
-      .text-l3 {
-        animation: lineFadeIn3 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both;
+      .paragraph-group {
+        animation: paragraphEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.26s both;
       }
       .pulsing-bar {
         animation: barPulse 2.8s ease-in-out infinite;
@@ -71,14 +56,21 @@
       }
       .badge-mono {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-        font-size: 10.5px;
+        font-size: 10px;
         font-weight: 700;
         letter-spacing: 1.6px;
         fill: #38bdf8;
       }
+      .main-heading {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 0.3px;
+        fill: #ffffff;
+      }
       .body-text {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 14.5px;
+        font-size: 14px;
         fill: #cbd5e1;
         letter-spacing: 0.15px;
       }
@@ -91,7 +83,7 @@
         fill: #38bdf8;
       }
       @media (prefers-reduced-motion: reduce) {
-        *, .card-root, .heading-group, .text-l1, .text-l2, .text-l3, .pulsing-bar, .pulsing-dot {
+        *, .card-root, .badge-group, .heading-group, .paragraph-group, .pulsing-bar, .pulsing-dot {
           animation: none !important;
           opacity: 1 !important;
           transform: none !important;
@@ -102,17 +94,22 @@
 
   <!-- Main Glass Container with entrance animation -->
   <g class="card-root">
-    <rect x="1" y="1" width="898" height="130" rx="12" fill="url(#ci-bg)" stroke="url(#ci-stroke)" stroke-width="1.2" />
-    <rect x="1" y="1" width="898" height="130" rx="12" fill="url(#ci-glow)" />
+    <rect x="1" y="1" width="898" height="154" rx="12" fill="url(#ci-bg)" stroke="url(#ci-stroke)" stroke-width="1.2" />
+    <rect x="1" y="1" width="898" height="154" rx="12" fill="url(#ci-glow)" />
 
     <!-- Left Accent Glowing Bar -->
-    <rect x="1" y="24" width="4" height="84" rx="2" fill="#38bdf8" class="pulsing-bar" />
+    <rect x="1" y="24" width="4" height="108" rx="2" fill="#38bdf8" class="pulsing-bar" />
 
-    <!-- Top Indicator Pill with Stronger Visual Weight -->
-    <g transform="translate(24, 18)" class="heading-group">
-      <rect x="0" y="0" width="236" height="24" rx="12" fill="#0b1730" stroke="#1e3a5f" stroke-width="1.2" />
-      <circle cx="13" cy="12" r="4" fill="#38bdf8" class="pulsing-dot" />
-      <text x="26" y="16" class="badge-mono">COLLABORATION &amp; INQUIRIES</text>
+    <!-- Top Status Indicator Pill -->
+    <g transform="translate(24, 18)" class="badge-group">
+      <rect x="0" y="0" width="270" height="22" rx="11" fill="#0b1730" stroke="#1e3a5f" stroke-width="1.1" />
+      <circle cx="12" cy="11" r="3.5" fill="#38bdf8" class="pulsing-dot" />
+      <text x="24" y="15" class="badge-mono">COLLABORATION &amp; INQUIRIES</text>
+    </g>
+
+    <!-- Prominent High-Contrast Section Heading -->
+    <g transform="translate(24, 60)" class="heading-group">
+      <text x="0" y="0" class="main-heading">Let&#8217;s Build Something Useful &amp; Meaningful Together</text>
     </g>
 
     <!-- Right Decorative Subtle Traces -->
@@ -122,27 +119,23 @@
       <circle cx="880" cy="24" r="2.5" fill="#06b6d4" />
     </g>
 
-    <!-- Enhanced Supporting Text: Larger, High Contrast, Staggered Entrance -->
-    <g class="text-l1">
-      <text x="24" y="66" class="body-text">
+    <!-- High-Contrast Supporting Text with Staggered Entrance -->
+    <g class="paragraph-group">
+      <text x="24" y="88" class="body-text">
         <tspan>I welcome </tspan>
         <tspan class="text-bold">meaningful connections</tspan>
-        <tspan> with developers, creators, open-source maintainers, and technology enthusiasts.</tspan>
+        <tspan> with developers, creators, open-source maintainers, and technology teams.</tspan>
       </text>
-    </g>
 
-    <g class="text-l2">
-      <text x="24" y="90" class="body-text">
+      <text x="24" y="112" class="body-text">
         <tspan>Whether you have an idea to build, an </tspan>
         <tspan class="text-cyan">open-source initiative to collaborate on</tspan>
-        <tspan>, or an opportunity to exchange knowledge</tspan>
+        <tspan>, or an opportunity to exchange insights</tspan>
       </text>
-    </g>
 
-    <g class="text-l3">
-      <text x="24" y="114" class="body-text">
-        <tspan>and explore client-side software engineering — </tspan>
-        <tspan class="text-bold">feel free to reach out across any verified channel below.</tspan>
+      <text x="24" y="136" class="body-text">
+        <tspan>around client-side engineering — </tspan>
+        <tspan class="text-bold">feel free to connect across any verified channel below. Direct inquiries are welcome.</tspan>
       </text>
     </g>
   </g>

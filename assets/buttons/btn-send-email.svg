@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 34" width="172" height="34">
   <defs>
-    <linearGradient id="btn-bg-email" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg-btn-send-email" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0c2e42"/>
       <stop offset="100%" stop-color="#12415c"/>
     </linearGradient>
@@ -31,6 +31,10 @@
         animation: borderShimmer 2.8s ease-in-out infinite;
         transition: stroke 0.2s ease, stroke-width 0.2s ease;
       }
+      .btn-icon {
+        transform-origin: 12px 12px;
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+      }
       .btn-root:hover, svg:hover .btn-root {
         transform: translateY(-2px) scale(1.03);
         filter: drop-shadow(0 4px 14px rgba(56, 189, 248, 0.45));
@@ -41,6 +45,10 @@
       }
       .btn-root:hover .btn-arrow-icon, svg:hover .btn-root .btn-arrow-icon {
         transform: translateX(4px);
+      }
+      .btn-root:hover .btn-icon, svg:hover .btn-root .btn-icon {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 4px #38bdf8);
       }
       .btn-root:active, svg:active .btn-root {
         transform: translateY(0.5px) scale(0.98);
@@ -57,7 +65,7 @@
         fill: #38bdf8;
       }
       @media (prefers-reduced-motion: reduce) {
-        *, .btn-root, .btn-arrow-icon, .btn-border {
+        *, .btn-root, .btn-arrow-icon, .btn-border, .btn-icon {
           animation: none !important;
           opacity: 1 !important;
           transform: none !important;
@@ -67,11 +75,13 @@
   </defs>
   <g class="btn-root" tabindex="0" role="button">
     <!-- Base Glass Container -->
-    <rect x="0.75" y="0.75" width="170.5" height="32.5" rx="7" class="btn-border" fill="url(#btn-bg-email)" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1.1"/>
+    <rect x="0.75" y="0.75" width="170.5" height="32.5" rx="7" class="btn-border" fill="url(#bg-btn-send-email)" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1.1"/>
     
-    <!-- Platform Mini Icon (16x16 scaled) -->
+    <!-- Platform Mini Icon (with coordinated micro-scale on hover) -->
     <g transform="translate(10, 9) scale(0.666)">
-      <rect x="2" y="4" width="20" height="16" rx="3" fill="none" stroke="#38BDF8" stroke-width="2"/><path d="M2.5 5l9.5 7.5L21.5 5" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <g class="btn-icon">
+        <rect x="2" y="4" width="20" height="16" rx="3" fill="none" stroke="#38BDF8" stroke-width="2"/><path d="M2.5 5l9.5 7.5L21.5 5" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
     </g>
 
     <!-- Action Text -->

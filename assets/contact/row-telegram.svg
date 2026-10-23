@@ -45,12 +45,21 @@
         50% { stroke-opacity: 1; stroke: #26a5e4; }
       }
       .row-card {
-        animation: rowIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.33s both;
+        animation: rowIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both;
       }
       .p-name { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.3px; }
       .p-handle { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 600; fill: #cbd5e1; }
       .p-btn { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; fill: #38bdf8; letter-spacing: 0.8px; }
       
+      .p-icon {
+        transform-origin: 12px 12px;
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+      }
+      .row-card:hover .p-icon, svg:hover .p-icon {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 3px #26a5e4);
+      }
+
       .btn-action-group {
         cursor: pointer;
         transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
@@ -83,7 +92,7 @@
         outline-offset: 2px;
       }
       @media (prefers-reduced-motion: reduce) {
-        *, .row-card, .btn-action-group, .btn-arrow, .btn-rect {
+        *, .row-card, .btn-action-group, .btn-arrow, .btn-rect, .p-icon {
           animation: none !important;
           opacity: 1 !important;
           transform: none !important;
@@ -103,7 +112,9 @@
     <g transform="translate(8, 5)">
       <rect x="0" y="0" width="222" height="38" rx="6" fill="url(#p-bg-telegram)" stroke="rgba(38, 165, 228, 0.55)" stroke-width="1" />
       <g transform="translate(14, 9)">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="#26A5E4"/>
+        <g class="p-icon">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="#26A5E4"/>
+        </g>
       </g>
       <text x="44" y="24" class="p-name">Telegram</text>
     </g>

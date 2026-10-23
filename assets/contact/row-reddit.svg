@@ -45,12 +45,21 @@
         50% { stroke-opacity: 1; stroke: #ff4500; }
       }
       .row-card {
-        animation: rowIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.41s both;
+        animation: rowIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.40s both;
       }
       .p-name { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.3px; }
       .p-handle { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 600; fill: #cbd5e1; }
       .p-btn { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; fill: #fdba74; letter-spacing: 0.8px; }
       
+      .p-icon {
+        transform-origin: 12px 12px;
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+      }
+      .row-card:hover .p-icon, svg:hover .p-icon {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 3px #ff4500);
+      }
+
       .btn-action-group {
         cursor: pointer;
         transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
@@ -83,7 +92,7 @@
         outline-offset: 2px;
       }
       @media (prefers-reduced-motion: reduce) {
-        *, .row-card, .btn-action-group, .btn-arrow, .btn-rect {
+        *, .row-card, .btn-action-group, .btn-arrow, .btn-rect, .p-icon {
           animation: none !important;
           opacity: 1 !important;
           transform: none !important;
@@ -103,7 +112,9 @@
     <g transform="translate(8, 5)">
       <rect x="0" y="0" width="222" height="38" rx="6" fill="url(#p-bg-reddit)" stroke="rgba(255, 69, 0, 0.5)" stroke-width="1" />
       <g transform="translate(14, 9)">
-        <path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm6.34 11.23c.03.22.05.45.05.67 0 2.3-2.68 4.16-6 4.16s-6-1.86-6-4.16c0-.22.02-.44.05-.66a1.737 1.737 0 0 1-.84-1.48c0-.96.78-1.74 1.74-1.74.52 0 .99.23 1.31.6 1.04-.73 2.45-1.2 4.02-1.25l.82-3.87 2.68.57c.05-.5.47-.89.98-.89.55 0 1 .45 1 .99 0 .55-.45 1-.99 1a.998.998 0 0 1-.97-.8l-2.31-.49-.71 3.37c1.54.07 2.92.54 3.94 1.26.32-.36.79-.58 1.3-.58.96 0 1.74.78 1.74 1.74 0 .61-.32 1.15-.81 1.45zM9.5 12.5c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm6 0c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm-6.28 3.09c-.08-.08-.08-.2 0-.28.32-.32 1.44-.71 2.78-.71s2.46.39 2.78.71c.08.08.08.2 0 .28-.08.08-.2.08-.28 0-.25-.25-1.28-.6-2.5-.6s-2.25.35-2.5.6c-.08.08-.2.08-.28 0z" fill="#FF4500"/>
+        <g class="p-icon">
+          <path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm6.34 11.23c.03.22.05.45.05.67 0 2.3-2.68 4.16-6 4.16s-6-1.86-6-4.16c0-.22.02-.44.05-.66a1.737 1.737 0 0 1-.84-1.48c0-.96.78-1.74 1.74-1.74.52 0 .99.23 1.31.6 1.04-.73 2.45-1.2 4.02-1.25l.82-3.87 2.68.57c.05-.5.47-.89.98-.89.55 0 1 .45 1 .99 0 .55-.45 1-.99 1a.998.998 0 0 1-.97-.8l-2.31-.49-.71 3.37c1.54.07 2.92.54 3.94 1.26.32-.36.79-.58 1.3-.58.96 0 1.74.78 1.74 1.74 0 .61-.32 1.15-.81 1.45zM9.5 12.5c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm6 0c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm-6.28 3.09c-.08-.08-.08-.2 0-.28.32-.32 1.44-.71 2.78-.71s2.46.39 2.78.71c.08.08.08.2 0 .28-.08.08-.2.08-.28 0-.25-.25-1.28-.6-2.5-.6s-2.25.35-2.5.6c-.08.08-.2.08-.28 0z" fill="#FF4500"/>
+        </g>
       </g>
       <text x="44" y="24" class="p-name">Reddit</text>
     </g>

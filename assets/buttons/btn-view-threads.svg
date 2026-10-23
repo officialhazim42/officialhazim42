@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 34" width="172" height="34">
   <defs>
-    <linearGradient id="btn-bg-threads" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg-btn-view-threads" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#101f33"/>
       <stop offset="100%" stop-color="#182e4c"/>
     </linearGradient>
@@ -31,6 +31,10 @@
         animation: borderShimmer 2.8s ease-in-out infinite;
         transition: stroke 0.2s ease, stroke-width 0.2s ease;
       }
+      .btn-icon {
+        transform-origin: 12px 12px;
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+      }
       .btn-root:hover, svg:hover .btn-root {
         transform: translateY(-2px) scale(1.03);
         filter: drop-shadow(0 4px 14px rgba(56, 189, 248, 0.4));
@@ -41,6 +45,10 @@
       }
       .btn-root:hover .btn-arrow-icon, svg:hover .btn-root .btn-arrow-icon {
         transform: translateX(4px);
+      }
+      .btn-root:hover .btn-icon, svg:hover .btn-root .btn-icon {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 4px #38bdf8);
       }
       .btn-root:active, svg:active .btn-root {
         transform: translateY(0.5px) scale(0.98);
@@ -57,7 +65,7 @@
         fill: #93c5fd;
       }
       @media (prefers-reduced-motion: reduce) {
-        *, .btn-root, .btn-arrow-icon, .btn-border {
+        *, .btn-root, .btn-arrow-icon, .btn-border, .btn-icon {
           animation: none !important;
           opacity: 1 !important;
           transform: none !important;
@@ -67,11 +75,13 @@
   </defs>
   <g class="btn-root" tabindex="0" role="button">
     <!-- Base Glass Container -->
-    <rect x="0.75" y="0.75" width="170.5" height="32.5" rx="7" class="btn-border" fill="url(#btn-bg-threads)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.1"/>
+    <rect x="0.75" y="0.75" width="170.5" height="32.5" rx="7" class="btn-border" fill="url(#bg-btn-view-threads)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.1"/>
     
-    <!-- Platform Mini Icon (16x16 scaled) -->
+    <!-- Platform Mini Icon (with coordinated micro-scale on hover) -->
     <g transform="translate(10, 9) scale(0.666)">
-      <path d="M12.186 2c5.44 0 9.814 4.374 9.814 9.814 0 5.44-4.374 9.814-9.814 9.814C6.746 21.628 2.372 17.254 2.372 11.814 2.372 6.374 6.746 2 12.186 2zm0 2.181c-4.237 0-7.633 3.396-7.633 7.633 0 4.237 3.396 7.633 7.633 7.633 4.237 0 7.633-3.396 7.633-7.633 0-4.237-3.396-7.633-7.633-7.633zm2.59 5.617c1.341 0 2.193.99 2.193 2.502 0 1.944-1.391 3.518-3.415 3.518-1.503 0-2.529-.906-2.529-2.235 0-1.362 1.05-2.261 2.457-2.261.42 0 .84.077 1.155.218v-.077c0-.857-.496-1.386-1.42-1.386-.706 0-1.285.319-1.638.647l-.924-1.319c.647-.613 1.63-1.076 2.894-1.076 2.05 0 3.227 1.151 3.227 3.37v4.613h-1.94v-.924h-.059c-.479.68-1.319 1.058-2.235 1.058-1.899 0-3.37-1.361-3.37-3.218 0-1.823 1.47-3.218 3.538-3.218.428 0 .865.05 1.252.16v-.084c0-.79-.479-1.218-1.311-1.218-.622 0-1.151.277-1.47.546l-.882-1.277c.605-.538 1.487-.933 2.546-.933zm.252 4.143c-.227-.084-.538-.134-.84-.134-.966 0-1.63.571-1.63 1.437 0 .824.63 1.378 1.504 1.378 1.017 0 1.748-.731 1.748-1.807v-.874z" fill="#F8FAFC"/>
+      <g class="btn-icon">
+        <path d="M12.186 2c5.44 0 9.814 4.374 9.814 9.814 0 5.44-4.374 9.814-9.814 9.814C6.746 21.628 2.372 17.254 2.372 11.814 2.372 6.374 6.746 2 12.186 2zm0 2.181c-4.237 0-7.633 3.396-7.633 7.633 0 4.237 3.396 7.633 7.633 7.633 4.237 0 7.633-3.396 7.633-7.633 0-4.237-3.396-7.633-7.633-7.633zm2.59 5.617c1.341 0 2.193.99 2.193 2.502 0 1.944-1.391 3.518-3.415 3.518-1.503 0-2.529-.906-2.529-2.235 0-1.362 1.05-2.261 2.457-2.261.42 0 .84.077 1.155.218v-.077c0-.857-.496-1.386-1.42-1.386-.706 0-1.285.319-1.638.647l-.924-1.319c.647-.613 1.63-1.076 2.894-1.076 2.05 0 3.227 1.151 3.227 3.37v4.613h-1.94v-.924h-.059c-.479.68-1.319 1.058-2.235 1.058-1.899 0-3.37-1.361-3.37-3.218 0-1.823 1.47-3.218 3.538-3.218.428 0 .865.05 1.252.16v-.084c0-.79-.479-1.218-1.311-1.218-.622 0-1.151.277-1.47.546l-.882-1.277c.605-.538 1.487-.933 2.546-.933zm.252 4.143c-.227-.084-.538-.134-.84-.134-.966 0-1.63.571-1.63 1.437 0 .824.63 1.378 1.504 1.378 1.017 0 1.748-.731 1.748-1.807v-.874z" fill="#F8FAFC"/>
+      </g>
     </g>
 
     <!-- Action Text -->

@@ -45,12 +45,21 @@
         50% { stroke-opacity: 1; stroke: #0a66c2; }
       }
       .row-card {
-        animation: rowIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.09s both;
+        animation: rowIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
       }
       .p-name { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.3px; }
       .p-handle { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 600; fill: #cbd5e1; }
       .p-btn { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; fill: #38bdf8; letter-spacing: 0.8px; }
       
+      .p-icon {
+        transform-origin: 12px 12px;
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+      }
+      .row-card:hover .p-icon, svg:hover .p-icon {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 3px #0a66c2);
+      }
+
       .btn-action-group {
         cursor: pointer;
         transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
@@ -66,7 +75,7 @@
       }
       .btn-action-group:hover, svg:hover .btn-action-group {
         transform: translateY(-1.5px) scale(1.025);
-        filter: drop-shadow(0 4px 12px rgba(10, 102, 194, 0.45));
+        filter: drop-shadow(0 4px 12px rgba(10, 102, 194, 0.5));
       }
       .btn-action-group:hover .btn-rect, svg:hover .btn-action-group .btn-rect {
         stroke: #0a66c2;
@@ -83,7 +92,7 @@
         outline-offset: 2px;
       }
       @media (prefers-reduced-motion: reduce) {
-        *, .row-card, .btn-action-group, .btn-arrow, .btn-rect {
+        *, .row-card, .btn-action-group, .btn-arrow, .btn-rect, .p-icon {
           animation: none !important;
           opacity: 1 !important;
           transform: none !important;
@@ -103,7 +112,9 @@
     <g transform="translate(8, 5)">
       <rect x="0" y="0" width="222" height="38" rx="6" fill="url(#p-bg-linkedin)" stroke="rgba(10, 102, 194, 0.55)" stroke-width="1" />
       <g transform="translate(14, 9)">
-        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0-.01-3.06 1.53 1.53 0 0 0 .01 3.06m-1.4 9.74h2.79v-8.37H5.06v8.37z" fill="#0A66C2"/>
+        <g class="p-icon">
+          <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0-.01-3.06 1.53 1.53 0 0 0 .01 3.06m-1.4 9.74h2.79v-8.37H5.06v8.37z" fill="#0A66C2"/>
+        </g>
       </g>
       <text x="44" y="24" class="p-name">LinkedIn</text>
     </g>
