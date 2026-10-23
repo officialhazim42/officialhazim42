@@ -8,7 +8,7 @@
 
   <br />
 
-  <img src="assets/intro-card.svg" alt="HAZIM BASHIR FAQEER — Developer Identity and Academic Base" width="100%" />
+  <img src="assets/intro-card.svg" alt="Hazim Bashir — Developer Identity and Academic Base" width="100%" />
 
   <br />
   <br />
