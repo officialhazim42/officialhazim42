@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 48" width="100%" height="48">
+  <defs>
+    <!-- Base Row Glass Gradient -->
+    <linearGradient id="row-bg-telegram" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#060b18" stop-opacity="0.96" />
+      <stop offset="26%" stop-color="#061c2b" stop-opacity="0.82" />
+      <stop offset="68%" stop-color="#05141f" stop-opacity="0.82" />
+      <stop offset="100%" stop-color="#092a40" stop-opacity="0.88" />
+    </linearGradient>
+    <linearGradient id="row-stroke-telegram" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(38, 165, 228, 0.35)" />
+      <stop offset="50%" stop-color="#1e3a5f" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="rgba(38, 165, 228, 0.35)" />
+    </linearGradient>
+
+    <!-- Platform Cell Gradient -->
+    <linearGradient id="p-bg-telegram" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061c2b" />
+      <stop offset="100%" stop-color="#0a293d" />
+    </linearGradient>
+
+    <!-- Identity Cell Gradient -->
+    <linearGradient id="id-bg-telegram" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05141f" />
+      <stop offset="100%" stop-color="#082030" />
+    </linearGradient>
+
+    <!-- Action Button Gradient -->
+    <linearGradient id="btn-bg-telegram" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#092a40" />
+      <stop offset="100%" stop-color="#0f3d5c" />
+    </linearGradient>
+
+    <style>
+      .p-name { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.3px; }
+      .p-handle { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 600; fill: #cbd5e1; }
+      .p-btn { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; fill: #38bdf8; letter-spacing: 0.8px; }
+    </style>
+  </defs>
+
+  <!-- Base Row Container -->
+  <rect x="1" y="1" width="898" height="46" rx="8" fill="url(#row-bg-telegram)" stroke="url(#row-stroke-telegram)" stroke-width="1.1" />
+
+  <!-- Left Accent Notch -->
+  <rect x="1" y="12" width="3" height="24" rx="1.5" fill="#26a5e4" />
+
+  <!-- 1. Channel / Platform Cell -->
+  <g transform="translate(8, 5)">
+    <rect x="0" y="0" width="222" height="38" rx="6" fill="url(#p-bg-telegram)" stroke="rgba(38, 165, 228, 0.55)" stroke-width="1" />
+    <g transform="translate(14, 9)">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="#26A5E4"/>
+    </g>
+    <text x="44" y="24" class="p-name">Telegram</text>
+  </g>
+
+  <!-- 2. Verified Identity Cell -->
+  <g transform="translate(236, 5)">
+    <rect x="0" y="0" width="456" height="38" rx="6" fill="url(#id-bg-telegram)" stroke="rgba(38, 165, 228, 0.55)" stroke-width="1" />
+    <!-- Identity Symbol / Prompt -->
+    <path d="M14 19l4-4-4-4" stroke="#26a5e4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8" />
+    <text x="28" y="24" class="p-handle">@officialhazim42</text>
+  </g>
+
+  <!-- 3. Direct Connection Action Button Cell -->
+  <g transform="translate(698, 5)">
+    <rect x="0" y="0" width="194" height="38" rx="6" fill="url(#btn-bg-telegram)" stroke="rgba(38, 165, 228, 0.55)" stroke-width="1.1" />
+    <text x="18" y="24" class="p-btn">MESSAGE</text>
+    <path d="M174 15l4 4-4 4m4-4h-8" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/>
+  </g>
+</svg>

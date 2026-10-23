@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 48" width="100%" height="48">
+  <defs>
+    <!-- Base Row Glass Gradient -->
+    <linearGradient id="row-bg-x" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#060b18" stop-opacity="0.96" />
+      <stop offset="26%" stop-color="#0b0e14" stop-opacity="0.82" />
+      <stop offset="68%" stop-color="#080a0f" stop-opacity="0.82" />
+      <stop offset="100%" stop-color="#121824" stop-opacity="0.88" />
+    </linearGradient>
+    <linearGradient id="row-stroke-x" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(148, 163, 184, 0.25)" />
+      <stop offset="50%" stop-color="#1e3a5f" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="rgba(148, 163, 184, 0.25)" />
+    </linearGradient>
+
+    <!-- Platform Cell Gradient -->
+    <linearGradient id="p-bg-x" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0e14" />
+      <stop offset="100%" stop-color="#121722" />
+    </linearGradient>
+
+    <!-- Identity Cell Gradient -->
+    <linearGradient id="id-bg-x" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080a0f" />
+      <stop offset="100%" stop-color="#0e121a" />
+    </linearGradient>
+
+    <!-- Action Button Gradient -->
+    <linearGradient id="btn-bg-x" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121824" />
+      <stop offset="100%" stop-color="#1b2436" />
+    </linearGradient>
+
+    <style>
+      .p-name { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.3px; }
+      .p-handle { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 600; fill: #cbd5e1; }
+      .p-btn { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; font-weight: 700; fill: #f8fafc; letter-spacing: 0.8px; }
+    </style>
+  </defs>
+
+  <!-- Base Row Container -->
+  <rect x="1" y="1" width="898" height="46" rx="8" fill="url(#row-bg-x)" stroke="url(#row-stroke-x)" stroke-width="1.1" />
+
+  <!-- Left Accent Notch -->
+  <rect x="1" y="12" width="3" height="24" rx="1.5" fill="#94a3b8" />
+
+  <!-- 1. Channel / Platform Cell -->
+  <g transform="translate(8, 5)">
+    <rect x="0" y="0" width="222" height="38" rx="6" fill="url(#p-bg-x)" stroke="rgba(148, 163, 184, 0.4)" stroke-width="1" />
+    <g transform="translate(14, 9)">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#F8FAFC"/>
+    </g>
+    <text x="44" y="24" class="p-name">X (Twitter)</text>
+  </g>
+
+  <!-- 2. Verified Identity Cell -->
+  <g transform="translate(236, 5)">
+    <rect x="0" y="0" width="456" height="38" rx="6" fill="url(#id-bg-x)" stroke="rgba(148, 163, 184, 0.4)" stroke-width="1" />
+    <!-- Identity Symbol / Prompt -->
+    <path d="M14 19l4-4-4-4" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.8" />
+    <text x="28" y="24" class="p-handle">@officialhazim42</text>
+  </g>
+
+  <!-- 3. Direct Connection Action Button Cell -->
+  <g transform="translate(698, 5)">
+    <rect x="0" y="0" width="194" height="38" rx="6" fill="url(#btn-bg-x)" stroke="rgba(148, 163, 184, 0.4)" stroke-width="1.1" />
+    <text x="18" y="24" class="p-btn">FOLLOW ON X</text>
+    <path d="M174 15l4 4-4 4m4-4h-8" stroke="#f8fafc" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/>
+  </g>
+</svg>
