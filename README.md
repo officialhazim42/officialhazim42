@@ -6,28 +6,28 @@
 
   <img src="assets/typing.svg" alt="Hazim Bashir — Developer Focus Headline" width="100%" />
 
-  <p align="center">
-    <strong>Software Creator &nbsp;•&nbsp; Computer Science Engineering Student &nbsp;•&nbsp; Ganderbal, Jammu &amp; Kashmir, India</strong>
-  </p>
+  <br />
+
+  <img src="assets/intro-card.svg" alt="Hazim Bashir — Developer Identity and Academic Base" width="100%" />
+
+  <br />
+  <br />
 
   <p align="center">
-    <a href="https://github.com/officialhazim42"><img src="https://img.shields.io/badge/GitHub-officialhazim42-0B1329?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-    <a href="https://www.instagram.com/officialhazim42/"><img src="https://img.shields.io/badge/Instagram-@officialhazim42-0B1329?style=flat-square&logo=instagram&logoColor=E4405F" alt="Instagram" /></a>
-    <a href="https://www.youtube.com/@officialhazim42"><img src="https://img.shields.io/badge/YouTube-@officialhazim42-0B1329?style=flat-square&logo=youtube&logoColor=FF0000" alt="YouTube" /></a>
-    <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="https://img.shields.io/badge/Email-hazimbashirfaqeer@gmail.com-0B1329?style=flat-square&logo=gmail&logoColor=EA4335" alt="Email" /></a>
+    <a href="https://github.com/officialhazim42"><img src="assets/buttons/btn-github.svg" alt="GitHub - @officialhazim42" width="206" /></a>
+    &nbsp;
+    <a href="https://www.instagram.com/officialhazim42/"><img src="assets/buttons/btn-instagram.svg" alt="Instagram - @officialhazim42" width="206" /></a>
+    &nbsp;
+    <a href="https://www.youtube.com/@officialhazim42"><img src="assets/buttons/btn-youtube.svg" alt="YouTube - @officialhazim42" width="206" /></a>
+    &nbsp;
+    <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="assets/buttons/btn-email.svg" alt="Email - hazimbashirfaqeer@gmail.com" width="206" /></a>
   </p>
 
 </div>
 
 <br />
 
-<img src="assets/section-about.svg" alt="01 / IDENTITY • ABOUT ME" width="100%" />
-
-<br />
-
-I am a Computer Science Engineering student at Government Polytechnic College Ganderbal, Jammu & Kashmir, India, and an independent software creator.
-
-My core focus centers on engineering practical web applications, Android tools, and client-side browser utilities that eliminate digital friction. I build software that runs with zero unnecessary dependencies: accessible to all, private by architecture, and engineered to deliver immediate utility on-device.
+<img src="assets/about-panel.svg" alt="01 / IDENTITY • ABOUT ME &amp; SOFTWARE PHILOSOPHY" width="100%" />
 
 <br />
 

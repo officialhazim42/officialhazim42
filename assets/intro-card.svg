@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 86" width="100%" height="86">
+  <defs>
+    <linearGradient id="intro-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1329" stop-opacity="0.98" />
+      <stop offset="60%" stop-color="#0c1833" stop-opacity="0.90" />
+      <stop offset="100%" stop-color="#060b18" stop-opacity="0.98" />
+    </linearGradient>
+    <linearGradient id="intro-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#3b82f6" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.3" />
+    </linearGradient>
+    <radialGradient id="intro-glow" cx="95%" cy="10%" r="45%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0a1329" stop-opacity="0" />
+    </radialGradient>
+    <style>
+      .lbl { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 1.5px; }
+      .val { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; letter-spacing: 0.3px; }
+      .desc { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; font-weight: 500; fill: #94a3b8; }
+    </style>
+  </defs>
+
+  <!-- Card Base -->
+  <rect x="1" y="1" width="898" height="84" rx="12" fill="url(#intro-bg)" stroke="url(#intro-stroke)" stroke-width="1.2" />
+  <rect x="1" y="1" width="898" height="84" rx="12" fill="url(#intro-glow)" />
+
+  <!-- Left Accent Bar -->
+  <rect x="1" y="12" width="4" height="62" rx="2" fill="#38bdf8" />
+
+  <!-- Pillar 1: Software Creator -->
+  <g transform="translate(24, 18)">
+    <!-- Icon Container -->
+    <rect width="36" height="36" rx="8" fill="#0B1730" stroke="#1E3A5F" stroke-width="1.1" />
+    <!-- Code Bracket Icon -->
+    <path d="M14 13l-5 5 5 5m8-10l5 5-5 5" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <text x="48" y="14" fill="#38bdf8" class="lbl">ROLE &amp; FOCUS</text>
+    <text x="48" y="32" class="val">Software Creator</text>
+    <text x="48" y="46" class="desc">Web &amp; Android Utilities • Zero-Upload Privacy</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="305" y1="16" x2="305" y2="70" stroke="#1E3A5F" stroke-width="1" />
+
+  <!-- Pillar 2: Academic Base -->
+  <g transform="translate(325, 18)">
+    <rect width="36" height="36" rx="8" fill="#0B1730" stroke="#1E3A5F" stroke-width="1.1" />
+    <!-- Graduation Cap Icon -->
+    <path d="M7 16l11-6 11 6-11 6-11-6zm18 4v6c0 2.5-3.5 5-7 5s-7-2.5-7-5v-6" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <text x="48" y="14" fill="#06b6d4" class="lbl">ACADEMIC BASE</text>
+    <text x="48" y="32" class="val">Computer Science Engineering</text>
+    <text x="48" y="46" class="desc">Govt Polytechnic College Ganderbal, J&amp;K</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="615" y1="16" x2="615" y2="70" stroke="#1E3A5F" stroke-width="1" />
+
+  <!-- Pillar 3: Location Base -->
+  <g transform="translate(635, 18)">
+    <rect width="36" height="36" rx="8" fill="#0B1730" stroke="#1E3A5F" stroke-width="1.1" />
+    <!-- Location Pin Icon -->
+    <path d="M18 10c-3.3 0-6 2.7-6 6 0 4.5 6 11 6 11s6-6.5 6-11c0-3.3-2.7-6-6-6zm0 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <text x="48" y="14" fill="#60a5fa" class="lbl">LOCATION</text>
+    <text x="48" y="32" class="val">Ganderbal, Kashmir</text>
+    <text x="48" y="46" class="desc">Jammu &amp; Kashmir, India</text>
+  </g>
+
+  <!-- Right Decorative Dots -->
+  <circle cx="875" cy="43" r="3" fill="#38bdf8" />
+  <circle cx="886" cy="43" r="1.8" fill="#06b6d4" />
+</svg>
