@@ -258,7 +258,7 @@ A structured, practical reference handbook and command guide for mastering nativ
 <tr>
 <td width="25%" align="center" valign="middle">
   <a href="https://cyberguard-yuva.vercel.app/">
-    <img src="assets/cyberguard-logo.png" alt="CyberGuard YUVA Official Logo" width="180" style="border-radius: 12px;" />
+    <img src="assets/cyberguard-logo.png" alt="CyberGuard YUVA Official Logo" width="180" style="border-radius: 50%;" />
   </a>
 </td>
 <td width="75%" valign="middle">

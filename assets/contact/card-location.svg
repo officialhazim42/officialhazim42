@@ -185,7 +185,7 @@
 
       <!-- PHASE 4 & 5: Verified Handle Text (with 2.8s reading hold) -->
       <g clip-path="url(#clip-handle-location)">
-        <text x="32" y="26" class="mono-text text-handle">Ganderbal, Jammu & Kashmir, India</text>
+        <text x="32" y="26" class="mono-text text-handle">Ganderbal, Jammu &amp; Kashmir, India</text>
       </g>
 
       <!-- PHASE 6 & 7: Visit Profile Action Label (Steady usable state) -->
