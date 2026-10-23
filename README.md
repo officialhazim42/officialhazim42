@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="assets/profile-header.svg" alt="HAZIM BASHIR — Software Creator &amp; Developer Banner" width="100%" />
+  <img src="assets/profile-header.svg" alt="HAZIM BASHIR FAQEER — Software Creator &amp; Developer Banner" width="100%" />
 
   <br />
 
