@@ -1,14 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 44" width="206" height="44">
   <defs>
-    <linearGradient id="btn-bg-instagram" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="btn-bg-btn-instagram" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0b1730"/>
       <stop offset="100%" stop-color="#102344"/>
     </linearGradient>
+    <style>
+      @keyframes arrowDrift {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(3px); }
+      }
+      @keyframes borderShimmer {
+        0%, 100% { stroke-opacity: 0.6; }
+        50% { stroke-opacity: 1; stroke: #e4405f; }
+      }
+      .hero-btn {
+        cursor: pointer;
+        transform-origin: 103px 22px;
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+      }
+      .hero-btn .btn-arrow-icon {
+        animation: arrowDrift 2.2s ease-in-out infinite;
+        transition: transform 0.2s ease;
+      }
+      .hero-btn .btn-border {
+        animation: borderShimmer 3s ease-in-out infinite;
+        transition: stroke 0.2s ease, stroke-width 0.2s ease;
+      }
+      .hero-btn:hover, svg:hover .hero-btn {
+        transform: translateY(-2px) scale(1.025);
+        filter: drop-shadow(0 4px 14px rgba(228, 64, 95, 0.4));
+      }
+      .hero-btn:hover .btn-border, svg:hover .hero-btn .btn-border {
+        stroke: #e4405f;
+        stroke-width: 1.5;
+      }
+      .hero-btn:hover .btn-arrow-icon, svg:hover .hero-btn .btn-arrow-icon {
+        transform: translateX(4px);
+      }
+      .hero-btn:active, svg:active .hero-btn {
+        transform: translateY(0.5px) scale(0.98);
+      }
+      .hero-btn:focus {
+        outline: 2px solid #e4405f;
+        outline-offset: 2px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, .hero-btn, .btn-arrow-icon, .btn-border {
+          animation: none !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
+    </style>
   </defs>
-  <rect x="0.75" y="0.75" width="204.5" height="42.5" rx="8" fill="url(#btn-bg-instagram)" stroke="#1E3A5F" stroke-width="1.2"/>
-  <g transform="translate(14, 11)"><rect x="1" y="1" width="20" height="20" rx="5" fill="none" stroke="#E4405F" stroke-width="1.8"/><circle cx="11" cy="11" r="5" fill="none" stroke="#E4405F" stroke-width="1.8"/><circle cx="16.5" cy="5.5" r="1.3" fill="#E4405F"/></g>
-  <text x="44" y="18" fill="#E4405F" font-family="ui-monospace, monospace" font-size="9" font-weight="700" letter-spacing="1px">INSTAGRAM</text>
-  <text x="44" y="32" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">@officialhazim42</text>
-  <!-- Right subtle indicator arrow -->
-  <path d="M192 20l4 4-4 4" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.7"/>
+  <g class="hero-btn" tabindex="0" role="button">
+    <rect x="0.75" y="0.75" width="204.5" height="42.5" rx="8" class="btn-border" fill="url(#btn-bg-btn-instagram)" stroke="#1E3A5F" stroke-width="1.2"/>
+    <g transform="translate(14, 12)"><defs><linearGradient id="ig-hero" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFDC80"/><stop offset="50%" stop-color="#F56040"/><stop offset="100%" stop-color="#C13584"/></linearGradient></defs><rect x="1" y="1" width="18" height="18" rx="5" fill="none" stroke="url(#ig-hero)" stroke-width="2"/><circle cx="10" cy="10" r="4" fill="none" stroke="url(#ig-hero)" stroke-width="2"/><circle cx="15" cy="5" r="1.1" fill="#FD1D1D"/></g>
+    <text x="44" y="18" fill="#f472b6" font-family="ui-monospace, monospace" font-size="9" font-weight="700" letter-spacing="1px">INSTAGRAM</text>
+    <text x="44" y="32" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">@officialhazim42</text>
+    <g class="btn-arrow-icon">
+      <path d="M192 20l4 4-4 4" stroke="#f472b6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85"/>
+    </g>
+  </g>
 </svg>

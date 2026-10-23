@@ -1,16 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 86" width="100%" height="86">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 104" width="100%" height="104">
   <defs>
     <linearGradient id="ft-bg" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#060b18" />
-      <stop offset="50%" stop-color="#0a142c" />
+      <stop offset="50%" stop-color="#0a1530" />
       <stop offset="100%" stop-color="#060b18" />
     </linearGradient>
     <linearGradient id="ft-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.25" />
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.25" />
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.3" />
     </linearGradient>
     <style>
+      @keyframes ftEntrance {
+        0% { opacity: 0; transform: translateY(8px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes dotJewel {
+        0%, 100% { r: 2.5; opacity: 0.8; }
+        50% { r: 3.8; opacity: 1; filter: drop-shadow(0 0 6px #38bdf8); }
+      }
+      .ft-root {
+        animation: ftEntrance 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .jewel-dot {
+        animation: dotJewel 2.4s ease-in-out infinite;
+      }
       .ft-mono {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         font-size: 11px;
@@ -20,10 +34,17 @@
       }
       .ft-tagline {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 13px;
+        font-size: 13.5px;
         font-weight: 500;
-        fill: #cbd5e1;
+        fill: #e2e8f0;
         letter-spacing: 0.2px;
+      }
+      .ft-domains {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 11px;
+        fill: #7dd3fc;
+        letter-spacing: 1.2px;
+        font-weight: 600;
       }
       .ft-sub {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -31,15 +52,32 @@
         fill: #64748b;
         letter-spacing: 1px;
       }
+      @media (prefers-reduced-motion: reduce) {
+        *, .ft-root, .jewel-dot {
+          animation: none !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
     </style>
   </defs>
 
-  <rect x="1" y="1" width="898" height="84" rx="12" fill="url(#ft-bg)" stroke="url(#ft-stroke)" stroke-width="1.2" />
+  <g class="ft-root">
+    <rect x="1" y="1" width="898" height="102" rx="12" fill="url(#ft-bg)" stroke="url(#ft-stroke)" stroke-width="1.2" />
 
-  <!-- Center Decorative Glow Dot -->
-  <circle cx="450" cy="1" r="2.5" fill="#38bdf8" />
+    <!-- Center Top Decorative Pulsing Jewel Dot -->
+    <circle cx="450" cy="1" r="3" fill="#38bdf8" class="jewel-dot" />
 
-  <text x="450" y="27" text-anchor="middle" class="ft-mono">HAZIM BASHIR FAQEER &#8226; @OFFICIALHAZIM42</text>
-  <text x="450" y="49" text-anchor="middle" class="ft-tagline">Designed with purpose. Built with care. Focused on creating useful digital experiences through thoughtful engineering.</text>
-  <text x="450" y="69" text-anchor="middle" class="ft-sub">Ganderbal, Jammu &amp; Kashmir, India &#8226; Accessible Technology &#8226; Open Source</text>
+    <!-- Line 1: Identity & Brand -->
+    <text x="450" y="27" text-anchor="middle" class="ft-mono">HAZIM BASHIR FAQEER &#8226; @OFFICIALHAZIM42 &#8226; SOFTWARE CREATOR</text>
+
+    <!-- Line 2: Engineering Philosophy -->
+    <text x="450" y="49" text-anchor="middle" class="ft-tagline">Designed with purpose. Built with care. Focused on useful digital experiences &amp; zero-upload client-side computing.</text>
+
+    <!-- Line 3: Verified Domain Ecosystem -->
+    <text x="450" y="71" text-anchor="middle" class="ft-domains">officialhazim42.github.io  &#8226;  cyberguard-yuva.vercel.app  &#8226;  imagehub.netlify.app  &#8226;  pdfshub.netlify.app</text>
+
+    <!-- Line 4: Academic Base & Location -->
+    <text x="450" y="90" text-anchor="middle" class="ft-sub">Ganderbal, Jammu &amp; Kashmir, India &#8226; Government Polytechnic College Ganderbal &#8226; Open Source</text>
+  </g>
 </svg>

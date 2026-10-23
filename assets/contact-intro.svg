@@ -1,32 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 116" width="100%" height="116">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 132" width="100%" height="132">
   <defs>
     <linearGradient id="ci-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#081329" stop-opacity="0.95" />
-      <stop offset="50%" stop-color="#0c1b3a" stop-opacity="0.90" />
-      <stop offset="100%" stop-color="#071124" stop-opacity="0.95" />
+      <stop offset="0%" stop-color="#081329" stop-opacity="0.96" />
+      <stop offset="50%" stop-color="#0d1f42" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#071126" stop-opacity="0.96" />
     </linearGradient>
     <linearGradient id="ci-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85" />
       <stop offset="40%" stop-color="#1e3a5f" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#0ea5e9" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.5" />
     </linearGradient>
-    <radialGradient id="ci-glow" cx="15%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.12" />
+    <radialGradient id="ci-glow" cx="18%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14" />
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
     </radialGradient>
+    <filter id="badge-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
     <style>
+      @keyframes ciEntrance {
+        0% { opacity: 0; transform: translateY(8px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes badgeEntrance {
+        0% { opacity: 0; transform: translateY(5px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes lineFadeIn1 {
+        0% { opacity: 0; transform: translateY(6px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes lineFadeIn2 {
+        0% { opacity: 0; transform: translateY(6px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes lineFadeIn3 {
+        0% { opacity: 0; transform: translateY(6px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes dotPulse {
+        0%, 100% { r: 3.5; opacity: 0.9; }
+        50% { r: 4.5; opacity: 1; filter: drop-shadow(0 0 6px #38bdf8); }
+      }
+      @keyframes barPulse {
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 3px rgba(56, 189, 248, 0.4)); }
+        50% { opacity: 1; filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.85)); }
+      }
+      .card-root {
+        animation: ciEntrance 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .heading-group {
+        animation: badgeEntrance 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+      }
+      .text-l1 {
+        animation: lineFadeIn1 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+      }
+      .text-l2 {
+        animation: lineFadeIn2 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both;
+      }
+      .text-l3 {
+        animation: lineFadeIn3 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both;
+      }
+      .pulsing-bar {
+        animation: barPulse 2.8s ease-in-out infinite;
+      }
+      .pulsing-dot {
+        animation: dotPulse 2.4s ease-in-out infinite;
+      }
       .badge-mono {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-        font-size: 10px;
+        font-size: 10.5px;
         font-weight: 700;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.6px;
         fill: #38bdf8;
       }
       .body-text {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 13.5px;
-        fill: #94a3b8;
-        line-height: 1.5;
+        font-size: 14.5px;
+        fill: #cbd5e1;
+        letter-spacing: 0.15px;
       }
       .text-bold {
         font-weight: 700;
@@ -36,43 +90,60 @@
         font-weight: 700;
         fill: #38bdf8;
       }
+      @media (prefers-reduced-motion: reduce) {
+        *, .card-root, .heading-group, .text-l1, .text-l2, .text-l3, .pulsing-bar, .pulsing-dot {
+          animation: none !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
     </style>
   </defs>
 
-  <!-- Main Glass Container -->
-  <rect x="1" y="1" width="898" height="114" rx="12" fill="url(#ci-bg)" stroke="url(#ci-stroke)" stroke-width="1.2" />
-  <rect x="1" y="1" width="898" height="114" rx="12" fill="url(#ci-glow)" />
+  <!-- Main Glass Container with entrance animation -->
+  <g class="card-root">
+    <rect x="1" y="1" width="898" height="130" rx="12" fill="url(#ci-bg)" stroke="url(#ci-stroke)" stroke-width="1.2" />
+    <rect x="1" y="1" width="898" height="130" rx="12" fill="url(#ci-glow)" />
 
-  <!-- Left Accent Glowing Bar -->
-  <rect x="1" y="24" width="4" height="68" rx="2" fill="#38bdf8" />
+    <!-- Left Accent Glowing Bar -->
+    <rect x="1" y="24" width="4" height="84" rx="2" fill="#38bdf8" class="pulsing-bar" />
 
-  <!-- Top Indicator Pill -->
-  <g transform="translate(24, 20)">
-    <rect x="0" y="0" width="220" height="22" rx="11" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
-    <circle cx="12" cy="11" r="3.5" fill="#38bdf8" />
-    <text x="24" y="15" class="badge-mono">COLLABORATION &amp; INQUIRIES</text>
+    <!-- Top Indicator Pill with Stronger Visual Weight -->
+    <g transform="translate(24, 18)" class="heading-group">
+      <rect x="0" y="0" width="236" height="24" rx="12" fill="#0b1730" stroke="#1e3a5f" stroke-width="1.2" />
+      <circle cx="13" cy="12" r="4" fill="#38bdf8" class="pulsing-dot" />
+      <text x="26" y="16" class="badge-mono">COLLABORATION &amp; INQUIRIES</text>
+    </g>
+
+    <!-- Right Decorative Subtle Traces -->
+    <g opacity="0.6">
+      <circle cx="850" cy="24" r="3" fill="#38bdf8" />
+      <line x1="850" y1="24" x2="880" y2="24" stroke="#1e3a5f" stroke-width="1.2" />
+      <circle cx="880" cy="24" r="2.5" fill="#06b6d4" />
+    </g>
+
+    <!-- Enhanced Supporting Text: Larger, High Contrast, Staggered Entrance -->
+    <g class="text-l1">
+      <text x="24" y="66" class="body-text">
+        <tspan>I welcome </tspan>
+        <tspan class="text-bold">meaningful connections</tspan>
+        <tspan> with developers, creators, open-source maintainers, and technology enthusiasts.</tspan>
+      </text>
+    </g>
+
+    <g class="text-l2">
+      <text x="24" y="90" class="body-text">
+        <tspan>Whether you have an idea to build, an </tspan>
+        <tspan class="text-cyan">open-source initiative to collaborate on</tspan>
+        <tspan>, or an opportunity to exchange knowledge</tspan>
+      </text>
+    </g>
+
+    <g class="text-l3">
+      <text x="24" y="114" class="body-text">
+        <tspan>and explore client-side software engineering — </tspan>
+        <tspan class="text-bold">feel free to reach out across any verified channel below.</tspan>
+      </text>
+    </g>
   </g>
-
-  <!-- Right Decorative Traces -->
-  <g opacity="0.6">
-    <circle cx="850" cy="24" r="3" fill="#38bdf8" />
-    <line x1="850" y1="24" x2="880" y2="24" stroke="#1e3a5f" stroke-width="1" />
-    <circle cx="880" cy="24" r="2" fill="#06b6d4" />
-  </g>
-
-  <!-- Introductory Welcoming Statement -->
-  <text x="24" y="64" class="body-text">
-    <tspan>I welcome </tspan>
-    <tspan class="text-bold">meaningful connections</tspan>
-    <tspan> with developers, creators, and technology enthusiasts.</tspan>
-  </text>
-  <text x="24" y="86" class="body-text">
-    <tspan>Whether you have an idea to build, an </tspan>
-    <tspan class="text-cyan">open-source project to collaborate on</tspan>
-    <tspan>, or an opportunity to exchange knowledge</tspan>
-  </text>
-  <text x="24" y="104" class="body-text">
-    <tspan>and explore practical software engineering — </tspan>
-    <tspan class="text-bold">feel free to reach out.</tspan>
-  </text>
 </svg>
