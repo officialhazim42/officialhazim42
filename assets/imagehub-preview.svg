@@ -22,7 +22,7 @@
   <circle cx="48" cy="33" r="3" fill="#10b981" />
   <text x="58" y="37" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#38bdf8">100% IN-BROWSER</text>
 
-  <!-- Title & Branding -->
+  <!-- Title and Branding -->
   <text x="36" y="95" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="#ffffff" letter-spacing="1px">ImageHub</text>
   <text x="36" y="122" font-family="ui-monospace, monospace" font-size="12" font-weight="600" fill="#93c5fd" letter-spacing="2px">PROFESSIONAL DIGITAL UTILITIES</text>
 

@@ -8,7 +8,7 @@
   <rect x="0.75" y="0.75" width="166.5" height="46.5" rx="8" fill="url(#bg_github)" stroke="#23436B" stroke-width="1.5"/>
   <g transform="translate(14, 11)"><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12c0 4.6 3 8.6 7.2 10 0.5 0.1 0.7-0.2 0.7-0.5v-1.8c-2.9 0.6-3.5-1.4-3.5-1.4-0.5-1.2-1.2-1.5-1.2-1.5-1-0.7 0.1-0.7 0.1-0.7 1.1 0.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2 0.9 0.1-0.7 0.4-1.2 0.7-1.5-2.3-0.3-4.8-1.2-4.8-5.2 0-1.1 0.4-2.1 1.1-2.8-0.1-0.3-0.5-1.3 0.1-2.8 0 0 0.9-0.3 2.9 1.1 0.8-0.2 1.7-0.4 2.6-0.4s1.8 0.1 2.6 0.4c2-1.4 2.9-1.1 2.9-1.1 0.6 1.5 0.2 2.5 0.1 2.8 0.7 0.8 1.1 1.7 1.1 2.8 0 4-2.5 4.9-4.8 5.2 0.4 0.3 0.8 1 0.8 2v3c0 0.3 0.2 0.6 0.7 0.5 4.2-1.4 7.2-5.4 7.2-10 0-5.8-4.7-10.5-10.5-10.5z" fill="#F8FAFC"/></g>
   <text x="44" y="20" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">GitHub</text>
-  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">Workflows & CI/CD</text>
+  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">Workflows &amp; CI/CD</text>
   <g transform="translate(108.8, 8)">
     <rect width="47.2" height="14" rx="3" fill="#181E29" stroke="#F8FAFC" stroke-width="0.8" opacity="0.9"/>
     <text x="23.6" y="10.5" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="800" text-anchor="middle" letter-spacing="0.5">DEVOPS</text>

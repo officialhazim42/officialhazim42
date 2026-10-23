@@ -73,7 +73,7 @@
     <text x="12" y="13" fill="#60A5FA" font-family="monospace" font-size="8" font-weight="700" text-anchor="middle">API</text>
   </g>
 
-  <!-- Server & Component Node (Right) -->
+  <!-- Server and Component Node (Right) -->
   <g transform="translate(268, 68)">
     <rect width="142" height="134" rx="8" fill="#0A1428" stroke="#1E3A5F" stroke-width="1.2"/>
     <rect width="142" height="20" rx="8" fill="#111F3A"/>

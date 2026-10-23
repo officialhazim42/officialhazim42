@@ -34,7 +34,7 @@
   <!-- Left Glowing Accent Indicator -->
   <rect x="1" y="10" width="4" height="34" rx="2" fill="#38bdf8" />
 
-  <!-- Section Number & Category Badge -->
+  <!-- Section Number and Category Badge -->
   <g transform="translate(22, 33)">
     <text class="mono-label">◈ 01</text>
   </g>

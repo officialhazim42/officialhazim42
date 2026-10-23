@@ -95,7 +95,7 @@
   <line x1="60" y1="16" x2="340" y2="16" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" />
   <line x1="840" y1="16" x2="1120" y2="16" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-opacity="0.7" />
 
-  <!-- LEFT CONTENT: IDENTITY & HEADINGS -->
+  <!-- LEFT CONTENT: IDENTITY and HEADINGS -->
   <g transform="translate(56, 52)">
 
     <!-- Top Status Badge -->
@@ -163,7 +163,7 @@
     <path d="M 1010 38 L 1010 20" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.6" />
     <circle cx="1010" cy="20" r="3" fill="#06b6d4" />
 
-    <!-- Portrait Drop Shadow & Background Backing -->
+    <!-- Portrait Drop Shadow and Background Backing -->
     <circle cx="1010" cy="180" r="117" fill="#091222" stroke="url(#ring-grad)" stroke-width="3.5" />
 
     <!-- Actual Cropped Portrait Image -->

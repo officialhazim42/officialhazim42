@@ -8,7 +8,7 @@
   <rect x="0.75" y="0.75" width="166.5" height="46.5" rx="8" fill="url(#bg_python)" stroke="#23436B" stroke-width="1.5"/>
   <g transform="translate(14, 11) scale(0.75)"><path d="M15.9 0c-4.4 0-4.1 1.9-4.1 1.9l.01 2H20v.6h-8.2c-2.3 0-4.1 1.4-4.1 4.1 0 2.8 1.8 3.9 1.8 3.9h1.1V10c0-1.7 1.4-3.1 3.1-3.1h8.2c1.4 0 2.5-1.1 2.5-2.5V1.9S24.6 0 15.9 0zm-2.3 1.3c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9z" fill="#387EB8"/><path d="M16.1 32c4.4 0 4.1-1.9 4.1-1.9l-.01-2H12v-.6h8.2c2.3 0 4.1-1.4 4.1-4.1 0-2.8-1.8-3.9-1.8-3.9h-1.1v2.5c0 1.7-1.4 3.1-3.1 3.1h-8.2c-1.4 0-2.5 1.1-2.5 2.5v2.5s-.2 1.9 8.5 1.9zm2.3-1.3c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9z" fill="#FFE052"/></g>
   <text x="44" y="20" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Python</text>
-  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">Scripting & Coursework</text>
+  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">Scripting &amp; Coursework</text>
   <g transform="translate(115, 8)">
     <rect width="41" height="14" rx="3" fill="#0F264A" stroke="#60A5FA" stroke-width="0.8" opacity="0.9"/>
     <text x="20.5" y="10.5" fill="#60A5FA" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="800" text-anchor="middle" letter-spacing="0.5">STUDY</text>
