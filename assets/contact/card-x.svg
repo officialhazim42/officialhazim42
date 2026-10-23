@@ -22,46 +22,31 @@
       <stop offset="100%" stop-color="#f8fafc" stop-opacity="0" />
     </radialGradient>
 
-    <!-- PHASE 2 & 3: Platform Name Clip -->
+    <!-- STAGE A: Platform Name Clip -->
     <clipPath id="clip-pname-x">
       <rect x="32" y="6" width="0" height="34">
         <animate
           attributeName="width"
-          dur="15s"
-          begin="1.25s"
+          dur="8s"
+          begin="2.0s"
           repeatCount="indefinite"
-          keyTimes="0; 0.027; 0.087; 0.140; 0.187; 0.213; 1"
-          values="0; 0;     106;   106;   0;    0;    0"
+          keyTimes="0; 0.025; 0.125; 0.25; 0.312; 0.35; 1"
+          values="0; 0; 106; 106; 0; 0; 0"
           calcMode="linear"
         />
       </rect>
     </clipPath>
 
-    <!-- PHASE 4 & 5: Verified Handle Clip (2.8s PRIORITY READING PAUSE between 0.307 and 0.493) -->
+    <!-- STAGE B: Verified Handle Clip (3-4s reading pause) -->
     <clipPath id="clip-handle-x">
       <rect x="32" y="6" width="0" height="34">
         <animate
           attributeName="width"
-          dur="15s"
-          begin="1.25s"
+          dur="8s"
+          begin="2.0s"
           repeatCount="indefinite"
-          keyTimes="0; 0.213; 0.307; 0.493; 0.560; 0.587; 1"
-          values="0; 0;    148;  148;  0;    0;    0"
-          calcMode="linear"
-        />
-      </rect>
-    </clipPath>
-
-    <!-- PHASE 6 & 7: Visit Profile Action Clip (4.7s STEADY USABLE STATE between 0.653 and 0.967) -->
-    <clipPath id="clip-action-x">
-      <rect x="32" y="6" width="0" height="34">
-        <animate
-          attributeName="width"
-          dur="15s"
-          begin="1.25s"
-          repeatCount="indefinite"
-          keyTimes="0; 0.587; 0.653; 0.967; 0.993; 1"
-          values="0; 0;    142;  142;  0;    0"
+          keyTimes="0; 0.35; 0.487; 0.887; 0.975; 1"
+          values="0; 0; 148; 148; 0; 0"
           calcMode="linear"
         />
       </rect>
@@ -81,19 +66,14 @@
         font-weight: 600;
       }
       .text-pname {
-        fill: #ffffff;
+        fill: #38bdf8;
         font-weight: 700;
         letter-spacing: 0.4px;
       }
       .text-handle {
-        fill: #38bdf8;
+        fill: #f8fafc;
         font-weight: 600;
         letter-spacing: 0.3px;
-      }
-      .text-action {
-        fill: #a5f3fc;
-        font-weight: 700;
-        letter-spacing: 0.5px;
       }
       .prompt {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -178,30 +158,25 @@
       <!-- Terminal Prompt Symbol -->
       <text x="14" y="26" class="prompt">&gt;</text>
 
-      <!-- PHASE 2 & 3: Platform Name Text -->
+      <!-- STAGE A: Platform Name Text -->
       <g clip-path="url(#clip-pname-x)">
         <text x="32" y="26" class="mono-text text-pname">X (Twitter)</text>
       </g>
 
-      <!-- PHASE 4 & 5: Verified Handle Text (with 2.8s reading hold) -->
+      <!-- STAGE B: Verified Handle Text (3-4s reading hold) -->
       <g clip-path="url(#clip-handle-x)">
         <text x="32" y="26" class="mono-text text-handle">@officialhazim42</text>
-      </g>
-
-      <!-- PHASE 6 & 7: Visit Profile Action Label (Steady usable state) -->
-      <g clip-path="url(#clip-action-x)">
-        <text x="32" y="26" class="mono-text text-action">Visit Profile &#8594;</text>
       </g>
 
       <!-- Dynamic Blinking Keystroke Cursor that tracks typing and backspacing -->
       <rect y="12" width="2.2" height="18" rx="1" class="cursor">
         <animate
           attributeName="x"
-          dur="15s"
-          begin="1.25s"
+          dur="8s"
+          begin="2.0s"
           repeatCount="indefinite"
-          keyTimes="0; 0.027; 0.087; 0.140; 0.187; 0.213; 0.307; 0.493; 0.560; 0.587; 0.653; 0.967; 0.993; 1"
-          values="32; 32;   138;  138;  32;   32;   180;  180;  32;   32;   174;  174;  32;   32"
+          keyTimes="0; 0.025; 0.125; 0.25; 0.312; 0.35; 0.487; 0.887; 0.975; 1"
+          values="32; 32; 138; 138; 32; 32; 180; 180; 32; 32"
           calcMode="linear"
         />
         <animate
@@ -217,7 +192,7 @@
     <!-- Right Side Attractive Action Button -->
     <g transform="translate(696, 9)" class="btn-action-group" role="button" tabindex="0">
       <rect x="0" y="0" width="188" height="42" rx="8" class="btn-rect" fill="#0d1f42" stroke="rgba(248, 250, 252, 0.45)" stroke-width="1.1" />
-      <text x="22" y="26" class="btn-label">VISIT PROFILE</text>
+      <text x="38" y="26" class="btn-label">CONNECT</text>
       <g transform="translate(150, 15)" class="btn-arrow-icon">
         <path d="M0 6h14m-5-5l5 5-5 5" stroke="#f8fafc" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
           <animateTransform
