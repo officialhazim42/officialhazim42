@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ph-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#050a16" />
+    </linearGradient>
+    <style>
+      .ph-num { font-family: ui-monospace, monospace; font-size: 10px; font-weight: 700; fill: #38bdf8; letter-spacing: 1.5px; }
+      .ph-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; }
+      .ph-desc { font-family: system-ui, sans-serif; font-size: 11px; fill: #94a3b8; }
+    </style>
+  </defs>
+
+  <g transform="translate(0, 0)">
+    <rect width="215" height="130" rx="10" fill="url(#ph-bg)" stroke="#1e3a5f" stroke-width="1.2" />
+    <rect x="0" y="8" width="4" height="24" rx="2" fill="#38bdf8" />
+    <text x="16" y="30" class="ph-num">PRINCIPLE 01</text>
+    <text x="16" y="60" class="ph-title">Practical First</text>
+    <text x="16" y="82" class="ph-desc">Learning computer science</text>
+    <text x="16" y="98" class="ph-desc">by building functional</text>
+    <text x="16" y="114" class="ph-desc">software that solves needs.</text>
+  </g>
+
+  <g transform="translate(228, 0)">
+    <rect width="215" height="130" rx="10" fill="url(#ph-bg)" stroke="#1e3a5f" stroke-width="1.2" />
+    <rect x="0" y="8" width="4" height="24" rx="2" fill="#3b82f6" />
+    <text x="16" y="30" class="ph-num">PRINCIPLE 02</text>
+    <text x="16" y="60" class="ph-title">Privacy by Design</text>
+    <text x="16" y="82" class="ph-desc">Leveraging client compute.</text>
+    <text x="16" y="98" class="ph-desc">Users retain total control</text>
+    <text x="16" y="114" class="ph-desc">of their data on-device.</text>
+  </g>
+
+  <g transform="translate(456, 0)">
+    <rect width="215" height="130" rx="10" fill="url(#ph-bg)" stroke="#1e3a5f" stroke-width="1.2" />
+    <rect x="0" y="8" width="4" height="24" rx="2" fill="#06b6d4" />
+    <text x="16" y="30" class="ph-num">PRINCIPLE 03</text>
+    <text x="16" y="60" class="ph-title">Accessible Utility</text>
+    <text x="16" y="82" class="ph-desc">Valuable tools should</text>
+    <text x="16" y="98" class="ph-desc">run with zero friction</text>
+    <text x="16" y="114" class="ph-desc">&amp; zero financial barrier.</text>
+  </g>
+
+  <g transform="translate(684, 0)">
+    <rect width="215" height="130" rx="10" fill="url(#ph-bg)" stroke="#1e3a5f" stroke-width="1.2" />
+    <rect x="0" y="8" width="4" height="24" rx="2" fill="#38bdf8" />
+    <text x="16" y="30" class="ph-num">PRINCIPLE 04</text>
+    <text x="16" y="60" class="ph-title">Continuous Polish</text>
+    <text x="16" y="82" class="ph-desc">Iterative engineering:</text>
+    <text x="16" y="98" class="ph-desc">from HTML/JS basics to</text>
+    <text x="16" y="114" class="ph-desc">TypeScript, Wasm &amp; PWAs.</text>
+  </g>
+</svg>

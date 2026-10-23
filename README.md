@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="assets/profile-header.svg" alt="Hazim Bashir — Software Creator &amp; Developer Banner" width="100%" />
+  <img src="assets/profile-header.svg" alt="HAZIM BASHIR — Software Creator &amp; Developer Banner" width="100%" />
 
   <br />
 
@@ -23,197 +23,247 @@
 
 <img src="assets/section-about.svg" alt="01 / IDENTITY • ABOUT ME" width="100%" />
 
+<br />
+
 I am a Computer Science Engineering student at Government Polytechnic College Ganderbal, Jammu & Kashmir, India, and an independent software creator.
 
-My primary focus is building practical web applications, Android tools, and client-side utilities that solve everyday digital problems. I believe the best software operates with zero friction: accessible to everyone, private by design, and engineered to deliver maximum utility directly in the browser or on the device.
+My core focus centers on engineering practical web applications, Android tools, and client-side browser utilities that eliminate digital friction. I build software that runs with zero unnecessary dependencies: accessible to all, private by architecture, and engineered to deliver immediate utility on-device.
 
-* **Academic Foundation:** Computer Science Engineering student at Government Polytechnic College Ganderbal.
-* **Core Philosophy:** Build useful, reliable software that respects user privacy and runs with zero cost to the end user whenever possible.
-* **Community Leadership:** Co-Founder of **CyberGuard YUVA**, a youth cyber defense club dedicated to student cybersecurity awareness, digital safety education, and defensive technical literacy.
+<br />
+
+<img src="assets/about-identity.svg" alt="Developer Identity Profile Matrix" width="100%" />
+
+<br />
+
+| Metric | Profile Specification | Details |
+| :--- | :--- | :--- |
+| **Developer Brand** | `@officialhazim42` | Software Creator & Web/Android Engineer |
+| **Academic Base** | CSE Student | Government Polytechnic College Ganderbal, J&amp;K |
+| **Engineering Mission** | Useful &amp; Private Tools | Zero-upload client-side processing &amp; accessible utilities |
+| **Community Leadership** | Co-Founder | CyberGuard YUVA Youth Cyber Defense Club |
 
 <br />
 
 <img src="assets/section-build.svg" alt="02 / SCOPE • WHAT I BUILD" width="100%" />
 
-```
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │                           DEVELOPMENT DOMAINS                           │
-  ├─────────────────────────────────────────────────────────────────────────┤
-  │  01. Client-Side Browser Utilities  •  Zero-upload, in-browser privacy  │
-  │  02. Document & PDF Processing      •  Wasm & Web Workers tooling       │
-  │  03. Image Manipulation Suites      •  AVIF, WebP, compression & canvas │
-  │  04. Progressive Web Applications   •  Offline-ready, responsive PWAs   │
-  │  05. Youth Cyber Defense Education  •  Workshops & safety guidelines    │
-  └─────────────────────────────────────────────────────────────────────────┘
-```
+<br />
 
-* **In-Browser & Client-Side Utilities:** Developing high-performance web applications that run entirely on the client side using Web APIs, HTML5 Canvas, and WebAssembly, ensuring that sensitive files and data never leave the user's machine.
-* **Document & PDF Engineering:** Building complete document processing suites with client-side OCR, page manipulation, PDF generation, and format conversion.
-* **Image Processing & Optimization:** Creating browser tools for modern formats (AVIF, WebP), intelligent compression, background manipulation, and canvas transformations.
-* **Productivity & Task Management:** Architecting offline-first Progressive Web Apps (PWAs) with local storage resilience and cloud sync capabilities.
-* **Cybersecurity Education & Awareness:** Organizing youth awareness programs and authoring practical handbooks through CyberGuard YUVA.
+<img src="assets/domain-cards.svg" alt="Development Domains Showcase" width="100%" />
+
+<br />
+
+* **In-Browser & Client-Side Utilities:** Developing high-performance web applications that execute entirely within the client runtime using Web APIs, HTML5 Canvas, and WebAssembly, guaranteeing zero server uploads for user files.
+* **Document & PDF Engineering:** Building complete document processing pipelines with client-side OCR, page reorganization, compression, and format conversions using `pdf-lib`, `pdf.js`, and `Tesseract.js`.
+* **Image Processing & Optimization:** Creating browser tools for modern formats (AVIF, WebP), real-time compression ratio previews, and canvas image manipulation.
+* **Progressive Web Applications:** Architecting responsive, installable PWAs with offline resilience, Service Worker caching, and local storage state persistence.
 
 <br />
 
 <img src="assets/section-stack.svg" alt="03 / TOOLKIT • TECHNOLOGY STACK" width="100%" />
 
-All listed technologies represent active tools, languages, and frameworks used across my open-source repositories and development projects:
+<br />
 
-#### Languages & Foundations
-<p>
-  <img src="https://img.shields.io/badge/JavaScript-ES6+-0B1329?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-Ready-0B1329?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/HTML5-Modern-0B1329?style=flat-square&logo=html5&logoColor=E34F26" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-Responsive-0B1329?style=flat-square&logo=css3&logoColor=1572B6" alt="CSS3" />
-  <img src="https://img.shields.io/badge/Python-Scripting-0B1329?style=flat-square&logo=python&logoColor=3776AB" alt="Python" />
-  <img src="https://img.shields.io/badge/C%2FC++-Core-0B1329?style=flat-square&logo=cplusplus&logoColor=00599C" alt="C/C++" />
-  <img src="https://img.shields.io/badge/Java-Android-0B1329?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Bash_/_Shell-CLI-0B1329?style=flat-square&logo=gnubash&logoColor=4EAA25" alt="Bash" />
-</p>
+<img src="assets/tech-languages.svg" alt="Programming Languages Shelf" width="100%" />
+<br />
+<img src="assets/tech-frontend.svg" alt="Web Frameworks Shelf" width="100%" />
+<br />
+<img src="assets/tech-specialized.svg" alt="Specialized Engines Shelf" width="100%" />
+<br />
+<img src="assets/tech-cloud.svg" alt="Backend and Cloud Shelf" width="100%" />
+<br />
+<img src="assets/tech-tools.svg" alt="Developer Tooling Shelf" width="100%" />
 
-#### Web Frameworks & Frontend Architecture
-<p>
-  <img src="https://img.shields.io/badge/React-Components-0B1329?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-Fullstack-0B1329?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Vite-Build_Tool-0B1329?style=flat-square&logo=vite&logoColor=646CFF" alt="Vite" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-Styling-0B1329?style=flat-square&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/PWA-Installable-0B1329?style=flat-square&logo=pwa&logoColor=white" alt="PWA" />
-</p>
+<br />
 
-#### Client-Side Engines & Specialized APIs
-<p>
-  <img src="https://img.shields.io/badge/WebAssembly-Wasm-0B1329?style=flat-square&logo=webassembly&logoColor=654FF0" alt="WebAssembly" />
-  <img src="https://img.shields.io/badge/HTML5_Canvas-Graphics-0B1329?style=flat-square&logo=html5&logoColor=E34F26" alt="Canvas" />
-  <img src="https://img.shields.io/badge/Web_Workers-Parallel-0B1329?style=flat-square&logo=googlechrome&logoColor=white" alt="Web Workers" />
-  <img src="https://img.shields.io/badge/pdf--lib-PDF_Engine-0B1329?style=flat-square&logo=adobeacrobatreader&logoColor=EC1C24" alt="pdf-lib" />
-  <img src="https://img.shields.io/badge/Tesseract.js-OCR-0B1329?style=flat-square&logo=tesseract&logoColor=white" alt="Tesseract.js" />
-</p>
-
-#### Backend, Cloud & Developer Tooling
-<p>
-  <img src="https://img.shields.io/badge/Supabase-PostgreSQL_%26_Auth-0B1329?style=flat-square&logo=supabase&logoColor=3FCF8E" alt="Supabase" />
-  <img src="https://img.shields.io/badge/Netlify-Edge_Hosting-0B1329?style=flat-square&logo=netlify&logoColor=00C7B7" alt="Netlify" />
-  <img src="https://img.shields.io/badge/Vercel-Deployment-0B1329?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
-  <img src="https://img.shields.io/badge/Git-Version_Control-0B1329?style=flat-square&logo=git&logoColor=F05032" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-Collaboration-0B1329?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/Termux-Android_CLI-0B1329?style=flat-square&logo=termux&logoColor=white" alt="Termux" />
-</p>
+| Domain | Core Technologies | Ecosystem Role |
+| :--- | :--- | :--- |
+| **Languages** | JavaScript (ES6+), TypeScript, Python, C/C++, Java, Bash | Application logic, system scripts &amp; algorithms |
+| **Frontend** | React 19, Next.js 16, HTML5, CSS3, Tailwind CSS, Vite | Responsive design &amp; modern web interfaces |
+| **Specialized** | WebAssembly (Wasm), Canvas 2D/GL, Web Workers, pdf-lib, Tesseract.js | In-browser compute, multithreading &amp; OCR |
+| **Backend &amp; Cloud** | Supabase (PostgreSQL, Auth), Netlify, Vercel, Cloudflare | Serverless hosting, database &amp; edge delivery |
+| **Tooling** | Git, GitHub, VS Code, Termux Android Environment | Version control, CLI workflows &amp; Android development |
 
 <br />
 
 <img src="assets/section-projects.svg" alt="04 / SHOWCASE • FEATURED PROJECTS" width="100%" />
 
-Here are highlights of my strongest public software projects, detailing their verified capabilities, technologies, and repositories:
+<br />
 
-#### 1. PDFHub — 33 Free Browser-Based PDF Tools
+### 1. PDFHub — 33 Free Browser-Based PDF Tools
 > **Zero Server Uploads • 100% In-Browser Privacy • Client-Side WebAssembly Suite**
 
-A comprehensive, zero-budget PDF utility suite engineered to run entirely within the user's browser. Documents are processed locally on the client machine using WebAssembly and client-side JavaScript engines, guaranteeing that confidential files are never transmitted across the network.
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
 
-* **Key Features:** Merge, split, organize, compress, extract text, client-side OCR (optical character recognition), rotate, format conversions, and offline-ready PWA support.
-* **Technologies:** JavaScript (ES6+), WebAssembly, `pdf-lib`, `pdf.js`, `SheetJS`, `Tesseract.js`, HTML5 Canvas.
-* **Direct Links:** [View Source Code](https://github.com/officialhazim42/pdfshub) &nbsp;|&nbsp; [Live Website](https://pdfshub.netlify.app/)
+A comprehensive, zero-budget PDF utility suite engineered to run entirely within the user's browser. Documents are processed locally on the client device using WebAssembly and client-side JavaScript engines, ensuring that confidential files never transmit across remote servers.
 
-```
-Repository: officialhazim42/pdfshub
-Status: Active & Deployed
-Deployment: Netlify (Canonical: pdfshub.netlify.app | Mirror: pdfshub.smartstores.in)
-```
+* **Capabilities:** Merge, split, organize, compress, extract text, client-side OCR, rotate, format conversion, and offline PWA capability.
+* **Stack:** JavaScript (ES6+), WebAssembly, `pdf-lib`, `pdf.js`, `SheetJS`, `Tesseract.js`, HTML5 Canvas.
+* **Architecture:** Netlify Edge (Canonical: `pdfshub.netlify.app` | Mirror: `pdfshub.smartstores.in`).
 
 <br />
 
-#### 2. ImageHub — Professional In-Browser Image Utilities
+<a href="https://github.com/officialhazim42/pdfshub"><img src="https://img.shields.io/badge/Repository-officialhazim42%2Fpdfshub-0B1329?style=flat-square&logo=github&logoColor=white" alt="View Source Code" /></a>
+&nbsp;
+<a href="https://pdfshub.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-pdfshub.netlify.app-0284C7?style=flat-square&logo=netlify&logoColor=white" alt="Live Website" /></a>
+
+</td>
+<td width="50%" valign="middle" align="center">
+  <a href="https://pdfshub.netlify.app/">
+    <img src="assets/pdfhub-preview.png" alt="PDFHub Application Preview" width="100%" style="border-radius: 8px;" />
+  </a>
+</td>
+</tr>
+</table>
+
+<br />
+
+### 2. ImageHub — Professional In-Browser Image Utilities
 > **Privacy-First Digital Image Manipulation Platform • 100% Local Execution**
 
-A production-grade, client-side digital image manipulation platform. Enables users to compress, upscale, isolate subjects, crop, resize, edit, and convert photos without uploading a single byte to remote servers.
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
 
-* **Key Features:** Instant client-side compression, subject isolation, smart cropping, dimensions resizing, format conversions (JPG, PNG, WebP, AVIF), image editing tools, and installable PWA.
-* **Technologies:** Pure JavaScript, HTML5 Canvas, Web APIs, CSS3, Service Workers.
-* **Direct Links:** [View Source Code](https://github.com/officialhazim42/imagehub) &nbsp;|&nbsp; [Live Website](https://imagehub.netlify.app/)
+A production-grade, client-side digital image manipulation platform. Enables users to compress, upscale, isolate subjects, crop, resize, edit, and convert photos without uploading a single byte to remote cloud servers.
 
-```
-Repository: officialhazim42/imagehub
-Status: Active & Deployed
-Deployment: Netlify (Canonical: imagehub.netlify.app | Mirror: imagehub.smartstores.in)
-```
+* **Capabilities:** Client-side compression, subject isolation, smart cropping, dimensions resizing, format conversions (JPG, PNG, WebP, AVIF), and PWA installation.
+* **Stack:** Pure JavaScript, HTML5 Canvas, Web APIs, CSS3, Service Workers.
+* **Architecture:** Netlify Edge (Canonical: `imagehub.netlify.app` | Mirror: `imagehub.smartstores.in`).
 
 <br />
 
-#### 3. Advanced Web Image Compressor
-> **Client-Side Compression with AVIF Support & Modern Glass UI**
+<a href="https://github.com/officialhazim42/imagehub"><img src="https://img.shields.io/badge/Repository-officialhazim42%2Fimagehub-0B1329?style=flat-square&logo=github&logoColor=white" alt="View Source Code" /></a>
+&nbsp;
+<a href="https://imagehub.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-imagehub.netlify.app-0284C7?style=flat-square&logo=netlify&logoColor=white" alt="Live Website" /></a>
 
-A focused, responsive web tool for lightning-fast image compression with real-time compression ratios and format detection.
-
-* **Key Features:** Support for JPG, JPEG, PNG, WEBP, and modern AVIF with automatic fallback; GIF detection; smart batch naming; dark/light theme toggle; PDF export; zero backend requirement.
-* **Technologies:** HTML5, CSS3, Vanilla JavaScript, Web APIs.
-* **Direct Links:** [View Source Code](https://github.com/officialhazim42/Advance-Image-Compressor) &nbsp;|&nbsp; [Live Website](https://advance-images-compressor.netlify.app/)
-
-```
-Repository: officialhazim42/Advance-Image-Compressor
-Status: Active & Deployed
-Deployment: Netlify (advance-images-compressor.netlify.app)
-```
+</td>
+<td width="50%" valign="middle" align="center">
+  <a href="https://imagehub.netlify.app/">
+    <img src="assets/imagehub-preview.svg" alt="ImageHub Application Preview" width="100%" style="border-radius: 8px;" />
+  </a>
+</td>
+</tr>
+</table>
 
 <br />
 
-#### 4. The Ultimate Termux Command Guide
-> **Comprehensive Handbook for Mastering Android CLI & Termux API**
+### 3. Advanced Web Image Compressor
+> **Client-Side Compression with AVIF Support &amp; Modern Glass UI**
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+A focused, responsive web tool engineered for fast image compression with real-time compression ratios and format detection.
+
+* **Capabilities:** Support for JPG, JPEG, PNG, WEBP, and AVIF with fallback; GIF detection; smart batch naming; dark/light theme toggle; PDF export; zero backend dependencies.
+* **Stack:** HTML5, CSS3, Vanilla JavaScript, Web APIs.
+* **Architecture:** Netlify Deployment (`advance-images-compressor.netlify.app`).
+
+<br />
+
+<a href="https://github.com/officialhazim42/Advance-Image-Compressor"><img src="https://img.shields.io/badge/Repository-Advance--Image--Compressor-0B1329?style=flat-square&logo=github&logoColor=white" alt="View Source Code" /></a>
+&nbsp;
+<a href="https://advance-images-compressor.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-advance--images--compressor-0284C7?style=flat-square&logo=netlify&logoColor=white" alt="Live Website" /></a>
+
+</td>
+<td width="50%" valign="middle" align="center">
+  <a href="https://advance-images-compressor.netlify.app/">
+    <img src="assets/compressor-preview.svg" alt="Advanced Image Compressor Preview" width="100%" style="border-radius: 8px;" />
+  </a>
+</td>
+</tr>
+</table>
+
+<br />
+
+### 4. The Ultimate Termux Command Guide
+> **Comprehensive Handbook for Mastering Android CLI &amp; Termux API**
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
 
 A structured, practical reference handbook and command guide for mastering native Linux command-line operations and device integration APIs within the Termux Android terminal environment.
 
-* **Key Features:** Categorized command indexes, Termux API integration recipes, package management workflows, troubleshooting tips, and setup instructions.
-* **Technologies:** Shell / Bash, Markdown, Android Termux Environment.
-* **Direct Links:** [View Repository](https://github.com/officialhazim42/Termux-Command-Listbook)
-
-```
-Repository: officialhazim42/Termux-Command-Listbook
-Status: Open Reference Handbook
-```
+* **Capabilities:** Categorized command indexes, Termux API integration recipes, package management workflows, troubleshooting tips, and setup instructions.
+* **Stack:** Shell / Bash, Markdown, Android Termux Environment.
+* **Status:** Open Reference Handbook on GitHub.
 
 <br />
 
-#### 5. Additional Work & Capstone Projects
-* **[Student Portfolio & Project Showcase](https://github.com/officialhazim42/week-6-final-capstone-project):** Final internship capstone project demonstrating modern responsive layout, DOM manipulation, structured project planning, testing, and deployment workflows.
-* **[Production Deployment Dashboard](https://github.com/officialhazim42/week-5-deployment-production):** Client-side dashboard prototype illustrating production application monitoring, environment status indicators, logs, and deployment health metrics.
-* **[Client-Side Form Validation & QA](https://github.com/officialhazim42/week-4-testing-quality-assurance):** Interactive test suite and form validation application demonstrating edge-case handling and quality assurance practices.
-* **[Student Task Manager](https://github.com/officialhazim42/week-3-student-task-manager):** Responsive task management web tool with category filtering, completion tracking, and persistent local storage.
+<a href="https://github.com/officialhazim42/Termux-Command-Listbook"><img src="https://img.shields.io/badge/Repository-Termux--Command--Listbook-0B1329?style=flat-square&logo=github&logoColor=white" alt="View Repository" /></a>
+
+</td>
+<td width="50%" valign="middle" align="center">
+  <a href="https://github.com/officialhazim42/Termux-Command-Listbook">
+    <img src="assets/termux-preview.svg" alt="Termux Command Guide Preview" width="100%" style="border-radius: 8px;" />
+  </a>
+</td>
+</tr>
+</table>
+
+<br />
+
+### 5. Additional Work &amp; Capstone Projects
+
+| Project | Focus Area | Technologies | Source Code |
+| :--- | :--- | :--- | :--- |
+| **Student Portfolio Showcase** | Final Capstone Project | HTML5, CSS3, JavaScript, Responsive DOM | [View Repository](https://github.com/officialhazim42/week-6-final-capstone-project) |
+| **Production Deployment Dashboard** | Operations &amp; Monitoring Prototype | HTML5, CSS3, JavaScript, Metrics &amp; Logs | [View Repository](https://github.com/officialhazim42/week-5-deployment-production) |
+| **Client-Side Form Validation &amp; QA** | Interactive Quality Assurance Suite | HTML5, CSS3, JavaScript, Edge-Case Testing | [View Repository](https://github.com/officialhazim42/week-4-testing-quality-assurance) |
+| **Student Task Manager** | Offline-First Task Organization | HTML5, CSS3, JavaScript, LocalStorage PWA | [View Repository](https://github.com/officialhazim42/week-3-student-task-manager) |
 
 <br />
 
 <img src="assets/section-cyberguard.svg" alt="05 / LEADERSHIP • CYBERGUARD YUVA" width="100%" />
 
-I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense club established to promote cybersecurity literacy, digital safety awareness, and ethical technology practices among students.
+<br />
 
-```
-  ┌────────────────────────────────────────────────────────────────────────┐
-  │                         CYBERGUARD YUVA                                │
-  │                 SECURE  •  EDUCATE  •  EMPOWER                         │
-  │                  Youth for a Safer Digital India                       │
-  ├────────────────────────────────────────────────────────────────────────┤
-  │  • Student Cybersecurity Literacy & Safe Digital Practices             │
-  │  • Youth Cyber Defense Awareness & Defense Workshops                   │
-  │  • Interactive PWA Security Guidelines & Resource Hubs                 │
-  └────────────────────────────────────────────────────────────────────────┘
-```
+<table width="100%">
+<tr>
+<td width="25%" align="center" valign="middle">
+  <a href="https://cyberguard-yuva.vercel.app/">
+    <img src="assets/cyberguard-logo.png" alt="CyberGuard YUVA Official Logo" width="180" style="border-radius: 12px;" />
+  </a>
+</td>
+<td width="75%" valign="middle">
 
-* **Mission:** Educate students about safe online habits, password security, phishing defense, social engineering awareness, and responsible digital citizenship.
-* **Platform:** Engineered an interactive, responsive Progressive Web App platform to deliver clear, accessible security guides.
+### CyberGuard YUVA — Youth Cyber Defense Club
+**SECURE &nbsp;•&nbsp; EDUCATE &nbsp;•&nbsp; EMPOWER &nbsp;—&nbsp; Youth for a Safer Digital India**
+
+I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative established to foster cybersecurity literacy, defensive technical literacy, and safe digital practices among students.
+
+* **Platform:** Engineered an interactive, responsive Progressive Web App to deliver accessible security guides.
 * **Official Website:** [cyberguard-yuva.vercel.app](https://cyberguard-yuva.vercel.app/)
+
+<br />
+
+<a href="https://cyberguard-yuva.vercel.app/"><img src="https://img.shields.io/badge/Portal-cyberguard--yuva.vercel.app-0B1329?style=flat-square&logo=vercel&logoColor=white" alt="CyberGuard Portal" /></a>
+
+</td>
+</tr>
+</table>
+
+<br />
+
+<img src="assets/cyberguard-pillars.svg" alt="CyberGuard YUVA Mission Pillars" width="100%" />
 
 <br />
 
 <img src="assets/section-philosophy.svg" alt="06 / APPROACH • DEVELOPMENT JOURNEY" width="100%" />
 
-My journey in software engineering is grounded in practical, iterative development:
+<br />
 
-1. **Practical First:** The best way to learn computer science is by building functional tools that address real-world needs.
-2. **Privacy by Architecture:** Where possible, leverage the client browser's compute capability. Users should not have to trust remote servers with their personal documents or photos.
-3. **Accessibility & Zero Cost:** Valuable digital utilities should be accessible to everyone, regardless of budget or high-end hardware.
-4. **Continuous Iteration:** Starting from fundamentals (HTML/CSS/JS) and progressively expanding into TypeScript, WebAssembly, Progressive Web Apps, and mobile ecosystems.
+<img src="assets/philosophy-grid.svg" alt="Development Journey Principles" width="100%" />
 
 <br />
 
 <img src="assets/section-stats.svg" alt="07 / METRICS • GITHUB ACTIVITY &amp; METRICS" width="100%" />
+
+<br />
 
 <div align="center">
 
@@ -235,11 +285,13 @@ My journey in software engineering is grounded in practical, iterative developme
 
 <img src="assets/section-connect.svg" alt="08 / NETWORK • CONNECT WITH ME" width="100%" />
 
-I welcome discussions regarding open-source development, web technologies, accessible software utilities, and student cyber defense initiatives.
+<br />
+
+I welcome discussions regarding open-source development, web technologies, client-side software utilities, and student cyber defense initiatives.
 
 <div align="center">
 
-| Platform | Handle / Destination | Direct Link |
+| Channel | Platform Handle / Identifier | Action Link |
 | :--- | :--- | :--- |
 | **GitHub** | `@officialhazim42` | [github.com/officialhazim42](https://github.com/officialhazim42) |
 | **Email** | `hazimbashirfaqeer@gmail.com` | [hazimbashirfaqeer@gmail.com](mailto:hazimbashirfaqeer@gmail.com) |

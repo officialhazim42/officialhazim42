@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#060b18" />
+    </linearGradient>
+    <linearGradient id="glow-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#1e3a5f" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.5" />
+    </linearGradient>
+    <style>
+      .num-tag { font-family: ui-monospace, monospace; font-size: 10px; font-weight: 700; fill: #38bdf8; letter-spacing: 1px; }
+      .card-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; }
+      .card-desc { font-family: system-ui, sans-serif; font-size: 11px; fill: #94a3b8; }
+    </style>
+  </defs>
+
+  <!-- Card 1: Developer Identity -->
+  <g transform="translate(0, 0)">
+    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#38bdf8" />
+    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
+    <!-- Code Icon -->
+    <path d="M 23 24 L 19 28 L 23 32 M 29 24 L 33 28 L 29 32" stroke="#38bdf8" stroke-width="1.5" fill="none" stroke-linecap="round" />
+    <text x="46" y="32" class="num-tag">01 / ROLE</text>
+    <text x="14" y="68" class="card-title">Software Creator</text>
+    <text x="14" y="88" class="card-desc">Building practical</text>
+    <text x="14" y="104" class="card-desc">digital utilities</text>
+  </g>
+
+  <!-- Card 2: Education -->
+  <g transform="translate(182, 0)">
+    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#3b82f6" />
+    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
+    <!-- Cap Icon -->
+    <path d="M 18 27 L 26 23 L 34 27 L 26 31 Z M 31 29 L 31 34 M 22 30 L 22 34 C 22 36 30 36 30 34 L 30 30" stroke="#60a5fa" stroke-width="1.3" fill="none" />
+    <text x="46" y="32" class="num-tag">02 / STUDY</text>
+    <text x="14" y="68" class="card-title">CSE Student</text>
+    <text x="14" y="88" class="card-desc">Govt Polytechnic</text>
+    <text x="14" y="104" class="card-desc">College Ganderbal</text>
+  </g>
+
+  <!-- Card 3: Location -->
+  <g transform="translate(364, 0)">
+    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#06b6d4" />
+    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
+    <!-- Pin Icon -->
+    <path d="M 26 21 C 23.5 21 21.5 23 21.5 25.5 C 21.5 29 26 34 26 34 C 26 34 30.5 29 30.5 25.5 C 30.5 23 28.5 21 26 21 Z M 26 27 C 25 27 24.2 26.2 24.2 25.2 C 24.2 24.2 25 23.4 26 23.4 C 27 23.4 27.8 24.2 27.8 25.2 C 27.8 26.2 27 27 26 27 Z" stroke="#22d3ee" stroke-width="1.2" fill="none" />
+    <text x="46" y="32" class="num-tag">03 / BASE</text>
+    <text x="14" y="68" class="card-title">Ganderbal</text>
+    <text x="14" y="88" class="card-desc">Jammu &amp; Kashmir</text>
+    <text x="14" y="104" class="card-desc">India</text>
+  </g>
+
+  <!-- Card 4: Focus -->
+  <g transform="translate(546, 0)">
+    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#38bdf8" />
+    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
+    <!-- Layers Icon -->
+    <path d="M 26 22 L 33 26 L 26 30 L 19 26 Z M 19 28.5 L 26 32.5 L 33 28.5 M 19 31 L 26 35 L 33 31" stroke="#38bdf8" stroke-width="1.3" fill="none" stroke-linejoin="round" />
+    <text x="46" y="32" class="num-tag">04 / FOCUS</text>
+    <text x="14" y="68" class="card-title">Web &amp; Android</text>
+    <text x="14" y="88" class="card-desc">Client-side tools</text>
+    <text x="14" y="104" class="card-desc">&amp; Wasm software</text>
+  </g>
+
+  <!-- Card 5: Leadership -->
+  <g transform="translate(728, 0)">
+    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#3b82f6" />
+    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
+    <!-- Shield Icon -->
+    <path d="M 26 21 L 32 23.5 L 32 28 C 32 32 26 35 26 35 C 26 35 20 32 20 28 L 20 23.5 Z" stroke="#60a5fa" stroke-width="1.3" fill="none" />
+    <text x="46" y="32" class="num-tag">05 / LEAD</text>
+    <text x="14" y="68" class="card-title">Co-Founder</text>
+    <text x="14" y="88" class="card-desc">CyberGuard YUVA</text>
+    <text x="14" y="104" class="card-desc">Youth Defense Club</text>
+  </g>
+</svg>
