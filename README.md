@@ -63,25 +63,113 @@ My core focus centers on engineering practical web applications, Android tools, 
 
 <br />
 
-<img src="assets/tech-languages.svg" alt="Programming Languages Shelf" width="100%" />
-<br />
-<img src="assets/tech-frontend.svg" alt="Web Frameworks Shelf" width="100%" />
-<br />
-<img src="assets/tech-specialized.svg" alt="Specialized Engines Shelf" width="100%" />
-<br />
-<img src="assets/tech-cloud.svg" alt="Backend and Cloud Shelf" width="100%" />
-<br />
-<img src="assets/tech-tools.svg" alt="Developer Tooling Shelf" width="100%" />
+### Core Programming Languages
+> **Languages verified in production web apps, engineering projects, and CSE academic coursework**
+
+<p align="center">
+  <img src="assets/technologies/javascript.svg" alt="JavaScript (ES6+)" width="160" />
+  &nbsp;
+  <img src="assets/technologies/typescript.svg" alt="TypeScript" width="160" />
+  &nbsp;
+  <img src="assets/technologies/python.svg" alt="Python" width="160" />
+  &nbsp;
+  <img src="assets/technologies/c.svg" alt="C" width="160" />
+  &nbsp;
+  <img src="assets/technologies/cpp.svg" alt="C++" width="160" />
+  &nbsp;
+  <img src="assets/technologies/java.svg" alt="Java" width="160" />
+</p>
 
 <br />
 
-| Domain | Core Technologies | Ecosystem Role |
+### Actively Exploring & Systems Languages
+> **Languages under active exploration for systems programming, high-performance tooling, and modern backend services**
+
+<p align="center">
+  <img src="assets/technologies/php.svg" alt="PHP" width="160" />
+  &nbsp;
+  <img src="assets/technologies/go.svg" alt="Go" width="160" />
+  &nbsp;
+  <img src="assets/technologies/rust.svg" alt="Rust" width="160" />
+</p>
+
+<br />
+
+### Web Markup, Styling & Frontend Frameworks
+> **Semantic web standards, modern reactive component frameworks, and utility-first styling**
+
+<p align="center">
+  <img src="assets/technologies/html5.svg" alt="HTML5" width="160" />
+  &nbsp;
+  <img src="assets/technologies/css3.svg" alt="CSS3" width="160" />
+  &nbsp;
+  <img src="assets/technologies/tailwind.svg" alt="Tailwind CSS" width="160" />
+  &nbsp;
+  <img src="assets/technologies/react.svg" alt="React 19" width="160" />
+  &nbsp;
+  <img src="assets/technologies/nextjs.svg" alt="Next.js 16" width="160" />
+  &nbsp;
+  <img src="assets/technologies/vite.svg" alt="Vite" width="160" />
+</p>
+
+<br />
+
+### Query, Cloud, Data & Developer Environments
+> **Relational data models, serverless edge delivery, distributed version control, and Linux CLI toolchains**
+
+<p align="center">
+  <img src="assets/technologies/sql.svg" alt="SQL / PostgreSQL" width="160" />
+  &nbsp;
+  <img src="assets/technologies/bash.svg" alt="Bash / Shell" width="160" />
+  &nbsp;
+  <img src="assets/technologies/supabase.svg" alt="Supabase" width="160" />
+  &nbsp;
+  <img src="assets/technologies/webassembly.svg" alt="WebAssembly" width="160" />
+  &nbsp;
+  <img src="assets/technologies/git.svg" alt="Git" width="160" />
+  &nbsp;
+  <img src="assets/technologies/github.svg" alt="GitHub" width="160" />
+  &nbsp;
+  <img src="assets/technologies/vscode.svg" alt="VS Code" width="160" />
+  &nbsp;
+  <img src="assets/technologies/termux.svg" alt="Termux" width="160" />
+</p>
+
+<br />
+
+### Architectural Domain Showcases
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+  <img src="assets/categories/web-fullstack.svg" alt="Web / Full-Stack Development Architecture" width="100%" />
+</td>
+<td width="50%" valign="top">
+  <img src="assets/categories/specialized-engineering.svg" alt="Specialized Engineering &amp; In-Browser Compute" width="100%" />
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <img src="assets/categories/backend-cloud-shell.svg" alt="Shell / Backend / Cloud Development Infrastructure" width="100%" />
+</td>
+<td width="50%" valign="top">
+  <img src="assets/categories/developer-tooling.svg" alt="Tooling / Developer Tools &amp; Environment" width="100%" />
+</td>
+</tr>
+</table>
+
+<br />
+
+| Domain Category | Core Technologies | Project Evidence &amp; Ecosystem Role |
 | :--- | :--- | :--- |
-| **Languages** | JavaScript (ES6+), TypeScript, Python, C/C++, Java, Bash | Application logic, system scripts &amp; algorithms |
-| **Frontend** | React 19, Next.js 16, HTML5, CSS3, Tailwind CSS, Vite | Responsive design &amp; modern web interfaces |
-| **Specialized** | WebAssembly (Wasm), Canvas 2D/GL, Web Workers, pdf-lib, Tesseract.js | In-browser compute, multithreading &amp; OCR |
-| **Backend &amp; Cloud** | Supabase (PostgreSQL, Auth), Netlify, Vercel, Cloudflare | Serverless hosting, database &amp; edge delivery |
-| **Tooling** | Git, GitHub, VS Code, Termux Android Environment | Version control, CLI workflows &amp; Android development |
+| **Primary Languages** | JavaScript (ES6+), TypeScript, Python | Core web application logic, CyberGuard Next.js portal, utility scripts |
+| **Academic Base (CSE)** | C, C++, Java, Data Structures &amp; Algorithms | Polytechnic coursework, memory management, algorithms &amp; OOP foundations |
+| **Systems &amp; Exploring** | PHP, Go, Rust | Actively exploring modern concurrent systems, microservices &amp; tool safety |
+| **Markup &amp; Styling** | HTML5, CSS3, Tailwind CSS | Semantic accessible markup, dark-mode glassmorphism, responsive UI |
+| **Frontend Frameworks** | React 19, Next.js 16, Vite | Component architecture, SSR/Edge rendering, fast bundling workflows |
+| **Specialized Compute** | WebAssembly, HTML5 Canvas, pdf-lib, Tesseract.js | In-browser PDF processing, AVIF compression, client-side OCR |
+| **Backend &amp; Cloud** | Supabase (PostgreSQL, Auth), Netlify Edge, Vercel | Relational schema design, RLS security, global edge hosting |
+| **Tooling &amp; CLI** | Git, GitHub, VS Code, Termux Android Environment | Distributed version control, automation scripts &amp; on-device Linux CLI |
 
 <br />
 
@@ -265,17 +353,22 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 
 <br />
 
+<img src="assets/language-stats.svg" alt="Verified Public Codebase Language Distribution" width="100%" />
+
+<br />
+<br />
+
 <div align="center">
 
   <img 
-    src="https://github-readme-stats.vercel.app/api?username=officialhazim42&show_icons=true&hide_border=true&bg_color=0a101f&title_color=38bdf8&text_color=94a3b8&icon_color=3b82f6" 
+    src="https://github-readme-stats.vercel.app/api?username=officialhazim42&show_icons=true&hide_border=true&bg_color=060b18&title_color=38bdf8&text_color=94a3b8&icon_color=3b82f6" 
     alt="Hazim Bashir GitHub Stats" 
     height="165" 
   />
   &nbsp;&nbsp;
   <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialhazim42&layout=compact&hide_border=true&bg_color=0a101f&title_color=38bdf8&text_color=94a3b8" 
-    alt="Hazim Bashir Most Used Languages" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialhazim42&layout=compact&hide_border=true&bg_color=060b18&title_color=38bdf8&text_color=94a3b8" 
+    alt="Hazim Bashir Top Language Summary" 
     height="165" 
   />
 

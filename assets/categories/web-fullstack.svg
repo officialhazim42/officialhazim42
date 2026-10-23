@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 220" width="430" height="220">
+  <defs>
+    <linearGradient id="catBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1730"/>
+      <stop offset="100%" stop-color="#060B18"/>
+    </linearGradient>
+    <linearGradient id="cyanBlue1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="80%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0B1730" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Card Base -->
+  <rect x="1" y="1" width="428" height="218" rx="12" fill="url(#catBg1)" stroke="#23436B" stroke-width="1.5"/>
+  <rect x="1" y="1" width="428" height="218" rx="12" fill="url(#glow1)"/>
+  
+  <!-- Accent Header Stripe -->
+  <path d="M12 1.5h406c5.8 0 10.5 4.7 10.5 10.5v1.5H1.5V12C1.5 6.2 6.2 1.5 12 1.5z" fill="url(#cyanBlue1)"/>
+  
+  <!-- Category Header -->
+  <g transform="translate(20, 26)">
+    <rect x="0" y="0" width="28" height="28" rx="6" fill="#102344" stroke="#23436B"/>
+    <path d="M6 14h16M14 6l8 8-8 8" stroke="#06B6D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="36" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" letter-spacing="0.5">WEB / FULL-STACK DEVELOPMENT</text>
+    <text x="36" y="26" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">Modern Client Architectures • Responsive Interfaces • State Hydration</text>
+  </g>
+
+  <!-- Illustration Composition -->
+  <!-- Browser Window (Left) -->
+  <g transform="translate(20, 68)">
+    <rect width="210" height="134" rx="8" fill="#0A1428" stroke="#1E3A5F" stroke-width="1.2"/>
+    <!-- Window Bar -->
+    <rect width="210" height="20" rx="8" fill="#111F3A"/>
+    <path d="M0 12h210v8H0z" fill="#111F3A"/>
+    <circle cx="12" cy="10" r="3" fill="#EF4444"/>
+    <circle cx="22" cy="10" r="3" fill="#F59E0B"/>
+    <circle cx="32" cy="10" r="3" fill="#10B981"/>
+    <!-- URL pill -->
+    <rect x="46" y="4" width="130" height="12" rx="4" fill="#08101E" stroke="#1E3A5F" stroke-width="0.8"/>
+    <text x="56" y="12.5" fill="#60A5FA" font-family="monospace" font-size="7">https://client.local</text>
+    <!-- Internal App Layout -->
+    <rect x="10" y="28" width="50" height="96" rx="4" fill="#102344" stroke="#1E3A5F" stroke-width="0.8"/>
+    <rect x="16" y="36" width="38" height="6" rx="2" fill="#3B82F6"/>
+    <rect x="16" y="48" width="30" height="4" rx="2" fill="#23436B"/>
+    <rect x="16" y="56" width="34" height="4" rx="2" fill="#23436B"/>
+    <rect x="16" y="64" width="28" height="4" rx="2" fill="#23436B"/>
+    
+    <!-- App Main Body Cards -->
+    <rect x="68" y="28" width="132" height="44" rx="4" fill="#0E1B33" stroke="#23436B" stroke-width="0.8"/>
+    <rect x="76" y="36" width="60" height="6" rx="2" fill="#06B6D4"/>
+    <rect x="76" y="48" width="100" height="4" rx="2" fill="#60A5FA" opacity="0.6"/>
+    <rect x="76" y="56" width="80" height="4" rx="2" fill="#60A5FA" opacity="0.4"/>
+    
+    <rect x="68" y="78" width="62" height="46" rx="4" fill="#102344" stroke="#1E3A5F" stroke-width="0.8"/>
+    <rect x="74" y="86" width="30" height="5" rx="2" fill="#38BDF8"/>
+    <rect x="74" y="96" width="46" height="3" rx="1.5" fill="#64748B"/>
+    <rect x="74" y="103" width="36" height="3" rx="1.5" fill="#64748B"/>
+
+    <rect x="138" y="78" width="62" height="46" rx="4" fill="#102344" stroke="#1E3A5F" stroke-width="0.8"/>
+    <rect x="144" y="86" width="30" height="5" rx="2" fill="#A855F7"/>
+    <rect x="144" y="96" width="46" height="3" rx="1.5" fill="#64748B"/>
+    <rect x="144" y="103" width="36" height="3" rx="1.5" fill="#64748B"/>
+  </g>
+
+  <!-- Connection Data Bridge -->
+  <g transform="translate(236, 120)">
+    <path d="M0 10h24" stroke="#06B6D4" stroke-width="2" stroke-dasharray="3,3"/>
+    <polygon points="26,10 20,6 20,14" fill="#06B6D4"/>
+    <circle cx="12" cy="10" r="7" fill="#0B1730" stroke="#3B82F6" stroke-width="1.2"/>
+    <text x="12" y="13" fill="#60A5FA" font-family="monospace" font-size="8" font-weight="700" text-anchor="middle">API</text>
+  </g>
+
+  <!-- Server & Component Node (Right) -->
+  <g transform="translate(268, 68)">
+    <rect width="142" height="134" rx="8" fill="#0A1428" stroke="#1E3A5F" stroke-width="1.2"/>
+    <rect width="142" height="20" rx="8" fill="#111F3A"/>
+    <path d="M0 12h142v8H0z" fill="#111F3A"/>
+    <text x="12" y="14" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="9" font-weight="700">SERVER &amp; EDGE LOGIC</text>
+    
+    <!-- Server Stack Units -->
+    <g transform="translate(10, 28)">
+      <rect width="122" height="26" rx="4" fill="#102344" stroke="#23436B" stroke-width="0.8"/>
+      <circle cx="12" cy="13" r="3" fill="#10B981"/>
+      <text x="22" y="16" fill="#F8FAFC" font-family="monospace" font-size="8.5">Next.js 16 / SSR</text>
+    </g>
+    <g transform="translate(10, 59)">
+      <rect width="122" height="26" rx="4" fill="#102344" stroke="#23436B" stroke-width="0.8"/>
+      <circle cx="12" cy="13" r="3" fill="#3B82F6"/>
+      <text x="22" y="16" fill="#F8FAFC" font-family="monospace" font-size="8.5">React 19 Islands</text>
+    </g>
+    <g transform="translate(10, 90)">
+      <rect width="122" height="26" rx="4" fill="#102344" stroke="#23436B" stroke-width="0.8"/>
+      <circle cx="12" cy="13" r="3" fill="#06B6D4"/>
+      <text x="22" y="16" fill="#F8FAFC" font-family="monospace" font-size="8.5">Edge Runtime</text>
+    </g>
+  </g>
+</svg>

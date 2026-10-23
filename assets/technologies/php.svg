@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 48" width="168" height="48">
+  <defs>
+    <linearGradient id="bg_php" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1730"/>
+      <stop offset="100%" stop-color="#102344"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.75" y="0.75" width="166.5" height="46.5" rx="8" fill="url(#bg_php)" stroke="#23436B" stroke-width="1.5"/>
+  <g transform="translate(14, 11)"><ellipse cx="12" cy="12" rx="11" ry="7" fill="#777BB4"/><path d="M6 10h2.2c.9 0 1.5.3 1.5 1s-.6 1-1.5 1H7.1L6.6 14H5.3L6 10zm1.7 1.4h.6c.4 0 .7-.1.7-.4s-.3-.4-.7-.4h-.5l-.1.8zm3.8-1.4h1.3l-.4 1.8h1.2c.9 0 1.5.3 1.5 1s-.6 1-1.5 1h-1.3L13 14h-1.3l.7-2.6h-.7l.2-.9h.7l.2-.5zm1.7 2.2h.6c.4 0 .7-.1.7-.4s-.3-.4-.7-.4h-.5l-.1.8zm3.5-2.2h2.2c.9 0 1.5.3 1.5 1s-.6 1-1.5 1h-1.1l-.5 2h-1.3l.7-4zm1.7 1.4h.6c.4 0 .7-.1.7-.4s-.3-.4-.7-.4h-.5l-.1.8z" fill="#FFFFFF"/></g>
+  <text x="44" y="20" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">PHP</text>
+  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">Backend Exploration</text>
+  <g transform="translate(90.19999999999999, 8)">
+    <rect width="65.80000000000001" height="14" rx="3" fill="#2E1065" stroke="#C084FC" stroke-width="0.8" opacity="0.9"/>
+    <text x="32.900000000000006" y="10.5" fill="#C084FC" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="800" text-anchor="middle" letter-spacing="0.5">EXPLORING</text>
+  </g>
+</svg>

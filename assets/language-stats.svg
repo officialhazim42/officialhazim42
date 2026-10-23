@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 270" width="880" height="270">
+  <defs>
+    <linearGradient id="chartBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1730"/>
+      <stop offset="60%" stop-color="#081226"/>
+      <stop offset="100%" stop-color="#060B18"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx="90%" cy="10%" r="45%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#0B1730" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="10%" cy="90%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0B1730" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Bar Gradients -->
+    <linearGradient id="htmlGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E34F26"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="jsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+    <linearGradient id="cssGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Panel Base -->
+  <rect x="1" y="1" width="878" height="268" rx="14" fill="url(#chartBg)" stroke="#23436B" stroke-width="1.5"/>
+  <rect x="1" y="1" width="878" height="268" rx="14" fill="url(#cyanGlow)"/>
+  <rect x="1" y="1" width="878" height="268" rx="14" fill="url(#blueGlow)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(28, 22)">
+    <!-- Icon Container -->
+    <rect x="0" y="0" width="36" height="36" rx="8" fill="#102344" stroke="#23436B" stroke-width="1.2"/>
+    <path d="M10 24l5-6 4 4 7-9m-4 0h4v4" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <text x="48" y="17" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="800" letter-spacing="0.3">PROGRAMMING &amp; MARKUP LANGUAGE DISTRIBUTION</text>
+    <text x="48" y="32" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500">Verifiable codebase audit across 13 public repositories • 3,635,977 bytes analyzed</text>
+
+    <!-- Top-Right Audit Badge -->
+    <g transform="translate(680, 4)">
+      <rect width="144" height="24" rx="12" fill="#0A2540" stroke="#06B6D4" stroke-width="1"/>
+      <circle cx="12" cy="12" r="3.5" fill="#10B981"/>
+      <text x="24" y="15.5" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="0.5">PUBLIC REPO AUDIT</text>
+    </g>
+  </g>
+
+  <!-- Multi-Segment Visual Progress Bar -->
+  <!-- Total Bar Width = 824px -->
+  <!-- HTML: 62.87% = 518px | JS: 32.83% = 270px | CSS: 4.30% = 36px -->
+  <g transform="translate(28, 76)">
+    <!-- Background track -->
+    <rect width="824" height="18" rx="9" fill="#071126" stroke="#1E3A5F" stroke-width="1"/>
+    <!-- Clip path for rounded multi-bar -->
+    <clipPath id="barClip">
+      <rect width="824" height="18" rx="9"/>
+    </clipPath>
+    <g clip-path="url(#barClip)">
+      <!-- HTML segment -->
+      <rect x="0" y="0" width="518" height="18" fill="url(#htmlGrad)"/>
+      <!-- JS segment -->
+      <rect x="518" y="0" width="270" height="18" fill="url(#jsGrad)"/>
+      <!-- CSS segment -->
+      <rect x="788" y="0" width="36" height="18" fill="url(#cssGrad)"/>
+    </g>
+  </g>
+
+  <!-- Detailed 3-Column Breakdown Cards -->
+  <g transform="translate(28, 108)">
+    <!-- Card 1: HTML5 -->
+    <g transform="translate(0, 0)">
+      <rect width="264" height="88" rx="10" fill="#09152C" stroke="#23436B" stroke-width="1.2"/>
+      <circle cx="22" cy="24" r="6" fill="#E34F26"/>
+      <text x="36" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="700">HTML5 Markup</text>
+      <text x="244" y="28" fill="#F97316" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="end">62.87%</text>
+      
+      <text x="22" y="52" fill="#60A5FA" font-family="monospace" font-size="11" font-weight="600">2,285,757 bytes</text>
+      <text x="22" y="70" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="9.5">Extensive UI templates, PDFHub &amp; ImageHub DOMs</text>
+    </g>
+
+    <!-- Card 2: JavaScript -->
+    <g transform="translate(280, 0)">
+      <rect width="264" height="88" rx="10" fill="#09152C" stroke="#23436B" stroke-width="1.2"/>
+      <circle cx="22" cy="24" r="6" fill="#FACC15"/>
+      <text x="36" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="700">JavaScript (ES6+)</text>
+      <text x="244" y="28" fill="#FACC15" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="end">32.83%</text>
+      
+      <text x="22" y="52" fill="#FDE047" font-family="monospace" font-size="11" font-weight="600">1,193,762 bytes</text>
+      <text x="22" y="70" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="9.5">In-browser compute engines, Canvas, PWA workers</text>
+    </g>
+
+    <!-- Card 3: CSS3 -->
+    <g transform="translate(560, 0)">
+      <rect width="264" height="88" rx="10" fill="#09152C" stroke="#23436B" stroke-width="1.2"/>
+      <circle cx="22" cy="24" r="6" fill="#38BDF8"/>
+      <text x="36" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="700">CSS3 Styling</text>
+      <text x="244" y="28" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="end">4.30%</text>
+      
+      <text x="22" y="52" fill="#93C5FD" font-family="monospace" font-size="11" font-weight="600">156,458 bytes</text>
+      <text x="22" y="70" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="9.5">Custom responsive design systems &amp; dark UI</text>
+    </g>
+  </g>
+
+  <!-- Footnote Panel: Specialized Stack Context -->
+  <g transform="translate(28, 210)">
+    <rect width="824" height="42" rx="8" fill="#071224" stroke="#1E3A5F" stroke-width="1"/>
+    <!-- Info icon -->
+    <circle cx="22" cy="21" r="9" fill="#0E223D" stroke="#06B6D4" stroke-width="1.2"/>
+    <text x="22" y="25" fill="#06B6D4" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">i</text>
+    
+    <text x="40" y="19" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Extended Stack in Specialized &amp; Academic Work:</text>
+    <text x="40" y="32" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="9.5">TypeScript (506 KB in CyberGuard YUVA) • PLpgSQL / SQL (69 KB in HabitsGrow &amp; Supabase) • Bash / Shell (Termux Guide) • C / C++ / Java (CSE Base)</text>
+  </g>
+</svg>

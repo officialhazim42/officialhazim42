@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 48" width="168" height="48">
+  <defs>
+    <linearGradient id="bg_supabase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1730"/>
+      <stop offset="100%" stop-color="#102344"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.75" y="0.75" width="166.5" height="46.5" rx="8" fill="url(#bg_supabase)" stroke="#23436B" stroke-width="1.5"/>
+  <g transform="translate(14, 11)"><path d="M12.5 2.5l8.5 10.5h-8l3 8.5-8.5-10.5h8l-3-8.5z" fill="#3ECF8E"/></g>
+  <text x="44" y="20" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Supabase</text>
+  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">PostgreSQL & Realtime</text>
+  <g transform="translate(115, 8)">
+    <rect width="41" height="14" rx="3" fill="#064E3B" stroke="#3ECF8E" stroke-width="0.8" opacity="0.9"/>
+    <text x="20.5" y="10.5" fill="#3ECF8E" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="800" text-anchor="middle" letter-spacing="0.5">CLOUD</text>
+  </g>
+</svg>

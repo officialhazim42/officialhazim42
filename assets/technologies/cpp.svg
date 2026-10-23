@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 48" width="168" height="48">
+  <defs>
+    <linearGradient id="bg_c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1730"/>
+      <stop offset="100%" stop-color="#102344"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.75" y="0.75" width="166.5" height="46.5" rx="8" fill="url(#bg_c)" stroke="#23436B" stroke-width="1.5"/>
+  <g transform="translate(14, 11)"><path d="M12 1l10.4 6v12L12 25 1.6 19V7L12 1z" fill="#00599C"/><path d="M12 2.7L20.5 7.6v9.8L12 22.3 3.5 17.4V7.6L12 2.7z" fill="#004482"/><path d="M13 10c-.7-.5-1.5-.7-2.4-.7-2.3 0-3.8 1.6-3.8 3.7s1.5 3.7 3.8 3.7c.9 0 1.7-.2 2.4-.7v1.7c-.7.3-1.5.4-2.4.4-3.3 0-5.7-2.2-5.7-5.1s2.4-5.1 5.7-5.1c.9 0 1.7.1 2.4.4V10zm2 2.2h1.2v-1.2h1v1.2h1.2v1h-1.2v1.2h-1v-1.2H15v-1zm4.2 0h1.2v-1.2h1v1.2h1.2v1h-1.2v1.2h-1v-1.2h-1.2v-1z" fill="#FFFFFF"/></g>
+  <text x="44" y="20" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">C++</text>
+  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">OOP & Algorithms</text>
+  <g transform="translate(127.4, 8)">
+    <rect width="28.6" height="14" rx="3" fill="#0C2B54" stroke="#93C5FD" stroke-width="0.8" opacity="0.9"/>
+    <text x="14.3" y="10.5" fill="#93C5FD" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="800" text-anchor="middle" letter-spacing="0.5">CSE</text>
+  </g>
+</svg>

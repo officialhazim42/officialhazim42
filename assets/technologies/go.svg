@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 48" width="168" height="48">
+  <defs>
+    <linearGradient id="bg_go" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1730"/>
+      <stop offset="100%" stop-color="#102344"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.75" y="0.75" width="166.5" height="46.5" rx="8" fill="url(#bg_go)" stroke="#23436B" stroke-width="1.5"/>
+  <g transform="translate(14, 11)"><path d="M2.5 10c0-2.5 2-4.5 4.5-4.5 2.1 0 3.8 1.4 4.3 3.3h-2.3C8.6 7.8 7.8 7.3 7 7.3c-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7c1 0 1.8-.5 2.1-1.3H6.8v-1.8h4.5v3.4C10.4 14.1 8.8 15 7 15c-2.5 0-4.5-2-4.5-5zm10.5 0c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5zm7 0c0-1.5-1.1-2.7-2.5-2.7s-2.5 1.2-2.5 2.7 1.1 2.7 2.5 2.7 2.5-1.2 2.5-2.7z" fill="#00ADD8"/></g>
+  <text x="44" y="20" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Go</text>
+  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">Concurrency & Systems</text>
+  <g transform="translate(90.19999999999999, 8)">
+    <rect width="65.80000000000001" height="14" rx="3" fill="#083344" stroke="#38BDF8" stroke-width="0.8" opacity="0.9"/>
+    <text x="32.900000000000006" y="10.5" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="800" text-anchor="middle" letter-spacing="0.5">EXPLORING</text>
+  </g>
+</svg>

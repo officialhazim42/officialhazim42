@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 220" width="430" height="220">
+  <defs>
+    <linearGradient id="catBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1730"/>
+      <stop offset="100%" stop-color="#060B18"/>
+    </linearGradient>
+    <linearGradient id="purpleCyan2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#654FF0"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="30%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#654FF0" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0B1730" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="1" y="1" width="428" height="218" rx="12" fill="url(#catBg2)" stroke="#23436B" stroke-width="1.5"/>
+  <rect x="1" y="1" width="428" height="218" rx="12" fill="url(#glow2)"/>
+  
+  <path d="M12 1.5h406c5.8 0 10.5 4.7 10.5 10.5v1.5H1.5V12C1.5 6.2 6.2 1.5 12 1.5z" fill="url(#purpleCyan2)"/>
+  
+  <g transform="translate(20, 26)">
+    <rect x="0" y="0" width="28" height="28" rx="6" fill="#102344" stroke="#23436B"/>
+    <path d="M8 14h12M14 8v12" stroke="#60A5FA" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="14" cy="14" r="8" fill="none" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <text x="36" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" letter-spacing="0.5">SPECIALIZED ENGINEERING</text>
+    <text x="36" y="26" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">In-Browser Compute • WebAssembly • Client-Side Privacy • OCR</text>
+  </g>
+
+  <!-- Central WebAssembly Chip / Engine Architecture -->
+  <g transform="translate(30, 72)">
+    <!-- Main Compute Box -->
+    <rect width="170" height="126" rx="8" fill="#0A1428" stroke="#23436B" stroke-width="1.2"/>
+    <!-- Chip Pins -->
+    <line x1="85" y1="0" x2="85" y2="-6" stroke="#654FF0" stroke-width="2"/>
+    <line x1="55" y1="0" x2="55" y2="-6" stroke="#654FF0" stroke-width="2"/>
+    <line x1="115" y1="0" x2="115" y2="-6" stroke="#654FF0" stroke-width="2"/>
+    <!-- Chip Body -->
+    <rect x="25" y="16" width="120" height="94" rx="6" fill="#102344" stroke="#654FF0" stroke-width="1.2"/>
+    <text x="85" y="42" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">WebAssembly</text>
+    <text x="85" y="56" fill="#06B6D4" font-family="monospace" font-size="9" text-anchor="middle">.wasm / Binary</text>
+    <!-- Multi-thread workers -->
+    <rect x="36" y="66" width="46" height="34" rx="4" fill="#071126" stroke="#1E3A5F" stroke-width="0.8"/>
+    <text x="59" y="80" fill="#60A5FA" font-family="monospace" font-size="7.5" text-anchor="middle">Worker 1</text>
+    <text x="59" y="92" fill="#4ADE80" font-family="monospace" font-size="6.5" text-anchor="middle">Active</text>
+
+    <rect x="88" y="66" width="46" height="34" rx="4" fill="#071126" stroke="#1E3A5F" stroke-width="0.8"/>
+    <text x="111" y="80" fill="#60A5FA" font-family="monospace" font-size="7.5" text-anchor="middle">Worker 2</text>
+    <text x="111" y="92" fill="#4ADE80" font-family="monospace" font-size="6.5" text-anchor="middle">Active</text>
+  </g>
+
+  <!-- Connectors -->
+  <g transform="translate(206, 130)">
+    <path d="M0 5h20" stroke="#654FF0" stroke-width="2" stroke-dasharray="2,2"/>
+    <polygon points="24,5 18,1 18,9" fill="#06B6D4"/>
+  </g>
+
+  <!-- Pipelines Display (Right) -->
+  <g transform="translate(234, 72)">
+    <rect width="166" height="126" rx="8" fill="#0A1428" stroke="#1E3A5F" stroke-width="1.2"/>
+    <!-- Item 1: PDF Processing -->
+    <g transform="translate(10, 10)">
+      <rect width="146" height="32" rx="4" fill="#102344" stroke="#23436B" stroke-width="0.8"/>
+      <path d="M12 8h10v16H12z" fill="#EF4444" opacity="0.3"/>
+      <path d="M14 11h6m-6 3h6m-6 3h4" stroke="#EF4444" stroke-width="1.2"/>
+      <text x="28" y="17" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="9" font-weight="700">PDF-Lib &amp; PDF.js</text>
+      <text x="28" y="27" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="7.5">100% In-Browser Manipulation</text>
+    </g>
+    <!-- Item 2: Canvas & AVIF -->
+    <g transform="translate(10, 48)">
+      <rect width="146" height="32" rx="4" fill="#102344" stroke="#23436B" stroke-width="0.8"/>
+      <circle cx="18" cy="16" r="7" fill="#3B82F6" opacity="0.3"/>
+      <path d="M15 17l2-3 3 4" stroke="#38BDF8" stroke-width="1.2"/>
+      <text x="28" y="17" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="9" font-weight="700">Canvas 2D / AVIF</text>
+      <text x="28" y="27" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="7.5">Real-time Image Compression</text>
+    </g>
+    <!-- Item 3: Tesseract OCR -->
+    <g transform="translate(10, 86)">
+      <rect width="146" height="32" rx="4" fill="#102344" stroke="#23436B" stroke-width="0.8"/>
+      <rect x="12" y="9" width="12" height="14" rx="2" fill="#10B981" opacity="0.3"/>
+      <text x="18" y="20" fill="#34D399" font-family="monospace" font-size="9" text-anchor="middle">T</text>
+      <text x="28" y="17" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="9" font-weight="700">Tesseract.js OCR</text>
+      <text x="28" y="27" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="7.5">Client-Side Text Recognition</text>
+    </g>
+  </g>
+</svg>

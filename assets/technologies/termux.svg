@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 48" width="168" height="48">
+  <defs>
+    <linearGradient id="bg_termux" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1730"/>
+      <stop offset="100%" stop-color="#102344"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.75" y="0.75" width="166.5" height="46.5" rx="8" fill="url(#bg_termux)" stroke="#23436B" stroke-width="1.5"/>
+  <rect x="14" y="11" width="24" height="24" rx="4" fill="#050C1A" stroke="#23436B" stroke-width="1.2"/><text x="26" y="27" fill="#06B6D4" font-family="monospace" font-size="12" font-weight="900" text-anchor="middle">&gt;_</text>
+  <text x="44" y="20" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Termux</text>
+  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">Android Linux CLI</text>
+  <g transform="translate(102.6, 8)">
+    <rect width="53.4" height="14" rx="3" fill="#083344" stroke="#06B6D4" stroke-width="0.8" opacity="0.9"/>
+    <text x="26.7" y="10.5" fill="#06B6D4" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="800" text-anchor="middle" letter-spacing="0.5">ANDROID</text>
+  </g>
+</svg>

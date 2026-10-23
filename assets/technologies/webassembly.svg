@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 48" width="168" height="48">
+  <defs>
+    <linearGradient id="bg_webassembly" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1730"/>
+      <stop offset="100%" stop-color="#102344"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.75" y="0.75" width="166.5" height="46.5" rx="8" fill="url(#bg_webassembly)" stroke="#23436B" stroke-width="1.5"/>
+  <g transform="translate(14, 11)"><rect width="24" height="24" rx="4" fill="#654FF0"/><text x="12" y="16.5" fill="#FFFFFF" font-family="monospace" font-size="9" font-weight="800" text-anchor="middle">WASM</text></g>
+  <text x="44" y="20" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">WebAssembly</text>
+  <text x="44" y="34" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="500">High-Performance Engine</text>
+  <g transform="translate(108.8, 8)">
+    <rect width="47.2" height="14" rx="3" fill="#2E1065" stroke="#A855F7" stroke-width="0.8" opacity="0.9"/>
+    <text x="23.6" y="10.5" fill="#A855F7" font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="800" text-anchor="middle" letter-spacing="0.5">BINARY</text>
+  </g>
+</svg>
