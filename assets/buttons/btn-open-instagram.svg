@@ -1,42 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 34" width="172" height="34">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 34" width="172" height="34" style="overflow: visible;">
   <defs>
     <linearGradient id="bg-btn-open-instagram" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2e0e26"/>
-      <stop offset="100%" stop-color="#421332"/>
+      <stop offset="0%" stop-color="#2a0d23"/>
+      <stop offset="100%" stop-color="#3d122e"/>
     </linearGradient>
     <style>
+      svg { overflow: visible; }
       @keyframes btnEntrance {
-        0% { opacity: 0; transform: translateY(4px); }
+        0% { opacity: 0; transform: translateY(6px); }
         100% { opacity: 1; transform: translateY(0); }
       }
       @keyframes arrowDrift {
         0%, 100% { transform: translateX(0); }
-        50% { transform: translateX(2.5px); }
+        50% { transform: translateX(3px); }
       }
       @keyframes borderShimmer {
-        0%, 100% { stroke-opacity: 0.6; }
+        0%, 100% { stroke-opacity: 0.55; stroke: rgba(228, 64, 95, 0.5); }
         50% { stroke-opacity: 1; stroke: #e4405f; }
+      }
+      @keyframes iconGaze {
+        0%, 100% { filter: drop-shadow(0 0 0px transparent); }
+        50% { filter: drop-shadow(0 0 3px rgba(228, 64, 95, 0.7)); }
       }
       .btn-root {
         cursor: pointer;
-        animation: btnEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation: btnEntrance 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         transform-origin: 86px 17px;
-        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+        transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), filter 0.24s ease;
       }
       .btn-root .btn-arrow-icon {
-        animation: arrowDrift 2s ease-in-out infinite;
+        animation: arrowDrift 2.4s ease-in-out infinite;
         transition: transform 0.2s ease;
       }
       .btn-root .btn-border {
-        animation: borderShimmer 2.8s ease-in-out infinite;
+        animation: borderShimmer 3.2s ease-in-out infinite;
         transition: stroke 0.2s ease, stroke-width 0.2s ease;
       }
       .btn-icon {
         transform-origin: 12px 12px;
+        animation: iconGaze 3.2s ease-in-out infinite;
         transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
       }
       .btn-root:hover, svg:hover .btn-root {
-        transform: translateY(-2px) scale(1.03);
+        transform: translateY(-2px) scale(1.028);
         filter: drop-shadow(0 4px 14px rgba(228, 64, 95, 0.45));
       }
       .btn-root:hover .btn-border, svg:hover .btn-root .btn-border {
@@ -44,11 +50,11 @@
         stroke-width: 1.4;
       }
       .btn-root:hover .btn-arrow-icon, svg:hover .btn-root .btn-arrow-icon {
-        transform: translateX(4px);
+        transform: translateX(4.5px);
       }
       .btn-root:hover .btn-icon, svg:hover .btn-root .btn-icon {
         transform: scale(1.12);
-        filter: drop-shadow(0 0 4px #e4405f);
+        filter: drop-shadow(0 0 5px #e4405f);
       }
       .btn-root:active, svg:active .btn-root {
         transform: translateY(0.5px) scale(0.98);
@@ -77,7 +83,7 @@
     <!-- Base Glass Container -->
     <rect x="0.75" y="0.75" width="170.5" height="32.5" rx="7" class="btn-border" fill="url(#bg-btn-open-instagram)" stroke="rgba(228, 64, 95, 0.5)" stroke-width="1.1"/>
     
-    <!-- Platform Mini Icon (with coordinated micro-scale on hover) -->
+    <!-- Platform Mini Icon -->
     <g transform="translate(10, 9) scale(0.666)">
       <g class="btn-icon">
         <defs><linearGradient id="ig-b-g" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFDC80"/><stop offset="50%" stop-color="#F56040"/><stop offset="100%" stop-color="#C13584"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="6" fill="none" stroke="url(#ig-b-g)" stroke-width="2"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="url(#ig-b-g)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="#FD1D1D"/>

@@ -1,42 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 116" width="100%" height="116">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 136" width="100%" height="136">
   <defs>
     <linearGradient id="ft-bg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#060b18" />
-      <stop offset="50%" stop-color="#0a1530" />
-      <stop offset="100%" stop-color="#060b18" />
+      <stop offset="0%" stop-color="#060b18" stop-opacity="0.98" />
+      <stop offset="50%" stop-color="#0a1532" stop-opacity="0.94" />
+      <stop offset="100%" stop-color="#060b18" stop-opacity="0.98" />
     </linearGradient>
     <linearGradient id="ft-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.3" />
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.3" />
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.4" />
+      <stop offset="30%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#0ea5e9" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.4" />
     </linearGradient>
+    <radialGradient id="ft-glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
     <style>
       @keyframes ftEntrance {
-        0% { opacity: 0; transform: translateY(8px); }
+        0% { opacity: 0; transform: translateY(10px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes lineStagger {
+        0% { opacity: 0; transform: translateY(6px); }
         100% { opacity: 1; transform: translateY(0); }
       }
       @keyframes dotJewel {
-        0%, 100% { r: 2.5; opacity: 0.8; }
-        50% { r: 3.8; opacity: 1; filter: drop-shadow(0 0 6px #38bdf8); }
+        0%, 100% { r: 3; opacity: 0.85; filter: drop-shadow(0 0 2px #38bdf8); }
+        50% { r: 4.2; opacity: 1; filter: drop-shadow(0 0 8px #38bdf8); }
       }
       .ft-root {
         animation: ftEntrance 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
       }
       .jewel-dot {
-        animation: dotJewel 2.4s ease-in-out infinite;
+        animation: dotJewel 2.6s ease-in-out infinite;
+      }
+      .ft-line-1 {
+        animation: lineStagger 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+      }
+      .ft-line-2 {
+        animation: lineStagger 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
+      }
+      .ft-line-3 {
+        animation: lineStagger 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both;
+      }
+      .ft-line-4 {
+        animation: lineStagger 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.44s both;
       }
       .ft-mono {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-        font-size: 11px;
+        font-size: 11.5px;
         fill: #38bdf8;
-        letter-spacing: 2px;
+        letter-spacing: 2.2px;
         font-weight: 700;
       }
       .ft-tagline {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 13.5px;
+        font-size: 14px;
         font-weight: 500;
-        fill: #e2e8f0;
+        fill: #f1f5f9;
         letter-spacing: 0.2px;
       }
       .ft-domains {
@@ -46,14 +67,18 @@
         letter-spacing: 1.2px;
         font-weight: 600;
       }
+      .ft-bullet {
+        fill: #38bdf8;
+        font-weight: 700;
+      }
       .ft-sub {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-        font-size: 10px;
-        fill: #64748b;
-        letter-spacing: 1px;
+        font-size: 10.5px;
+        fill: #94a3b8;
+        letter-spacing: 1.2px;
       }
       @media (prefers-reduced-motion: reduce) {
-        *, .ft-root, .jewel-dot {
+        *, .ft-root, .jewel-dot, .ft-line-1, .ft-line-2, .ft-line-3, .ft-line-4 {
           animation: none !important;
           opacity: 1 !important;
           transform: none !important;
@@ -63,21 +88,40 @@
   </defs>
 
   <g class="ft-root">
-    <rect x="1" y="1" width="898" height="114" rx="12" fill="url(#ft-bg)" stroke="url(#ft-stroke)" stroke-width="1.2" />
+    <rect x="1" y="1" width="898" height="134" rx="12" fill="url(#ft-bg)" stroke="url(#ft-stroke)" stroke-width="1.2" />
+    <rect x="1" y="1" width="898" height="134" rx="12" fill="url(#ft-glow)" />
 
     <!-- Center Top Decorative Pulsing Jewel Dot -->
-    <circle cx="450" cy="1" r="3" fill="#38bdf8" class="jewel-dot" />
+    <circle cx="450" cy="1" r="3.5" fill="#38bdf8" class="jewel-dot" />
 
     <!-- Line 1: Identity & Brand -->
-    <text x="450" y="28" text-anchor="middle" class="ft-mono">HAZIM BASHIR FAQEER &#8226; @OFFICIALHAZIM42 &#8226; SOFTWARE CREATOR</text>
+    <g class="ft-line-1">
+      <text x="450" y="32" text-anchor="middle" class="ft-mono">HAZIM BASHIR FAQEER &#8226; @OFFICIALHAZIM42 &#8226; SOFTWARE CREATOR</text>
+    </g>
 
     <!-- Line 2: Engineering Philosophy -->
-    <text x="450" y="52" text-anchor="middle" class="ft-tagline">Designed with purpose. Built with care. Focused on useful digital experiences &amp; zero-upload client-side computing.</text>
+    <g class="ft-line-2">
+      <text x="450" y="58" text-anchor="middle" class="ft-tagline">Designed with purpose. Built with care. Focused on useful digital experiences &amp; zero-upload client-side computing.</text>
+    </g>
 
     <!-- Line 3: Verified Domain Ecosystem -->
-    <text x="450" y="76" text-anchor="middle" class="ft-domains">officialhazim42.github.io  &#8226;  cyberguard-yuva.vercel.app  &#8226;  imagehub.netlify.app  &#8226;  pdfshub.netlify.app  &#8226;  advance-images-compressor.netlify.app</text>
+    <g class="ft-line-3">
+      <text x="450" y="86" text-anchor="middle" class="ft-domains">
+        <tspan>officialhazim42.github.io</tspan>
+        <tspan class="ft-bullet">  &#8226;  </tspan>
+        <tspan>cyberguard-yuva.vercel.app</tspan>
+        <tspan class="ft-bullet">  &#8226;  </tspan>
+        <tspan>imagehub.netlify.app</tspan>
+        <tspan class="ft-bullet">  &#8226;  </tspan>
+        <tspan>pdfshub.netlify.app</tspan>
+        <tspan class="ft-bullet">  &#8226;  </tspan>
+        <tspan>advance-images-compressor.netlify.app</tspan>
+      </text>
+    </g>
 
     <!-- Line 4: Academic Base & Location -->
-    <text x="450" y="98" text-anchor="middle" class="ft-sub">Ganderbal, Jammu &amp; Kashmir, India &#8226; Government Polytechnic College Ganderbal &#8226; Open Source</text>
+    <g class="ft-line-4">
+      <text x="450" y="112" text-anchor="middle" class="ft-sub">Ganderbal, Jammu &amp; Kashmir, India &#8226; Government Polytechnic College Ganderbal &#8226; Open Source</text>
+    </g>
   </g>
 </svg>

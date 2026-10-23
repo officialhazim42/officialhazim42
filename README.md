@@ -341,7 +341,6 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
   <a href="https://t.me/officialhazim42"><img src="assets/contact/row-telegram.svg" alt="Telegram • @officialhazim42 • Message on Telegram" width="100%" /></a>
   <a href="https://discord.com/users/officialhazim42"><img src="assets/contact/row-discord.svg" alt="Discord • officialhazim42 • Connect on Discord" width="100%" /></a>
   <a href="https://www.reddit.com/user/officialhazim42"><img src="assets/contact/row-reddit.svg" alt="Reddit • u/officialhazim42 • View Reddit Profile" width="100%" /></a>
-  <a href="https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India"><img src="assets/contact/row-location.svg" alt="Location • Ganderbal, Jammu &amp; Kashmir, India • Open in Google Maps" width="100%" /></a>
 </div>
 
 <br />
@@ -362,7 +361,6 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 | **Telegram** | `@officialhazim42` | [t.me/officialhazim42](https://t.me/officialhazim42) |
 | **Discord** | `officialhazim42` | [discord.com/users/officialhazim42](https://discord.com/users/officialhazim42) |
 | **Reddit** | `u/officialhazim42` | [reddit.com/user/officialhazim42](https://www.reddit.com/user/officialhazim42) |
-| **Base Location** | Ganderbal, Jammu &amp; Kashmir, India | [Open in Google Maps](https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India) |
 
 </details>
 
@@ -393,7 +391,8 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
   <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="assets/buttons/btn-send-email.svg" alt="Email • Send Email" height="34" /></a>
   &nbsp;
   <a href="https://www.instagram.com/officialhazim42/"><img src="assets/buttons/btn-open-instagram.svg" alt="Instagram • Open Instagram" height="34" /></a>
-  &nbsp;
+  <br />
+  <br />
   <a href="https://www.youtube.com/@officialhazim42"><img src="assets/buttons/btn-visit-youtube.svg" alt="YouTube • Visit Channel" height="34" /></a>
   &nbsp;
   <a href="https://x.com/officialhazim42"><img src="assets/buttons/btn-follow-x.svg" alt="X • Follow on X" height="34" /></a>
@@ -401,7 +400,8 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
   <a href="https://www.threads.net/@officialhazim42"><img src="assets/buttons/btn-view-threads.svg" alt="Threads • View Threads" height="34" /></a>
   &nbsp;
   <a href="https://t.me/officialhazim42"><img src="assets/buttons/btn-message-telegram.svg" alt="Telegram • Message on Telegram" height="34" /></a>
-  &nbsp;
+  <br />
+  <br />
   <a href="https://discord.com/users/officialhazim42"><img src="assets/buttons/btn-connect-discord.svg" alt="Discord • Connect on Discord" height="34" /></a>
   &nbsp;
   <a href="https://www.reddit.com/user/officialhazim42"><img src="assets/buttons/btn-view-reddit.svg" alt="Reddit • View Reddit Profile" height="34" /></a>
@@ -423,28 +423,51 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 <br />
 
 <div align="center">
-  <p align="center">
-    <sub><b>🌐 VERIFIED WEB DOMAINS &amp; LIVE PLATFORMS</b></sub>
-    <br />
-    <a href="https://officialhazim42.github.io"><code>officialhazim42.github.io</code></a>
-    &nbsp;•&nbsp;
-    <a href="https://cyberguard-yuva.vercel.app/"><code>cyberguard-yuva.vercel.app</code></a>
-    &nbsp;•&nbsp;
-    <a href="https://imagehub.netlify.app/"><code>imagehub.netlify.app</code></a>
-    &nbsp;•&nbsp;
-    <a href="https://pdfshub.netlify.app/"><code>pdfshub.netlify.app</code></a>
-    &nbsp;•&nbsp;
-    <a href="https://advance-images-compressor.netlify.app/"><code>advance-images-compressor.netlify.app</code></a>
-  </p>
-  <p align="center">
-    <sub><b>🛡️ DIRECT DEVELOPER IDENTITY &amp; REGIONAL BASE</b></sub>
-    <br />
-    <a href="https://github.com/officialhazim42"><code>github.com/officialhazim42</code></a>
-    &nbsp;•&nbsp;
-    <a href="mailto:hazimbashirfaqeer@gmail.com"><code>hazimbashirfaqeer@gmail.com</code></a>
-    &nbsp;•&nbsp;
-    <a href="https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India"><code>📍 Ganderbal, Jammu &amp; Kashmir, India</code></a>
-  </p>
+  <img src="assets/footer-ecosystem-header.svg" alt="Verified Web Domains &amp; Live Platforms Header" width="100%" />
 </div>
+
+<br />
+
+<p align="center">
+  <a href="https://officialhazim42.github.io"><img src="assets/buttons/pill-officialhazim42.svg" alt="officialhazim42.github.io" height="32" /></a>
+  &nbsp;
+  <a href="https://cyberguard-yuva.vercel.app/"><img src="assets/buttons/pill-cyberguard.svg" alt="cyberguard-yuva.vercel.app" height="32" /></a>
+  &nbsp;
+  <a href="https://imagehub.netlify.app/"><img src="assets/buttons/pill-imagehub.svg" alt="imagehub.netlify.app" height="32" /></a>
+  <br />
+  <br />
+  <a href="https://pdfshub.netlify.app/"><img src="assets/buttons/pill-pdfshub.svg" alt="pdfshub.netlify.app" height="32" /></a>
+  &nbsp;
+  <a href="https://advance-images-compressor.netlify.app/"><img src="assets/buttons/pill-compressor.svg" alt="advance-images-compressor.netlify.app" height="32" /></a>
+</p>
+
+<br />
+
+<p align="center">
+  <a href="https://github.com/officialhazim42"><img src="assets/buttons/pill-identity-github.svg" alt="github.com/officialhazim42" height="32" /></a>
+  &nbsp;
+  <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="assets/buttons/pill-identity-email.svg" alt="hazimbashirfaqeer@gmail.com" height="32" /></a>
+  &nbsp;
+  <a href="https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India"><img src="assets/buttons/pill-identity-location.svg" alt="Ganderbal, Jammu &amp; Kashmir, India" height="32" /></a>
+</p>
+
+<br />
+
+<details>
+  <summary><b>Verified Domain URLs &amp; Direct Connection Registry (Accessible Text)</b></summary>
+  <br />
+
+| Ecosystem Layer | Entity / Handle | Canonical Destination | Status |
+| :--- | :--- | :--- | :--- |
+| **Personal Showcase** | `officialhazim42.github.io` | [officialhazim42.github.io](https://officialhazim42.github.io) | Production Live |
+| **Youth Defense Club** | `cyberguard-yuva.vercel.app` | [cyberguard-yuva.vercel.app](https://cyberguard-yuva.vercel.app/) | Production Live |
+| **In-Browser Image Suite** | `imagehub.netlify.app` | [imagehub.netlify.app](https://imagehub.netlify.app/) | Production Live |
+| **Privacy PDF Toolkit** | `pdfshub.netlify.app` | [pdfshub.netlify.app](https://pdfshub.netlify.app/) | Production Live |
+| **Web Image Compressor** | `advance-images-compressor.netlify.app` | [advance-images-compressor.netlify.app](https://advance-images-compressor.netlify.app/) | Production Live |
+| **Developer Base** | `@officialhazim42` | [github.com/officialhazim42](https://github.com/officialhazim42) | Verified Account |
+| **Direct Inquiries** | `hazimbashirfaqeer@gmail.com` | [hazimbashirfaqeer@gmail.com](mailto:hazimbashirfaqeer@gmail.com) | Direct Contact |
+| **Regional Base** | `Ganderbal, Jammu & Kashmir, India` | [Open Google Maps](https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India) | Regional Base |
+
+</details>
 
 

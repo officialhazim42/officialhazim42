@@ -1,49 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 44" width="206" height="44">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 44" width="206" height="44" style="overflow: visible;">
   <defs>
     <linearGradient id="btn-bg-btn-github" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0b1730"/>
       <stop offset="100%" stop-color="#102344"/>
     </linearGradient>
     <style>
+      svg { overflow: visible; }
+      @keyframes btnEntrance {
+        0% { opacity: 0; transform: translateY(6px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
       @keyframes arrowDrift {
         0%, 100% { transform: translateX(0); }
         50% { transform: translateX(3px); }
       }
       @keyframes borderShimmer {
-        0%, 100% { stroke-opacity: 0.6; }
+        0%, 100% { stroke-opacity: 0.55; stroke: #1e3a5f; }
         50% { stroke-opacity: 1; stroke: #f0f6fc; }
+      }
+      @keyframes iconGaze {
+        0%, 100% { filter: drop-shadow(0 0 0px transparent); }
+        50% { filter: drop-shadow(0 0 3px rgba(240, 246, 252, 0.7)); }
       }
       .hero-btn {
         cursor: pointer;
+        animation: btnEntrance 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         transform-origin: 103px 22px;
-        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+        transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), filter 0.24s ease;
       }
       .hero-btn .btn-arrow-icon {
-        animation: arrowDrift 2.2s ease-in-out infinite;
+        animation: arrowDrift 2.4s ease-in-out infinite;
         transition: transform 0.2s ease;
       }
       .hero-btn .btn-border {
-        animation: borderShimmer 3s ease-in-out infinite;
+        animation: borderShimmer 3.2s ease-in-out infinite;
         transition: stroke 0.2s ease, stroke-width 0.2s ease;
       }
       .btn-icon {
         transform-origin: 10px 10px;
+        animation: iconGaze 3.2s ease-in-out infinite;
         transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
       }
       .hero-btn:hover, svg:hover .hero-btn {
-        transform: translateY(-2px) scale(1.025);
-        filter: drop-shadow(0 4px 14px rgba(240, 246, 252, 0.4));
+        transform: translateY(-2px) scale(1.028);
+        filter: drop-shadow(0 4px 14px rgba(240, 246, 252, 0.38));
       }
       .hero-btn:hover .btn-border, svg:hover .hero-btn .btn-border {
         stroke: #f0f6fc;
         stroke-width: 1.5;
       }
       .hero-btn:hover .btn-arrow-icon, svg:hover .hero-btn .btn-arrow-icon {
-        transform: translateX(4px);
+        transform: translateX(4.5px);
       }
       .hero-btn:hover .btn-icon, svg:hover .hero-btn .btn-icon {
         transform: scale(1.12);
-        filter: drop-shadow(0 0 4px #f0f6fc);
+        filter: drop-shadow(0 0 5px #f0f6fc);
       }
       .hero-btn:active, svg:active .hero-btn {
         transform: translateY(0.5px) scale(0.98);

@@ -1,54 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 34" width="172" height="34">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 34" width="172" height="34" style="overflow: visible;">
   <defs>
     <linearGradient id="bg-btn-connect-linkedin" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#082447"/>
-      <stop offset="100%" stop-color="#0c3669"/>
+      <stop offset="0%" stop-color="#072242"/>
+      <stop offset="100%" stop-color="#0b3464"/>
     </linearGradient>
     <style>
+      svg { overflow: visible; }
       @keyframes btnEntrance {
-        0% { opacity: 0; transform: translateY(4px); }
+        0% { opacity: 0; transform: translateY(6px); }
         100% { opacity: 1; transform: translateY(0); }
       }
       @keyframes arrowDrift {
         0%, 100% { transform: translateX(0); }
-        50% { transform: translateX(2.5px); }
+        50% { transform: translateX(3px); }
       }
       @keyframes borderShimmer {
-        0%, 100% { stroke-opacity: 0.6; }
+        0%, 100% { stroke-opacity: 0.55; stroke: rgba(10, 102, 194, 0.5); }
         50% { stroke-opacity: 1; stroke: #0a66c2; }
+      }
+      @keyframes iconGaze {
+        0%, 100% { filter: drop-shadow(0 0 0px transparent); }
+        50% { filter: drop-shadow(0 0 3px rgba(10, 102, 194, 0.7)); }
       }
       .btn-root {
         cursor: pointer;
-        animation: btnEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation: btnEntrance 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         transform-origin: 86px 17px;
-        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+        transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), filter 0.24s ease;
       }
       .btn-root .btn-arrow-icon {
-        animation: arrowDrift 2s ease-in-out infinite;
+        animation: arrowDrift 2.4s ease-in-out infinite;
         transition: transform 0.2s ease;
       }
       .btn-root .btn-border {
-        animation: borderShimmer 2.8s ease-in-out infinite;
+        animation: borderShimmer 3.2s ease-in-out infinite;
         transition: stroke 0.2s ease, stroke-width 0.2s ease;
       }
       .btn-icon {
         transform-origin: 12px 12px;
+        animation: iconGaze 3.2s ease-in-out infinite;
         transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
       }
       .btn-root:hover, svg:hover .btn-root {
-        transform: translateY(-2px) scale(1.03);
-        filter: drop-shadow(0 4px 14px rgba(10, 102, 194, 0.5));
+        transform: translateY(-2px) scale(1.028);
+        filter: drop-shadow(0 4px 14px rgba(10, 102, 194, 0.45));
       }
       .btn-root:hover .btn-border, svg:hover .btn-root .btn-border {
-        stroke: #0a66c2;
+        stroke: #38bdf8;
         stroke-width: 1.4;
       }
       .btn-root:hover .btn-arrow-icon, svg:hover .btn-root .btn-arrow-icon {
-        transform: translateX(4px);
+        transform: translateX(4.5px);
       }
       .btn-root:hover .btn-icon, svg:hover .btn-root .btn-icon {
         transform: scale(1.12);
-        filter: drop-shadow(0 0 4px #0a66c2);
+        filter: drop-shadow(0 0 5px #0a66c2);
       }
       .btn-root:active, svg:active .btn-root {
         transform: translateY(0.5px) scale(0.98);
@@ -77,7 +83,7 @@
     <!-- Base Glass Container -->
     <rect x="0.75" y="0.75" width="170.5" height="32.5" rx="7" class="btn-border" fill="url(#bg-btn-connect-linkedin)" stroke="rgba(10, 102, 194, 0.55)" stroke-width="1.1"/>
     
-    <!-- Platform Mini Icon (with coordinated micro-scale on hover) -->
+    <!-- Platform Mini Icon -->
     <g transform="translate(10, 9) scale(0.666)">
       <g class="btn-icon">
         <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0-.01-3.06 1.53 1.53 0 0 0 .01 3.06m-1.4 9.74h2.79v-8.37H5.06v8.37z" fill="#0A66C2"/>

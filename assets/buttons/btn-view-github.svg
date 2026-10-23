@@ -1,54 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 34" width="172" height="34">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 34" width="172" height="34" style="overflow: visible;">
   <defs>
     <linearGradient id="bg-btn-view-github" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#161b22"/>
-      <stop offset="100%" stop-color="#21262d"/>
+      <stop offset="0%" stop-color="#121720"/>
+      <stop offset="100%" stop-color="#1c212a"/>
     </linearGradient>
     <style>
+      svg { overflow: visible; }
       @keyframes btnEntrance {
-        0% { opacity: 0; transform: translateY(4px); }
+        0% { opacity: 0; transform: translateY(6px); }
         100% { opacity: 1; transform: translateY(0); }
       }
       @keyframes arrowDrift {
         0%, 100% { transform: translateX(0); }
-        50% { transform: translateX(2.5px); }
+        50% { transform: translateX(3px); }
       }
       @keyframes borderShimmer {
-        0%, 100% { stroke-opacity: 0.6; }
+        0%, 100% { stroke-opacity: 0.55; stroke: #30363d; }
         50% { stroke-opacity: 1; stroke: #f0f6fc; }
+      }
+      @keyframes iconGaze {
+        0%, 100% { filter: drop-shadow(0 0 0px transparent); }
+        50% { filter: drop-shadow(0 0 3px rgba(240, 246, 252, 0.6)); }
       }
       .btn-root {
         cursor: pointer;
-        animation: btnEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation: btnEntrance 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         transform-origin: 86px 17px;
-        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+        transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), filter 0.24s ease;
       }
       .btn-root .btn-arrow-icon {
-        animation: arrowDrift 2s ease-in-out infinite;
+        animation: arrowDrift 2.4s ease-in-out infinite;
         transition: transform 0.2s ease;
       }
       .btn-root .btn-border {
-        animation: borderShimmer 2.8s ease-in-out infinite;
+        animation: borderShimmer 3.2s ease-in-out infinite;
         transition: stroke 0.2s ease, stroke-width 0.2s ease;
       }
       .btn-icon {
         transform-origin: 12px 12px;
+        animation: iconGaze 3.2s ease-in-out infinite;
         transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
       }
       .btn-root:hover, svg:hover .btn-root {
-        transform: translateY(-2px) scale(1.03);
-        filter: drop-shadow(0 4px 14px rgba(240, 246, 252, 0.45));
+        transform: translateY(-2px) scale(1.028);
+        filter: drop-shadow(0 4px 14px rgba(240, 246, 252, 0.4));
       }
       .btn-root:hover .btn-border, svg:hover .btn-root .btn-border {
         stroke: #f0f6fc;
         stroke-width: 1.4;
       }
       .btn-root:hover .btn-arrow-icon, svg:hover .btn-root .btn-arrow-icon {
-        transform: translateX(4px);
+        transform: translateX(4.5px);
       }
       .btn-root:hover .btn-icon, svg:hover .btn-root .btn-icon {
         transform: scale(1.12);
-        filter: drop-shadow(0 0 4px #f0f6fc);
+        filter: drop-shadow(0 0 5px #f0f6fc);
       }
       .btn-root:active, svg:active .btn-root {
         transform: translateY(0.5px) scale(0.98);
@@ -77,7 +83,7 @@
     <!-- Base Glass Container -->
     <rect x="0.75" y="0.75" width="170.5" height="32.5" rx="7" class="btn-border" fill="url(#bg-btn-view-github)" stroke="#30363d" stroke-width="1.1"/>
     
-    <!-- Platform Mini Icon (with coordinated micro-scale on hover) -->
+    <!-- Platform Mini Icon -->
     <g transform="translate(10, 9) scale(0.666)">
       <g class="btn-icon">
         <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill="#F0F6FC"/>
