@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="100%" height="60">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="card-bg-instagram" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#081329" stop-opacity="0.98" />
+      <stop offset="35%" stop-color="#0d1f42" stop-opacity="0.94" />
+      <stop offset="75%" stop-color="#08152e" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#071126" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Card Stroke Gradient -->
+    <linearGradient id="card-stroke-instagram" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(225, 48, 108, 0.55)" />
+      <stop offset="30%" stop-color="rgba(56, 189, 248, 0.35)" />
+      <stop offset="70%" stop-color="rgba(14, 165, 233, 0.3)" />
+      <stop offset="100%" stop-color="rgba(225, 48, 108, 0.55)" />
+    </linearGradient>
+
+    <!-- Logo Glow -->
+    <radialGradient id="logo-glow-instagram" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e1306c" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#e1306c" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- PHASE 2 & 3: Platform Name Clip -->
+    <clipPath id="clip-pname-instagram">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="0.75s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.035; 0.11; 0.18; 0.23; 0.24; 1"
+          values="0; 0;     86;   86;   0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 4 & 5: Verified Handle Clip -->
+    <clipPath id="clip-handle-instagram">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="0.75s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.25; 0.37; 0.49; 0.56; 0.57; 1"
+          values="0; 0;    148;  148;  0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 6 & 7: View Profile Action Clip -->
+    <clipPath id="clip-action-instagram">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="0.75s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.58; 0.67; 0.96; 0.99; 1"
+          values="0; 0;    145;  145;  0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <style>
+      .card-box {
+        transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
+      }
+      .card-box:hover, svg:hover .card-box {
+        filter: drop-shadow(0 6px 18px rgba(56, 189, 248, 0.25));
+      }
+      .mono-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .text-pname {
+        fill: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+      }
+      .text-handle {
+        fill: #38bdf8;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+      }
+      .text-action {
+        fill: #a5f3fc;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      .prompt {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 15px;
+        font-weight: 800;
+        fill: #38bdf8;
+      }
+      .cursor {
+        fill: #38bdf8;
+      }
+      .btn-label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 10.5px;
+        font-weight: 700;
+        fill: #f0f6fc;
+        letter-spacing: 1px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, .card-box, .cursor, rect, path, text {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <g class="card-box">
+    <!-- Card Frame -->
+    <rect x="1" y="2" width="898" height="56" rx="10" fill="url(#card-bg-instagram)" stroke="url(#card-stroke-instagram)" stroke-width="1.1" />
+
+    <!-- Left Platform Brand Accent Notch -->
+    <rect x="1" y="14" width="3.5" height="32" rx="1.75" fill="#e1306c" />
+
+    <!-- PHASE 1: Platform Logo Icon (with subtle fade/scale entrance) -->
+    <g transform="translate(14, 9)">
+      <circle cx="21" cy="21" r="23" fill="url(#logo-glow-instagram)" />
+      <rect x="0" y="0" width="42" height="42" rx="8" fill="#091122" stroke="rgba(225, 48, 108, 0.55)" stroke-width="1" />
+      <g transform="translate(9, 9)">
+        <defs><linearGradient id="ig-g" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFDC80"/><stop offset="50%" stop-color="#F56040"/><stop offset="100%" stop-color="#C13584"/></linearGradient></defs><rect x="2" y="2" width="20" height="20" rx="6" fill="none" stroke="url(#ig-g)" stroke-width="2"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="url(#ig-g)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="#FD1D1D"/>
+      </g>
+    </g>
+
+    <!-- Dynamic Terminal Display Container -->
+    <g transform="translate(68, 9)">
+      <rect x="0" y="0" width="616" height="42" rx="7" fill="#050c1c" stroke="#16284a" stroke-width="1" />
+      
+      <!-- Terminal Prompt Symbol -->
+      <text x="14" y="26" class="prompt">&gt;</text>
+
+      <!-- PHASE 2 & 3: Platform Name Text -->
+      <g clip-path="url(#clip-pname-instagram)">
+        <text x="32" y="26" class="mono-text text-pname">Instagram</text>
+      </g>
+
+      <!-- PHASE 4 & 5: Verified Handle Text -->
+      <g clip-path="url(#clip-handle-instagram)">
+        <text x="32" y="26" class="mono-text text-handle">@officialhazim42</text>
+      </g>
+
+      <!-- PHASE 6 & 7: View Profile Action Label -->
+      <g clip-path="url(#clip-action-instagram)">
+        <text x="32" y="26" class="mono-text text-action">View Profile &#8594;</text>
+      </g>
+
+      <!-- Dynamic Blinking Keystroke Cursor that tracks typing and backspacing -->
+      <rect y="12" width="2.2" height="18" rx="1" class="cursor">
+        <animate
+          attributeName="x"
+          dur="14s"
+          begin="0.75s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.035; 0.11; 0.18; 0.23; 0.24; 0.25; 0.37; 0.49; 0.56; 0.57; 0.58; 0.67; 0.96; 0.99; 1"
+          values="32; 32;   118;  118;  32;   32;   32;   180;  180;  32;   32;   32;   176;  176;  32;   32"
+          calcMode="linear"
+        />
+        <animate
+          attributeName="opacity"
+          dur="0.8s"
+          repeatCount="indefinite"
+          values="1; 1; 0; 0"
+          keyTimes="0; 0.5; 0.51; 1"
+        />
+      </rect>
+    </g>
+
+    <!-- Right Side Permanent Action Button -->
+    <g transform="translate(696, 9)">
+      <rect x="0" y="0" width="188" height="42" rx="7" fill="#0d1f42" stroke="rgba(225, 48, 108, 0.55)" stroke-width="1.1" />
+      <text x="24" y="26" class="btn-label">VIEW PROFILE</text>
+      <g transform="translate(148, 15)">
+        <path d="M0 6h16m-5-5l5 5-5 5" stroke="#e1306c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            dur="2.4s"
+            repeatCount="indefinite"
+            values="0,0; 3,0; 0,0"
+            keyTimes="0; 0.5; 1"
+          />
+        </path>
+      </g>
+    </g>
+  </g>
+</svg>

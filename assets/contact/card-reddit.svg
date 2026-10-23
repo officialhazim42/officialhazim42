@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="100%" height="60">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="card-bg-reddit" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#081329" stop-opacity="0.98" />
+      <stop offset="35%" stop-color="#0d1f42" stop-opacity="0.94" />
+      <stop offset="75%" stop-color="#08152e" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#071126" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Card Stroke Gradient -->
+    <linearGradient id="card-stroke-reddit" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255, 69, 0, 0.55)" />
+      <stop offset="30%" stop-color="rgba(56, 189, 248, 0.35)" />
+      <stop offset="70%" stop-color="rgba(14, 165, 233, 0.3)" />
+      <stop offset="100%" stop-color="rgba(255, 69, 0, 0.55)" />
+    </linearGradient>
+
+    <!-- Logo Glow -->
+    <radialGradient id="logo-glow-reddit" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4500" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- PHASE 2 & 3: Platform Name Clip -->
+    <clipPath id="clip-pname-reddit">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="2.25s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.035; 0.11; 0.18; 0.23; 0.24; 1"
+          values="0; 0;     64;   64;   0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 4 & 5: Verified Handle Clip -->
+    <clipPath id="clip-handle-reddit">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="2.25s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.25; 0.37; 0.49; 0.56; 0.57; 1"
+          values="0; 0;    156;  156;  0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 6 & 7: View Profile Action Clip -->
+    <clipPath id="clip-action-reddit">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="2.25s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.58; 0.67; 0.96; 0.99; 1"
+          values="0; 0;    145;  145;  0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <style>
+      .card-box {
+        transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
+      }
+      .card-box:hover, svg:hover .card-box {
+        filter: drop-shadow(0 6px 18px rgba(56, 189, 248, 0.25));
+      }
+      .mono-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .text-pname {
+        fill: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+      }
+      .text-handle {
+        fill: #38bdf8;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+      }
+      .text-action {
+        fill: #a5f3fc;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      .prompt {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 15px;
+        font-weight: 800;
+        fill: #38bdf8;
+      }
+      .cursor {
+        fill: #38bdf8;
+      }
+      .btn-label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 10.5px;
+        font-weight: 700;
+        fill: #f0f6fc;
+        letter-spacing: 1px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, .card-box, .cursor, rect, path, text {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <g class="card-box">
+    <!-- Card Frame -->
+    <rect x="1" y="2" width="898" height="56" rx="10" fill="url(#card-bg-reddit)" stroke="url(#card-stroke-reddit)" stroke-width="1.1" />
+
+    <!-- Left Platform Brand Accent Notch -->
+    <rect x="1" y="14" width="3.5" height="32" rx="1.75" fill="#ff4500" />
+
+    <!-- PHASE 1: Platform Logo Icon (with subtle fade/scale entrance) -->
+    <g transform="translate(14, 9)">
+      <circle cx="21" cy="21" r="23" fill="url(#logo-glow-reddit)" />
+      <rect x="0" y="0" width="42" height="42" rx="8" fill="#091122" stroke="rgba(255, 69, 0, 0.55)" stroke-width="1" />
+      <g transform="translate(9, 9)">
+        <path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm6.34 11.23c.03.22.05.45.05.67 0 2.3-2.68 4.16-6 4.16s-6-1.86-6-4.16c0-.22.02-.44.05-.66a1.737 1.737 0 0 1-.84-1.48c0-.96.78-1.74 1.74-1.74.52 0 .99.23 1.31.6 1.04-.73 2.45-1.2 4.02-1.25l.82-3.87 2.68.57c.05-.5.47-.89.98-.89.55 0 1 .45 1 .99 0 .55-.45 1-.99 1a.998.998 0 0 1-.97-.8l-2.31-.49-.71 3.37c1.54.07 2.92.54 3.94 1.26.32-.36.79-.58 1.3-.58.96 0 1.74.78 1.74 1.74 0 .61-.32 1.15-.81 1.45zM9.5 12.5c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm6 0c0-.55-.45-1-1-1s-1 .45-1 1 .45 1 1 1 1-.45 1-1zm-6.28 3.09c-.08-.08-.08-.2 0-.28.32-.32 1.44-.71 2.78-.71s2.46.39 2.78.71c.08.08.08.2 0 .28-.08.08-.2.08-.28 0-.25-.25-1.28-.6-2.5-.6s-2.25.35-2.5.6c-.08.08-.2.08-.28 0z" fill="#FF4500"/>
+      </g>
+    </g>
+
+    <!-- Dynamic Terminal Display Container -->
+    <g transform="translate(68, 9)">
+      <rect x="0" y="0" width="616" height="42" rx="7" fill="#050c1c" stroke="#16284a" stroke-width="1" />
+      
+      <!-- Terminal Prompt Symbol -->
+      <text x="14" y="26" class="prompt">&gt;</text>
+
+      <!-- PHASE 2 & 3: Platform Name Text -->
+      <g clip-path="url(#clip-pname-reddit)">
+        <text x="32" y="26" class="mono-text text-pname">Reddit</text>
+      </g>
+
+      <!-- PHASE 4 & 5: Verified Handle Text -->
+      <g clip-path="url(#clip-handle-reddit)">
+        <text x="32" y="26" class="mono-text text-handle">u/officialhazim42</text>
+      </g>
+
+      <!-- PHASE 6 & 7: View Profile Action Label -->
+      <g clip-path="url(#clip-action-reddit)">
+        <text x="32" y="26" class="mono-text text-action">View Profile &#8594;</text>
+      </g>
+
+      <!-- Dynamic Blinking Keystroke Cursor that tracks typing and backspacing -->
+      <rect y="12" width="2.2" height="18" rx="1" class="cursor">
+        <animate
+          attributeName="x"
+          dur="14s"
+          begin="2.25s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.035; 0.11; 0.18; 0.23; 0.24; 0.25; 0.37; 0.49; 0.56; 0.57; 0.58; 0.67; 0.96; 0.99; 1"
+          values="32; 32;   96;  96;  32;   32;   32;   188;  188;  32;   32;   32;   176;  176;  32;   32"
+          calcMode="linear"
+        />
+        <animate
+          attributeName="opacity"
+          dur="0.8s"
+          repeatCount="indefinite"
+          values="1; 1; 0; 0"
+          keyTimes="0; 0.5; 0.51; 1"
+        />
+      </rect>
+    </g>
+
+    <!-- Right Side Permanent Action Button -->
+    <g transform="translate(696, 9)">
+      <rect x="0" y="0" width="188" height="42" rx="7" fill="#0d1f42" stroke="rgba(255, 69, 0, 0.55)" stroke-width="1.1" />
+      <text x="24" y="26" class="btn-label">VIEW PROFILE</text>
+      <g transform="translate(148, 15)">
+        <path d="M0 6h16m-5-5l5 5-5 5" stroke="#ff4500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            dur="2.4s"
+            repeatCount="indefinite"
+            values="0,0; 3,0; 0,0"
+            keyTimes="0; 0.5; 1"
+          />
+        </path>
+      </g>
+    </g>
+  </g>
+</svg>

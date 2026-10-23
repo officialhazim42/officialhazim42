@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="100%" height="60">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="card-bg-threads" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#081329" stop-opacity="0.98" />
+      <stop offset="35%" stop-color="#0d1f42" stop-opacity="0.94" />
+      <stop offset="75%" stop-color="#08152e" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#071126" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Card Stroke Gradient -->
+    <linearGradient id="card-stroke-threads" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.45)" />
+      <stop offset="30%" stop-color="rgba(56, 189, 248, 0.35)" />
+      <stop offset="70%" stop-color="rgba(14, 165, 233, 0.3)" />
+      <stop offset="100%" stop-color="rgba(56, 189, 248, 0.45)" />
+    </linearGradient>
+
+    <!-- Logo Glow -->
+    <radialGradient id="logo-glow-threads" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- PHASE 2 & 3: Platform Name Clip -->
+    <clipPath id="clip-pname-threads">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="1.5s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.035; 0.11; 0.18; 0.23; 0.24; 1"
+          values="0; 0;     72;   72;   0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 4 & 5: Verified Handle Clip -->
+    <clipPath id="clip-handle-threads">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="1.5s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.25; 0.37; 0.49; 0.56; 0.57; 1"
+          values="0; 0;    148;  148;  0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 6 & 7: View Profile Action Clip -->
+    <clipPath id="clip-action-threads">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="1.5s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.58; 0.67; 0.96; 0.99; 1"
+          values="0; 0;    145;  145;  0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <style>
+      .card-box {
+        transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
+      }
+      .card-box:hover, svg:hover .card-box {
+        filter: drop-shadow(0 6px 18px rgba(56, 189, 248, 0.25));
+      }
+      .mono-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .text-pname {
+        fill: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+      }
+      .text-handle {
+        fill: #38bdf8;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+      }
+      .text-action {
+        fill: #a5f3fc;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      .prompt {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 15px;
+        font-weight: 800;
+        fill: #38bdf8;
+      }
+      .cursor {
+        fill: #38bdf8;
+      }
+      .btn-label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 10.5px;
+        font-weight: 700;
+        fill: #f0f6fc;
+        letter-spacing: 1px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, .card-box, .cursor, rect, path, text {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <g class="card-box">
+    <!-- Card Frame -->
+    <rect x="1" y="2" width="898" height="56" rx="10" fill="url(#card-bg-threads)" stroke="url(#card-stroke-threads)" stroke-width="1.1" />
+
+    <!-- Left Platform Brand Accent Notch -->
+    <rect x="1" y="14" width="3.5" height="32" rx="1.75" fill="#38bdf8" />
+
+    <!-- PHASE 1: Platform Logo Icon (with subtle fade/scale entrance) -->
+    <g transform="translate(14, 9)">
+      <circle cx="21" cy="21" r="23" fill="url(#logo-glow-threads)" />
+      <rect x="0" y="0" width="42" height="42" rx="8" fill="#091122" stroke="rgba(56, 189, 248, 0.45)" stroke-width="1" />
+      <g transform="translate(9, 9)">
+        <path d="M12.186 2c5.44 0 9.814 4.374 9.814 9.814 0 5.44-4.374 9.814-9.814 9.814C6.746 21.628 2.372 17.254 2.372 11.814 2.372 6.374 6.746 2 12.186 2zm0 2.181c-4.237 0-7.633 3.396-7.633 7.633 0 4.237 3.396 7.633 7.633 7.633 4.237 0 7.633-3.396 7.633-7.633 0-4.237-3.396-7.633-7.633-7.633zm2.59 5.617c1.341 0 2.193.99 2.193 2.502 0 1.944-1.391 3.518-3.415 3.518-1.503 0-2.529-.906-2.529-2.235 0-1.362 1.05-2.261 2.457-2.261.42 0 .84.077 1.155.218v-.077c0-.857-.496-1.386-1.42-1.386-.706 0-1.285.319-1.638.647l-.924-1.319c.647-.613 1.63-1.076 2.894-1.076 2.05 0 3.227 1.151 3.227 3.37v4.613h-1.94v-.924h-.059c-.479.68-1.319 1.058-2.235 1.058-1.899 0-3.37-1.361-3.37-3.218 0-1.823 1.47-3.218 3.538-3.218.428 0 .865.05 1.252.16v-.084c0-.79-.479-1.218-1.311-1.218-.622 0-1.151.277-1.47.546l-.882-1.277c.605-.538 1.487-.933 2.546-.933zm.252 4.143c-.227-.084-.538-.134-.84-.134-.966 0-1.63.571-1.63 1.437 0 .824.63 1.378 1.504 1.378 1.017 0 1.748-.731 1.748-1.807v-.874z" fill="#F8FAFC"/>
+      </g>
+    </g>
+
+    <!-- Dynamic Terminal Display Container -->
+    <g transform="translate(68, 9)">
+      <rect x="0" y="0" width="616" height="42" rx="7" fill="#050c1c" stroke="#16284a" stroke-width="1" />
+      
+      <!-- Terminal Prompt Symbol -->
+      <text x="14" y="26" class="prompt">&gt;</text>
+
+      <!-- PHASE 2 & 3: Platform Name Text -->
+      <g clip-path="url(#clip-pname-threads)">
+        <text x="32" y="26" class="mono-text text-pname">Threads</text>
+      </g>
+
+      <!-- PHASE 4 & 5: Verified Handle Text -->
+      <g clip-path="url(#clip-handle-threads)">
+        <text x="32" y="26" class="mono-text text-handle">@officialhazim42</text>
+      </g>
+
+      <!-- PHASE 6 & 7: View Profile Action Label -->
+      <g clip-path="url(#clip-action-threads)">
+        <text x="32" y="26" class="mono-text text-action">View Profile &#8594;</text>
+      </g>
+
+      <!-- Dynamic Blinking Keystroke Cursor that tracks typing and backspacing -->
+      <rect y="12" width="2.2" height="18" rx="1" class="cursor">
+        <animate
+          attributeName="x"
+          dur="14s"
+          begin="1.5s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.035; 0.11; 0.18; 0.23; 0.24; 0.25; 0.37; 0.49; 0.56; 0.57; 0.58; 0.67; 0.96; 0.99; 1"
+          values="32; 32;   104;  104;  32;   32;   32;   180;  180;  32;   32;   32;   176;  176;  32;   32"
+          calcMode="linear"
+        />
+        <animate
+          attributeName="opacity"
+          dur="0.8s"
+          repeatCount="indefinite"
+          values="1; 1; 0; 0"
+          keyTimes="0; 0.5; 0.51; 1"
+        />
+      </rect>
+    </g>
+
+    <!-- Right Side Permanent Action Button -->
+    <g transform="translate(696, 9)">
+      <rect x="0" y="0" width="188" height="42" rx="7" fill="#0d1f42" stroke="rgba(56, 189, 248, 0.45)" stroke-width="1.1" />
+      <text x="24" y="26" class="btn-label">VIEW PROFILE</text>
+      <g transform="translate(148, 15)">
+        <path d="M0 6h16m-5-5l5 5-5 5" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            dur="2.4s"
+            repeatCount="indefinite"
+            values="0,0; 3,0; 0,0"
+            keyTimes="0; 0.5; 1"
+          />
+        </path>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -330,17 +330,16 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 <br />
 
 <div align="center">
-  <img src="assets/contact/table-header.svg" alt="Directory Columns: Channel / Platform • Verified Identity • Direct Connection" width="100%" />
-  <a href="https://github.com/officialhazim42"><img src="assets/contact/row-github.svg" alt="GitHub • @officialhazim42 • View Profile" width="100%" /></a>
-  <a href="https://www.linkedin.com/in/hazim-bashir-faqeer"><img src="assets/contact/row-linkedin.svg" alt="LinkedIn • hazim-bashir-faqeer • Connect" width="100%" /></a>
-  <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="assets/contact/row-email.svg" alt="Email • hazimbashirfaqeer@gmail.com • Send Email" width="100%" /></a>
-  <a href="https://www.instagram.com/officialhazim42/"><img src="assets/contact/row-instagram.svg" alt="Instagram • @officialhazim42 • Open Instagram" width="100%" /></a>
-  <a href="https://www.youtube.com/@officialhazim42"><img src="assets/contact/row-youtube.svg" alt="YouTube • @officialhazim42 • Visit Channel" width="100%" /></a>
-  <a href="https://x.com/officialhazim42"><img src="assets/contact/row-x.svg" alt="X (Twitter) • @officialhazim42 • Follow on X" width="100%" /></a>
-  <a href="https://www.threads.net/@officialhazim42"><img src="assets/contact/row-threads.svg" alt="Threads • @officialhazim42 • View Threads" width="100%" /></a>
-  <a href="https://t.me/officialhazim42"><img src="assets/contact/row-telegram.svg" alt="Telegram • @officialhazim42 • Message on Telegram" width="100%" /></a>
-  <a href="https://discord.com/users/officialhazim42"><img src="assets/contact/row-discord.svg" alt="Discord • officialhazim42 • Connect on Discord" width="100%" /></a>
-  <a href="https://www.reddit.com/user/officialhazim42"><img src="assets/contact/row-reddit.svg" alt="Reddit • u/officialhazim42 • View Reddit Profile" width="100%" /></a>
+  <a href="https://github.com/officialhazim42"><img src="assets/contact/card-github.svg" alt="GitHub • @officialhazim42 • View Profile" width="100%" /></a>
+  <a href="https://www.linkedin.com/in/hazim-bashir-faqeer"><img src="assets/contact/card-linkedin.svg" alt="LinkedIn • hazim-bashir-faqeer • View Profile" width="100%" /></a>
+  <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="assets/contact/card-email.svg" alt="Email • hazimbashirfaqeer@gmail.com • View Profile" width="100%" /></a>
+  <a href="https://www.instagram.com/officialhazim42/"><img src="assets/contact/card-instagram.svg" alt="Instagram • @officialhazim42 • View Profile" width="100%" /></a>
+  <a href="https://www.youtube.com/@officialhazim42"><img src="assets/contact/card-youtube.svg" alt="YouTube • @officialhazim42 • View Profile" width="100%" /></a>
+  <a href="https://x.com/officialhazim42"><img src="assets/contact/card-x.svg" alt="X (Twitter) • @officialhazim42 • View Profile" width="100%" /></a>
+  <a href="https://www.threads.net/@officialhazim42"><img src="assets/contact/card-threads.svg" alt="Threads • @officialhazim42 • View Profile" width="100%" /></a>
+  <a href="https://t.me/officialhazim42"><img src="assets/contact/card-telegram.svg" alt="Telegram • @officialhazim42 • View Profile" width="100%" /></a>
+  <a href="https://discord.com/users/officialhazim42"><img src="assets/contact/card-discord.svg" alt="Discord • officialhazim42 • View Profile" width="100%" /></a>
+  <a href="https://www.reddit.com/user/officialhazim42"><img src="assets/contact/card-reddit.svg" alt="Reddit • u/officialhazim42 • View Profile" width="100%" /></a>
 </div>
 
 <br />
@@ -374,100 +373,12 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 <br />
 
 <!-- ================================================================= -->
-<!-- 08.1 / DIRECT ACTION BUTTON BOARD                                 -->
-<!-- ================================================================= -->
-
-<div align="center">
-  <img src="assets/quick-action-board-header.svg" alt="Quick-Action Portfolio &amp; Connection Board" width="100%" />
-</div>
-
-<br />
-
-<p align="center">
-  <a href="https://github.com/officialhazim42"><img src="assets/buttons/btn-view-github.svg" alt="GitHub • View Profile" height="34" /></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/hazim-bashir-faqeer"><img src="assets/buttons/btn-connect-linkedin.svg" alt="LinkedIn • Connect" height="34" /></a>
-  &nbsp;
-  <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="assets/buttons/btn-send-email.svg" alt="Email • Send Email" height="34" /></a>
-  &nbsp;
-  <a href="https://www.instagram.com/officialhazim42/"><img src="assets/buttons/btn-open-instagram.svg" alt="Instagram • Open Instagram" height="34" /></a>
-  <br />
-  <br />
-  <a href="https://www.youtube.com/@officialhazim42"><img src="assets/buttons/btn-visit-youtube.svg" alt="YouTube • Visit Channel" height="34" /></a>
-  &nbsp;
-  <a href="https://x.com/officialhazim42"><img src="assets/buttons/btn-follow-x.svg" alt="X • Follow on X" height="34" /></a>
-  &nbsp;
-  <a href="https://www.threads.net/@officialhazim42"><img src="assets/buttons/btn-view-threads.svg" alt="Threads • View Threads" height="34" /></a>
-  &nbsp;
-  <a href="https://t.me/officialhazim42"><img src="assets/buttons/btn-message-telegram.svg" alt="Telegram • Message on Telegram" height="34" /></a>
-  <br />
-  <br />
-  <a href="https://discord.com/users/officialhazim42"><img src="assets/buttons/btn-connect-discord.svg" alt="Discord • Connect on Discord" height="34" /></a>
-  &nbsp;
-  <a href="https://www.reddit.com/user/officialhazim42"><img src="assets/buttons/btn-view-reddit.svg" alt="Reddit • View Reddit Profile" height="34" /></a>
-  &nbsp;
-  <a href="https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India"><img src="assets/buttons/btn-open-map.svg" alt="Location • Open in Maps" height="34" /></a>
-</p>
-
-<br />
-<br />
-
-<!-- ================================================================= -->
-<!-- PORTFOLIO FOOTER & VERIFIED DOMAIN ECOSYSTEM                      -->
+<!-- DEVELOPER IDENTITY & FOOTER BRANDING                              -->
 <!-- ================================================================= -->
 
 <div align="center">
   <img src="assets/profile-footer.svg" alt="Hazim Bashir FAQEER • Software Creator Portfolio Footer" width="100%" />
 </div>
 
-<br />
-
-<div align="center">
-  <img src="assets/footer-ecosystem-header.svg" alt="Verified Web Domains &amp; Live Platforms Header" width="100%" />
-</div>
-
-<br />
-
-<p align="center">
-  <a href="https://officialhazim42.github.io"><img src="assets/buttons/pill-officialhazim42.svg" alt="officialhazim42.github.io" height="32" /></a>
-  &nbsp;
-  <a href="https://cyberguard-yuva.vercel.app/"><img src="assets/buttons/pill-cyberguard.svg" alt="cyberguard-yuva.vercel.app" height="32" /></a>
-  &nbsp;
-  <a href="https://imagehub.netlify.app/"><img src="assets/buttons/pill-imagehub.svg" alt="imagehub.netlify.app" height="32" /></a>
-  <br />
-  <br />
-  <a href="https://pdfshub.netlify.app/"><img src="assets/buttons/pill-pdfshub.svg" alt="pdfshub.netlify.app" height="32" /></a>
-  &nbsp;
-  <a href="https://advance-images-compressor.netlify.app/"><img src="assets/buttons/pill-compressor.svg" alt="advance-images-compressor.netlify.app" height="32" /></a>
-</p>
-
-<br />
-
-<p align="center">
-  <a href="https://github.com/officialhazim42"><img src="assets/buttons/pill-identity-github.svg" alt="github.com/officialhazim42" height="32" /></a>
-  &nbsp;
-  <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="assets/buttons/pill-identity-email.svg" alt="hazimbashirfaqeer@gmail.com" height="32" /></a>
-  &nbsp;
-  <a href="https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India"><img src="assets/buttons/pill-identity-location.svg" alt="Ganderbal, Jammu &amp; Kashmir, India" height="32" /></a>
-</p>
-
-<br />
-
-<details>
-  <summary><b>Verified Domain URLs &amp; Direct Connection Registry (Accessible Text)</b></summary>
-  <br />
-
-| Ecosystem Layer | Entity / Handle | Canonical Destination | Status |
-| :--- | :--- | :--- | :--- |
-| **Personal Showcase** | `officialhazim42.github.io` | [officialhazim42.github.io](https://officialhazim42.github.io) | Production Live |
-| **Youth Defense Club** | `cyberguard-yuva.vercel.app` | [cyberguard-yuva.vercel.app](https://cyberguard-yuva.vercel.app/) | Production Live |
-| **In-Browser Image Suite** | `imagehub.netlify.app` | [imagehub.netlify.app](https://imagehub.netlify.app/) | Production Live |
-| **Privacy PDF Toolkit** | `pdfshub.netlify.app` | [pdfshub.netlify.app](https://pdfshub.netlify.app/) | Production Live |
-| **Web Image Compressor** | `advance-images-compressor.netlify.app` | [advance-images-compressor.netlify.app](https://advance-images-compressor.netlify.app/) | Production Live |
-| **Developer Base** | `@officialhazim42` | [github.com/officialhazim42](https://github.com/officialhazim42) | Verified Account |
-| **Direct Inquiries** | `hazimbashirfaqeer@gmail.com` | [hazimbashirfaqeer@gmail.com](mailto:hazimbashirfaqeer@gmail.com) | Direct Contact |
-| **Regional Base** | `Ganderbal, Jammu & Kashmir, India` | [Open Google Maps](https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India) | Regional Base |
-
-</details>
 
 

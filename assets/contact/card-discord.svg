@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="100%" height="60">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="card-bg-discord" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#081329" stop-opacity="0.98" />
+      <stop offset="35%" stop-color="#0d1f42" stop-opacity="0.94" />
+      <stop offset="75%" stop-color="#08152e" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#071126" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Card Stroke Gradient -->
+    <linearGradient id="card-stroke-discord" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(88, 101, 242, 0.55)" />
+      <stop offset="30%" stop-color="rgba(56, 189, 248, 0.35)" />
+      <stop offset="70%" stop-color="rgba(14, 165, 233, 0.3)" />
+      <stop offset="100%" stop-color="rgba(88, 101, 242, 0.55)" />
+    </linearGradient>
+
+    <!-- Logo Glow -->
+    <radialGradient id="logo-glow-discord" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5865f2" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#5865f2" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- PHASE 2 & 3: Platform Name Clip -->
+    <clipPath id="clip-pname-discord">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="2.0s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.035; 0.11; 0.18; 0.23; 0.24; 1"
+          values="0; 0;     72;   72;   0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 4 & 5: Verified Handle Clip -->
+    <clipPath id="clip-handle-discord">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="2.0s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.25; 0.37; 0.49; 0.56; 0.57; 1"
+          values="0; 0;    138;  138;  0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 6 & 7: View Profile Action Clip -->
+    <clipPath id="clip-action-discord">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="14s"
+          begin="2.0s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.58; 0.67; 0.96; 0.99; 1"
+          values="0; 0;    145;  145;  0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <style>
+      .card-box {
+        transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
+      }
+      .card-box:hover, svg:hover .card-box {
+        filter: drop-shadow(0 6px 18px rgba(56, 189, 248, 0.25));
+      }
+      .mono-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .text-pname {
+        fill: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+      }
+      .text-handle {
+        fill: #38bdf8;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+      }
+      .text-action {
+        fill: #a5f3fc;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      .prompt {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 15px;
+        font-weight: 800;
+        fill: #38bdf8;
+      }
+      .cursor {
+        fill: #38bdf8;
+      }
+      .btn-label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 10.5px;
+        font-weight: 700;
+        fill: #f0f6fc;
+        letter-spacing: 1px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *, .card-box, .cursor, rect, path, text {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <g class="card-box">
+    <!-- Card Frame -->
+    <rect x="1" y="2" width="898" height="56" rx="10" fill="url(#card-bg-discord)" stroke="url(#card-stroke-discord)" stroke-width="1.1" />
+
+    <!-- Left Platform Brand Accent Notch -->
+    <rect x="1" y="14" width="3.5" height="32" rx="1.75" fill="#5865f2" />
+
+    <!-- PHASE 1: Platform Logo Icon (with subtle fade/scale entrance) -->
+    <g transform="translate(14, 9)">
+      <circle cx="21" cy="21" r="23" fill="url(#logo-glow-discord)" />
+      <rect x="0" y="0" width="42" height="42" rx="8" fill="#091122" stroke="rgba(88, 101, 242, 0.55)" stroke-width="1" />
+      <g transform="translate(9, 9)">
+        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" fill="#5865F2"/>
+      </g>
+    </g>
+
+    <!-- Dynamic Terminal Display Container -->
+    <g transform="translate(68, 9)">
+      <rect x="0" y="0" width="616" height="42" rx="7" fill="#050c1c" stroke="#16284a" stroke-width="1" />
+      
+      <!-- Terminal Prompt Symbol -->
+      <text x="14" y="26" class="prompt">&gt;</text>
+
+      <!-- PHASE 2 & 3: Platform Name Text -->
+      <g clip-path="url(#clip-pname-discord)">
+        <text x="32" y="26" class="mono-text text-pname">Discord</text>
+      </g>
+
+      <!-- PHASE 4 & 5: Verified Handle Text -->
+      <g clip-path="url(#clip-handle-discord)">
+        <text x="32" y="26" class="mono-text text-handle">officialhazim42</text>
+      </g>
+
+      <!-- PHASE 6 & 7: View Profile Action Label -->
+      <g clip-path="url(#clip-action-discord)">
+        <text x="32" y="26" class="mono-text text-action">View Profile &#8594;</text>
+      </g>
+
+      <!-- Dynamic Blinking Keystroke Cursor that tracks typing and backspacing -->
+      <rect y="12" width="2.2" height="18" rx="1" class="cursor">
+        <animate
+          attributeName="x"
+          dur="14s"
+          begin="2.0s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.035; 0.11; 0.18; 0.23; 0.24; 0.25; 0.37; 0.49; 0.56; 0.57; 0.58; 0.67; 0.96; 0.99; 1"
+          values="32; 32;   104;  104;  32;   32;   32;   170;  170;  32;   32;   32;   176;  176;  32;   32"
+          calcMode="linear"
+        />
+        <animate
+          attributeName="opacity"
+          dur="0.8s"
+          repeatCount="indefinite"
+          values="1; 1; 0; 0"
+          keyTimes="0; 0.5; 0.51; 1"
+        />
+      </rect>
+    </g>
+
+    <!-- Right Side Permanent Action Button -->
+    <g transform="translate(696, 9)">
+      <rect x="0" y="0" width="188" height="42" rx="7" fill="#0d1f42" stroke="rgba(88, 101, 242, 0.55)" stroke-width="1.1" />
+      <text x="24" y="26" class="btn-label">VIEW PROFILE</text>
+      <g transform="translate(148, 15)">
+        <path d="M0 6h16m-5-5l5 5-5 5" stroke="#5865f2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            dur="2.4s"
+            repeatCount="indefinite"
+            values="0,0; 3,0; 0,0"
+            keyTimes="0; 0.5; 1"
+          />
+        </path>
+      </g>
+    </g>
+  </g>
+</svg>
