@@ -63,81 +63,25 @@ My core focus centers on engineering practical web applications, Android tools, 
 
 <br />
 
-### Core Programming Languages
-> **Languages verified in production web apps, engineering projects, and CSE academic coursework**
-
-<p align="center">
-  <img src="assets/technologies/javascript.svg" alt="JavaScript (ES6+)" width="160" />
-  &nbsp;
-  <img src="assets/technologies/typescript.svg" alt="TypeScript" width="160" />
-  &nbsp;
-  <img src="assets/technologies/python.svg" alt="Python" width="160" />
-  &nbsp;
-  <img src="assets/technologies/c.svg" alt="C" width="160" />
-  &nbsp;
-  <img src="assets/technologies/cpp.svg" alt="C++" width="160" />
-  &nbsp;
-  <img src="assets/technologies/java.svg" alt="Java" width="160" />
-</p>
+<img src="assets/stack-core-languages.svg" alt="Core Programming Languages Panel" width="100%" />
 
 <br />
 
-### Actively Exploring & Systems Languages
-> **Languages under active exploration for systems programming, high-performance tooling, and modern backend services**
-
-<p align="center">
-  <img src="assets/technologies/php.svg" alt="PHP" width="160" />
-  &nbsp;
-  <img src="assets/technologies/go.svg" alt="Go" width="160" />
-  &nbsp;
-  <img src="assets/technologies/rust.svg" alt="Rust" width="160" />
-</p>
+<img src="assets/stack-exploring-languages.svg" alt="Actively Exploring &amp; Systems Languages Panel" width="100%" />
 
 <br />
 
-### Web Markup, Styling & Frontend Frameworks
-> **Semantic web standards, modern reactive component frameworks, and utility-first styling**
-
-<p align="center">
-  <img src="assets/technologies/html5.svg" alt="HTML5" width="160" />
-  &nbsp;
-  <img src="assets/technologies/css3.svg" alt="CSS3" width="160" />
-  &nbsp;
-  <img src="assets/technologies/tailwind.svg" alt="Tailwind CSS" width="160" />
-  &nbsp;
-  <img src="assets/technologies/react.svg" alt="React 19" width="160" />
-  &nbsp;
-  <img src="assets/technologies/nextjs.svg" alt="Next.js 16" width="160" />
-  &nbsp;
-  <img src="assets/technologies/vite.svg" alt="Vite" width="160" />
-</p>
+<img src="assets/stack-frontend-frameworks.svg" alt="Web Markup, Styling &amp; Frontend Frameworks Panel" width="100%" />
 
 <br />
 
-### Query, Cloud, Data & Developer Environments
-> **Relational data models, serverless edge delivery, distributed version control, and Linux CLI toolchains**
-
-<p align="center">
-  <img src="assets/technologies/sql.svg" alt="SQL / PostgreSQL" width="160" />
-  &nbsp;
-  <img src="assets/technologies/bash.svg" alt="Bash / Shell" width="160" />
-  &nbsp;
-  <img src="assets/technologies/supabase.svg" alt="Supabase" width="160" />
-  &nbsp;
-  <img src="assets/technologies/webassembly.svg" alt="WebAssembly" width="160" />
-  &nbsp;
-  <img src="assets/technologies/git.svg" alt="Git" width="160" />
-  &nbsp;
-  <img src="assets/technologies/github.svg" alt="GitHub" width="160" />
-  &nbsp;
-  <img src="assets/technologies/vscode.svg" alt="VS Code" width="160" />
-  &nbsp;
-  <img src="assets/technologies/termux.svg" alt="Termux" width="160" />
-</p>
+<img src="assets/stack-cloud-dev-env.svg" alt="Cloud, Data &amp; Developer Environments Panel" width="100%" />
 
 <br />
 
-### Architectural Domain Showcases
+<img src="assets/stack-domain-showcases.svg" alt="Architectural Domain Showcases Panel" width="100%" />
+
+<br />
 
 <table width="100%">
 <tr>
