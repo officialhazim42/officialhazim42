@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="100%" height="60" style="overflow: visible;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="card-bg-location" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#081329" stop-opacity="0.98" />
+      <stop offset="35%" stop-color="#0d1f42" stop-opacity="0.94" />
+      <stop offset="75%" stop-color="#08152e" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#071126" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Card Stroke Gradient -->
+    <linearGradient id="card-stroke-location" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(52, 168, 83, 0.55)" />
+      <stop offset="30%" stop-color="rgba(56, 189, 248, 0.35)" />
+      <stop offset="70%" stop-color="rgba(14, 165, 233, 0.3)" />
+      <stop offset="100%" stop-color="rgba(52, 168, 83, 0.55)" />
+    </linearGradient>
+
+    <!-- Logo Glow -->
+    <radialGradient id="logo-glow-location" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34a853" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#34a853" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- PHASE 2 & 3: Platform Name Clip -->
+    <clipPath id="clip-pname-location">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="15s"
+          begin="2.5s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.027; 0.087; 0.140; 0.187; 0.213; 1"
+          values="0; 0;     104;   104;   0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 4 & 5: Verified Handle Clip (2.8s PRIORITY READING PAUSE between 0.307 and 0.493) -->
+    <clipPath id="clip-handle-location">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="15s"
+          begin="2.5s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.213; 0.307; 0.493; 0.560; 0.587; 1"
+          values="0; 0;    300;  300;  0;    0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <!-- PHASE 6 & 7: Visit Profile Action Clip (4.7s STEADY USABLE STATE between 0.653 and 0.967) -->
+    <clipPath id="clip-action-location">
+      <rect x="32" y="6" width="0" height="34">
+        <animate
+          attributeName="width"
+          dur="15s"
+          begin="2.5s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.587; 0.653; 0.967; 0.993; 1"
+          values="0; 0;    156;  156;  0;    0"
+          calcMode="linear"
+        />
+      </rect>
+    </clipPath>
+
+    <style>
+      svg { overflow: visible; }
+      .card-box {
+        transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1), filter 0.24s ease;
+      }
+      .card-box:hover, svg:hover .card-box {
+        filter: drop-shadow(0 6px 20px rgba(56, 189, 248, 0.28));
+      }
+      .mono-text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 14.5px;
+        font-weight: 600;
+      }
+      .text-pname {
+        fill: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+      }
+      .text-handle {
+        fill: #38bdf8;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+      }
+      .text-action {
+        fill: #a5f3fc;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+      .prompt {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 15px;
+        font-weight: 800;
+        fill: #38bdf8;
+      }
+      .cursor {
+        fill: #38bdf8;
+      }
+
+      /* Right Side Action Button with Unified Interactive System */
+      .btn-action-group {
+        cursor: pointer;
+        transform-origin: 790px 30px;
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), filter 0.22s ease;
+      }
+      .btn-action-group .btn-rect {
+        transition: stroke 0.2s ease, stroke-width 0.2s ease, fill 0.2s ease;
+      }
+      .btn-action-group .btn-arrow-icon {
+        transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .btn-label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 11px;
+        font-weight: 700;
+        fill: #f8fafc;
+        letter-spacing: 1px;
+      }
+      
+      /* Hover State: Smooth lift, subtle scale (1.028), platform-colored glow, arrow slide */
+      .card-box:hover .btn-action-group, svg:hover .btn-action-group {
+        transform: translateY(-1.5px) scale(1.028);
+        filter: drop-shadow(0 4px 14px rgba(52, 168, 83, 0.4));
+      }
+      .card-box:hover .btn-rect, svg:hover .btn-rect {
+        stroke: #34a853;
+        stroke-width: 1.4;
+        fill: #132b57;
+      }
+      .card-box:hover .btn-arrow-icon, svg:hover .btn-arrow-icon {
+        transform: translateX(4px);
+      }
+      .card-box:active .btn-action-group, svg:active .btn-action-group {
+        transform: translateY(0.5px) scale(0.98);
+      }
+      .btn-action-group:focus {
+        outline: 2px solid #38bdf8;
+        outline-offset: 2px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, .card-box, .cursor, rect, path, text, .btn-action-group, .btn-arrow-icon {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <g class="card-box">
+    <!-- Card Frame -->
+    <rect x="1" y="2" width="898" height="56" rx="10" fill="url(#card-bg-location)" stroke="url(#card-stroke-location)" stroke-width="1.1" />
+
+    <!-- Left Platform Brand Accent Notch -->
+    <rect x="1" y="14" width="3.5" height="32" rx="1.75" fill="#34a853" />
+
+    <!-- PHASE 1: Platform Logo Icon (with subtle fade/scale entrance) -->
+    <g transform="translate(14, 9)">
+      <circle cx="21" cy="21" r="23" fill="url(#logo-glow-location)" />
+      <rect x="0" y="0" width="42" height="42" rx="8" fill="#091122" stroke="rgba(52, 168, 83, 0.55)" stroke-width="1" />
+      <g transform="translate(9, 9)">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#34A853"/>
+      </g>
+    </g>
+
+    <!-- Dynamic Terminal Display Container -->
+    <g transform="translate(68, 9)">
+      <rect x="0" y="0" width="616" height="42" rx="7" fill="#050c1c" stroke="#16284a" stroke-width="1" />
+      
+      <!-- Terminal Prompt Symbol -->
+      <text x="14" y="26" class="prompt">&gt;</text>
+
+      <!-- PHASE 2 & 3: Platform Name Text -->
+      <g clip-path="url(#clip-pname-location)">
+        <text x="32" y="26" class="mono-text text-pname">Google Maps</text>
+      </g>
+
+      <!-- PHASE 4 & 5: Verified Handle Text (with 2.8s reading hold) -->
+      <g clip-path="url(#clip-handle-location)">
+        <text x="32" y="26" class="mono-text text-handle">Ganderbal, Jammu & Kashmir, India</text>
+      </g>
+
+      <!-- PHASE 6 & 7: Visit Profile Action Label (Steady usable state) -->
+      <g clip-path="url(#clip-action-location)">
+        <text x="32" y="26" class="mono-text text-action">Visit Location &#8594;</text>
+      </g>
+
+      <!-- Dynamic Blinking Keystroke Cursor that tracks typing and backspacing -->
+      <rect y="12" width="2.2" height="18" rx="1" class="cursor">
+        <animate
+          attributeName="x"
+          dur="15s"
+          begin="2.5s"
+          repeatCount="indefinite"
+          keyTimes="0; 0.027; 0.087; 0.140; 0.187; 0.213; 0.307; 0.493; 0.560; 0.587; 0.653; 0.967; 0.993; 1"
+          values="32; 32;   136;  136;  32;   32;   332;  332;  32;   32;   188;  188;  32;   32"
+          calcMode="linear"
+        />
+        <animate
+          attributeName="opacity"
+          dur="0.8s"
+          repeatCount="indefinite"
+          values="1; 1; 0; 0"
+          keyTimes="0; 0.5; 0.51; 1"
+        />
+      </rect>
+    </g>
+
+    <!-- Right Side Attractive Action Button -->
+    <g transform="translate(696, 9)" class="btn-action-group" role="button" tabindex="0">
+      <rect x="0" y="0" width="188" height="42" rx="8" class="btn-rect" fill="#0d1f42" stroke="rgba(52, 168, 83, 0.55)" stroke-width="1.1" />
+      <text x="22" y="26" class="btn-label">VISIT LOCATION</text>
+      <g transform="translate(150, 15)" class="btn-arrow-icon">
+        <path d="M0 6h14m-5-5l5 5-5 5" stroke="#34a853" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            dur="2.4s"
+            repeatCount="indefinite"
+            values="0,0; 3,0; 0,0"
+            keyTimes="0; 0.5; 1"
+          />
+        </path>
+      </g>
+    </g>
+  </g>
+</svg>

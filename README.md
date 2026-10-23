@@ -330,44 +330,18 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 <br />
 
 <div align="center">
-  <a href="https://github.com/officialhazim42"><img src="assets/contact/card-github.svg" alt="GitHub • @officialhazim42 • View Profile" width="100%" /></a>
-  <a href="https://www.linkedin.com/in/hazim-bashir-faqeer"><img src="assets/contact/card-linkedin.svg" alt="LinkedIn • hazim-bashir-faqeer • View Profile" width="100%" /></a>
-  <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="assets/contact/card-email.svg" alt="Email • hazimbashirfaqeer@gmail.com • View Profile" width="100%" /></a>
-  <a href="https://www.instagram.com/officialhazim42/"><img src="assets/contact/card-instagram.svg" alt="Instagram • @officialhazim42 • View Profile" width="100%" /></a>
-  <a href="https://www.youtube.com/@officialhazim42"><img src="assets/contact/card-youtube.svg" alt="YouTube • @officialhazim42 • View Profile" width="100%" /></a>
-  <a href="https://x.com/officialhazim42"><img src="assets/contact/card-x.svg" alt="X (Twitter) • @officialhazim42 • View Profile" width="100%" /></a>
-  <a href="https://www.threads.net/@officialhazim42"><img src="assets/contact/card-threads.svg" alt="Threads • @officialhazim42 • View Profile" width="100%" /></a>
-  <a href="https://t.me/officialhazim42"><img src="assets/contact/card-telegram.svg" alt="Telegram • @officialhazim42 • View Profile" width="100%" /></a>
-  <a href="https://discord.com/users/officialhazim42"><img src="assets/contact/card-discord.svg" alt="Discord • officialhazim42 • View Profile" width="100%" /></a>
-  <a href="https://www.reddit.com/user/officialhazim42"><img src="assets/contact/card-reddit.svg" alt="Reddit • u/officialhazim42 • View Profile" width="100%" /></a>
+  <a href="https://github.com/officialhazim42"><img src="assets/contact/card-github.svg" alt="GitHub • @officialhazim42 • Visit Profile" width="100%" /></a>
+  <a href="https://www.linkedin.com/in/hazim-bashir-faqeer"><img src="assets/contact/card-linkedin.svg" alt="LinkedIn • hazim-bashir-faqeer • Visit Profile" width="100%" /></a>
+  <a href="mailto:hazimbashirfaqeer@gmail.com"><img src="assets/contact/card-email.svg" alt="Email • hazimbashirfaqeer@gmail.com • Visit Profile" width="100%" /></a>
+  <a href="https://www.instagram.com/officialhazim42/"><img src="assets/contact/card-instagram.svg" alt="Instagram • @officialhazim42 • Visit Profile" width="100%" /></a>
+  <a href="https://www.youtube.com/@officialhazim42"><img src="assets/contact/card-youtube.svg" alt="YouTube • @officialhazim42 • Visit Profile" width="100%" /></a>
+  <a href="https://x.com/officialhazim42"><img src="assets/contact/card-x.svg" alt="X (Twitter) • @officialhazim42 • Visit Profile" width="100%" /></a>
+  <a href="https://www.threads.net/@officialhazim42"><img src="assets/contact/card-threads.svg" alt="Threads • @officialhazim42 • Visit Profile" width="100%" /></a>
+  <a href="https://t.me/officialhazim42"><img src="assets/contact/card-telegram.svg" alt="Telegram • @officialhazim42 • Visit Profile" width="100%" /></a>
+  <a href="https://discord.com/users/officialhazim42"><img src="assets/contact/card-discord.svg" alt="Discord • officialhazim42 • Visit Profile" width="100%" /></a>
+  <a href="https://www.reddit.com/user/officialhazim42"><img src="assets/contact/card-reddit.svg" alt="Reddit • u/officialhazim42 • Visit Profile" width="100%" /></a>
+  <a href="https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India"><img src="assets/contact/card-location.svg" alt="Google Maps • Ganderbal, Jammu &amp; Kashmir, India • Visit Location" width="100%" /></a>
 </div>
-
-<br />
-
-<details>
-  <summary><b>Accessible Contact Directory &amp; Copyable Handles</b></summary>
-  <br />
-
-| Channel / Platform | Verified Identity | Direct Connection Link |
-| :--- | :--- | :--- |
-| **GitHub** | `@officialhazim42` | [github.com/officialhazim42](https://github.com/officialhazim42) |
-| **LinkedIn** | `hazim-bashir-faqeer` | [linkedin.com/in/hazim-bashir-faqeer](https://www.linkedin.com/in/hazim-bashir-faqeer) |
-| **Email** | `hazimbashirfaqeer@gmail.com` | [hazimbashirfaqeer@gmail.com](mailto:hazimbashirfaqeer@gmail.com) |
-| **Instagram** | `@officialhazim42` | [instagram.com/officialhazim42](https://www.instagram.com/officialhazim42/) |
-| **YouTube** | `@officialhazim42` | [youtube.com/@officialhazim42](https://www.youtube.com/@officialhazim42) |
-| **X (Twitter)** | `@officialhazim42` | [x.com/officialhazim42](https://x.com/officialhazim42) |
-| **Threads** | `@officialhazim42` | [threads.net/@officialhazim42](https://www.threads.net/@officialhazim42) |
-| **Telegram** | `@officialhazim42` | [t.me/officialhazim42](https://t.me/officialhazim42) |
-| **Discord** | `officialhazim42` | [discord.com/users/officialhazim42](https://discord.com/users/officialhazim42) |
-| **Reddit** | `u/officialhazim42` | [reddit.com/user/officialhazim42](https://www.reddit.com/user/officialhazim42) |
-
-</details>
-
-<br />
-
-<a href="https://www.google.com/maps/search/?api=1&query=Ganderbal%2C%20Jammu%20%26%20Kashmir%2C%20India">
-  <img src="assets/location-card.svg" alt="Location: Ganderbal, Jammu &amp; Kashmir, India — Click to Open Google Maps" width="100%" />
-</a>
 
 <br />
 <br />

@@ -1,57 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 188" width="100%" height="188">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 184" width="100%" height="184">
   <defs>
+    <!-- Background Gradient Matching Profile System -->
     <linearGradient id="ci-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#081329" stop-opacity="0.98" />
-      <stop offset="50%" stop-color="#0d1f42" stop-opacity="0.94" />
+      <stop offset="45%" stop-color="#0d1f42" stop-opacity="0.94" />
       <stop offset="100%" stop-color="#071126" stop-opacity="0.98" />
     </linearGradient>
+
+    <!-- Refined Accent Stroke Gradient -->
     <linearGradient id="ci-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
-      <stop offset="35%" stop-color="#1e3a5f" stop-opacity="0.6" />
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85" />
+      <stop offset="35%" stop-color="#1e3a5f" stop-opacity="0.55" />
       <stop offset="70%" stop-color="#0ea5e9" stop-opacity="0.75" />
       <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.65" />
     </linearGradient>
-    <radialGradient id="ci-glow" cx="18%" cy="25%" r="65%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18" />
-      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.04" />
+
+    <!-- Subtle Radial Glow in Corner -->
+    <radialGradient id="ci-glow" cx="16%" cy="22%" r="65%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.16" />
+      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.03" />
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
     </radialGradient>
+
     <style>
       @keyframes ciEntrance {
-        0% { opacity: 0; transform: translateY(10px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes headingEntrance {
         0% { opacity: 0; transform: translateY(8px); }
         100% { opacity: 1; transform: translateY(0); }
       }
-      @keyframes paragraphEntrance {
-        0% { opacity: 0; transform: translateY(8px); }
+      @keyframes elementEntrance {
+        0% { opacity: 0; transform: translateY(6px); }
         100% { opacity: 1; transform: translateY(0); }
       }
       @keyframes dotPulse {
-        0%, 100% { r: 3.5; opacity: 0.85; }
+        0%, 100% { r: 3.5; opacity: 0.85; filter: drop-shadow(0 0 2px #38bdf8); }
         50% { r: 4.5; opacity: 1; filter: drop-shadow(0 0 6px #38bdf8); }
       }
       @keyframes barPulse {
-        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 3px rgba(56, 189, 248, 0.4)); }
-        50% { opacity: 1; filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.85)); }
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 3px rgba(56, 189, 248, 0.35)); }
+        50% { opacity: 1; filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.75)); }
       }
       @keyframes traceGlow {
-        0%, 100% { opacity: 0.5; }
-        50% { opacity: 0.9; }
+        0%, 100% { opacity: 0.45; }
+        50% { opacity: 0.85; }
       }
       .card-root {
-        animation: ciEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation: ciEntrance 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
       }
       .badge-group {
-        animation: headingEntrance 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.06s both;
+        animation: elementEntrance 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
       }
       .heading-group {
-        animation: headingEntrance 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+        animation: elementEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both;
       }
       .paragraph-group {
-        animation: paragraphEntrance 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both;
+        animation: elementEntrance 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.26s both;
       }
       .pulsing-bar {
         animation: barPulse 2.8s ease-in-out infinite;
@@ -60,7 +62,7 @@
         animation: dotPulse 2.4s ease-in-out infinite;
       }
       .circuit-trace {
-        animation: traceGlow 3s ease-in-out infinite;
+        animation: traceGlow 3.2s ease-in-out infinite;
       }
       .badge-mono {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -71,14 +73,14 @@
       }
       .main-heading {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 23px;
+        font-size: 22.5px;
         font-weight: 800;
         letter-spacing: -0.2px;
         fill: #ffffff;
       }
       .body-text {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 15px;
+        font-size: 14.5px;
         fill: #e2e8f0;
         letter-spacing: 0.15px;
       }
@@ -102,26 +104,26 @@
 
   <!-- Main Glass Container with entrance animation -->
   <g class="card-root">
-    <rect x="1" y="1" width="898" height="186" rx="12" fill="url(#ci-bg)" stroke="url(#ci-stroke)" stroke-width="1.2" />
-    <rect x="1" y="1" width="898" height="186" rx="12" fill="url(#ci-glow)" />
+    <rect x="1" y="1" width="898" height="182" rx="12" fill="url(#ci-bg)" stroke="url(#ci-stroke)" stroke-width="1.2" />
+    <rect x="1" y="1" width="898" height="182" rx="12" fill="url(#ci-glow)" />
 
     <!-- Left Accent Glowing Bar -->
-    <rect x="1" y="22" width="4" height="142" rx="2" fill="#38bdf8" class="pulsing-bar" />
+    <rect x="1" y="20" width="4" height="142" rx="2" fill="#38bdf8" class="pulsing-bar" />
 
     <!-- Top Status Indicator Pill -->
-    <g transform="translate(24, 18)" class="badge-group">
-      <rect x="0" y="0" width="276" height="24" rx="12" fill="#0b1730" stroke="#1e3a5f" stroke-width="1.1" />
+    <g transform="translate(26, 18)" class="badge-group">
+      <rect x="0" y="0" width="280" height="24" rx="12" fill="#09162e" stroke="#1e3a5f" stroke-width="1.1" />
       <circle cx="13" cy="12" r="3.5" fill="#38bdf8" class="pulsing-dot" />
       <text x="26" y="16.5" class="badge-mono">COLLABORATION &amp; INQUIRIES</text>
     </g>
 
     <!-- Prominent High-Contrast Section Heading -->
-    <g transform="translate(24, 72)" class="heading-group">
+    <g transform="translate(26, 70)" class="heading-group">
       <text x="0" y="0" class="main-heading">Let's Build Something Useful &amp; Meaningful Together</text>
     </g>
 
     <!-- Right Decorative Subtle Traces -->
-    <g opacity="0.75" class="circuit-trace">
+    <g opacity="0.7" class="circuit-trace">
       <circle cx="848" cy="24" r="3" fill="#38bdf8" />
       <line x1="848" y1="24" x2="880" y2="24" stroke="#1e3a5f" stroke-width="1.2" />
       <circle cx="880" cy="24" r="2.5" fill="#06b6d4" />
@@ -129,19 +131,19 @@
 
     <!-- High-Contrast Supporting Text with Staggered Entrance and Generous Spacing -->
     <g class="paragraph-group">
-      <text x="24" y="106" class="body-text">
+      <text x="26" y="104" class="body-text">
         <tspan>I welcome </tspan>
         <tspan class="text-bold">meaningful connections</tspan>
-        <tspan> with developers, creators, open-source maintainers, and technology teams.</tspan>
+        <tspan> with developers, creators, open-source maintainers, and engineering teams.</tspan>
       </text>
 
-      <text x="24" y="132" class="body-text">
+      <text x="26" y="130" class="body-text">
         <tspan>Whether you have an idea to build, an </tspan>
         <tspan class="text-cyan">open-source initiative to collaborate on</tspan>
-        <tspan>, or an opportunity to exchange insights</tspan>
+        <tspan>, or insights to exchange</tspan>
       </text>
 
-      <text x="24" y="158" class="body-text">
+      <text x="26" y="156" class="body-text">
         <tspan>around client-side engineering — </tspan>
         <tspan class="text-bold">feel free to connect across any verified channel below. Direct inquiries are welcome.</tspan>
       </text>
