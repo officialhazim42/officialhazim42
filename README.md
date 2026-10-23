@@ -4,11 +4,11 @@
 
   <br />
 
-  <img src="assets/typing.svg" alt="Hazim Bashir — Developer Focus Headline" width="100%" />
+  <img src="assets/typing.svg" alt="HAZIM BASHIR FAQEER — Developer Focus Headline" width="100%" />
 
   <br />
 
-  <img src="assets/intro-card.svg" alt="Hazim Bashir — Developer Identity and Academic Base" width="100%" />
+  <img src="assets/intro-card.svg" alt="HAZIM BASHIR FAQEER — Developer Identity and Academic Base" width="100%" />
 
   <br />
   <br />
@@ -27,7 +27,7 @@
 
 <br />
 
-<img src="assets/about-panel.svg" alt="01 / IDENTITY • ABOUT ME &amp; SOFTWARE PHILOSOPHY" width="100%" />
+<img src="assets/about-panel.svg" alt="01 / CREATE IDENTITY — About Me &amp; Software Philosophy" width="100%" />
 
 <br />
 
@@ -44,7 +44,7 @@
 
 <br />
 
-<img src="assets/section-build.svg" alt="02 / SCOPE • WHAT I BUILD" width="100%" />
+<img src="assets/section-build.svg" alt="02 / WHAT I BUILD" width="100%" />
 
 <br />
 
@@ -59,7 +59,7 @@
 
 <br />
 
-<img src="assets/section-stack.svg" alt="03 / TOOLKIT • TECHNOLOGY STACK" width="100%" />
+<img src="assets/section-stack.svg" alt="03 / TECHNOLOGY STACK" width="100%" />
 
 <br />
 
@@ -117,7 +117,7 @@
 
 <br />
 
-<img src="assets/section-projects.svg" alt="04 / SHOWCASE • FEATURED PROJECTS" width="100%" />
+<img src="assets/section-projects.svg" alt="04 / FEATURED PROJECTS" width="100%" />
 
 <br />
 
@@ -250,7 +250,7 @@ A structured, practical reference handbook and command guide for mastering nativ
 
 <br />
 
-<img src="assets/section-cyberguard.svg" alt="05 / LEADERSHIP • CYBERGUARD YUVA" width="100%" />
+<img src="assets/section-cyberguard.svg" alt="05 / CYBERGUARD YUVA" width="100%" />
 
 <br />
 
@@ -285,7 +285,7 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 
 <br />
 
-<img src="assets/section-philosophy.svg" alt="06 / APPROACH • DEVELOPMENT JOURNEY" width="100%" />
+<img src="assets/section-philosophy.svg" alt="06 / DEVELOPMENT JOURNEY" width="100%" />
 
 <br />
 
@@ -293,7 +293,7 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 
 <br />
 
-<img src="assets/section-stats.svg" alt="07 / METRICS • GITHUB ACTIVITY &amp; METRICS" width="100%" />
+<img src="assets/section-stats.svg" alt="07 / GITHUB ACTIVITY AND METRICS" width="100%" />
 
 <br />
 
@@ -306,13 +306,13 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 
   <img 
     src="https://github-readme-stats.vercel.app/api?username=officialhazim42&show_icons=true&hide_border=true&bg_color=060b18&title_color=38bdf8&text_color=94a3b8&icon_color=3b82f6" 
-    alt="Hazim Bashir GitHub Stats" 
+    alt="HAZIM BASHIR FAQEER GitHub Stats" 
     height="165" 
   />
   &nbsp;&nbsp;
   <img 
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialhazim42&layout=compact&hide_border=true&bg_color=060b18&title_color=38bdf8&text_color=94a3b8" 
-    alt="Hazim Bashir Top Language Summary" 
+    alt="HAZIM BASHIR FAQEER Top Language Summary" 
     height="165" 
   />
 
@@ -320,7 +320,7 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 
 <br />
 
-<img src="assets/section-connect.svg" alt="08 / NETWORK • CONNECT WITH ME" width="100%" />
+<img src="assets/section-connect.svg" alt="08 / CONNECT WITH ME" width="100%" />
 
 <br />
 
@@ -351,7 +351,7 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 <!-- ================================================================= -->
 
 <div align="center">
-  <img src="assets/profile-footer.svg" alt="Hazim Bashir FAQEER • Software Creator Portfolio Footer" width="100%" />
+  <img src="assets/profile-footer.svg" alt="HAZIM BASHIR FAQEER • Software Creator Portfolio Footer" width="100%" />
 </div>
 
 
