@@ -59,6 +59,12 @@
         letter-spacing: 1px;
         fill: #94a3b8;
       }
+      .stage-tag {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+        font-size: 6.5px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
 
       /* Dynamic Keyframe Animations */
       .clip-rect {
@@ -77,22 +83,6 @@
       }
       .divider-filament {
         animation: pulseFilament 4s ease-in-out infinite;
-      }
-      .status-dot {
-        animation: pulseGlow 2.5s ease-in-out infinite;
-      }
-      .journey-runner {
-        stroke-dasharray: 8 60;
-        animation: journeyTrack 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-      }
-      .journey-node-1 {
-        animation: journeyNode1 3.6s ease-in-out infinite;
-      }
-      .journey-node-2 {
-        animation: journeyNode2 3.6s ease-in-out infinite;
-      }
-      .journey-node-3 {
-        animation: journeyNode3 3.6s ease-in-out infinite;
       }
 
       @keyframes textReveal-06 {
@@ -131,41 +121,186 @@
         50% { stroke: #38bdf8; }
       }
 
-      @keyframes pulseGlow {
-        0%, 100% { transform: scale(1); opacity: 0.85; }
-        50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+      /* -------------------------------------------------------------
+         Development Journey Progress Tracker Animations (3.6s Cycle)
+         ------------------------------------------------------------- */
+      /* Active Progressive Connecting Line Track */
+      .journey-track-active {
+        stroke-dasharray: 72;
+        animation: journeyTrackProgress 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: stroke-dashoffset, opacity;
+      }
+      @keyframes journeyTrackProgress {
+        0% { stroke-dashoffset: 72; opacity: 1; }
+        8.3% { stroke-dashoffset: 72; opacity: 1; }
+        19.4% { stroke-dashoffset: 48; opacity: 1; }
+        27.8% { stroke-dashoffset: 48; opacity: 1; }
+        38.9% { stroke-dashoffset: 24; opacity: 1; }
+        47.2% { stroke-dashoffset: 24; opacity: 1; }
+        58.3% { stroke-dashoffset: 0; opacity: 1; }
+        83.3% { stroke-dashoffset: 0; opacity: 1; filter: drop-shadow(0 0 2px #38bdf8); }
+        94.4%, 100% { stroke-dashoffset: 0; opacity: 0; filter: none; }
       }
 
-      @keyframes journeyTrack {
-        0% { stroke-dashoffset: 60; opacity: 0; }
-        10% { opacity: 0.95; }
-        70% { stroke-dashoffset: 0; opacity: 0.95; }
-        82%, 100% { stroke-dashoffset: -8; opacity: 0; }
+      /* Traveling Luminous Signal Pulse Bead */
+      .journey-signal-pulse {
+        animation: journeySignalTravel 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, opacity;
+      }
+      @keyframes journeySignalTravel {
+        0% { transform: translateX(0); opacity: 0; }
+        8.3% { transform: translateX(0); opacity: 1; }
+        19.4% { transform: translateX(24px); opacity: 1; }
+        27.8% { transform: translateX(24px); opacity: 0.85; }
+        38.9% { transform: translateX(48px); opacity: 1; }
+        47.2% { transform: translateX(48px); opacity: 0.85; }
+        58.3% { transform: translateX(72px); opacity: 1; }
+        66.7% { transform: translateX(72px); opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        72.2%, 100% { transform: translateX(72px); opacity: 0; }
       }
 
-      @keyframes journeyNode1 {
-        0%, 100% { fill: #1e293b; stroke: #334155; filter: none; }
-        10%, 25% { fill: #0284c7; stroke: #38bdf8; filter: drop-shadow(0 0 3px #38bdf8); }
-        35% { fill: #1e293b; stroke: #334155; filter: none; }
+      /* Milestone 1: FOUNDATION (x=8) */
+      .ms-out-1 {
+        animation: msOut1Seq 3.6s ease-in-out infinite;
+        will-change: stroke, filter;
+      }
+      .ms-in-1 {
+        animation: msIn1Seq 3.6s ease-in-out infinite;
+        will-change: fill;
+      }
+      .ms-tag-1 {
+        animation: msTag1Seq 3.6s ease-in-out infinite;
+        will-change: fill;
+      }
+      @keyframes msOut1Seq {
+        0% { stroke: #67e8f9; filter: drop-shadow(0 0 3px #38bdf8); }
+        8.3% { stroke: #67e8f9; filter: drop-shadow(0 0 3.5px #38bdf8); }
+        19.4%, 66.7% { stroke: #38bdf8; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        72.2%, 83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 3.5px #38bdf8); }
+        94.4%, 100% { stroke: #1e3a5f; filter: none; }
+      }
+      @keyframes msIn1Seq {
+        0%, 8.3% { fill: #a5f3fc; }
+        19.4%, 66.7% { fill: #38bdf8; }
+        72.2%, 83.3% { fill: #a5f3fc; }
+        94.4%, 100% { fill: #1e293b; }
+      }
+      @keyframes msTag1Seq {
+        0%, 8.3% { fill: #67e8f9; }
+        19.4%, 66.7% { fill: #38bdf8; }
+        72.2%, 83.3% { fill: #67e8f9; }
+        94.4%, 100% { fill: #475569; }
       }
 
-      @keyframes journeyNode2 {
-        0%, 30% { fill: #3b82f6; opacity: 0.8; filter: none; }
-        42%, 55% { fill: #38bdf8; opacity: 1; filter: drop-shadow(0 0 3.5px #38bdf8); }
-        68%, 100% { fill: #3b82f6; opacity: 0.8; filter: none; }
+      /* Milestone 2: BUILD (x=32) */
+      .ms-out-2 {
+        animation: msOut2Seq 3.6s ease-in-out infinite;
+        will-change: stroke, filter;
+      }
+      .ms-in-2 {
+        animation: msIn2Seq 3.6s ease-in-out infinite;
+        will-change: fill;
+      }
+      .ms-tag-2 {
+        animation: msTag2Seq 3.6s ease-in-out infinite;
+        will-change: fill;
+      }
+      @keyframes msOut2Seq {
+        0%, 16.7% { stroke: #1e3a5f; filter: none; }
+        19.4%, 27.8% { stroke: #67e8f9; filter: drop-shadow(0 0 3.5px #38bdf8); }
+        38.9%, 66.7% { stroke: #38bdf8; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        72.2%, 83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 3.5px #38bdf8); }
+        94.4%, 100% { stroke: #1e3a5f; filter: none; }
+      }
+      @keyframes msIn2Seq {
+        0%, 16.7% { fill: #1e293b; }
+        19.4%, 27.8% { fill: #a5f3fc; }
+        38.9%, 66.7% { fill: #38bdf8; }
+        72.2%, 83.3% { fill: #a5f3fc; }
+        94.4%, 100% { fill: #1e293b; }
+      }
+      @keyframes msTag2Seq {
+        0%, 16.7% { fill: #475569; }
+        19.4%, 27.8% { fill: #67e8f9; }
+        38.9%, 66.7% { fill: #38bdf8; }
+        72.2%, 83.3% { fill: #67e8f9; }
+        94.4%, 100% { fill: #475569; }
       }
 
-      @keyframes journeyNode3 {
-        0%, 65% { fill: #38bdf8; opacity: 0.8; filter: drop-shadow(0 0 1px #38bdf8); }
-        75%, 88% { fill: #7dd3fc; opacity: 1; filter: drop-shadow(0 0 5px #38bdf8); }
-        98%, 100% { fill: #38bdf8; opacity: 0.8; filter: drop-shadow(0 0 1px #38bdf8); }
+      /* Milestone 3: EXPLORE (x=56) */
+      .ms-out-3 {
+        animation: msOut3Seq 3.6s ease-in-out infinite;
+        will-change: stroke, filter;
+      }
+      .ms-in-3 {
+        animation: msIn3Seq 3.6s ease-in-out infinite;
+        will-change: fill;
+      }
+      .ms-tag-3 {
+        animation: msTag3Seq 3.6s ease-in-out infinite;
+        will-change: fill;
+      }
+      @keyframes msOut3Seq {
+        0%, 36.1% { stroke: #1e3a5f; filter: none; }
+        38.9%, 47.2% { stroke: #67e8f9; filter: drop-shadow(0 0 3.5px #38bdf8); }
+        58.3%, 66.7% { stroke: #38bdf8; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        72.2%, 83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 3.5px #38bdf8); }
+        94.4%, 100% { stroke: #1e3a5f; filter: none; }
+      }
+      @keyframes msIn3Seq {
+        0%, 36.1% { fill: #1e293b; }
+        38.9%, 47.2% { fill: #a5f3fc; }
+        58.3%, 66.7% { fill: #38bdf8; }
+        72.2%, 83.3% { fill: #a5f3fc; }
+        94.4%, 100% { fill: #1e293b; }
+      }
+      @keyframes msTag3Seq {
+        0%, 36.1% { fill: #475569; }
+        38.9%, 47.2% { fill: #67e8f9; }
+        58.3%, 66.7% { fill: #38bdf8; }
+        72.2%, 83.3% { fill: #67e8f9; }
+        94.4%, 100% { fill: #475569; }
+      }
+
+      /* Milestone 4: EVOLVE (x=80) */
+      .ms-out-4 {
+        animation: msOut4Seq 3.6s ease-in-out infinite;
+        will-change: stroke, filter;
+      }
+      .ms-in-4 {
+        animation: msIn4Seq 3.6s ease-in-out infinite;
+        will-change: fill;
+      }
+      .ms-tag-4 {
+        animation: msTag4Seq 3.6s ease-in-out infinite;
+        will-change: fill;
+      }
+      @keyframes msOut4Seq {
+        0%, 55.6% { stroke: #1e3a5f; filter: none; }
+        58.3%, 66.7% { stroke: #67e8f9; filter: drop-shadow(0 0 4px #38bdf8); }
+        72.2%, 83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 4px #38bdf8); }
+        94.4%, 100% { stroke: #1e3a5f; filter: none; }
+      }
+      @keyframes msIn4Seq {
+        0%, 55.6% { fill: #1e293b; }
+        58.3%, 66.7% { fill: #a5f3fc; }
+        72.2%, 83.3% { fill: #a5f3fc; }
+        94.4%, 100% { fill: #1e293b; }
+      }
+      @keyframes msTag4Seq {
+        0%, 55.6% { fill: #475569; }
+        58.3%, 66.7% { fill: #67e8f9; }
+        72.2%, 83.3% { fill: #67e8f9; }
+        94.4%, 100% { fill: #475569; }
       }
 
       @media (prefers-reduced-motion: reduce) {
-        * {
+        .journey-track-active, .journey-signal-pulse,
+        .ms-out-1, .ms-in-1, .ms-tag-1,
+        .ms-out-2, .ms-in-2, .ms-tag-2,
+        .ms-out-3, .ms-in-3, .ms-tag-3,
+        .ms-out-4, .ms-in-4, .ms-tag-4 {
           animation: none !important;
-          stroke-dashoffset: 0 !important;
-          opacity: 1 !important;
         }
       }
     </style>
@@ -200,13 +335,96 @@
   <line class="accent-line" x1="120" y1="46" x2="290" y2="46" stroke="url(#acc-grad-06)" stroke-width="1.5" stroke-linecap="round" />
 
   <!-- Section-Specific Right Visual Marker and Telemetry -->
-    <!-- Right Motif: Growth Track Waypoint Progress Line -->
+  <!-- Development Progress Tracker (4 Sequential Milestones) + Preserved PROGRESS TRACK Badge -->
   <g transform="translate(650, 17)">
-    <line x1="0" y1="12" x2="80" y2="12" stroke="#1e3a5f" stroke-width="1.5" />
-    <line class="journey-runner" x1="15" y1="12" x2="75" y2="12" stroke="#38bdf8" stroke-width="1.6" stroke-linecap="round" />
-    <circle class="journey-node-1" cx="15" cy="12" r="3" fill="#1e293b" stroke="#334155" stroke-width="1" />
-    <circle class="journey-node-2" cx="45" cy="12" r="3.5" fill="#3b82f6" />
-    <circle class="journey-node-3" cx="75" cy="12" r="4" fill="#38bdf8" />
+    <!-- Base Dormant Pipeline Track -->
+    <line x1="8" y1="12" x2="80" y2="12" stroke="#1e3a5f" stroke-width="1.4" stroke-linecap="round" />
+    
+    <!-- Active Illuminated Progressive Track -->
+    <line class="journey-track-active" x1="8" y1="12" x2="80" y2="12" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round">
+      <animate attributeName="stroke-dashoffset" dur="3.6s" repeatCount="indefinite"
+               values="72; 72; 48; 48; 24; 24; 0; 0; 0"
+               keyTimes="0; 0.083; 0.194; 0.278; 0.389; 0.472; 0.583; 0.833; 1" />
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="1; 1; 1; 1; 1; 1; 1; 1; 0"
+               keyTimes="0; 0.083; 0.194; 0.278; 0.389; 0.472; 0.583; 0.833; 1" />
+    </line>
+
+    <!-- Traveling Luminous Signal Pulse Bead -->
+    <circle class="journey-signal-pulse" cx="8" cy="12" r="2.2" fill="#a5f3fc">
+      <animateTransform attributeName="transform" type="translate" dur="3.6s" repeatCount="indefinite"
+                        values="0 0; 0 0; 24 0; 24 0; 48 0; 48 0; 72 0; 72 0; 72 0"
+                        keyTimes="0; 0.083; 0.194; 0.278; 0.389; 0.472; 0.583; 0.667; 1" />
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 1; 1; 0.85; 1; 0.85; 1; 1; 0"
+               keyTimes="0; 0.083; 0.194; 0.278; 0.389; 0.472; 0.583; 0.667; 1" />
+    </circle>
+
+    <!-- Milestone 1: 01 / FOUNDATION -->
+    <g class="milestone-1">
+      <title>01 — FOUNDATION</title>
+      <circle class="ms-out-1" cx="8" cy="12" r="3.6" fill="#081226" stroke="#1e3a5f" stroke-width="1.2">
+        <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+                 values="#67e8f9; #67e8f9; #38bdf8; #67e8f9; #1e3a5f"
+                 keyTimes="0; 0.083; 0.194; 0.833; 1" />
+      </circle>
+      <circle class="ms-in-1" cx="8" cy="12" r="1.8" fill="#1e293b">
+        <animate attributeName="fill" dur="3.6s" repeatCount="indefinite"
+                 values="#a5f3fc; #a5f3fc; #38bdf8; #a5f3fc; #1e293b"
+                 keyTimes="0; 0.083; 0.194; 0.833; 1" />
+      </circle>
+      <text x="8" y="22" text-anchor="middle" class="stage-tag ms-tag-1" fill="#475569">01</text>
+    </g>
+
+    <!-- Milestone 2: 02 / BUILD -->
+    <g class="milestone-2">
+      <title>02 — BUILD</title>
+      <circle class="ms-out-2" cx="32" cy="12" r="3.6" fill="#081226" stroke="#1e3a5f" stroke-width="1.2">
+        <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+                 values="#1e3a5f; #1e3a5f; #67e8f9; #38bdf8; #67e8f9; #1e3a5f"
+                 keyTimes="0; 0.167; 0.194; 0.389; 0.833; 1" />
+      </circle>
+      <circle class="ms-in-2" cx="32" cy="12" r="1.8" fill="#1e293b">
+        <animate attributeName="fill" dur="3.6s" repeatCount="indefinite"
+                 values="#1e293b; #1e293b; #a5f3fc; #38bdf8; #a5f3fc; #1e293b"
+                 keyTimes="0; 0.167; 0.194; 0.389; 0.833; 1" />
+      </circle>
+      <text x="32" y="22" text-anchor="middle" class="stage-tag ms-tag-2" fill="#475569">02</text>
+    </g>
+
+    <!-- Milestone 3: 03 / EXPLORE -->
+    <g class="milestone-3">
+      <title>03 — EXPLORE</title>
+      <circle class="ms-out-3" cx="56" cy="12" r="3.6" fill="#081226" stroke="#1e3a5f" stroke-width="1.2">
+        <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+                 values="#1e3a5f; #1e3a5f; #67e8f9; #38bdf8; #67e8f9; #1e3a5f"
+                 keyTimes="0; 0.361; 0.389; 0.583; 0.833; 1" />
+      </circle>
+      <circle class="ms-in-3" cx="56" cy="12" r="1.8" fill="#1e293b">
+        <animate attributeName="fill" dur="3.6s" repeatCount="indefinite"
+                 values="#1e293b; #1e293b; #a5f3fc; #38bdf8; #a5f3fc; #1e293b"
+                 keyTimes="0; 0.361; 0.389; 0.583; 0.833; 1" />
+      </circle>
+      <text x="56" y="22" text-anchor="middle" class="stage-tag ms-tag-3" fill="#475569">03</text>
+    </g>
+
+    <!-- Milestone 4: 04 / EVOLVE -->
+    <g class="milestone-4">
+      <title>04 — EVOLVE</title>
+      <circle class="ms-out-4" cx="80" cy="12" r="3.6" fill="#081226" stroke="#1e3a5f" stroke-width="1.2">
+        <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+                 values="#1e3a5f; #1e3a5f; #67e8f9; #67e8f9; #1e3a5f"
+                 keyTimes="0; 0.556; 0.583; 0.833; 1" />
+      </circle>
+      <circle class="ms-in-4" cx="80" cy="12" r="1.8" fill="#1e293b">
+        <animate attributeName="fill" dur="3.6s" repeatCount="indefinite"
+                 values="#1e293b; #1e293b; #a5f3fc; #a5f3fc; #1e293b"
+                 keyTimes="0; 0.556; 0.583; 0.833; 1" />
+      </circle>
+      <text x="80" y="22" text-anchor="middle" class="stage-tag ms-tag-4" fill="#475569">04</text>
+    </g>
+
+    <!-- Preserved PROGRESS TRACK Badge (Completely Unaltered Dimensions & Content) -->
     <rect x="90" y="0" width="145" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
     <text x="162" y="12" text-anchor="middle" dominant-baseline="central" class="mono-meta">PROGRESS TRACK</text>
   </g>
