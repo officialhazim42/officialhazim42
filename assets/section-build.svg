@@ -81,15 +81,28 @@
       .status-dot {
         animation: pulseGlow 2.5s ease-in-out infinite;
       }
-      .waveform-base {
-        filter: drop-shadow(0 0 1.5px rgba(56, 189, 248, 0.4));
+      .waveform-track {
+        stroke: #1e3a5f;
+        stroke-width: 1;
+        opacity: 0.6;
       }
-      .waveform-pulse {
-        stroke-dasharray: 20 120;
-        animation: waveformGlow 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      .waveform-trace {
+        stroke-dasharray: 120;
+        stroke-dashoffset: 120;
+        animation: waveformTraceSeq 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: stroke-dashoffset, opacity, filter;
+      }
+      .waveform-head {
+        stroke-dasharray: 10 110;
+        stroke-dashoffset: 120;
+        opacity: 0;
+        animation: waveformHeadSeq 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: stroke-dashoffset, opacity, filter;
       }
       .waveform-end-dot {
-        animation: waveformDotGlow 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        opacity: 0.4;
+        animation: waveformDotSeq 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: opacity, fill, r, filter;
       }
 
       @keyframes textReveal-02 {
@@ -133,25 +146,34 @@
         50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
       }
 
-      @keyframes waveformGlow {
-        0% { stroke-dashoffset: 120; opacity: 0; filter: drop-shadow(0 0 2px #38bdf8); }
-        15% { opacity: 0.95; }
-        70% { opacity: 0.95; }
-        85% { stroke-dashoffset: -20; opacity: 0; filter: drop-shadow(0 0 5px #38bdf8); }
-        100% { stroke-dashoffset: -20; opacity: 0; }
+      /* Signal Tracing Waveform: draws left-to-right (0s - 1.5s), holds (1.5s - 2.5s), retracts (2.5s - 3.4s) */
+      @keyframes waveformTraceSeq {
+        0% { stroke-dashoffset: 120; opacity: 0; filter: none; }
+        2% { opacity: 1; }
+        37.5% { stroke-dashoffset: 0; opacity: 1; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        62.5% { stroke-dashoffset: 0; opacity: 1; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        85.0% { stroke-dashoffset: 120; opacity: 0.6; filter: none; }
+        87.0%, 100% { stroke-dashoffset: 120; opacity: 0; filter: none; }
       }
 
-      @keyframes waveformDotGlow {
-        0%, 65% { opacity: 0.75; filter: drop-shadow(0 0 1px #06b6d4); }
-        75%, 85% { opacity: 1; filter: drop-shadow(0 0 4px #38bdf8); }
-        95%, 100% { opacity: 0.75; filter: drop-shadow(0 0 1px #06b6d4); }
+      /* Leading Signal Highlight: rides advancing tip of waveform during drawing (0s - 1.5s) */
+      @keyframes waveformHeadSeq {
+        0% { stroke-dashoffset: 120; opacity: 0; }
+        2% { opacity: 1; }
+        37.5% { stroke-dashoffset: 0; opacity: 1; filter: drop-shadow(0 0 3.5px #67e8f9); }
+        38.5%, 100% { opacity: 0; stroke-dashoffset: 0; filter: none; }
+      }
+
+      /* Endpoint Receiver Dot: Activates with smooth cyan glow and slight expansion on signal arrival */
+      @keyframes waveformDotSeq {
+        0%, 37.5% { opacity: 0.4; fill: #0284c7; r: 2.5; filter: none; }
+        47.5%, 62.5% { opacity: 1; fill: #38bdf8; r: 3.2; filter: drop-shadow(0 0 5px #38bdf8); }
+        75.0%, 100% { opacity: 0.4; fill: #0284c7; r: 2.5; filter: none; }
       }
 
       @media (prefers-reduced-motion: reduce) {
-        * {
+        .text-cursor, .clip-rect {
           animation: none !important;
-          stroke-dashoffset: 0 !important;
-          opacity: 1 !important;
         }
       }
     </style>
@@ -188,31 +210,42 @@
   <!-- Section-Specific Right Visual Marker and Telemetry -->
     <!-- Right Motif: Client-Side Compute Waveform & Tech Badge -->
   <g transform="translate(650, 17)">
-    <path d="M 0 12 L 25 12 L 31 5 L 39 19 L 47 4 L 55 20 L 61 12 L 85 12" stroke="#38bdf8" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round" class="waveform-base">
-      <animate attributeName="d"
-        dur="3.2s"
-        repeatCount="indefinite"
-        values="M 0 12 L 25 12 L 31 5 L 39 19 L 47 4 L 55 20 L 61 12 L 85 12;
-                M 0 12 L 25 12 L 31 3 L 39 21 L 47 2 L 55 22 L 61 12 L 85 12;
-                M 0 12 L 25 12 L 31 7 L 39 17 L 47 6 L 55 18 L 61 12 L 85 12;
-                M 0 12 L 25 12 L 31 5 L 39 19 L 47 4 L 55 20 L 61 12 L 85 12"
-        keyTimes="0; 0.35; 0.7; 1"
-        calcMode="spline"
-        keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+    <!-- Underlying Faint Guide Circuit (Static Background Track) -->
+    <path class="waveform-track" d="M 0 12 L 25 12 L 31 5 L 39 19 L 47 4 L 55 20 L 61 12 L 85 12" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Active Tracing Waveform: Progressively draws from left to right, then retracts -->
+    <path class="waveform-trace" d="M 0 12 L 25 12 L 31 5 L 39 19 L 47 4 L 55 20 L 61 12 L 85 12" stroke="#38bdf8" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round" pathLength="120" stroke-dasharray="120" stroke-dashoffset="120" opacity="0">
+      <animate attributeName="stroke-dashoffset" dur="4s" repeatCount="indefinite"
+               values="120; 0; 0; 120; 120"
+               keyTimes="0; 0.375; 0.625; 0.850; 1" />
+      <animate attributeName="opacity" dur="4s" repeatCount="indefinite"
+               values="0; 1; 1; 0.6; 0; 0"
+               keyTimes="0; 0.02; 0.625; 0.850; 0.870; 1" />
     </path>
-    <path d="M 0 12 L 25 12 L 31 5 L 39 19 L 47 4 L 55 20 L 61 12 L 85 12" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" class="waveform-pulse">
-      <animate attributeName="d"
-        dur="3.2s"
-        repeatCount="indefinite"
-        values="M 0 12 L 25 12 L 31 5 L 39 19 L 47 4 L 55 20 L 61 12 L 85 12;
-                M 0 12 L 25 12 L 31 3 L 39 21 L 47 2 L 55 22 L 61 12 L 85 12;
-                M 0 12 L 25 12 L 31 7 L 39 17 L 47 6 L 55 18 L 61 12 L 85 12;
-                M 0 12 L 25 12 L 31 5 L 39 19 L 47 4 L 55 20 L 61 12 L 85 12"
-        keyTimes="0; 0.35; 0.7; 1"
-        calcMode="spline"
-        keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+
+    <!-- Leading Signal Highlight: Subtle photon head riding the leading edge of the tracing wave -->
+    <path class="waveform-head" d="M 0 12 L 25 12 L 31 5 L 39 19 L 47 4 L 55 20 L 61 12 L 85 12" stroke="#67e8f9" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" pathLength="120" stroke-dasharray="10 110" stroke-dashoffset="120" opacity="0">
+      <animate attributeName="stroke-dashoffset" dur="4s" repeatCount="indefinite"
+               values="120; 0; 0; 120; 120"
+               keyTimes="0; 0.375; 0.385; 0.999; 1" />
+      <animate attributeName="opacity" dur="4s" repeatCount="indefinite"
+               values="0; 1; 1; 0; 0"
+               keyTimes="0; 0.02; 0.375; 0.385; 1" />
     </path>
-    <circle cx="85" cy="12" r="2.5" fill="#06b6d4" class="waveform-end-dot" />
+
+    <!-- Endpoint Receiver Dot: Activates with cyan glow and subtle expansion on signal arrival -->
+    <circle cx="85" cy="12" r="2.5" fill="#0284c7" class="waveform-end-dot" opacity="0.4">
+      <animate attributeName="opacity" dur="4s" repeatCount="indefinite"
+               values="0.4; 0.4; 1; 1; 0.4; 0.4"
+               keyTimes="0; 0.375; 0.475; 0.625; 0.750; 1" />
+      <animate attributeName="fill" dur="4s" repeatCount="indefinite"
+               values="#0284c7; #0284c7; #38bdf8; #38bdf8; #0284c7; #0284c7"
+               keyTimes="0; 0.375; 0.475; 0.625; 0.750; 1" />
+      <animate attributeName="r" dur="4s" repeatCount="indefinite"
+               values="2.5; 2.5; 3.2; 3.2; 2.5; 2.5"
+               keyTimes="0; 0.375; 0.475; 0.625; 0.750; 1" />
+    </circle>
+
     <rect x="95" y="0" width="140" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
     <circle cx="108" cy="12" r="3" fill="#38bdf8" class="status-dot" />
     <text x="119" y="12" dominant-baseline="central" class="mono-meta">IN-BROWSER ENGINE</text>
