@@ -344,24 +344,37 @@ A production deployment dashboard prototype demonstrating environment status, ap
 
 <table width="100%">
 <tr>
-<td width="25%" align="center" valign="middle">
+<td width="30%" align="center" valign="middle">
+
   <a href="https://cyberguard-yuva.vercel.app/">
-    <img src="assets/cyberguard-logo.png" alt="CyberGuard YUVA Official Logo" width="180" style="border-radius: 50%;" />
+    <img src="assets/cyberguard-emblem.svg" alt="CyberGuard YUVA Official Emblem &amp; Youth Cyber Defense Club" width="100%" style="max-width: 260px;" />
   </a>
+
 </td>
-<td width="75%" valign="middle">
+<td width="70%" valign="top">
 
-### CyberGuard YUVA — Youth Cyber Defense Club
-**SECURE &nbsp;•&nbsp; EDUCATE &nbsp;•&nbsp; EMPOWER &nbsp;—&nbsp; Youth for a Safer Digital India**
+### 🛡️ CYBERGUARD YUVA
+`DEFENSIVE CYBERSECURITY &amp; YOUTH DIGITAL SAFETY` &nbsp; <img src="https://img.shields.io/badge/STATUS-ACTIVE_INITIATIVE-0284C7?style=flat-square" alt="Status: Active Initiative" /> &nbsp; <img src="https://img.shields.io/badge/PORTAL-PRODUCTION_LIVE-0284C7?style=flat-square&logo=vercel&logoColor=white" alt="Live on Vercel" />
 
-I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative established to foster cybersecurity literacy, defensive technical literacy, and safe digital practices among students.
+> **SECURE &nbsp;•&nbsp; EDUCATE &nbsp;•&nbsp; EMPOWER &nbsp;—&nbsp; Youth for a Safer Digital India**
 
-* **Platform:** Engineered an interactive, responsive Progressive Web App to deliver accessible security guides.
-* **Official Website:** [cyberguard-yuva.vercel.app](https://cyberguard-yuva.vercel.app/)
+Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and community organization dedicated to cultivating defensive technical literacy, student privacy hygiene, threat resistance, and responsible online practices across schools and universities.
+
+* **Flagship Platform:** Engineered an interactive, responsive Progressive Web App delivering structured cyber defense guides, threat advisory matrices, and student playbooks.
+* **Community Leadership:** Leading student awareness programs, CTF preparation sessions, and collaborative digital safety campaigns.
+* **Technology Stack:** Engineered with `Next.js 15+`, `React 19`, `TypeScript`, `Tailwind CSS`, `Lucide Icons`, and deployed on `Vercel Edge`.
 
 <br />
 
-<a href="https://cyberguard-yuva.vercel.app/"><img src="https://img.shields.io/badge/Portal-cyberguard--yuva.vercel.app-0B1329?style=flat-square&logo=vercel&logoColor=white" alt="CyberGuard Portal" /></a>
+<a href="https://cyberguard-yuva.vercel.app/">
+  <img src="assets/btn-visit-cyberguard.svg" alt="VISIT OFFICIAL WEBSITE →" height="40" />
+</a>
+&nbsp;&nbsp;
+<a href="PROJECTS.md#03-cyberguard-yuva">
+  <img src="https://img.shields.io/badge/📖_PROJECT_SPECS-0F2244?style=for-the-badge&logo=gitbook&logoColor=38BDF8" alt="Read Technical Dossier" />
+</a>
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/CODEBASE-PRIVATE-1E293B?style=for-the-badge&logo=github&logoColor=94A3B8" alt="Private Repository" />
 
 </td>
 </tr>
@@ -370,6 +383,17 @@ I am the Co-Founder of **CyberGuard YUVA**, a youth-led cyber defense initiative
 <br />
 
 <img src="assets/cyberguard-pillars.svg" alt="CyberGuard YUVA Mission Pillars" width="100%" />
+
+<br />
+
+<details>
+<summary><b>🖥️ View CyberGuard YUVA Desktop Interface &amp; Live Platform Preview</b></summary>
+<br />
+<a href="https://cyberguard-yuva.vercel.app/">
+  <img src="assets/cyberguard-preview.png" alt="CyberGuard YUVA Desktop Interface Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
+<p align="center"><sub>Official CyberGuard YUVA interactive web portal running in production at <a href="https://cyberguard-yuva.vercel.app/">cyberguard-yuva.vercel.app</a></sub></p>
+</details>
 
 <br />
 
