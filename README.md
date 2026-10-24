@@ -417,7 +417,7 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
 <div align="center">
 
   <img 
-    src="https://github-readme-stats.vercel.app/api?username=officialhazim42&show_icons=true&hide_border=true&bg_color=060b18&title_color=38bdf8&text_color=94a3b8&icon_color=3b82f6" 
+    src="https://github-readme-stats.vercel.app/api?username=officialhazim42&show_icons=true&hide_border=true&include_all_commits=true&bg_color=060b18&title_color=38bdf8&text_color=94a3b8&icon_color=3b82f6" 
     alt="HAZIM BASHIR FAQEER GitHub Stats" 
     height="165" 
   />
@@ -425,6 +425,15 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
   <img 
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialhazim42&layout=compact&hide_border=true&bg_color=060b18&title_color=38bdf8&text_color=94a3b8" 
     alt="HAZIM BASHIR FAQEER Top Language Summary" 
+    height="165" 
+  />
+
+  <br />
+  <br />
+
+  <img 
+    src="https://streak-stats.demolab.com?user=officialhazim42&theme=dark&background=060b18&border=1e3a5f&stroke=38bdf8&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&dates=94a3b8" 
+    alt="HAZIM BASHIR FAQEER GitHub Contribution &amp; Streak Activity" 
     height="165" 
   />
 
