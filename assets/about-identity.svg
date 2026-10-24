@@ -1,83 +1,481 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 130" width="100%" height="130">
   <defs>
+    <!-- Background Gradient -->
     <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1329" />
-      <stop offset="100%" stop-color="#060b18" />
+      <stop offset="0%" stop-color="#0a1329" stop-opacity="0.98" />
+      <stop offset="60%" stop-color="#0c1833" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#060b18" stop-opacity="0.98" />
     </linearGradient>
-    <linearGradient id="glow-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#1e3a5f" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.5" />
+
+    <!-- Border Gradient -->
+    <linearGradient id="glow-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.75" />
+      <stop offset="35%" stop-color="#3b82f6" stop-opacity="0.40" />
+      <stop offset="70%" stop-color="#1e3a5f" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.55" />
     </linearGradient>
+
+    <!-- Left Accent Bar Gradient -->
+    <linearGradient id="ind-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Subtle Radial Glow -->
+    <radialGradient id="card-glow" cx="85%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#0a1329" stop-opacity="0" />
+    </radialGradient>
+
     <style>
-      .num-tag { font-family: ui-monospace, monospace; font-size: 10px; font-weight: 700; fill: #38bdf8; letter-spacing: 1px; }
-      .card-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; }
-      .card-desc { font-family: system-ui, sans-serif; font-size: 11px; fill: #94a3b8; }
+      .card-tag {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        letter-spacing: 1px;
+      }
+      .tag-num {
+        font-size: 9.5px;
+        font-weight: 700;
+        fill: #60a5fa;
+      }
+      .tag-slash {
+        font-size: 9.5px;
+        font-weight: 400;
+        fill: #334155;
+      }
+      .tag-label {
+        font-size: 10px;
+        font-weight: 800;
+        fill: #38bdf8;
+        letter-spacing: 1.2px;
+      }
+      .card-title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+        font-size: 13.5px;
+        font-weight: 700;
+        fill: #f8fafc;
+        letter-spacing: 0.2px;
+      }
+      .card-desc {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+        font-size: 10.5px;
+        font-weight: 450;
+        fill: #94a3b8;
+        letter-spacing: 0.15px;
+      }
+      .card-bg {
+        transition: stroke 0.3s ease, filter 0.3s ease;
+      }
+      .left-accent {
+        transition: filter 0.3s ease, fill 0.3s ease;
+      }
+      .card-clickable {
+        cursor: pointer;
+      }
+      .card-clickable:hover .card-bg {
+        stroke: #38bdf8;
+        stroke-opacity: 0.95;
+        filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.45));
+      }
+      .card-clickable:hover .left-accent {
+        filter: drop-shadow(0 0 4px #38bdf8);
+      }
+
+      /* 1. Code Brackets Animation: Inward nudge, sweep glow, resting */
+      .code-bracket-left {
+        animation: codeLeft 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, stroke, filter;
+      }
+      .code-bracket-right {
+        animation: codeRight 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, stroke, filter;
+      }
+      @keyframes codeLeft {
+        0%, 100% { transform: translateX(0); stroke: #38bdf8; filter: none; }
+        5.6% { transform: translateX(1.2px); stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        11.1% { transform: translateX(0); stroke: #38bdf8; filter: none; }
+        16.7%, 25.0% { stroke: #67e8f9; filter: drop-shadow(0 0 3px #38bdf8); }
+        33.3%, 100% { stroke: #38bdf8; filter: none; }
+      }
+      @keyframes codeRight {
+        0%, 100% { transform: translateX(0); stroke: #38bdf8; filter: none; }
+        6.9% { transform: translateX(0); }
+        12.5% { transform: translateX(-1.2px); stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        18.1% { transform: translateX(0); stroke: #38bdf8; }
+        18.2%, 25.0% { stroke: #67e8f9; filter: drop-shadow(0 0 3px #38bdf8); }
+        33.3%, 100% { stroke: #38bdf8; filter: none; }
+      }
+
+      /* 2. Graduation Cap Animation: Gentle lift, upper glint, tassel sway, soft glow */
+      .grad-lift {
+        animation: capLift 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, filter;
+      }
+      .grad-glint {
+        animation: capGlint 3.6s ease-in-out infinite;
+        will-change: opacity, filter;
+      }
+      .grad-tassel {
+        transform-origin: 31px 27px;
+        animation: capTassel 3.6s ease-in-out infinite;
+        will-change: transform;
+      }
+      @keyframes capLift {
+        0%, 19.4% { transform: translateY(0); filter: none; }
+        30.6% { transform: translateY(-1.8px); filter: drop-shadow(0 0 2.5px #38bdf8); }
+        41.7% { transform: translateY(0); filter: none; }
+        47.2%, 55.6% { filter: drop-shadow(0 0 3px #38bdf8); }
+        63.9%, 100% { transform: translateY(0); filter: none; }
+      }
+      @keyframes capGlint {
+        0%, 23.0% { opacity: 0; filter: none; }
+        30.6% { opacity: 1; filter: drop-shadow(0 0 2px #67e8f9); }
+        38.0%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes capTassel {
+        0%, 25.0% { transform: rotate(0deg); }
+        33.3% { transform: rotate(3.5deg); }
+        41.7% { transform: rotate(-2deg); }
+        50.0%, 100% { transform: rotate(0deg); }
+      }
+
+      /* 3. Location Pin Animation: Center point pulse, pin body highlight, radar ping */
+      .loc-dot {
+        animation: locDotSeq 3.6s ease-in-out infinite;
+        will-change: opacity, fill, filter;
+      }
+      .loc-body {
+        animation: locBodySeq 3.6s ease-in-out infinite;
+        will-change: stroke, filter;
+      }
+      .loc-radar {
+        animation: locRadarSeq 3.6s ease-out infinite;
+        will-change: r, opacity;
+      }
+      @keyframes locDotSeq {
+        0%, 41.7% { opacity: 0.6; fill: #0284c7; filter: none; }
+        47.2%, 63.9% { opacity: 1; fill: #38bdf8; filter: drop-shadow(0 0 3px #38bdf8); }
+        72.2%, 100% { opacity: 0.6; fill: #0284c7; filter: none; }
+      }
+      @keyframes locBodySeq {
+        0%, 47.2% { stroke: #38bdf8; filter: none; }
+        52.8%, 66.7% { stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        75.0%, 100% { stroke: #38bdf8; filter: none; }
+      }
+      @keyframes locRadarSeq {
+        0%, 58.3% { r: 1.8px; opacity: 0; }
+        60.0% { opacity: 0.85; }
+        72.2% { r: 6.8px; opacity: 0; }
+        100% { r: 6.8px; opacity: 0; }
+      }
+
+      /* 4. Layered Systems Animation: Vertical separation, cyan edge highlight, reassembly */
+      .stack-layer-top {
+        animation: stackTopSeq 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, stroke, filter;
+      }
+      .stack-layer-mid {
+        animation: stackMidSeq 3.6s ease-in-out infinite;
+        will-change: stroke, filter;
+      }
+      .stack-layer-bot {
+        animation: stackBotSeq 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, stroke, filter;
+      }
+      @keyframes stackTopSeq {
+        0%, 55.6% { transform: translateY(0); stroke: #38bdf8; filter: none; }
+        66.7% { transform: translateY(-1.5px); stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        77.8% { transform: translateY(0); stroke: #67e8f9; }
+        83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 3px #38bdf8); }
+        88.9%, 100% { transform: translateY(0); stroke: #38bdf8; filter: none; }
+      }
+      @keyframes stackMidSeq {
+        0%, 58.0% { stroke: #38bdf8; filter: none; }
+        66.7%, 83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        88.9%, 100% { stroke: #38bdf8; filter: none; }
+      }
+      @keyframes stackBotSeq {
+        0%, 55.6% { transform: translateY(0); stroke: #38bdf8; filter: none; }
+        66.7% { transform: translateY(1.5px); stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        77.8% { transform: translateY(0); stroke: #67e8f9; }
+        83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 3px #38bdf8); }
+        88.9%, 100% { transform: translateY(0); stroke: #38bdf8; filter: none; }
+      }
+
+      /* 5. Shield Leadership Animation: Traveling edge beam, flare glow, core beacon pulse */
+      .shield-beam {
+        stroke-dasharray: 12 30;
+        animation: shieldBeamSeq 3.6s linear infinite;
+        will-change: stroke-dashoffset, opacity;
+      }
+      .shield-flare {
+        animation: shieldFlareSeq 3.6s ease-in-out infinite;
+        will-change: stroke, stroke-opacity, filter;
+      }
+      .shield-beacon {
+        animation: shieldBeaconSeq 3.6s ease-in-out infinite;
+        will-change: opacity, r, filter;
+      }
+      @keyframes shieldBeamSeq {
+        0%, 69.4% { stroke-dashoffset: 42; opacity: 0; }
+        72.2% { opacity: 1; }
+        86.1% { stroke-dashoffset: 0; opacity: 1; }
+        88.0% { opacity: 0; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+      }
+      @keyframes shieldFlareSeq {
+        0%, 80.5% { stroke: #38bdf8; stroke-opacity: 0.7; filter: none; }
+        86.1%, 91.7% { stroke: #67e8f9; stroke-opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+        95.8%, 100% { stroke: #38bdf8; stroke-opacity: 0.7; filter: none; }
+      }
+      @keyframes shieldBeaconSeq {
+        0%, 75.0% { opacity: 0.5; r: 1.3px; filter: none; }
+        86.1% { opacity: 1; r: 1.8px; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        94.4%, 100% { opacity: 0.5; r: 1.3px; filter: none; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .code-bracket-left, .code-bracket-right, .grad-lift, .grad-glint, .grad-tassel,
+        .loc-dot, .loc-body, .loc-radar, .stack-layer-top, .stack-layer-mid, .stack-layer-bot,
+        .shield-beam, .shield-flare, .shield-beacon {
+          animation: none !important;
+        }
+      }
     </style>
   </defs>
 
-  <!-- Card 1: Developer Identity -->
+
+  <!-- Card 1: 01 / ROLE - Software Creator -->
   <g transform="translate(0, 0)">
-    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
-    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#38bdf8" />
-    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
-    <!-- Code Icon -->
-    <path d="M 23 24 L 19 28 L 23 32 M 29 24 L 33 28 L 29 32" stroke="#38bdf8" stroke-width="1.5" fill="none" stroke-linecap="round" />
-    <text x="46" y="32" class="num-tag">01 / ROLE</text>
-    <text x="14" y="68" class="card-title">Software Creator</text>
-    <text x="14" y="88" class="card-desc">Building practical</text>
-    <text x="14" y="104" class="card-desc">digital utilities</text>
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-glow)" />
+    <rect class="left-accent" x="0" y="8" width="3.2" height="24" rx="1.6" fill="url(#ind-grad)" />
+    
+    <!-- Icon Container -->
+    <circle cx="26" cy="28" r="14" fill="#081226" stroke="#1e3a5f" stroke-width="1.1" />
+    
+    <!-- Code Bracket Icon (Left and Right with Inward Code Activation) -->
+    <!-- Left Bracket -->
+    <path class="code-bracket-left" d="M 23 24 L 19 28 L 23 32" stroke="#38bdf8" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <animateTransform attributeName="transform" type="translate" dur="3.6s" repeatCount="indefinite"
+                        values="0 0; 1.2 0; 0 0; 0 0; 0 0"
+                        keyTimes="0; 0.056; 0.111; 0.333; 1" />
+      <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+               values="#38bdf8; #67e8f9; #38bdf8; #67e8f9; #38bdf8; #38bdf8"
+               keyTimes="0; 0.056; 0.111; 0.250; 0.333; 1" />
+    </path>
+    <!-- Right Bracket -->
+    <path class="code-bracket-right" d="M 29 24 L 33 28 L 29 32" stroke="#38bdf8" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <animateTransform attributeName="transform" type="translate" dur="3.6s" repeatCount="indefinite"
+                        values="0 0; 0 0; -1.2 0; 0 0; 0 0"
+                        keyTimes="0; 0.069; 0.125; 0.181; 1" />
+      <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+               values="#38bdf8; #38bdf8; #67e8f9; #67e8f9; #38bdf8; #38bdf8"
+               keyTimes="0; 0.069; 0.125; 0.250; 0.333; 1" />
+    </path>
+
+    <!-- Category Label -->
+    <text x="48" y="32" class="card-tag"><tspan class="tag-num">01</tspan><tspan class="tag-slash"> / </tspan><tspan class="tag-label">ROLE</tspan></text>
+    
+    <!-- Title -->
+    <text x="16" y="68" class="card-title">Software Creator</text>
+    
+    <!-- Supporting Description -->
+    <text x="16" y="88" class="card-desc">Building practical</text>
+    <text x="16" y="104" class="card-desc">digital utilities</text>
   </g>
 
-  <!-- Card 2: Education -->
+  <!-- Card 2: 02 / STUDY - CSE Student -->
   <g transform="translate(182, 0)">
-    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
-    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#3b82f6" />
-    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
-    <!-- Cap Icon -->
-    <path d="M 18 27 L 26 23 L 34 27 L 26 31 Z M 31 29 L 31 34 M 22 30 L 22 34 C 22 36 30 36 30 34 L 30 30" stroke="#60a5fa" stroke-width="1.3" fill="none" />
-    <text x="46" y="32" class="num-tag">02 / STUDY</text>
-    <text x="14" y="68" class="card-title">CSE Student</text>
-    <text x="14" y="88" class="card-desc">Govt Polytechnic</text>
-    <text x="14" y="104" class="card-desc">College Ganderbal</text>
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-glow)" />
+    <rect class="left-accent" x="0" y="8" width="3.2" height="24" rx="1.6" fill="url(#ind-grad)" />
+    
+    <!-- Icon Container -->
+    <circle cx="26" cy="28" r="14" fill="#081226" stroke="#1e3a5f" stroke-width="1.1" />
+    
+    <!-- Graduation Cap Group with Subtle Lift and Tassel Sway -->
+    <g class="grad-lift">
+      <animateTransform attributeName="transform" type="translate" dur="3.6s" repeatCount="indefinite"
+                        values="0 0; 0 0; 0 -1.8; 0 0; 0 0"
+                        keyTimes="0; 0.194; 0.306; 0.417; 1" />
+      <!-- Rhombus Top -->
+      <path d="M 18 27 L 26 23 L 34 27 L 26 31 Z" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      
+      <!-- Upper Edge Glint Highlight -->
+      <path class="grad-glint" d="M 18 27 L 26 23 L 34 27" stroke="#67e8f9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0">
+        <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+                 values="0; 0; 1; 0; 0"
+                 keyTimes="0; 0.230; 0.306; 0.380; 1" />
+      </path>
+
+      <!-- Skull Band -->
+      <path d="M 22 29.5 V 33.5 C 22 35.5 24 37 26 37 S 30 35.5 30 33.5 V 29.5" stroke="#38bdf8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      
+      <!-- Tassel with Gentle Sway -->
+      <g class="grad-tassel">
+        <animateTransform attributeName="transform" type="rotate" dur="3.6s" repeatCount="indefinite"
+                          values="0 31 27; 0 31 27; 3.5 31 27; -2 31 27; 0 31 27; 0 31 27"
+                          keyTimes="0; 0.250; 0.333; 0.417; 0.500; 1" />
+        <path d="M 31 27 L 31.5 33" stroke="#67e8f9" stroke-width="1.2" stroke-linecap="round" fill="none" />
+        <circle cx="31.5" cy="33.5" r="0.8" fill="#67e8f9" />
+      </g>
+    </g>
+
+    <!-- Category Label -->
+    <text x="48" y="32" class="card-tag"><tspan class="tag-num">02</tspan><tspan class="tag-slash"> / </tspan><tspan class="tag-label">STUDY</tspan></text>
+    
+    <!-- Title -->
+    <text x="16" y="68" class="card-title">CSE Student</text>
+    
+    <!-- Supporting Description -->
+    <text x="16" y="88" class="card-desc">Govt Polytechnic</text>
+    <text x="16" y="104" class="card-desc">College Ganderbal</text>
   </g>
 
-  <!-- Card 3: Location -->
-  <g transform="translate(364, 0)">
-    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
-    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#06b6d4" />
-    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
-    <!-- Pin Icon -->
-    <path d="M 26 21 C 23.5 21 21.5 23 21.5 25.5 C 21.5 29 26 34 26 34 C 26 34 30.5 29 30.5 25.5 C 30.5 23 28.5 21 26 21 Z M 26 27 C 25 27 24.2 26.2 24.2 25.2 C 24.2 24.2 25 23.4 26 23.4 C 27 23.4 27.8 24.2 27.8 25.2 C 27.8 26.2 27 27 26 27 Z" stroke="#22d3ee" stroke-width="1.2" fill="none" />
-    <text x="46" y="32" class="num-tag">03 / BASE</text>
-    <text x="14" y="68" class="card-title">Ganderbal</text>
-    <text x="14" y="88" class="card-desc">Jammu &amp; Kashmir</text>
-    <text x="14" y="104" class="card-desc">India</text>
-  </g>
+  <!-- Card 3: 03 / BASE - Ganderbal (Clickable -> Google Maps) -->
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Ganderbal%2C%20Jammu%20and%20Kashmir%2C%20India" target="_blank" rel="noopener noreferrer" aria-label="View Ganderbal, Jammu and Kashmir on Google Maps">
+    <g class="card-clickable" transform="translate(364, 0)">
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-glow)" />
+    <rect class="left-accent" x="0" y="8" width="3.2" height="24" rx="1.6" fill="url(#ind-grad)" />
+    
+    <!-- Icon Container -->
+    <circle cx="26" cy="28" r="14" fill="#081226" stroke="#1e3a5f" stroke-width="1.1" />
+    
+    <!-- Location Radar Ping Confirmation -->
+    <circle class="loc-radar" cx="26" cy="25.2" r="1.8" fill="none" stroke="#67e8f9" stroke-width="1.1" opacity="0">
+      <animate attributeName="r" dur="3.6s" repeatCount="indefinite"
+               values="1.8; 1.8; 6.8; 6.8"
+               keyTimes="0; 0.583; 0.722; 1" />
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 0.85; 0; 0"
+               keyTimes="0; 0.583; 0.600; 0.722; 1" />
+    </circle>
 
-  <!-- Card 4: Focus -->
+    <!-- Location Pin Body -->
+    <path class="loc-body" d="M 26 21 C 23.5 21 21.5 23 21.5 25.5 C 21.5 29 26 34 26 34 C 26 34 30.5 29 30.5 25.5 C 30.5 23 28.5 21 26 21 Z" stroke="#38bdf8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+               values="#38bdf8; #38bdf8; #67e8f9; #38bdf8; #38bdf8"
+               keyTimes="0; 0.472; 0.583; 0.750; 1" />
+    </path>
+
+    <!-- Center Point Pulse -->
+    <circle class="loc-dot" cx="26" cy="25.2" r="1.8" fill="#38bdf8">
+      <animate attributeName="fill" dur="3.6s" repeatCount="indefinite"
+               values="#0284c7; #0284c7; #38bdf8; #0284c7; #0284c7"
+               keyTimes="0; 0.417; 0.500; 0.722; 1" />
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0.6; 0.6; 1; 0.6; 0.6"
+               keyTimes="0; 0.417; 0.500; 0.722; 1" />
+    </circle>
+
+    <!-- Category Label -->
+    <text x="48" y="32" class="card-tag"><tspan class="tag-num">03</tspan><tspan class="tag-slash"> / </tspan><tspan class="tag-label">BASE</tspan></text>
+    
+    <!-- Title -->
+    <text x="16" y="68" class="card-title">Ganderbal</text>
+    
+    <!-- Supporting Description -->
+    <text x="16" y="88" class="card-desc">Jammu &amp; Kashmir</text>
+    <text x="16" y="104" class="card-desc">India</text>
+    </g>
+  </a>
+
+  <!-- Card 4: 04 / FOCUS - Web & Android -->
   <g transform="translate(546, 0)">
-    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
-    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#38bdf8" />
-    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
-    <!-- Layers Icon -->
-    <path d="M 26 22 L 33 26 L 26 30 L 19 26 Z M 19 28.5 L 26 32.5 L 33 28.5 M 19 31 L 26 35 L 33 31" stroke="#38bdf8" stroke-width="1.3" fill="none" stroke-linejoin="round" />
-    <text x="46" y="32" class="num-tag">04 / FOCUS</text>
-    <text x="14" y="68" class="card-title">Web &amp; Android</text>
-    <text x="14" y="88" class="card-desc">Client-side tools</text>
-    <text x="14" y="104" class="card-desc">&amp; Wasm software</text>
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-glow)" />
+    <rect class="left-accent" x="0" y="8" width="3.2" height="24" rx="1.6" fill="url(#ind-grad)" />
+    
+    <!-- Icon Container -->
+    <circle cx="26" cy="28" r="14" fill="#081226" stroke="#1e3a5f" stroke-width="1.1" />
+    
+    <!-- Layered Stack Icon: Architecture layers that shift apart and reassemble -->
+    <!-- Top Layer (Rhombus) -->
+    <path class="stack-layer-top" d="M 26 22 L 33 26 L 26 30 L 19 26 Z" stroke="#38bdf8" stroke-width="1.4" fill="none" stroke-linejoin="round">
+      <animateTransform attributeName="transform" type="translate" dur="3.6s" repeatCount="indefinite"
+                        values="0 0; 0 0; 0 -1.5; 0 0; 0 0; 0 0"
+                        keyTimes="0; 0.556; 0.667; 0.778; 0.833; 1" />
+      <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+               values="#38bdf8; #38bdf8; #67e8f9; #67e8f9; #38bdf8; #38bdf8"
+               keyTimes="0; 0.556; 0.667; 0.833; 0.889; 1" />
+    </path>
+
+    <!-- Middle Layer (Chevron) -->
+    <path class="stack-layer-mid" d="M 19 28.5 L 26 32.5 L 33 28.5" stroke="#38bdf8" stroke-width="1.4" fill="none" stroke-linejoin="round">
+      <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+               values="#38bdf8; #38bdf8; #67e8f9; #67e8f9; #38bdf8; #38bdf8"
+               keyTimes="0; 0.580; 0.667; 0.833; 0.889; 1" />
+    </path>
+
+    <!-- Bottom Layer (Chevron) -->
+    <path class="stack-layer-bot" d="M 19 31 L 26 35 L 33 31" stroke="#38bdf8" stroke-width="1.4" fill="none" stroke-linejoin="round">
+      <animateTransform attributeName="transform" type="translate" dur="3.6s" repeatCount="indefinite"
+                        values="0 0; 0 0; 0 1.5; 0 0; 0 0; 0 0"
+                        keyTimes="0; 0.556; 0.667; 0.778; 0.833; 1" />
+      <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+               values="#38bdf8; #38bdf8; #67e8f9; #67e8f9; #38bdf8; #38bdf8"
+               keyTimes="0; 0.556; 0.667; 0.833; 0.889; 1" />
+    </path>
+
+    <!-- Category Label -->
+    <text x="48" y="32" class="card-tag"><tspan class="tag-num">04</tspan><tspan class="tag-slash"> / </tspan><tspan class="tag-label">FOCUS</tspan></text>
+    
+    <!-- Title -->
+    <text x="16" y="68" class="card-title">Web &amp; Android</text>
+    
+    <!-- Supporting Description -->
+    <text x="16" y="88" class="card-desc">Client-side tools</text>
+    <text x="16" y="104" class="card-desc">&amp; Wasm software</text>
   </g>
 
-  <!-- Card 5: Leadership -->
-  <g transform="translate(728, 0)">
-    <rect width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
-    <rect x="0" y="8" width="3" height="24" rx="1.5" fill="#3b82f6" />
-    <circle cx="26" cy="28" r="14" fill="#0f2244" stroke="#1e3a5f" stroke-width="1" />
-    <!-- Shield Icon -->
-    <path d="M 26 21 L 32 23.5 L 32 28 C 32 32 26 35 26 35 C 26 35 20 32 20 28 L 20 23.5 Z" stroke="#60a5fa" stroke-width="1.3" fill="none" />
-    <text x="46" y="32" class="num-tag">05 / LEAD</text>
-    <text x="14" y="68" class="card-title">Co-Founder</text>
-    <text x="14" y="88" class="card-desc">CyberGuard YUVA</text>
-    <text x="14" y="104" class="card-desc">Youth Defense Club</text>
-  </g>
+  <!-- Card 5: 05 / LEAD - Co-Founder (Clickable -> CyberGuard YUVA) -->
+  <a href="https://cyberguard-yuva.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit the CyberGuard YUVA official website">
+    <g class="card-clickable" transform="translate(728, 0)">
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-glow)" />
+    <rect class="left-accent" x="0" y="8" width="3.2" height="24" rx="1.6" fill="url(#ind-grad)" />
+    
+    <!-- Icon Container -->
+    <circle cx="26" cy="28" r="14" fill="#081226" stroke="#1e3a5f" stroke-width="1.1" />
+    
+    <!-- Shield Icon: Leadership & Protection -->
+    <!-- Base Shield with Synchronized Flare -->
+    <path class="shield-flare" d="M 26 21 L 32 23.5 L 32 28 C 32 32 26 35 26 35 C 26 35 20 32 20 28 L 20 23.5 Z" stroke="#38bdf8" stroke-width="1.4" fill="none" stroke-linejoin="round">
+      <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+               values="#38bdf8; #38bdf8; #67e8f9; #67e8f9; #38bdf8; #38bdf8"
+               keyTimes="0; 0.805; 0.861; 0.917; 0.958; 1" />
+    </path>
+
+    <!-- Traveling Cyan Beam along Shield Contour -->
+    <path class="shield-beam" d="M 26 21 L 32 23.5 L 32 28 C 32 32 26 35 26 35 C 26 35 20 32 20 28 L 20 23.5 Z" stroke="#67e8f9" stroke-width="1.6" fill="none" stroke-linejoin="round" opacity="0">
+      <animate attributeName="stroke-dashoffset" dur="3.6s" repeatCount="indefinite"
+               values="42; 42; 0; 0"
+               keyTimes="0; 0.694; 0.861; 1" />
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 1; 0; 0"
+               keyTimes="0; 0.694; 0.722; 0.861; 0.880; 1" />
+    </path>
+
+    <!-- Center Pulse Beacon -->
+    <circle class="shield-beacon" cx="26" cy="27" r="1.3" fill="#38bdf8">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0.5; 0.5; 1; 0.5; 0.5"
+               keyTimes="0; 0.750; 0.861; 0.944; 1" />
+      <animate attributeName="r" dur="3.6s" repeatCount="indefinite"
+               values="1.3; 1.3; 1.8; 1.3; 1.3"
+               keyTimes="0; 0.750; 0.861; 0.944; 1" />
+    </circle>
+
+    <!-- Category Label -->
+    <text x="48" y="32" class="card-tag"><tspan class="tag-num">05</tspan><tspan class="tag-slash"> / </tspan><tspan class="tag-label">LEAD</tspan></text>
+    
+    <!-- Title -->
+    <text x="16" y="68" class="card-title">Co-Founder</text>
+    
+    <!-- Supporting Description -->
+    <text x="16" y="88" class="card-desc">CyberGuard YUVA</text>
+    <text x="16" y="104" class="card-desc">Youth Defense Club</text>
+    </g>
+  </a>
 </svg>

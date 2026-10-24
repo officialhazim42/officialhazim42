@@ -29,11 +29,17 @@
 
 <img src="assets/about-panel.svg" alt="01 / CREATE IDENTITY — About Me &amp; Software Philosophy" width="100%" />
 
-<br />
-
-<img src="assets/about-identity.svg" alt="Developer Identity Profile Matrix" width="100%" />
-
-<br />
+<p align="center">
+  <img src="assets/cards/card-role.svg" alt="01 / ROLE — Software Creator" width="172" />
+  &nbsp;
+  <img src="assets/cards/card-study.svg" alt="02 / STUDY — CSE Student" width="172" />
+  &nbsp;
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Ganderbal%2C%20Jammu%20and%20Kashmir%2C%20India" target="_blank" rel="noopener noreferrer" aria-label="View Ganderbal, Jammu and Kashmir on Google Maps"><img src="assets/cards/card-base.svg" alt="03 / BASE — Ganderbal, Jammu &amp; Kashmir India" width="172" /></a>
+  &nbsp;
+  <img src="assets/cards/card-focus.svg" alt="04 / FOCUS — Web &amp; Android" width="172" />
+  &nbsp;
+  <a href="https://cyberguard-yuva.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit the CyberGuard YUVA official website"><img src="assets/cards/card-lead.svg" alt="05 / LEAD — Co-Founder, CyberGuard YUVA Youth Defense Club" width="172" /></a>
+</p>
 
 | Metric | Profile Specification | Details |
 | :--- | :--- | :--- |

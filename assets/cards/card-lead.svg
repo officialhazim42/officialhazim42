@@ -1,0 +1,294 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 130" width="100%" height="130">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1329" stop-opacity="0.98" />
+      <stop offset="60%" stop-color="#0c1833" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#060b18" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="glow-stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.75" />
+      <stop offset="35%" stop-color="#3b82f6" stop-opacity="0.40" />
+      <stop offset="70%" stop-color="#1e3a5f" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.55" />
+    </linearGradient>
+
+    <!-- Left Accent Bar Gradient -->
+    <linearGradient id="ind-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Subtle Radial Glow -->
+    <radialGradient id="card-glow" cx="85%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#0a1329" stop-opacity="0" />
+    </radialGradient>
+
+    <style>
+      .card-tag {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        letter-spacing: 1px;
+      }
+      .tag-num {
+        font-size: 9.5px;
+        font-weight: 700;
+        fill: #60a5fa;
+      }
+      .tag-slash {
+        font-size: 9.5px;
+        font-weight: 400;
+        fill: #334155;
+      }
+      .tag-label {
+        font-size: 10px;
+        font-weight: 800;
+        fill: #38bdf8;
+        letter-spacing: 1.2px;
+      }
+      .card-title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+        font-size: 13.5px;
+        font-weight: 700;
+        fill: #f8fafc;
+        letter-spacing: 0.2px;
+      }
+      .card-desc {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+        font-size: 10.5px;
+        font-weight: 450;
+        fill: #94a3b8;
+        letter-spacing: 0.15px;
+      }
+      .card-bg {
+        transition: stroke 0.3s ease, filter 0.3s ease;
+      }
+      .left-accent {
+        transition: filter 0.3s ease, fill 0.3s ease;
+      }
+      .card-clickable {
+        cursor: pointer;
+      }
+      .card-clickable:hover .card-bg {
+        stroke: #38bdf8;
+        stroke-opacity: 0.95;
+        filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.45));
+      }
+      .card-clickable:hover .left-accent {
+        filter: drop-shadow(0 0 4px #38bdf8);
+      }
+
+      /* 1. Code Brackets Animation: Inward nudge, sweep glow, resting */
+      .code-bracket-left {
+        animation: codeLeft 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, stroke, filter;
+      }
+      .code-bracket-right {
+        animation: codeRight 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, stroke, filter;
+      }
+      @keyframes codeLeft {
+        0%, 100% { transform: translateX(0); stroke: #38bdf8; filter: none; }
+        5.6% { transform: translateX(1.2px); stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        11.1% { transform: translateX(0); stroke: #38bdf8; filter: none; }
+        16.7%, 25.0% { stroke: #67e8f9; filter: drop-shadow(0 0 3px #38bdf8); }
+        33.3%, 100% { stroke: #38bdf8; filter: none; }
+      }
+      @keyframes codeRight {
+        0%, 100% { transform: translateX(0); stroke: #38bdf8; filter: none; }
+        6.9% { transform: translateX(0); }
+        12.5% { transform: translateX(-1.2px); stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        18.1% { transform: translateX(0); stroke: #38bdf8; }
+        18.2%, 25.0% { stroke: #67e8f9; filter: drop-shadow(0 0 3px #38bdf8); }
+        33.3%, 100% { stroke: #38bdf8; filter: none; }
+      }
+
+      /* 2. Graduation Cap Animation: Gentle lift, upper glint, tassel sway, soft glow */
+      .grad-lift {
+        animation: capLift 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, filter;
+      }
+      .grad-glint {
+        animation: capGlint 3.6s ease-in-out infinite;
+        will-change: opacity, filter;
+      }
+      .grad-tassel {
+        transform-origin: 31px 27px;
+        animation: capTassel 3.6s ease-in-out infinite;
+        will-change: transform;
+      }
+      @keyframes capLift {
+        0%, 19.4% { transform: translateY(0); filter: none; }
+        30.6% { transform: translateY(-1.8px); filter: drop-shadow(0 0 2.5px #38bdf8); }
+        41.7% { transform: translateY(0); filter: none; }
+        47.2%, 55.6% { filter: drop-shadow(0 0 3px #38bdf8); }
+        63.9%, 100% { transform: translateY(0); filter: none; }
+      }
+      @keyframes capGlint {
+        0%, 23.0% { opacity: 0; filter: none; }
+        30.6% { opacity: 1; filter: drop-shadow(0 0 2px #67e8f9); }
+        38.0%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes capTassel {
+        0%, 25.0% { transform: rotate(0deg); }
+        33.3% { transform: rotate(3.5deg); }
+        41.7% { transform: rotate(-2deg); }
+        50.0%, 100% { transform: rotate(0deg); }
+      }
+
+      /* 3. Location Pin Animation: Center point pulse, pin body highlight, radar ping */
+      .loc-dot {
+        animation: locDotSeq 3.6s ease-in-out infinite;
+        will-change: opacity, fill, filter;
+      }
+      .loc-body {
+        animation: locBodySeq 3.6s ease-in-out infinite;
+        will-change: stroke, filter;
+      }
+      .loc-radar {
+        animation: locRadarSeq 3.6s ease-out infinite;
+        will-change: r, opacity;
+      }
+      @keyframes locDotSeq {
+        0%, 41.7% { opacity: 0.6; fill: #0284c7; filter: none; }
+        47.2%, 63.9% { opacity: 1; fill: #38bdf8; filter: drop-shadow(0 0 3px #38bdf8); }
+        72.2%, 100% { opacity: 0.6; fill: #0284c7; filter: none; }
+      }
+      @keyframes locBodySeq {
+        0%, 47.2% { stroke: #38bdf8; filter: none; }
+        52.8%, 66.7% { stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        75.0%, 100% { stroke: #38bdf8; filter: none; }
+      }
+      @keyframes locRadarSeq {
+        0%, 58.3% { r: 1.8px; opacity: 0; }
+        60.0% { opacity: 0.85; }
+        72.2% { r: 6.8px; opacity: 0; }
+        100% { r: 6.8px; opacity: 0; }
+      }
+
+      /* 4. Layered Systems Animation: Vertical separation, cyan edge highlight, reassembly */
+      .stack-layer-top {
+        animation: stackTopSeq 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, stroke, filter;
+      }
+      .stack-layer-mid {
+        animation: stackMidSeq 3.6s ease-in-out infinite;
+        will-change: stroke, filter;
+      }
+      .stack-layer-bot {
+        animation: stackBotSeq 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: transform, stroke, filter;
+      }
+      @keyframes stackTopSeq {
+        0%, 55.6% { transform: translateY(0); stroke: #38bdf8; filter: none; }
+        66.7% { transform: translateY(-1.5px); stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        77.8% { transform: translateY(0); stroke: #67e8f9; }
+        83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 3px #38bdf8); }
+        88.9%, 100% { transform: translateY(0); stroke: #38bdf8; filter: none; }
+      }
+      @keyframes stackMidSeq {
+        0%, 58.0% { stroke: #38bdf8; filter: none; }
+        66.7%, 83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        88.9%, 100% { stroke: #38bdf8; filter: none; }
+      }
+      @keyframes stackBotSeq {
+        0%, 55.6% { transform: translateY(0); stroke: #38bdf8; filter: none; }
+        66.7% { transform: translateY(1.5px); stroke: #67e8f9; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        77.8% { transform: translateY(0); stroke: #67e8f9; }
+        83.3% { stroke: #67e8f9; filter: drop-shadow(0 0 3px #38bdf8); }
+        88.9%, 100% { transform: translateY(0); stroke: #38bdf8; filter: none; }
+      }
+
+      /* 5. Shield Leadership Animation: Traveling edge beam, flare glow, core beacon pulse */
+      .shield-beam {
+        stroke-dasharray: 12 30;
+        animation: shieldBeamSeq 3.6s linear infinite;
+        will-change: stroke-dashoffset, opacity;
+      }
+      .shield-flare {
+        animation: shieldFlareSeq 3.6s ease-in-out infinite;
+        will-change: stroke, stroke-opacity, filter;
+      }
+      .shield-beacon {
+        animation: shieldBeaconSeq 3.6s ease-in-out infinite;
+        will-change: opacity, r, filter;
+      }
+      @keyframes shieldBeamSeq {
+        0%, 69.4% { stroke-dashoffset: 42; opacity: 0; }
+        72.2% { opacity: 1; }
+        86.1% { stroke-dashoffset: 0; opacity: 1; }
+        88.0% { opacity: 0; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+      }
+      @keyframes shieldFlareSeq {
+        0%, 80.5% { stroke: #38bdf8; stroke-opacity: 0.7; filter: none; }
+        86.1%, 91.7% { stroke: #67e8f9; stroke-opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+        95.8%, 100% { stroke: #38bdf8; stroke-opacity: 0.7; filter: none; }
+      }
+      @keyframes shieldBeaconSeq {
+        0%, 75.0% { opacity: 0.5; r: 1.3px; filter: none; }
+        86.1% { opacity: 1; r: 1.8px; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        94.4%, 100% { opacity: 0.5; r: 1.3px; filter: none; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .code-bracket-left, .code-bracket-right, .grad-lift, .grad-glint, .grad-tassel,
+        .loc-dot, .loc-body, .loc-radar, .stack-layer-top, .stack-layer-mid, .stack-layer-bot,
+        .shield-beam, .shield-flare, .shield-beacon {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <a href="https://cyberguard-yuva.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit the CyberGuard YUVA official website">
+    <g class="card-clickable">
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-grad)" stroke="url(#glow-stroke)" stroke-width="1.2" />
+    <rect class="card-bg" width="172" height="130" rx="10" fill="url(#card-glow)" />
+    <rect class="left-accent" x="0" y="8" width="3.2" height="24" rx="1.6" fill="url(#ind-grad)" />
+    
+    <!-- Icon Container -->
+    <circle cx="26" cy="28" r="14" fill="#081226" stroke="#1e3a5f" stroke-width="1.1" />
+    
+    <!-- Shield Icon: Leadership & Protection -->
+    <!-- Base Shield with Synchronized Flare -->
+    <path class="shield-flare" d="M 26 21 L 32 23.5 L 32 28 C 32 32 26 35 26 35 C 26 35 20 32 20 28 L 20 23.5 Z" stroke="#38bdf8" stroke-width="1.4" fill="none" stroke-linejoin="round">
+      <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+               values="#38bdf8; #38bdf8; #67e8f9; #67e8f9; #38bdf8; #38bdf8"
+               keyTimes="0; 0.805; 0.861; 0.917; 0.958; 1" />
+    </path>
+
+    <!-- Traveling Cyan Beam along Shield Contour -->
+    <path class="shield-beam" d="M 26 21 L 32 23.5 L 32 28 C 32 32 26 35 26 35 C 26 35 20 32 20 28 L 20 23.5 Z" stroke="#67e8f9" stroke-width="1.6" fill="none" stroke-linejoin="round" opacity="0">
+      <animate attributeName="stroke-dashoffset" dur="3.6s" repeatCount="indefinite"
+               values="42; 42; 0; 0"
+               keyTimes="0; 0.694; 0.861; 1" />
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 1; 0; 0"
+               keyTimes="0; 0.694; 0.722; 0.861; 0.880; 1" />
+    </path>
+
+    <!-- Center Pulse Beacon -->
+    <circle class="shield-beacon" cx="26" cy="27" r="1.3" fill="#38bdf8">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0.5; 0.5; 1; 0.5; 0.5"
+               keyTimes="0; 0.750; 0.861; 0.944; 1" />
+      <animate attributeName="r" dur="3.6s" repeatCount="indefinite"
+               values="1.3; 1.3; 1.8; 1.3; 1.3"
+               keyTimes="0; 0.750; 0.861; 0.944; 1" />
+    </circle>
+
+    <!-- Category Label -->
+    <text x="48" y="32" class="card-tag"><tspan class="tag-num">05</tspan><tspan class="tag-slash"> / </tspan><tspan class="tag-label">LEAD</tspan></text>
+    
+    <!-- Title -->
+    <text x="16" y="68" class="card-title">Co-Founder</text>
+    
+    <!-- Supporting Description -->
+    <text x="16" y="88" class="card-desc">CyberGuard YUVA</text>
+    <text x="16" y="104" class="card-desc">Youth Defense Club</text>
+    </g>
+  </a>
+</svg>
