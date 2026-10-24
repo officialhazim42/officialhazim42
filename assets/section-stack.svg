@@ -81,15 +81,37 @@
       .status-dot {
         animation: pulseGlow 2.5s ease-in-out infinite;
       }
+      .term-prompt {
+        opacity: 0.25;
+        animation: termPromptSeq 3.6s ease-in-out infinite;
+        will-change: opacity, filter;
+      }
       .term-cursor {
         animation: termCursorBlink 1.2s step-end infinite;
       }
-      .stack-track-pulse {
-        stroke-dasharray: 10 65;
-        animation: stackPhoton 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      .term-short-line {
+        stroke-dasharray: 14;
+        stroke-dashoffset: 14;
+        opacity: 0;
+        animation: shortLineDrawSeq 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        will-change: stroke-dashoffset, opacity, filter;
       }
+      .stack-seg {
+        opacity: 0;
+        will-change: opacity, filter;
+      }
+      .stack-seg-1 { animation: stackSeg1Seq 3.6s ease-out infinite; }
+      .stack-seg-2 { animation: stackSeg2Seq 3.6s ease-out infinite; }
+      .stack-seg-3 { animation: stackSeg3Seq 3.6s ease-out infinite; }
+      .stack-seg-4 { animation: stackSeg4Seq 3.6s ease-out infinite; }
+      .stack-seg-5 { animation: stackSeg5Seq 3.6s ease-out infinite; }
+      .stack-seg-6 { animation: stackSeg6Seq 3.6s ease-out infinite; }
+      .stack-seg-7 { animation: stackSeg7Seq 3.6s ease-out infinite; }
+      .stack-seg-8 { animation: stackSeg8Seq 3.6s ease-out infinite; }
       .stack-bus-dot {
-        animation: stackBusGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        opacity: 0.4;
+        animation: stackBusDotSeq 3.6s ease-in-out infinite;
+        will-change: opacity, fill, filter;
       }
 
       @keyframes textReveal-03 {
@@ -139,24 +161,82 @@
         100% { opacity: 1; }
       }
 
-      @keyframes stackPhoton {
-        0% { stroke-dashoffset: 65; opacity: 0; }
-        15% { opacity: 0.9; }
-        60% { stroke-dashoffset: 0; opacity: 0.9; }
-        75%, 100% { stroke-dashoffset: -10; opacity: 0; }
+      /* Phase 1: Terminal Prompt Reveal (0s - 0.25s), hold through 2.7s, reset */
+      @keyframes termPromptSeq {
+        0% { opacity: 0.25; filter: none; }
+        6.9% { opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+        75% { opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+        83.3%, 100% { opacity: 0.25; filter: none; }
       }
 
-      @keyframes stackBusGlow {
-        0%, 55% { opacity: 0.75; filter: drop-shadow(0 0 1px #38bdf8); }
-        65%, 75% { opacity: 1; filter: drop-shadow(0 0 4px #38bdf8); }
-        90%, 100% { opacity: 0.75; filter: drop-shadow(0 0 1px #38bdf8); }
+      /* Phase 2: Short Horizontal Line Draws (0.25s - 0.60s), hold through 2.6s, retracts */
+      @keyframes shortLineDrawSeq {
+        0%, 6.9% { stroke-dashoffset: 14; opacity: 0; filter: none; }
+        16.7% { stroke-dashoffset: 0; opacity: 1; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        72.2% { stroke-dashoffset: 0; opacity: 1; filter: drop-shadow(0 0 2.5px #38bdf8); }
+        80.6%, 100% { stroke-dashoffset: 14; opacity: 0; filter: none; }
+      }
+
+      /* Phase 3: Sequential Dotted Line Illumination (0.60s - 1.40s) */
+      @keyframes stackSeg1Seq {
+        0%, 16.7% { opacity: 0; filter: none; }
+        18.9% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        20.0%, 69.4% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        77.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes stackSeg2Seq {
+        0%, 19.4% { opacity: 0; filter: none; }
+        21.7% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        22.8%, 69.4% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        77.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes stackSeg3Seq {
+        0%, 22.2% { opacity: 0; filter: none; }
+        24.4% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        25.6%, 69.4% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        77.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes stackSeg4Seq {
+        0%, 25.0% { opacity: 0; filter: none; }
+        27.2% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        28.3%, 69.4% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        77.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes stackSeg5Seq {
+        0%, 27.8% { opacity: 0; filter: none; }
+        30.0% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        31.1%, 69.4% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        77.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes stackSeg6Seq {
+        0%, 30.6% { opacity: 0; filter: none; }
+        32.8% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        33.9%, 69.4% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        77.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes stackSeg7Seq {
+        0%, 33.3% { opacity: 0; filter: none; }
+        35.6% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        36.7%, 69.4% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        77.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes stackSeg8Seq {
+        0%, 36.1% { opacity: 0; filter: none; }
+        38.3% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        39.4%, 69.4% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        77.8%, 100% { opacity: 0; filter: none; }
+      }
+
+      /* Phase 4: Endpoint Dot Glows (activates after dotted line at 40.3%), holds, fades */
+      @keyframes stackBusDotSeq {
+        0%, 40.3% { opacity: 0.4; fill: #0284c7; filter: none; }
+        47.2%, 66.7% { opacity: 1; fill: #38bdf8; filter: drop-shadow(0 0 4.5px #38bdf8); }
+        75.0%, 100% { opacity: 0.4; fill: #0284c7; filter: none; }
       }
 
       @media (prefers-reduced-motion: reduce) {
-        * {
+        .text-cursor, .clip-rect {
           animation: none !important;
-          stroke-dashoffset: 0 !important;
-          opacity: 1 !important;
         }
       }
     </style>
@@ -193,10 +273,87 @@
   <!-- Section-Specific Right Visual Marker and Telemetry -->
     <!-- Right Motif: Terminal Command Detail & Circuit Bus -->
   <g transform="translate(655, 17)">
-    <text x="0" y="12" dominant-baseline="central" class="mono-badge">&gt;<tspan class="term-cursor">_</tspan></text>
-    <line x1="24" y1="12" x2="85" y2="12" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="3,3" />
-    <line class="stack-track-pulse" x1="24" y1="12" x2="85" y2="12" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round" />
-    <circle cx="85" cy="12" r="2.5" fill="#38bdf8" class="stack-bus-dot" />
+    <!-- Terminal Prompt: Reveals first (0s - 0.25s) with subtle cyan highlight -->
+    <text x="0" y="12" dominant-baseline="central" class="mono-badge term-prompt" opacity="0.25">&gt;<tspan class="term-cursor">_</tspan>
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0.25; 1; 1; 0.25; 0.25"
+               keyTimes="0; 0.069; 0.75; 0.833; 1" />
+    </text>
+
+    <!-- Underlying Guide Tracks (Dim Background) -->
+    <line x1="24" y1="12" x2="38" y2="12" stroke="#1e3a5f" stroke-width="1" />
+    <line x1="38" y1="12" x2="85" y2="12" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="3,3" />
+
+    <!-- Short Horizontal Line: Draws smoothly after terminal prompt (0.25s - 0.60s) -->
+    <line class="term-short-line" x1="24" y1="12" x2="38" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="14" stroke-dashoffset="14" opacity="0">
+      <animate attributeName="stroke-dashoffset" dur="3.6s" repeatCount="indefinite"
+               values="14; 14; 0; 0; 14; 14"
+               keyTimes="0; 0.069; 0.167; 0.722; 0.806; 1" />
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 1; 0; 0"
+               keyTimes="0; 0.069; 0.167; 0.722; 0.806; 1" />
+    </line>
+
+    <!-- Sequential Left-to-Right Illuminated Dotted Segments (38 to 83) -->
+    <!-- Segment 1 (x: 38-41) -->
+    <line class="stack-seg stack-seg-1" x1="38" y1="12" x2="41" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.167; 0.189; 0.200; 0.694; 0.778; 1" />
+    </line>
+    <!-- Segment 2 (x: 44-47) -->
+    <line class="stack-seg stack-seg-2" x1="44" y1="12" x2="47" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.194; 0.217; 0.228; 0.694; 0.778; 1" />
+    </line>
+    <!-- Segment 3 (x: 50-53) -->
+    <line class="stack-seg stack-seg-3" x1="50" y1="12" x2="53" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.222; 0.244; 0.256; 0.694; 0.778; 1" />
+    </line>
+    <!-- Segment 4 (x: 56-59) -->
+    <line class="stack-seg stack-seg-4" x1="56" y1="12" x2="59" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.250; 0.272; 0.283; 0.694; 0.778; 1" />
+    </line>
+    <!-- Segment 5 (x: 62-65) -->
+    <line class="stack-seg stack-seg-5" x1="62" y1="12" x2="65" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.278; 0.300; 0.311; 0.694; 0.778; 1" />
+    </line>
+    <!-- Segment 6 (x: 68-71) -->
+    <line class="stack-seg stack-seg-6" x1="68" y1="12" x2="71" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.306; 0.328; 0.339; 0.694; 0.778; 1" />
+    </line>
+    <!-- Segment 7 (x: 74-77) -->
+    <line class="stack-seg stack-seg-7" x1="74" y1="12" x2="77" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.333; 0.356; 0.367; 0.694; 0.778; 1" />
+    </line>
+    <!-- Segment 8 (x: 80-83) -->
+    <line class="stack-seg stack-seg-8" x1="80" y1="12" x2="83" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.361; 0.383; 0.394; 0.694; 0.778; 1" />
+    </line>
+
+    <!-- Endpoint Dot: Brightens with cyan/blue glow ONLY AFTER dotted line completes illumination -->
+    <circle cx="85" cy="12" r="2.5" fill="#0284c7" class="stack-bus-dot" opacity="0.4">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0.4; 0.4; 1; 1; 0.4; 0.4"
+               keyTimes="0; 0.403; 0.472; 0.667; 0.750; 1" />
+      <animate attributeName="fill" dur="3.6s" repeatCount="indefinite"
+               values="#0284c7; #0284c7; #38bdf8; #38bdf8; #0284c7; #0284c7"
+               keyTimes="0; 0.403; 0.472; 0.667; 0.750; 1" />
+    </circle>
+
     <rect x="95" y="0" width="135" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
     <circle cx="108" cy="12" r="3" fill="#3b82f6" />
     <text x="119" y="12" dominant-baseline="central" class="mono-meta">STACK MATRIX</text>
