@@ -127,132 +127,214 @@
 
 <br />
 
-### 1. PDFHub — 33 Free Browser-Based PDF Tools
-> **Zero Server Uploads • 100% In-Browser Privacy • Client-Side WebAssembly Suite**
+<div align="center">
+  <a href="portfolio/index.html">
+    <img src="https://img.shields.io/badge/✨_LAUNCH_INTERACTIVE_PORTFOLIO-0284C7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Interactive Web Portfolio" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="PROJECTS.md">
+    <img src="https://img.shields.io/badge/📖_FULL_PROJECT_DOSSIER-0F2244?style=for-the-badge&logo=gitbook&logoColor=38BDF8" alt="Complete Project Dossier" />
+  </a>
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/VERIFIED_PROJECTS-10_Active-0284C7?style=for-the-badge" alt="10 Verified Projects" />
+</div>
+
+<p align="center">
+  <sub>A curated portfolio of client-side web applications, in-browser graphics engines, privacy-focused utilities, and cybersecurity platforms engineered by <b>@officialhazim42</b>. Click any card or link to explore live deployments, source code, and architecture specifications.</sub>
+</p>
 
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
 
-A comprehensive, zero-budget PDF utility suite engineered to run entirely within the user's browser. Documents are processed locally on the client device using WebAssembly and client-side JavaScript engines, ensuring that confidential files never transmit across remote servers.
+### 01 &nbsp; 📄 PDFHub
+`CLIENT-SIDE WEBASSEMBLY SUITE` &nbsp; <img src="https://img.shields.io/badge/LIVE-0284C7?style=flat-square" alt="LIVE" />
 
-* **Capabilities:** Merge, split, organize, compress, extract text, client-side OCR, rotate, format conversion, and offline PWA capability.
-* **Stack:** JavaScript (ES6+), WebAssembly, `pdf-lib`, `pdf.js`, `SheetJS`, `Tesseract.js`, HTML5 Canvas.
-* **Architecture:** Netlify Edge (Canonical: `pdfshub.netlify.app` | Mirror: `pdfshub.smartstores.in`).
+<a href="https://pdfshub.netlify.app/">
+  <img src="assets/pdfhub-preview.png" alt="PDFHub Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
+
+A comprehensive, privacy-first PDF utility suite engineered to execute 100% within the browser. Files are processed locally on the client device using WebAssembly and client-side JavaScript engines, guaranteeing that sensitive documents never touch external servers.
+
+`JavaScript (ES6+)` `WebAssembly` `pdf-lib` `pdf.js`
 
 <br />
 
-<a href="https://github.com/officialhazim42/pdfshub"><img src="https://img.shields.io/badge/Repository-officialhazim42%2Fpdfshub-0B1329?style=flat-square&logo=github&logoColor=white" alt="View Source Code" /></a>
-&nbsp;
-<a href="https://pdfshub.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-pdfshub.netlify.app-0284C7?style=flat-square&logo=netlify&logoColor=white" alt="Live Website" /></a>
+[🌐 Live Demo](https://pdfshub.netlify.app/) &nbsp;•&nbsp; [💻 Repository](https://github.com/officialhazim42/pdfshub) &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#01-pdfhub)
 
 </td>
-<td width="50%" valign="middle" align="center">
-  <a href="https://pdfshub.netlify.app/">
-    <img src="assets/pdfhub-preview.png" alt="PDFHub Application Preview" width="100%" style="border-radius: 8px;" />
-  </a>
+<td width="50%" valign="top">
+
+### 02 &nbsp; 🖼️ ImageHub
+`IN-BROWSER GRAPHICS ENGINE` &nbsp; <img src="https://img.shields.io/badge/LIVE-0284C7?style=flat-square" alt="LIVE" />
+
+<a href="https://imagehub.netlify.app/">
+  <img src="assets/imagehub-preview.svg" alt="ImageHub Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
+
+A production-grade, client-side digital image manipulation platform running locally in the web browser. Empowers users to compress, upscale, isolate subjects, crop, resize, and convert graphics without transmitting a single byte over the network.
+
+`Pure JavaScript` `HTML5 Canvas` `Web APIs` `CSS3`
+
+<br />
+
+[🌐 Live Demo](https://imagehub.netlify.app/) &nbsp;•&nbsp; [💻 Repository](https://github.com/officialhazim42/imagehub) &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#02-imagehub)
+
 </td>
 </tr>
-</table>
-
-<br />
-
-### 2. ImageHub — Professional In-Browser Image Utilities
-> **Privacy-First Digital Image Manipulation Platform • 100% Local Execution**
-
-<table width="100%">
 <tr>
 <td width="50%" valign="top">
 
-A production-grade, client-side digital image manipulation platform. Enables users to compress, upscale, isolate subjects, crop, resize, edit, and convert photos without uploading a single byte to remote cloud servers.
+### 03 &nbsp; 🛡️ CyberGuard YUVA
+`CYBER DEFENSE PORTAL & COMMUNITY` &nbsp; <img src="https://img.shields.io/badge/LIVE-0284C7?style=flat-square" alt="LIVE" />
 
-* **Capabilities:** Client-side compression, subject isolation, smart cropping, dimensions resizing, format conversions (JPG, PNG, WebP, AVIF), and PWA installation.
-* **Stack:** Pure JavaScript, HTML5 Canvas, Web APIs, CSS3, Service Workers.
-* **Architecture:** Netlify Edge (Canonical: `imagehub.netlify.app` | Mirror: `imagehub.smartstores.in`).
+<a href="https://cyberguard-yuva.vercel.app/">
+  <img src="assets/cyberguard-preview.png" alt="CyberGuard YUVA Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
+
+Official web portal and digital learning hub for CyberGuard YUVA, a youth-led cyber defense initiative dedicated to fostering defensive technical literacy, student privacy hygiene, and safe digital practices across schools and universities.
+
+`Next.js 15+` `React 19` `TypeScript` `Tailwind CSS`
 
 <br />
 
-<a href="https://github.com/officialhazim42/imagehub"><img src="https://img.shields.io/badge/Repository-officialhazim42%2Fimagehub-0B1329?style=flat-square&logo=github&logoColor=white" alt="View Source Code" /></a>
-&nbsp;
-<a href="https://imagehub.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-imagehub.netlify.app-0284C7?style=flat-square&logo=netlify&logoColor=white" alt="Live Website" /></a>
+[🌐 Live Demo](https://cyberguard-yuva.vercel.app/) &nbsp;•&nbsp; 🔒 <i>Private Codebase</i> &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#03-cyberguard-yuva)
 
 </td>
-<td width="50%" valign="middle" align="center">
-  <a href="https://imagehub.netlify.app/">
-    <img src="assets/imagehub-preview.svg" alt="ImageHub Application Preview" width="100%" style="border-radius: 8px;" />
-  </a>
+<td width="50%" valign="top">
+
+### 04 &nbsp; 🌱 HabitsGrow (HabitFlow)
+`PRODUCTIVITY & PERSONAL GROWTH PWA` &nbsp; <img src="https://img.shields.io/badge/LIVE-0284C7?style=flat-square" alt="LIVE" />
+
+<a href="https://habit-flow-ten-eta.vercel.app">
+  <img src="assets/habitsgrow-preview.png" alt="HabitsGrow (HabitFlow) Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
+
+A responsive, privacy-centric Progressive Web App designed to help individuals build positive routines, maintain completion consistency streaks, visualize progress analytics, and document mindfulness reflections.
+
+`JavaScript (ES6+)` `PWA` `Service Workers` `HTML5/CSS3`
+
+<br />
+
+[🌐 Live Demo](https://habit-flow-ten-eta.vercel.app) &nbsp;•&nbsp; 🔒 <i>Private Codebase</i> &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#04-habitsgrow)
+
 </td>
 </tr>
-</table>
-
-<br />
-
-### 3. Advanced Web Image Compressor
-> **Client-Side Compression with AVIF Support &amp; Modern Glass UI**
-
-<table width="100%">
 <tr>
 <td width="50%" valign="top">
 
-A focused, responsive web tool engineered for fast image compression with real-time compression ratios and format detection.
+### 05 &nbsp; ⚡ Advanced Image Compressor
+`COMPRESSION UTILITY` &nbsp; <img src="https://img.shields.io/badge/LIVE-0284C7?style=flat-square" alt="LIVE" />
 
-* **Capabilities:** Support for JPG, JPEG, PNG, WEBP, and AVIF with fallback; GIF detection; smart batch naming; dark/light theme toggle; PDF export; zero backend dependencies.
-* **Stack:** HTML5, CSS3, Vanilla JavaScript, Web APIs.
-* **Architecture:** Netlify Deployment (`advance-images-compressor.netlify.app`).
+<a href="https://advance-images-compressor.netlify.app/">
+  <img src="assets/compressor-preview.svg" alt="Advanced Image Compressor Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
 
-<br />
+A focused, responsive web tool engineered for ultra-fast image compression with real-time compression ratios and format detection, packaged in a sleek dark glassmorphic UI.
 
-<a href="https://github.com/officialhazim42/Advance-Image-Compressor"><img src="https://img.shields.io/badge/Repository-Advance--Image--Compressor-0B1329?style=flat-square&logo=github&logoColor=white" alt="View Source Code" /></a>
-&nbsp;
-<a href="https://advance-images-compressor.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-advance--images--compressor-0284C7?style=flat-square&logo=netlify&logoColor=white" alt="Live Website" /></a>
-
-</td>
-<td width="50%" valign="middle" align="center">
-  <a href="https://advance-images-compressor.netlify.app/">
-    <img src="assets/compressor-preview.svg" alt="Advanced Image Compressor Preview" width="100%" style="border-radius: 8px;" />
-  </a>
-</td>
-</tr>
-</table>
+`HTML5` `CSS3` `Vanilla JavaScript` `Web APIs`
 
 <br />
 
-### 4. The Ultimate Termux Command Guide
-> **Comprehensive Handbook for Mastering Android CLI &amp; Termux API**
+[🌐 Live Demo](https://advance-images-compressor.netlify.app/) &nbsp;•&nbsp; [💻 Repository](https://github.com/officialhazim42/Advance-Image-Compressor) &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#05-advance-image-compressor)
 
-<table width="100%">
-<tr>
+</td>
 <td width="50%" valign="top">
+
+### 06 &nbsp; 💻 Termux Command Guide
+`TECHNICAL DOCUMENTATION HANDBOOK` &nbsp; <img src="https://img.shields.io/badge/REPOSITORY_ONLY-334155?style=flat-square" alt="REPOSITORY ONLY" />
+
+<a href="https://github.com/officialhazim42/Termux-Command-Listbook">
+  <img src="assets/termux-preview.svg" alt="Termux Command Guide Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
 
 A structured, practical reference handbook and command guide for mastering native Linux command-line operations and device integration APIs within the Termux Android terminal environment.
 
-* **Capabilities:** Categorized command indexes, Termux API integration recipes, package management workflows, troubleshooting tips, and setup instructions.
-* **Stack:** Shell / Bash, Markdown, Android Termux Environment.
-* **Status:** Open Reference Handbook on GitHub.
+`Shell / Bash` `Markdown` `Android Termux Environment` `Linux CLI`
 
 <br />
 
-<a href="https://github.com/officialhazim42/Termux-Command-Listbook"><img src="https://img.shields.io/badge/Repository-Termux--Command--Listbook-0B1329?style=flat-square&logo=github&logoColor=white" alt="View Repository" /></a>
+[💻 Repository](https://github.com/officialhazim42/Termux-Command-Listbook) &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#06-termux-command-guide)
 
 </td>
-<td width="50%" valign="middle" align="center">
-  <a href="https://github.com/officialhazim42/Termux-Command-Listbook">
-    <img src="assets/termux-preview.svg" alt="Termux Command Guide Preview" width="100%" style="border-radius: 8px;" />
-  </a>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 07 &nbsp; 📸 Passport Photo Maker
+`CLIENT-SIDE MEDIA TOOL` &nbsp; <img src="https://img.shields.io/badge/REPOSITORY_ONLY-334155?style=flat-square" alt="REPOSITORY ONLY" />
+
+<a href="https://github.com/officialhazim42/Passportsize-photo-maker">
+  <img src="assets/passport-preview.svg" alt="Passport Photo Maker Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
+
+A client-side utility built with HTML5 Canvas that enables users to crop, scale, and format photographs to international passport standards and generate multi-photo sheets ready for printing.
+
+`HTML5` `CSS3` `Vanilla JavaScript` `Canvas API`
+
+<br />
+
+[💻 Repository](https://github.com/officialhazim42/Passportsize-photo-maker) &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#07-passport-photo-maker)
+
+</td>
+<td width="50%" valign="top">
+
+### 08 &nbsp; 🔊 Text to Audio Converter
+`SPEECH SYNTHESIS TOOL` &nbsp; <img src="https://img.shields.io/badge/REPOSITORY_ONLY-334155?style=flat-square" alt="REPOSITORY ONLY" />
+
+<a href="https://github.com/officialhazim42/Text-to-Audio-Converter">
+  <img src="assets/audio-preview.svg" alt="Text to Audio Converter Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
+
+A lightweight web tool leveraging the browser-native Web Speech Synthesis API to convert written text into spoken audio with real-time controls for pitch, speech rate, and voice accents.
+
+`HTML5` `CSS3` `JavaScript` `Web Speech API`
+
+<br />
+
+[💻 Repository](https://github.com/officialhazim42/Text-to-Audio-Converter) &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#08-text-to-audio)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 09 &nbsp; 📝 Student Task Manager
+`ACADEMIC WORKFLOW WEB TOOL` &nbsp; <img src="https://img.shields.io/badge/REPOSITORY_ONLY-334155?style=flat-square" alt="REPOSITORY ONLY" />
+
+<a href="https://github.com/officialhazim42/week-3-student-task-manager">
+  <img src="assets/task-manager-preview.svg" alt="Student Task Manager Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
+
+An interactive task organization web application engineered with HTML, CSS, and JavaScript, featuring task creation, completion tracking, filtering, deletion, and local storage state persistence.
+
+`HTML5` `CSS3` `JavaScript` `LocalStorage API`
+
+<br />
+
+[💻 Repository](https://github.com/officialhazim42/week-3-student-task-manager) &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#09-student-task-manager)
+
+</td>
+<td width="50%" valign="top">
+
+### 10 &nbsp; 📊 Deployment Dashboard
+`DEVOPS & MONITORING PROTOTYPE` &nbsp; <img src="https://img.shields.io/badge/REPOSITORY_ONLY-334155?style=flat-square" alt="REPOSITORY ONLY" />
+
+<a href="https://github.com/officialhazim42/week-5-deployment-production">
+  <img src="assets/deployment-preview.svg" alt="Deployment Dashboard Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" />
+</a>
+
+A production deployment dashboard prototype demonstrating environment status, application telemetry, performance metrics, simulated server logs, health checks, and production release concepts.
+
+`HTML5` `CSS3` `JavaScript` `DOM Architecture`
+
+<br />
+
+[💻 Repository](https://github.com/officialhazim42/week-5-deployment-production) &nbsp;•&nbsp; [🔍 Details →](PROJECTS.md#10-deployment-dashboard)
+
 </td>
 </tr>
 </table>
-
-<br />
-
-### 5. Additional Work &amp; Capstone Projects
-
-| Project | Focus Area | Technologies | Source Code |
-| :--- | :--- | :--- | :--- |
-| **Student Portfolio Showcase** | Final Capstone Project | HTML5, CSS3, JavaScript, Responsive DOM | [View Repository](https://github.com/officialhazim42/week-6-final-capstone-project) |
-| **Production Deployment Dashboard** | Operations &amp; Monitoring Prototype | HTML5, CSS3, JavaScript, Metrics &amp; Logs | [View Repository](https://github.com/officialhazim42/week-5-deployment-production) |
-| **Client-Side Form Validation &amp; QA** | Interactive Quality Assurance Suite | HTML5, CSS3, JavaScript, Edge-Case Testing | [View Repository](https://github.com/officialhazim42/week-4-testing-quality-assurance) |
-| **Student Task Manager** | Offline-First Task Organization | HTML5, CSS3, JavaScript, LocalStorage PWA | [View Repository](https://github.com/officialhazim42/week-3-student-task-manager) |
 
 <br />
 
