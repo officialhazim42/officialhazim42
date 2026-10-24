@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hazim Bashir Faqeer — Interactive Project Portfolio</title>
+  <meta name="description" content="Explore verified featured projects by Hazim Bashir Faqeer: client-side web tools, Progressive Web Apps, cyber defense platforms, and open source utilities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #050a16;
+      --card-bg: #0a1329;
+      --card-hover: #0c1833;
+      --border-blue: #1e3a5f;
+      --border-active: #38bdf8;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-cyan: #38bdf8;
+      --accent-blue: #3b82f6;
+      --tag-bg: #0f2244;
+      --badge-live: #0284c7;
+      --badge-repo: #334155;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px 80px;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    /* Top Bar */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-blue);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-cyan);
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: var(--tag-bg);
+      border: 1px solid var(--border-blue);
+      transition: all 0.25s ease;
+    }
+    .back-link:hover {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+      transform: translateX(-2px);
+    }
+    .profile-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10b981;
+    }
+
+    /* Portfolio Header */
+    .header-banner {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    .section-tag {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+    .page-title {
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #ffffff 40%, var(--accent-cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .page-subtitle {
+      color: var(--text-muted);
+      font-size: 16px;
+      max-width: 650px;
+      margin: 0 auto 28px;
+    }
+
+    /* Filter Tabs */
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .filter-btn {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 20px;
+      background: #081226;
+      border: 1px solid var(--border-blue);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      color: var(--text-main);
+      border-color: var(--accent-cyan);
+      background: var(--tag-bg);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 25px;
+    }
+    .project-card {
+      background: var(--card-bg);
+      border: 1.2px solid var(--border-blue);
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-active);
+      box-shadow: 0 12px 30px -10px rgba(56, 189, 248, 0.3);
+    }
+    .card-thumb-wrapper {
+      position: relative;
+      width: 100%;
+      height: 185px;
+      background: #060b18;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-blue);
+    }
+    .card-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .project-card:hover .card-thumb {
+      transform: scale(1.04);
+    }
+    .card-num-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      background: rgba(8, 18, 38, 0.85);
+      border: 1px solid var(--border-active);
+      color: var(--accent-cyan);
+      padding: 3px 10px;
+      border-radius: 6px;
+      backdrop-filter: blur(6px);
+      letter-spacing: 1px;
+    }
+    .card-status-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+    }
+    .badge-live {
+      background: rgba(2, 132, 199, 0.85);
+      color: #ffffff;
+      border: 1px solid #38bdf8;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+    }
+    .badge-repo {
+      background: rgba(30, 41, 59, 0.85);
+      color: #cbd5e1;
+      border: 1px solid #475569;
+    }
+    .card-content {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-category {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 16px;
+      flex-grow: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .stack-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: var(--tag-bg);
+      border: 1px solid rgba(30, 58, 95, 0.8);
+      color: #cbd5e1;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px solid rgba(30, 58, 95, 0.4);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--accent-cyan);
+    }
+    .card-action-hint {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* -------------------------------------------------------------
+       Interactive Detail View Modal & 5-Phase Typewriter Animation
+       ------------------------------------------------------------- */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.85);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .modal-backdrop.active {
+      display: flex;
+      opacity: 1;
+    }
+    .modal-dialog {
+      background: #091328;
+      border: 1.5px solid var(--border-active);
+      box-shadow: 0 20px 60px -10px rgba(56, 189, 248, 0.35);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 820px;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      transform: scale(0.95);
+      transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .modal-backdrop.active .modal-dialog {
+      transform: scale(1);
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #081226;
+      border: 1px solid var(--border-blue);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.2s ease;
+    }
+    .modal-close-btn:hover {
+      color: var(--text-main);
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+    }
+    .modal-header-banner {
+      position: relative;
+      height: 240px;
+      background: #050a16;
+      border-bottom: 1px solid var(--border-blue);
+      overflow: hidden;
+    }
+    .modal-banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .modal-body {
+      padding: 30px;
+    }
+
+    /* Typewriter Cursor */
+    .typing-cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1.1em;
+      background-color: var(--accent-cyan);
+      margin-left: 4px;
+      vertical-align: middle;
+      animation: blinkCursor 0.8s infinite;
+    }
+    @keyframes blinkCursor {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .modal-project-tag {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .modal-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--accent-cyan);
+      background: var(--tag-bg);
+      border: 1px solid var(--border-active);
+      padding: 3px 10px;
+      border-radius: 6px;
+      letter-spacing: 1px;
+    }
+    .modal-cat {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-blue);
+    }
+    .modal-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+      min-height: 36px;
+    }
+    .modal-tagline {
+      font-size: 14px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #93c5fd;
+      margin-bottom: 20px;
+    }
+    .modal-desc-box {
+      background: #070e1e;
+      border: 1px solid var(--border-blue);
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 24px;
+      min-height: 80px;
+      font-size: 14.5px;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+    .modal-section-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .features-list {
+      list-style: none;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .feature-item {
+      background: rgba(15, 34, 68, 0.4);
+      border: 1px solid rgba(30, 58, 95, 0.6);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 13.5px;
+      color: #cbd5e1;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+    .feature-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .feat-bullet {
+      color: var(--accent-cyan);
+      font-weight: bold;
+    }
+    .modal-stack-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+    .modal-stack-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--tag-bg);
+      border: 1px solid var(--border-blue);
+      color: #93c5fd;
+      padding: 6px 14px;
+      border-radius: 6px;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 0.3s ease;
+    }
+    .modal-stack-pill.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .modal-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.35s ease;
+    }
+    .modal-actions.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .action-btn {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn-live {
+      background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+      color: #ffffff;
+      border: 1px solid #38bdf8;
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.35);
+    }
+    .btn-live:hover {
+      box-shadow: 0 0 24px rgba(56, 189, 248, 0.6);
+      transform: translateY(-2px);
+    }
+    .btn-repo {
+      background: #081226;
+      border: 1.2px solid var(--border-blue);
+      color: #cbd5e1;
+    }
+    .btn-repo:hover {
+      border-color: var(--accent-cyan);
+      color: #ffffff;
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+      transform: translateY(-2px);
+    }
+    .btn-close {
+      background: transparent;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      color: var(--text-muted);
+    }
+    .btn-close:hover {
+      color: #ffffff;
+      border-color: var(--text-muted);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      .modal-body {
+        padding: 20px;
+      }
+      .page-title {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-nav">
+      <a href="https://github.com/officialhazim42" class="back-link">
+        ← Return to GitHub Profile
+      </a>
+      <div class="profile-pill">
+        <span class="status-dot"></span>
+        <span>@officialhazim42 &nbsp;|&nbsp; Verified Portfolio</span>
+      </div>
+    </div>
+
+    <div class="header-banner">
+      <span class="section-tag">◈ 04 &nbsp;|&nbsp; Software Architecture</span>
+      <h1 class="page-title">Featured Projects Portfolio</h1>
+      <p class="page-subtitle">
+        A curated showcase of verified web applications, privacy-first client-side utilities, Progressive Web Apps, and technical reference platforms.
+      </p>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterProjects('all')">All Projects (10)</button>
+        <button class="filter-btn" onclick="filterProjects('live')">⚡ Live Deployments (5)</button>
+        <button class="filter-btn" onclick="filterProjects('repo')">💻 Open Source Repositories (10)</button>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+
+  <!-- Interactive Project Detail View Modal with Typewriter Animation -->
+  <div class="modal-backdrop" id="projectModal" onclick="handleBackdropClick(event)">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Close modal">✕</button>
+      
+      <div class="modal-header-banner">
+        <img id="modalBannerImg" class="modal-banner-img" src="" alt="Project Banner" />
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-project-tag">
+          <span class="modal-num" id="modalNum">01</span>
+          <span class="modal-cat" id="modalCat">CLIENT-SIDE UTILITY</span>
+          <span class="card-status-badge badge-live" id="modalStatusBadge">LIVE</span>
+        </div>
+
+        <!-- Phase 1: Project Identity & Typed Name -->
+        <h2 class="modal-title">
+          <span id="modalTitleText"></span><span class="typing-cursor" id="modalTitleCursor"></span>
+        </h2>
+        <div class="modal-tagline" id="modalTagline"></div>
+
+        <!-- Phase 2: Natural Typed Description -->
+        <div class="modal-desc-box">
+          <span id="modalDescText"></span><span class="typing-cursor" id="modalDescCursor" style="display:none;"></span>
+        </div>
+
+        <!-- Phase 3: Staggered Features List -->
+        <div class="modal-section-title">
+          <span>⚡ Verified Architectural Capabilities</span>
+        </div>
+        <ul class="features-list" id="modalFeaturesList"></ul>
+
+        <!-- Phase 4: Staggered Tech Stack Badges -->
+        <div class="modal-section-title">
+          <span>🛠️ Verified Technology Stack</span>
+        </div>
+        <div class="modal-stack-wrap" id="modalStackWrap"></div>
+
+        <!-- Phase 5: Action Links -->
+        <div class="modal-actions" id="modalActions"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const PROJECTS_DATA = [
+  {
+    "id": "01-pdfhub",
+    "num": "01",
+    "name": "PDFHub",
+    "tagline": "33 Free Browser-Based PDF Tools Suite",
+    "status": "LIVE",
+    "statusType": "live",
+    "category": "Client-Side WebAssembly Suite",
+    "desc": "A comprehensive, privacy-first PDF utility suite engineered to execute 100% within the browser. Files are processed locally on the client device using WebAssembly and client-side JavaScript engines, guaranteeing that sensitive documents never touch external servers.",
+    "features": [
+      "33 specialized tools: Merge, Split, Organize, Compress, Client-Side OCR, PDF Repair, and Format Conversion",
+      "Zero server uploads: 100% in-browser processing using client WebAssembly and Web Workers",
+      "Offline PWA capability: Installable as an offline desktop and mobile application",
+      "Document integrity: Local PDF repair and format validation without data leakage"
+    ],
+    "stack": [
+      "JavaScript (ES6+)",
+      "WebAssembly",
+      "pdf-lib",
+      "pdf.js",
+      "SheetJS",
+      "Tesseract.js",
+      "HTML5 Canvas",
+      "Netlify Edge"
+    ],
+    "repo": "https://github.com/officialhazim42/pdfshub",
+    "live": "https://pdfshub.netlify.app/",
+    "mirror": "https://pdfshub.smartstores.in/",
+    "thumbnail": "../assets/pdfhub-preview.png",
+    "readmeThumb": "assets/pdfhub-preview.png",
+    "icon": "\ud83d\udcc4"
+  },
+  {
+    "id": "02-imagehub",
+    "num": "02",
+    "name": "ImageHub",
+    "tagline": "Professional In-Browser Image Manipulation Platform",
+    "status": "LIVE",
+    "statusType": "live",
+    "category": "In-Browser Graphics Engine",
+    "desc": "A production-grade, client-side digital image manipulation platform running locally in the web browser. Empowers users to compress, upscale, isolate subjects, crop, resize, and convert graphics without transmitting a single byte over the network.",
+    "features": [
+      "Client-side image processing: Compress, crop, resize, upscale, and isolate photo subjects locally",
+      "Broad format support: Converts between JPG, PNG, WebP, and modern AVIF formats in-browser",
+      "Offline-first PWA: Complete Service Worker caching for seamless offline editing workflows",
+      "Zero backend dependencies: High-performance HTML5 Canvas rendering engine"
+    ],
+    "stack": [
+      "Pure JavaScript",
+      "HTML5 Canvas",
+      "Web APIs",
+      "CSS3",
+      "Service Workers",
+      "Netlify Edge"
+    ],
+    "repo": "https://github.com/officialhazim42/imagehub",
+    "live": "https://imagehub.netlify.app/",
+    "mirror": "https://imagehb.netlify.app/",
+    "thumbnail": "../assets/imagehub-preview.svg",
+    "readmeThumb": "assets/imagehub-preview.svg",
+    "icon": "\ud83d\uddbc\ufe0f"
+  },
+  {
+    "id": "03-cyberguard-yuva",
+    "num": "03",
+    "name": "CyberGuard YUVA",
+    "tagline": "Youth Cyber Defense & Digital Safety Platform",
+    "status": "LIVE",
+    "statusType": "live",
+    "category": "Cyber Defense Portal & Community",
+    "desc": "Official web portal and digital learning hub for CyberGuard YUVA, a youth-led cyber defense initiative dedicated to fostering defensive technical literacy, student privacy hygiene, and safe digital practices across schools and universities.",
+    "features": [
+      "Defensive curriculum: Phishing resistance playbooks, threat hygiene guides, and online safety manuals",
+      "Interactive student manuals: Structured guides and digital toolkits built for student literacy",
+      "Community initiatives: Peer workshops, campus defense chapters, and cyber literacy sessions",
+      "High-performance edge portal: Modern SSR/Edge architecture with verified Vercel deployment"
+    ],
+    "stack": [
+      "Next.js 15+",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel Edge"
+    ],
+    "repo": "",
+    "live": "https://cyberguard-yuva.vercel.app/",
+    "thumbnail": "../assets/cyberguard-preview.png",
+    "readmeThumb": "assets/cyberguard-preview.png",
+    "icon": "\ud83d\udee1\ufe0f"
+  },
+  {
+    "id": "04-habitsgrow",
+    "num": "04",
+    "name": "HabitsGrow (HabitFlow)",
+    "tagline": "Modern Routine Building & Consistency Tracking PWA",
+    "status": "LIVE",
+    "statusType": "live",
+    "category": "Productivity & Personal Growth PWA",
+    "desc": "A responsive, privacy-centric Progressive Web App designed to help individuals build positive routines, maintain completion consistency streaks, visualize progress analytics, and document mindfulness reflections.",
+    "features": [
+      "Daily habit tracking: Intuitive streak counters, category grouping, and routine checklists",
+      "Analytics dashboard: Interactive completion visualizer, calendar history, and streak trends",
+      "Offline-first PWA: Full offline capabilities with Web App Manifest and Service Worker sync",
+      "Secure state persistence: Cloud state synchronization backed by Supabase with Row Level Security"
+    ],
+    "stack": [
+      "JavaScript (ES6+)",
+      "PWA",
+      "Service Workers",
+      "HTML5/CSS3",
+      "Supabase",
+      "Vercel"
+    ],
+    "repo": "",
+    "live": "https://habit-flow-ten-eta.vercel.app",
+    "thumbnail": "../assets/habitsgrow-preview.png",
+    "readmeThumb": "assets/habitsgrow-preview.png",
+    "icon": "\ud83c\udf31"
+  },
+  {
+    "id": "05-advance-image-compressor",
+    "num": "05",
+    "name": "Advanced Image Compressor",
+    "tagline": "Client-Side Multi-Format Compression with AVIF Support",
+    "status": "LIVE",
+    "statusType": "live",
+    "category": "Compression Utility",
+    "desc": "A focused, responsive web tool engineered for ultra-fast image compression with real-time compression ratios and format detection, packaged in a sleek dark glassmorphic UI.",
+    "features": [
+      "Modern AVIF engine: Full support for JPG, PNG, WebP, and next-gen AVIF with graceful fallbacks",
+      "Real-time ratio previews: Dynamic before-and-after compression stats and file size previews",
+      "Smart batch renaming: Automated sequential file naming and organized batch archiving",
+      "Theme toggle: Seamless dark-mode and light-mode glassmorphism interface"
+    ],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JavaScript",
+      "Web APIs",
+      "Canvas API",
+      "Netlify"
+    ],
+    "repo": "https://github.com/officialhazim42/Advance-Image-Compressor",
+    "live": "https://advance-images-compressor.netlify.app/",
+    "thumbnail": "../assets/compressor-preview.svg",
+    "readmeThumb": "assets/compressor-preview.svg",
+    "icon": "\u26a1"
+  },
+  {
+    "id": "06-termux-command-guide",
+    "num": "06",
+    "name": "Termux Command Guide",
+    "tagline": "The Ultimate Android CLI & API Reference Handbook",
+    "status": "REPOSITORY ONLY",
+    "statusType": "repo",
+    "category": "Technical Documentation Handbook",
+    "desc": "A structured, practical reference handbook and command guide for mastering native Linux command-line operations and device integration APIs within the Termux Android terminal environment.",
+    "features": [
+      "Categorized command index: Core Linux commands, package managers, and development tool setups",
+      "Termux API integration: Practical shell recipes for interfacing with Android hardware and sensors",
+      "On-device development: Complete guides for configuring Git, Node.js, and Python on Android",
+      "Troubleshooting recipes: Storage permissions, repo mirrors, and shell environment tuning"
+    ],
+    "stack": [
+      "Shell / Bash",
+      "Markdown",
+      "Android Termux Environment",
+      "Linux CLI"
+    ],
+    "repo": "https://github.com/officialhazim42/Termux-Command-Listbook",
+    "live": "",
+    "thumbnail": "../assets/termux-preview.svg",
+    "readmeThumb": "assets/termux-preview.svg",
+    "icon": "\ud83d\udcbb"
+  },
+  {
+    "id": "07-passport-photo-maker",
+    "num": "07",
+    "name": "Passport Photo Maker",
+    "tagline": "In-Browser Passport Dimensions & Print Sheet Generator",
+    "status": "REPOSITORY ONLY",
+    "statusType": "repo",
+    "category": "Client-Side Media Tool",
+    "desc": "A client-side utility built with HTML5 Canvas that enables users to crop, scale, and format photographs to international passport standards and generate multi-photo sheets ready for printing.",
+    "features": [
+      "Standard dimension presets: Support for standard 2x2 inch and 35x45mm passport dimensions",
+      "Multi-photo grid: Automatically tiles multiple passport photos onto printable standard sheets",
+      "In-browser privacy: Local image processing on the HTML5 Canvas with zero uploads",
+      "Instant download: Exports high-resolution printable PNG sheets instantly"
+    ],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JavaScript",
+      "Canvas API"
+    ],
+    "repo": "https://github.com/officialhazim42/Passportsize-photo-maker",
+    "live": "",
+    "thumbnail": "../assets/passport-preview.svg",
+    "readmeThumb": "assets/passport-preview.svg",
+    "icon": "\ud83d\udcf8"
+  },
+  {
+    "id": "08-text-to-audio",
+    "num": "08",
+    "name": "Text to Audio Converter",
+    "tagline": "Web Speech API Speech Synthesis Utility",
+    "status": "REPOSITORY ONLY",
+    "statusType": "repo",
+    "category": "Speech Synthesis Tool",
+    "desc": "A lightweight web tool leveraging the browser-native Web Speech Synthesis API to convert written text into spoken audio with real-time controls for pitch, speech rate, and voice accents.",
+    "features": [
+      "Native speech synthesis: Utilizes the browser's hardware-accelerated speech engine",
+      "Voice controls: Sliders for real-time speech rate, pitch tuning, and voice accent switching",
+      "Zero dependencies: 100% vanilla client execution with no third-party cloud API keys required",
+      "Accessible interface: Keyboard-friendly controls with live playback indicator"
+    ],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Web Speech API"
+    ],
+    "repo": "https://github.com/officialhazim42/Text-to-Audio-Converter",
+    "live": "",
+    "thumbnail": "../assets/audio-preview.svg",
+    "readmeThumb": "assets/audio-preview.svg",
+    "icon": "\ud83d\udd0a"
+  },
+  {
+    "id": "09-student-task-manager",
+    "num": "09",
+    "name": "Student Task Manager",
+    "tagline": "Responsive Offline-First Task Organization Web App",
+    "status": "REPOSITORY ONLY",
+    "statusType": "repo",
+    "category": "Academic Workflow Web Tool",
+    "desc": "An interactive task organization web application engineered with HTML, CSS, and JavaScript, featuring task creation, completion tracking, filtering, deletion, and local storage state persistence.",
+    "features": [
+      "Task organization: Add, complete, filter, and delete coursework assignments seamlessly",
+      "Filter views: Quick-switch between All, Active, and Completed task states",
+      "State persistence: Automatic local storage caching ensures zero data loss between sessions",
+      "Responsive DOM architecture: Clean, accessible user interface optimized for desktop and mobile"
+    ],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "LocalStorage API",
+      "Responsive DOM"
+    ],
+    "repo": "https://github.com/officialhazim42/week-3-student-task-manager",
+    "live": "",
+    "thumbnail": "../assets/task-manager-preview.svg",
+    "readmeThumb": "assets/task-manager-preview.svg",
+    "icon": "\ud83d\udcdd"
+  },
+  {
+    "id": "10-deployment-dashboard",
+    "num": "10",
+    "name": "Deployment Dashboard",
+    "tagline": "Production Operations & Monitoring Telemetry Prototype",
+    "status": "REPOSITORY ONLY",
+    "statusType": "repo",
+    "category": "DevOps & Monitoring Prototype",
+    "desc": "A production deployment dashboard prototype demonstrating environment status, application telemetry, performance metrics, simulated server logs, health checks, and production release concepts.",
+    "features": [
+      "Environment telemetry: Real-time simulation of production, staging, and development server states",
+      "Metric visualizers: CPU usage, memory allocation, and latency telemetry graphs",
+      "Live log streamer: Dynamic console log feed displaying system events and security checks",
+      "Release readiness checklist: Automated pre-flight validation rules for production deployment"
+    ],
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "DOM Architecture",
+      "Metrics Simulation"
+    ],
+    "repo": "https://github.com/officialhazim42/week-5-deployment-production",
+    "live": "",
+    "thumbnail": "../assets/deployment-preview.svg",
+    "readmeThumb": "assets/deployment-preview.svg",
+    "icon": "\ud83d\udcca"
+  }
+];
+    let currentFilter = 'all';
+    let typingTimeouts = [];
+
+    function clearAllTyping() {
+      typingTimeouts.forEach(t => clearTimeout(t));
+      typingTimeouts = [];
+    }
+
+    function renderGrid(filter = 'all') {
+      const grid = document.getElementById('projectsGrid');
+      grid.innerHTML = '';
+      
+      const filtered = PROJECTS_DATA.filter(p => {
+        if (filter === 'live') return p.statusType === 'live';
+        if (filter === 'repo') return true;
+        return true;
+      });
+
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        card.onclick = () => openProject(p.id);
+
+        const statusClass = p.statusType === 'live' ? 'badge-live' : 'badge-repo';
+        const stackBadges = p.stack.slice(0, 3).map(s => `<span class="stack-pill">${s}</span>`).join('');
+
+        card.innerHTML = `
+          <div class="card-thumb-wrapper">
+            <img class="card-thumb" src="${p.thumbnail}" alt="${p.name} Preview" loading="lazy" />
+            <span class="card-num-badge">${p.num}</span>
+            <span class="card-status-badge ${statusClass}">${p.status}</span>
+          </div>
+          <div class="card-content">
+            <div class="card-category">${p.category}</div>
+            <h3 class="card-title">${p.icon} ${p.name}</h3>
+            <p class="card-desc">${p.desc}</p>
+            <div class="card-stack">${stackBadges}</div>
+            <div class="card-footer">
+              <span>EXPLORE SPECIFICATIONS</span>
+              <span class="card-action-hint">DETAILS →</span>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterProjects(type) {
+      currentFilter = type;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.innerText.toLowerCase().includes(type));
+      });
+      renderGrid(type);
+    }
+
+    function openProject(projectId) {
+      const p = PROJECTS_DATA.find(item => item.id === projectId);
+      if (!p) return;
+
+      clearAllTyping();
+
+      window.location.hash = p.id;
+      const modal = document.getElementById('projectModal');
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      // Set Banner & Tags
+      document.getElementById('modalBannerImg').src = p.thumbnail;
+      document.getElementById('modalBannerImg').alt = p.name + ' Preview';
+      document.getElementById('modalNum').innerText = p.num;
+      document.getElementById('modalCat').innerText = p.category.toUpperCase();
+      
+      const statusBadge = document.getElementById('modalStatusBadge');
+      statusBadge.innerText = p.status;
+      statusBadge.className = 'card-status-badge ' + (p.statusType === 'live' ? 'badge-live' : 'badge-repo');
+
+      document.getElementById('modalTagline').innerText = p.tagline;
+
+      // Reset animated fields
+      const titleEl = document.getElementById('modalTitleText');
+      const titleCursor = document.getElementById('modalTitleCursor');
+      const descEl = document.getElementById('modalDescText');
+      const descCursor = document.getElementById('modalDescCursor');
+      const featList = document.getElementById('modalFeaturesList');
+      const stackWrap = document.getElementById('modalStackWrap');
+      const actionsEl = document.getElementById('modalActions');
+
+      titleEl.innerText = '';
+      titleCursor.style.display = 'inline-block';
+      descEl.innerText = '';
+      descCursor.style.display = 'none';
+      featList.innerHTML = '';
+      stackWrap.innerHTML = '';
+      actionsEl.className = 'modal-actions';
+      actionsEl.innerHTML = '';
+
+      // Prepare actions
+      let actionsHTML = '';
+      if (p.live) {
+        actionsHTML += `<a href="${p.live}" target="_blank" rel="noopener noreferrer" class="action-btn btn-live">🌐 Launch Live Demo ↗</a>`;
+      }
+      if (p.repo) {
+        actionsHTML += `<a href="${p.repo}" target="_blank" rel="noopener noreferrer" class="action-btn btn-repo">💻 View GitHub Repository ↗</a>`;
+      }
+      actionsHTML += `<button onclick="closeModal()" class="action-btn btn-close">← Back to Portfolio</button>`;
+      actionsEl.innerHTML = actionsHTML;
+
+      // Check reduced motion preference
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (prefersReduced) {
+        titleEl.innerText = p.icon + ' ' + p.name;
+        titleCursor.style.display = 'none';
+        descEl.innerText = p.desc;
+        p.features.forEach(f => {
+          const li = document.createElement('li');
+          li.className = 'feature-item visible';
+          li.innerHTML = `<span class="feat-bullet">⚡</span> <span>${f}</span>`;
+          featList.appendChild(li);
+        });
+        p.stack.forEach(s => {
+          const sp = document.createElement('span');
+          sp.className = 'modal-stack-pill visible';
+          sp.innerText = s;
+          stackWrap.appendChild(sp);
+        });
+        actionsEl.classList.add('visible');
+        return;
+      }
+
+      // --- PHASE 1: Type Project Name ---
+      const fullTitle = p.icon + ' ' + p.name;
+      let tIdx = 0;
+      function typeTitle() {
+        if (tIdx < fullTitle.length) {
+          titleEl.innerText += fullTitle[tIdx++];
+          typingTimeouts.push(setTimeout(typeTitle, 28));
+        } else {
+          titleCursor.style.display = 'none';
+          // --- PHASE 2: Start Description Typing ---
+          descCursor.style.display = 'inline-block';
+          typingTimeouts.push(setTimeout(startDescTyping, 120));
+        }
+      }
+
+      // --- PHASE 2: Type Description ---
+      let dIdx = 0;
+      function startDescTyping() {
+        if (dIdx < p.desc.length) {
+          descEl.innerText += p.desc[dIdx++];
+          typingTimeouts.push(setTimeout(startDescTyping, 12));
+        } else {
+          descCursor.style.display = 'none';
+          // --- PHASE 3: Reveal Features ---
+          typingTimeouts.push(setTimeout(revealFeatures, 150));
+        }
+      }
+
+      // --- PHASE 3: Reveal Features Sequentially ---
+      function revealFeatures() {
+        p.features.forEach((f, idx) => {
+          const li = document.createElement('li');
+          li.className = 'feature-item';
+          li.innerHTML = `<span class="feat-bullet">⚡</span> <span>${f}</span>`;
+          featList.appendChild(li);
+          typingTimeouts.push(setTimeout(() => {
+            li.classList.add('visible');
+          }, idx * 80));
+        });
+
+        const totalFeatDelay = p.features.length * 80 + 100;
+        typingTimeouts.push(setTimeout(revealStack, totalFeatDelay));
+      }
+
+      // --- PHASE 4: Reveal Tech Stack ---
+      function revealStack() {
+        p.stack.forEach((s, idx) => {
+          const sp = document.createElement('span');
+          sp.className = 'modal-stack-pill';
+          sp.innerText = s;
+          stackWrap.appendChild(sp);
+          typingTimeouts.push(setTimeout(() => {
+            sp.classList.add('visible');
+          }, idx * 50));
+        });
+
+        const totalStackDelay = p.stack.length * 50 + 120;
+        typingTimeouts.push(setTimeout(() => {
+          // --- PHASE 5: Action Buttons ---
+          actionsEl.classList.add('visible');
+        }, totalStackDelay));
+      }
+
+      typingTimeouts.push(setTimeout(typeTitle, 80));
+    }
+
+    function closeModal() {
+      clearAllTyping();
+      const modal = document.getElementById('projectModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+      history.pushState("", document.title, window.location.pathname + window.location.search);
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'projectModal') {
+        closeModal();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // Initialize
+    renderGrid('all');
+
+    // Handle deep link hash
+    if (window.location.hash) {
+      const hashId = window.location.hash.substring(1);
+      setTimeout(() => openProject(hashId), 150);
+    }
+  </script>
+</body>
+</html>
