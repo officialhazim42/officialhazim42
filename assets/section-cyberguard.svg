@@ -78,18 +78,39 @@
       .divider-filament {
         animation: pulseFilament 4s ease-in-out infinite;
       }
-      .status-dot {
-        animation: pulseGlow 2.5s ease-in-out infinite;
-      }
       .shield-base {
-        animation: shieldPulse 3.5s ease-in-out infinite;
+        stroke: #38bdf8;
+        opacity: 0.8;
+        animation: shieldBaseScan 3.6s ease-in-out infinite;
+        will-change: stroke, opacity, filter;
       }
       .shield-circuit-trace {
-        stroke-dasharray: 12 55;
-        animation: shieldTrace 3.5s linear infinite;
+        stroke-dasharray: 16 52;
+        stroke-dashoffset: 68;
+        opacity: 0;
+        animation: shieldTraceScan 3.6s linear infinite;
+        will-change: stroke-dashoffset, opacity, filter;
       }
       .shield-core-dot {
-        animation: shieldCoreGlow 3.5s ease-in-out infinite;
+        opacity: 0.7;
+        animation: shieldCoreGlow 3.6s ease-in-out infinite;
+        will-change: opacity, fill, filter;
+      }
+      .dot-seg {
+        opacity: 0;
+        will-change: opacity, filter;
+      }
+      .dot-seg-1 { animation: dotSeg1Seq 3.6s ease-out infinite; }
+      .dot-seg-2 { animation: dotSeg2Seq 3.6s ease-out infinite; }
+      .dot-seg-3 { animation: dotSeg3Seq 3.6s ease-out infinite; }
+      .dot-seg-4 { animation: dotSeg4Seq 3.6s ease-out infinite; }
+      .dot-seg-5 { animation: dotSeg5Seq 3.6s ease-out infinite; }
+      .dot-seg-6 { animation: dotSeg6Seq 3.6s ease-out infinite; }
+      .dot-seg-7 { animation: dotSeg7Seq 3.6s ease-out infinite; }
+      .status-dot {
+        opacity: 0.4;
+        animation: statusDotSeq 3.6s ease-in-out infinite;
+        will-change: opacity, fill, filter;
       }
 
       @keyframes textReveal-05 {
@@ -133,36 +154,83 @@
         50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
       }
 
-      @keyframes shieldPulse {
-        0%, 100% {
-          stroke: #38bdf8;
-          opacity: 0.85;
-          filter: drop-shadow(0 0 1px #38bdf8);
-        }
-        50% {
-          stroke: #67e8f9;
-          opacity: 1;
-          filter: drop-shadow(0 0 4.5px rgba(56, 189, 248, 0.7));
-        }
+      /* Shield Base: Glows during status scan (0s - 0.7s), returns to normal */
+      @keyframes shieldBaseScan {
+        0%, 100% { stroke: #38bdf8; opacity: 0.8; filter: drop-shadow(0 0 1px #38bdf8); }
+        9.7% { stroke: #67e8f9; opacity: 1; filter: drop-shadow(0 0 3.5px rgba(56, 189, 248, 0.7)); }
+        19.4% { stroke: #38bdf8; opacity: 0.8; filter: drop-shadow(0 0 1px #38bdf8); }
       }
 
-      @keyframes shieldTrace {
-        0% { stroke-dashoffset: 67; opacity: 0; }
-        10% { opacity: 0.95; }
-        90% { opacity: 0.95; }
-        100% { stroke-dashoffset: 0; opacity: 0; }
+      /* Shield Outline Highlight: Restrained sweep along outline during 0s - 0.7s */
+      @keyframes shieldTraceScan {
+        0% { stroke-dashoffset: 68; opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        19.4% { stroke-dashoffset: 0; opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        19.5%, 100% { stroke-dashoffset: 68; opacity: 0; filter: none; }
       }
 
+      /* Shield Inner Dot: Pulses gently during 0s - 0.7s, then settles */
       @keyframes shieldCoreGlow {
-        0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 1px #06b6d4); }
-        50% { opacity: 1; filter: drop-shadow(0 0 3.5px #38bdf8); }
+        0%, 100% { opacity: 0.7; fill: #06b6d4; filter: drop-shadow(0 0 1px #06b6d4); }
+        6% { opacity: 1; fill: #38bdf8; filter: drop-shadow(0 0 4px #38bdf8); }
+        10% { opacity: 0.85; fill: #06b6d4; filter: drop-shadow(0 0 2px #38bdf8); }
+        14% { opacity: 1; fill: #38bdf8; filter: drop-shadow(0 0 4px #38bdf8); }
+        19.4% { opacity: 0.7; fill: #06b6d4; filter: drop-shadow(0 0 1px #06b6d4); }
+      }
+
+      /* Sequential Dotted Line Illumination (Left to Right from Shield to Status Dot) */
+      @keyframes dotSeg1Seq {
+        0%, 19.4% { opacity: 0; filter: none; }
+        22.2% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        23.9%, 56.9% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        70.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes dotSeg2Seq {
+        0%, 23.1% { opacity: 0; filter: none; }
+        25.8% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        27.5%, 56.9% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        70.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes dotSeg3Seq {
+        0%, 26.7% { opacity: 0; filter: none; }
+        29.4% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        31.1%, 56.9% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        70.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes dotSeg4Seq {
+        0%, 30.3% { opacity: 0; filter: none; }
+        33.1% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        34.7%, 56.9% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        70.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes dotSeg5Seq {
+        0%, 33.9% { opacity: 0; filter: none; }
+        36.7% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        38.3%, 56.9% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        70.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes dotSeg6Seq {
+        0%, 37.5% { opacity: 0; filter: none; }
+        40.3% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        41.9%, 56.9% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        70.8%, 100% { opacity: 0; filter: none; }
+      }
+      @keyframes dotSeg7Seq {
+        0%, 41.1% { opacity: 0; filter: none; }
+        43.9% { opacity: 1; filter: drop-shadow(0 0 3px #67e8f9); }
+        45.6%, 56.9% { opacity: 0.75; filter: drop-shadow(0 0 1.5px #38bdf8); }
+        70.8%, 100% { opacity: 0; filter: none; }
+      }
+
+      /* Status Dot: Activates ONLY AFTER dotted line completes illumination and hold (at 56.9%) */
+      @keyframes statusDotSeq {
+        0%, 56.9% { opacity: 0.4; fill: #06b6d4; filter: none; }
+        62.5%, 70.8% { opacity: 1; fill: #38bdf8; filter: drop-shadow(0 0 5px #38bdf8); }
+        81.9%, 100% { opacity: 0.4; fill: #06b6d4; filter: none; }
       }
 
       @media (prefers-reduced-motion: reduce) {
-        * {
+        .text-cursor, .clip-rect {
           animation: none !important;
-          stroke-dashoffset: 0 !important;
-          opacity: 1 !important;
         }
       }
     </style>
@@ -199,12 +267,94 @@
   <!-- Section-Specific Right Visual Marker and Telemetry -->
     <!-- Right Motif: Cyber Defense Shield & Security Status -->
   <g transform="translate(650, 17)">
-    <path class="shield-base" d="M 12 3 L 23 -1 L 34 3 C 34 12 23 20 23 20 C 23 20 12 12 12 3 Z" fill="none" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
-    <path class="shield-circuit-trace" d="M 12 3 L 23 -1 L 34 3 C 34 12 23 20 23 20 C 23 20 12 12 12 3 Z" fill="none" stroke="#67e8f9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-    <circle cx="23" cy="9" r="2" fill="#06b6d4" class="shield-core-dot" />
+    <!-- Shield Base Outline: Cyan security contour with subtle scan glow -->
+    <path class="shield-base" d="M 12 3 L 23 -1 L 34 3 C 34 12 23 20 23 20 C 23 20 12 12 12 3 Z" fill="none" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="stroke" dur="3.6s" repeatCount="indefinite"
+               values="#38bdf8; #67e8f9; #38bdf8; #38bdf8"
+               keyTimes="0; 0.097; 0.194; 1" />
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0.8; 1; 0.8; 0.8"
+               keyTimes="0; 0.097; 0.194; 1" />
+    </path>
+
+    <!-- Shield Scanning Highlight: Sweeps smoothly along the outline (0s - 0.7s) -->
+    <path class="shield-circuit-trace" d="M 12 3 L 23 -1 L 34 3 C 34 12 23 20 23 20 C 23 20 12 12 12 3 Z" fill="none" stroke="#67e8f9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16 52" stroke-dashoffset="68" opacity="0">
+      <animate attributeName="stroke-dashoffset" dur="3.6s" repeatCount="indefinite"
+               values="68; 0; 0; 68; 68"
+               keyTimes="0; 0.194; 0.195; 0.999; 1" />
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="1; 1; 0; 0; 1"
+               keyTimes="0; 0.194; 0.195; 0.999; 1" />
+    </path>
+
+    <!-- Shield Inner Core Dot: Soft glow -> bright pulse -> settles (0s - 0.7s) -->
+    <circle cx="23" cy="9" r="2" fill="#06b6d4" class="shield-core-dot" opacity="0.7">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0.7; 1; 0.85; 1; 0.7; 0.7"
+               keyTimes="0; 0.06; 0.10; 0.14; 0.194; 1" />
+      <animate attributeName="fill" dur="3.6s" repeatCount="indefinite"
+               values="#06b6d4; #38bdf8; #06b6d4; #38bdf8; #06b6d4; #06b6d4"
+               keyTimes="0; 0.06; 0.10; 0.14; 0.194; 1" />
+    </circle>
+
+    <!-- Underlying Dim Dotted Track (Original Baseline) -->
     <line x1="42" y1="12" x2="80" y2="12" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="3,3" />
+
+    <!-- Sequential Left-to-Right Illuminated Dotted Segments -->
+    <!-- Segment 1 (x: 42-45) -->
+    <line class="dot-seg dot-seg-1" x1="42" y1="12" x2="45" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.194; 0.222; 0.239; 0.569; 0.708; 1" />
+    </line>
+    <!-- Segment 2 (x: 48-51) -->
+    <line class="dot-seg dot-seg-2" x1="48" y1="12" x2="51" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.231; 0.258; 0.275; 0.569; 0.708; 1" />
+    </line>
+    <!-- Segment 3 (x: 54-57) -->
+    <line class="dot-seg dot-seg-3" x1="54" y1="12" x2="57" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.267; 0.294; 0.311; 0.569; 0.708; 1" />
+    </line>
+    <!-- Segment 4 (x: 60-63) -->
+    <line class="dot-seg dot-seg-4" x1="60" y1="12" x2="63" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.303; 0.331; 0.347; 0.569; 0.708; 1" />
+    </line>
+    <!-- Segment 5 (x: 66-69) -->
+    <line class="dot-seg dot-seg-5" x1="66" y1="12" x2="69" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.339; 0.367; 0.383; 0.569; 0.708; 1" />
+    </line>
+    <!-- Segment 6 (x: 72-75) -->
+    <line class="dot-seg dot-seg-6" x1="72" y1="12" x2="75" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.375; 0.403; 0.419; 0.569; 0.708; 1" />
+    </line>
+    <!-- Segment 7 (x: 78-80) -->
+    <line class="dot-seg dot-seg-7" x1="78" y1="12" x2="80" y2="12" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0; 0; 1; 0.75; 0.75; 0; 0"
+               keyTimes="0; 0.411; 0.439; 0.456; 0.569; 0.708; 1" />
+    </line>
+
     <rect x="90" y="0" width="145" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
-    <circle cx="103" cy="12" r="3.5" fill="#06b6d4" class="status-dot" />
+
+    <!-- Status Dot: Activates ONLY AFTER the dotted line reaches the end and holds -->
+    <circle cx="103" cy="12" r="3.5" fill="#06b6d4" class="status-dot" opacity="0.4">
+      <animate attributeName="opacity" dur="3.6s" repeatCount="indefinite"
+               values="0.4; 0.4; 1; 1; 0.4; 0.4"
+               keyTimes="0; 0.569; 0.625; 0.708; 0.819; 1" />
+      <animate attributeName="fill" dur="3.6s" repeatCount="indefinite"
+               values="#06b6d4; #06b6d4; #38bdf8; #38bdf8; #06b6d4; #06b6d4"
+               keyTimes="0; 0.569; 0.625; 0.708; 0.819; 1" />
+    </circle>
     <text x="114" y="12" dominant-baseline="central" class="mono-meta">CYBER DEFENSE CLUB</text>
   </g>
 </svg>
