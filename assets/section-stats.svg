@@ -81,6 +81,11 @@
       .status-dot {
         animation: pulseGlow 2.5s ease-in-out infinite;
       }
+      .spark-bar-1 { animation: sparkGlow1 2.2s ease-in-out infinite; }
+      .spark-bar-2 { animation: sparkGlow2 2.7s ease-in-out infinite; }
+      .spark-bar-3 { animation: sparkGlow3 2.4s ease-in-out infinite; }
+      .spark-bar-4 { animation: sparkGlow4 2.9s ease-in-out infinite; }
+      .spark-bar-5 { animation: sparkGlow5 2.5s ease-in-out infinite; }
 
       @keyframes textReveal-07 {
         0% { width: 0; }
@@ -123,6 +128,12 @@
         50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
       }
 
+      @keyframes sparkGlow1 { 0%, 100% { fill: #1e3a5f; } 45% { fill: #2563eb; } }
+      @keyframes sparkGlow2 { 0%, 100% { fill: #1d4ed8; } 50% { fill: #38bdf8; } }
+      @keyframes sparkGlow3 { 0%, 100% { fill: #2563eb; } 40% { fill: #60a5fa; } }
+      @keyframes sparkGlow4 { 0%, 100% { fill: #38bdf8; filter: none; } 55% { fill: #7dd3fc; filter: drop-shadow(0 0 2px #38bdf8); } }
+      @keyframes sparkGlow5 { 0%, 100% { fill: #38bdf8; filter: drop-shadow(0 0 1px #38bdf8); } 50% { fill: #bae6fd; filter: drop-shadow(0 0 3px #38bdf8); } }
+
       @media (prefers-reduced-motion: reduce) {
         * {
           animation: none !important;
@@ -164,11 +175,26 @@
   <!-- Section-Specific Right Visual Marker and Telemetry -->
     <!-- Right Motif: Analytical Telemetry Spark Bars -->
   <g transform="translate(640, 17)">
-    <rect x="0" y="14" width="3" height="10" rx="1" fill="#1e3a5f" />
-    <rect x="6" y="9" width="3" height="15" rx="1" fill="#1d4ed8" />
-    <rect x="12" y="5" width="3" height="19" rx="1" fill="#2563eb" />
-    <rect x="18" y="11" width="3" height="13" rx="1" fill="#38bdf8" />
-    <rect x="24" y="2" width="3" height="22" rx="1" fill="#38bdf8" class="status-dot" />
+    <rect x="0" y="14" width="3" height="10" rx="1" fill="#1e3a5f" class="spark-bar-1">
+      <animate attributeName="height" values="10; 13; 7; 11; 10" dur="2.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+      <animate attributeName="y" values="14; 11; 17; 13; 14" dur="2.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+    </rect>
+    <rect x="6" y="9" width="3" height="15" rx="1" fill="#1d4ed8" class="spark-bar-2">
+      <animate attributeName="height" values="15; 11; 18; 13; 15" dur="2.7s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+      <animate attributeName="y" values="9; 13; 6; 11; 9" dur="2.7s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+    </rect>
+    <rect x="12" y="5" width="3" height="19" rx="1" fill="#2563eb" class="spark-bar-3">
+      <animate attributeName="height" values="19; 21; 15; 20; 19" dur="2.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+      <animate attributeName="y" values="5; 3; 9; 4; 5" dur="2.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+    </rect>
+    <rect x="18" y="11" width="3" height="13" rx="1" fill="#38bdf8" class="spark-bar-4">
+      <animate attributeName="height" values="13; 16; 9; 14; 13" dur="2.9s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+      <animate attributeName="y" values="11; 8; 15; 10; 11" dur="2.9s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+    </rect>
+    <rect x="24" y="2" width="3" height="22" rx="1" fill="#38bdf8" class="spark-bar-5">
+      <animate attributeName="height" values="22; 18; 23; 19; 22" dur="2.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+      <animate attributeName="y" values="2; 6; 1; 5; 2" dur="2.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1" />
+    </rect>
     <line x1="36" y1="12" x2="75" y2="12" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="3,3" />
     <rect x="85" y="0" width="160" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
     <circle cx="98" cy="12" r="3.5" fill="#10b981" class="status-dot" />

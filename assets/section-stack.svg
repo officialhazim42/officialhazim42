@@ -81,6 +81,16 @@
       .status-dot {
         animation: pulseGlow 2.5s ease-in-out infinite;
       }
+      .term-cursor {
+        animation: termCursorBlink 1.2s step-end infinite;
+      }
+      .stack-track-pulse {
+        stroke-dasharray: 10 65;
+        animation: stackPhoton 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .stack-bus-dot {
+        animation: stackBusGlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
 
       @keyframes textReveal-03 {
         0% { width: 0; }
@@ -121,6 +131,25 @@
       @keyframes pulseGlow {
         0%, 100% { transform: scale(1); opacity: 0.85; }
         50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+      }
+
+      @keyframes termCursorBlink {
+        0%, 45% { opacity: 1; }
+        50%, 95% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      @keyframes stackPhoton {
+        0% { stroke-dashoffset: 65; opacity: 0; }
+        15% { opacity: 0.9; }
+        60% { stroke-dashoffset: 0; opacity: 0.9; }
+        75%, 100% { stroke-dashoffset: -10; opacity: 0; }
+      }
+
+      @keyframes stackBusGlow {
+        0%, 55% { opacity: 0.75; filter: drop-shadow(0 0 1px #38bdf8); }
+        65%, 75% { opacity: 1; filter: drop-shadow(0 0 4px #38bdf8); }
+        90%, 100% { opacity: 0.75; filter: drop-shadow(0 0 1px #38bdf8); }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -164,9 +193,10 @@
   <!-- Section-Specific Right Visual Marker and Telemetry -->
     <!-- Right Motif: Terminal Command Detail & Circuit Bus -->
   <g transform="translate(655, 17)">
-    <text x="0" y="12" dominant-baseline="central" class="mono-badge">&gt;_</text>
+    <text x="0" y="12" dominant-baseline="central" class="mono-badge">&gt;<tspan class="term-cursor">_</tspan></text>
     <line x1="24" y1="12" x2="85" y2="12" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="3,3" />
-    <circle cx="85" cy="12" r="2.5" fill="#38bdf8" class="status-dot" />
+    <line class="stack-track-pulse" x1="24" y1="12" x2="85" y2="12" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round" />
+    <circle cx="85" cy="12" r="2.5" fill="#38bdf8" class="stack-bus-dot" />
     <rect x="95" y="0" width="135" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
     <circle cx="108" cy="12" r="3" fill="#3b82f6" />
     <text x="119" y="12" dominant-baseline="central" class="mono-meta">STACK MATRIX</text>

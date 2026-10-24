@@ -81,6 +81,16 @@
       .status-dot {
         animation: pulseGlow 2.5s ease-in-out infinite;
       }
+      .diamond-pulse {
+        animation: diamondGlow 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .diamond-trail {
+        stroke-dasharray: 8 50;
+        animation: diamondTravel 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .diamond-end-dot {
+        animation: diamondDotGlow 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
 
       @keyframes textReveal-04 {
         0% { width: 0; }
@@ -121,6 +131,25 @@
       @keyframes pulseGlow {
         0%, 100% { transform: scale(1); opacity: 0.85; }
         50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+      }
+
+      @keyframes diamondGlow {
+        0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 1px #38bdf8); }
+        20%, 35% { opacity: 1; filter: drop-shadow(0 0 4.5px #38bdf8); }
+        55% { opacity: 0.85; filter: drop-shadow(0 0 1.5px #38bdf8); }
+      }
+
+      @keyframes diamondTravel {
+        0%, 15% { stroke-dashoffset: 50; opacity: 0; }
+        25% { opacity: 0.95; }
+        60% { stroke-dashoffset: 0; opacity: 0.95; }
+        75%, 100% { stroke-dashoffset: -8; opacity: 0; }
+      }
+
+      @keyframes diamondDotGlow {
+        0%, 55% { opacity: 0.75; filter: drop-shadow(0 0 1px #0284c7); }
+        65%, 75% { opacity: 1; filter: drop-shadow(0 0 4px #38bdf8); }
+        90%, 100% { opacity: 0.75; filter: drop-shadow(0 0 1px #0284c7); }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -164,9 +193,17 @@
   <!-- Section-Specific Right Visual Marker and Telemetry -->
     <!-- Right Motif: Showcase Diamond & Open-Source Tag -->
   <g transform="translate(660, 17)">
-    <polygon points="15,4 19,12 15,20 11,12" fill="#38bdf8" class="status-dot" />
+    <polygon points="15,4 19,12 15,20 11,12" fill="#38bdf8" class="diamond-pulse">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 15 12; 4 15 12; 0 15 12; -4 15 12; 0 15 12"
+        dur="6.4s"
+        repeatCount="indefinite" />
+    </polygon>
     <line x1="28" y1="12" x2="75" y2="12" stroke="#1e3a5f" stroke-width="1" />
-    <circle cx="75" cy="12" r="2.5" fill="#0284c7" />
+    <line class="diamond-trail" x1="28" y1="12" x2="75" y2="12" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round" />
+    <circle cx="75" cy="12" r="2.5" fill="#0284c7" class="diamond-end-dot" />
     <rect x="85" y="0" width="140" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
     <circle cx="98" cy="12" r="3" fill="#38bdf8" />
     <text x="109" y="12" dominant-baseline="central" class="mono-meta">SHOWCASE REPOS</text>

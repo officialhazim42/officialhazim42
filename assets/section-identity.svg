@@ -81,6 +81,13 @@
       .status-dot {
         animation: pulseGlow 2.5s ease-in-out infinite;
       }
+      .sec1-travel-pulse {
+        stroke-dasharray: 8 35;
+        animation: sec1Photon 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .sec1-indicator-pulse {
+        animation: sec1NodePulse 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
 
       @keyframes textReveal-01 {
         0% { width: 0; }
@@ -121,6 +128,19 @@
       @keyframes pulseGlow {
         0%, 100% { transform: scale(1); opacity: 0.85; }
         50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+      }
+
+      @keyframes sec1Photon {
+        0% { stroke-dashoffset: 35; opacity: 0; }
+        15% { opacity: 0.9; }
+        50% { stroke-dashoffset: 0; opacity: 0.9; }
+        65%, 100% { stroke-dashoffset: -8; opacity: 0; }
+      }
+
+      @keyframes sec1NodePulse {
+        0%, 45% { opacity: 0.75; filter: drop-shadow(0 0 1px #38bdf8); }
+        55%, 65% { opacity: 1; filter: drop-shadow(0 0 4px #38bdf8); }
+        85%, 100% { opacity: 0.75; filter: drop-shadow(0 0 1px #38bdf8); }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -165,7 +185,8 @@
     <!-- Right Motif: Developer Identity & Active System Node -->
   <g transform="translate(685, 17)">
     <line x1="0" y1="12" x2="35" y2="12" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="3,3" />
-    <circle cx="35" cy="12" r="2.5" fill="#38bdf8" />
+    <line class="sec1-travel-pulse" x1="0" y1="12" x2="35" y2="12" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round" />
+    <circle class="sec1-indicator-pulse" cx="35" cy="12" r="2.5" fill="#38bdf8" />
     <rect x="45" y="0" width="155" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
     <circle cx="58" cy="12" r="3.5" fill="#10b981" class="status-dot" />
     <text x="70" y="12" dominant-baseline="central" class="mono-meta">DEV.ID // ACTIVE</text>

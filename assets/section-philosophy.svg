@@ -81,6 +81,19 @@
       .status-dot {
         animation: pulseGlow 2.5s ease-in-out infinite;
       }
+      .journey-runner {
+        stroke-dasharray: 8 60;
+        animation: journeyTrack 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .journey-node-1 {
+        animation: journeyNode1 3.6s ease-in-out infinite;
+      }
+      .journey-node-2 {
+        animation: journeyNode2 3.6s ease-in-out infinite;
+      }
+      .journey-node-3 {
+        animation: journeyNode3 3.6s ease-in-out infinite;
+      }
 
       @keyframes textReveal-06 {
         0% { width: 0; }
@@ -121,6 +134,31 @@
       @keyframes pulseGlow {
         0%, 100% { transform: scale(1); opacity: 0.85; }
         50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+      }
+
+      @keyframes journeyTrack {
+        0% { stroke-dashoffset: 60; opacity: 0; }
+        10% { opacity: 0.95; }
+        70% { stroke-dashoffset: 0; opacity: 0.95; }
+        82%, 100% { stroke-dashoffset: -8; opacity: 0; }
+      }
+
+      @keyframes journeyNode1 {
+        0%, 100% { fill: #1e293b; stroke: #334155; filter: none; }
+        10%, 25% { fill: #0284c7; stroke: #38bdf8; filter: drop-shadow(0 0 3px #38bdf8); }
+        35% { fill: #1e293b; stroke: #334155; filter: none; }
+      }
+
+      @keyframes journeyNode2 {
+        0%, 30% { fill: #3b82f6; opacity: 0.8; filter: none; }
+        42%, 55% { fill: #38bdf8; opacity: 1; filter: drop-shadow(0 0 3.5px #38bdf8); }
+        68%, 100% { fill: #3b82f6; opacity: 0.8; filter: none; }
+      }
+
+      @keyframes journeyNode3 {
+        0%, 65% { fill: #38bdf8; opacity: 0.8; filter: drop-shadow(0 0 1px #38bdf8); }
+        75%, 88% { fill: #7dd3fc; opacity: 1; filter: drop-shadow(0 0 5px #38bdf8); }
+        98%, 100% { fill: #38bdf8; opacity: 0.8; filter: drop-shadow(0 0 1px #38bdf8); }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -165,9 +203,10 @@
     <!-- Right Motif: Growth Track Waypoint Progress Line -->
   <g transform="translate(650, 17)">
     <line x1="0" y1="12" x2="80" y2="12" stroke="#1e3a5f" stroke-width="1.5" />
-    <circle cx="15" cy="12" r="3" fill="#1e293b" stroke="#334155" stroke-width="1" />
-    <circle cx="45" cy="12" r="3.5" fill="#3b82f6" />
-    <circle cx="75" cy="12" r="4" fill="#38bdf8" class="status-dot" />
+    <line class="journey-runner" x1="15" y1="12" x2="75" y2="12" stroke="#38bdf8" stroke-width="1.6" stroke-linecap="round" />
+    <circle class="journey-node-1" cx="15" cy="12" r="3" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle class="journey-node-2" cx="45" cy="12" r="3.5" fill="#3b82f6" />
+    <circle class="journey-node-3" cx="75" cy="12" r="4" fill="#38bdf8" />
     <rect x="90" y="0" width="145" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
     <text x="162" y="12" text-anchor="middle" dominant-baseline="central" class="mono-meta">PROGRESS TRACK</text>
   </g>

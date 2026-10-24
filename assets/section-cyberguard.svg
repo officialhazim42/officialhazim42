@@ -81,6 +81,16 @@
       .status-dot {
         animation: pulseGlow 2.5s ease-in-out infinite;
       }
+      .shield-base {
+        animation: shieldPulse 3.5s ease-in-out infinite;
+      }
+      .shield-circuit-trace {
+        stroke-dasharray: 12 55;
+        animation: shieldTrace 3.5s linear infinite;
+      }
+      .shield-core-dot {
+        animation: shieldCoreGlow 3.5s ease-in-out infinite;
+      }
 
       @keyframes textReveal-05 {
         0% { width: 0; }
@@ -121,6 +131,31 @@
       @keyframes pulseGlow {
         0%, 100% { transform: scale(1); opacity: 0.85; }
         50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 3px #38bdf8); }
+      }
+
+      @keyframes shieldPulse {
+        0%, 100% {
+          stroke: #38bdf8;
+          opacity: 0.85;
+          filter: drop-shadow(0 0 1px #38bdf8);
+        }
+        50% {
+          stroke: #67e8f9;
+          opacity: 1;
+          filter: drop-shadow(0 0 4.5px rgba(56, 189, 248, 0.7));
+        }
+      }
+
+      @keyframes shieldTrace {
+        0% { stroke-dashoffset: 67; opacity: 0; }
+        10% { opacity: 0.95; }
+        90% { opacity: 0.95; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+      }
+
+      @keyframes shieldCoreGlow {
+        0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 1px #06b6d4); }
+        50% { opacity: 1; filter: drop-shadow(0 0 3.5px #38bdf8); }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -164,8 +199,9 @@
   <!-- Section-Specific Right Visual Marker and Telemetry -->
     <!-- Right Motif: Cyber Defense Shield & Security Status -->
   <g transform="translate(650, 17)">
-    <path d="M 12 3 L 23 -1 L 34 3 C 34 12 23 20 23 20 C 23 20 12 12 12 3 Z" fill="none" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
-    <circle cx="23" cy="9" r="2" fill="#06b6d4" class="status-dot" />
+    <path class="shield-base" d="M 12 3 L 23 -1 L 34 3 C 34 12 23 20 23 20 C 23 20 12 12 12 3 Z" fill="none" stroke="#38bdf8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+    <path class="shield-circuit-trace" d="M 12 3 L 23 -1 L 34 3 C 34 12 23 20 23 20 C 23 20 12 12 12 3 Z" fill="none" stroke="#67e8f9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="23" cy="9" r="2" fill="#06b6d4" class="shield-core-dot" />
     <line x1="42" y1="12" x2="80" y2="12" stroke="#1e3a5f" stroke-width="1" stroke-dasharray="3,3" />
     <rect x="90" y="0" width="145" height="24" rx="5" fill="#0b1730" stroke="#1e3a5f" stroke-width="1" />
     <circle cx="103" cy="12" r="3.5" fill="#06b6d4" class="status-dot" />
