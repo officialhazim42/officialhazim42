@@ -40,7 +40,7 @@
     <path d="M10 24l5-6 4 4 7-9m-4 0h4v4" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
     
     <text x="48" y="17" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="800" letter-spacing="0.3">PROGRAMMING &amp; MARKUP LANGUAGE DISTRIBUTION</text>
-    <text x="48" y="32" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500">Verifiable codebase audit across 13 public repositories • 3,635,977 bytes analyzed</text>
+    <text x="48" y="32" fill="#B8C7DC" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500">Verifiable codebase audit across 13 public repositories • 3,674,654 bytes analyzed</text>
 
     <!-- Top-Right Audit Badge -->
     <g transform="translate(680, 4)">
@@ -52,7 +52,7 @@
 
   <!-- Multi-Segment Visual Progress Bar -->
   <!-- Total Bar Width = 824px -->
-  <!-- HTML: 62.87% = 518px | JS: 32.83% = 270px | CSS: 4.30% = 36px -->
+  <!-- HTML: 63.26% = 521px | JS: 32.49% = 268px | CSS: 4.26% = 35px -->
   <g transform="translate(28, 76)">
     <!-- Background track -->
     <rect width="824" height="18" rx="9" fill="#071126" stroke="#1E3A5F" stroke-width="1"/>
@@ -62,11 +62,11 @@
     </clipPath>
     <g clip-path="url(#barClip)">
       <!-- HTML segment -->
-      <rect x="0" y="0" width="518" height="18" fill="url(#htmlGrad)"/>
+      <rect x="0" y="0" width="521" height="18" fill="url(#htmlGrad)"/>
       <!-- JS segment -->
-      <rect x="518" y="0" width="270" height="18" fill="url(#jsGrad)"/>
+      <rect x="521" y="0" width="268" height="18" fill="url(#jsGrad)"/>
       <!-- CSS segment -->
-      <rect x="788" y="0" width="36" height="18" fill="url(#cssGrad)"/>
+      <rect x="789" y="0" width="35" height="18" fill="url(#cssGrad)"/>
     </g>
   </g>
 
@@ -77,9 +77,9 @@
       <rect width="264" height="88" rx="10" fill="#09152C" stroke="#23436B" stroke-width="1.2"/>
       <circle cx="22" cy="24" r="6" fill="#E34F26"/>
       <text x="36" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="700">HTML5 Markup</text>
-      <text x="244" y="28" fill="#F97316" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="end">62.87%</text>
+      <text x="244" y="28" fill="#F97316" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="end">63.26%</text>
       
-      <text x="22" y="52" fill="#60A5FA" font-family="monospace" font-size="11" font-weight="600">2,285,757 bytes</text>
+      <text x="22" y="52" fill="#60A5FA" font-family="monospace" font-size="11" font-weight="600">2,324,434 bytes</text>
       <text x="22" y="70" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="9.5">Extensive UI templates, PDFHub &amp; ImageHub DOMs</text>
     </g>
 
@@ -88,7 +88,7 @@
       <rect width="264" height="88" rx="10" fill="#09152C" stroke="#23436B" stroke-width="1.2"/>
       <circle cx="22" cy="24" r="6" fill="#FACC15"/>
       <text x="36" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="700">JavaScript (ES6+)</text>
-      <text x="244" y="28" fill="#FACC15" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="end">32.83%</text>
+      <text x="244" y="28" fill="#FACC15" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="end">32.49%</text>
       
       <text x="22" y="52" fill="#FDE047" font-family="monospace" font-size="11" font-weight="600">1,193,762 bytes</text>
       <text x="22" y="70" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="9.5">In-browser compute engines, Canvas, PWA workers</text>
@@ -99,7 +99,7 @@
       <rect width="264" height="88" rx="10" fill="#09152C" stroke="#23436B" stroke-width="1.2"/>
       <circle cx="22" cy="24" r="6" fill="#38BDF8"/>
       <text x="36" y="28" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="700">CSS3 Styling</text>
-      <text x="244" y="28" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="end">4.30%</text>
+      <text x="244" y="28" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="end">4.26%</text>
       
       <text x="22" y="52" fill="#93C5FD" font-family="monospace" font-size="11" font-weight="600">156,458 bytes</text>
       <text x="22" y="70" fill="#B8C7DC" font-family="system-ui, sans-serif" font-size="9.5">Custom responsive design systems &amp; dark UI</text>

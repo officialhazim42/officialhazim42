@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 126" width="100%" height="126">
+  <defs>
+    <linearGradient id="metricCardBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1329" stop-opacity="0.98"/>
+      <stop offset="60%" stop-color="#0c1833" stop-opacity="0.94"/>
+      <stop offset="100%" stop-color="#060b18" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="strokeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#2563eb" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="accentPill2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <radialGradient id="glowGlow2" cx="90%" cy="15%" r="65%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0a1329" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .beacon-dot { animation: pulseBeacon 2.5s infinite ease-in-out; }
+      @keyframes pulseBeacon { 0%, 100% { opacity: 0.8; transform: scale(1); } 50% { opacity: 1; transform: scale(1.2); filter: drop-shadow(0 0 4px #22d3ee); } }
+      @media (prefers-reduced-motion: reduce) { .beacon-dot { animation: none !important; } }
+    </style>
+  </defs>
+  <rect width="280" height="126" rx="12" fill="url(#metricCardBg2)" stroke="url(#strokeGrad2)" stroke-width="1.2"/>
+  <rect width="280" height="126" rx="12" fill="url(#glowGlow2)"/>
+  <rect x="0" y="14" width="3.5" height="32" rx="1.75" fill="url(#accentPill2)"/>
+  <g transform="translate(18, 18)">
+    <circle cx="14" cy="14" r="14" fill="#08142b" stroke="#1e3a5f" stroke-width="1.2"/>
+    <path d="M14 6 C12 10, 8 13, 8 17 C8 20.3, 10.7 23, 14 23 C17.3 23, 20 20.3, 20 17 C20 13.5, 17 11, 14 6 Z" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M14 14 C13 16, 11 17, 11 18.5 C11 20, 12.3 21, 14 21 C15.7 21, 17 20, 17 18.5 C17 17, 15.5 16, 14 14 Z" fill="#22d3ee"/>
+  </g>
+  <text x="54" y="27" fill="#60a5fa" font-family="ui-monospace, monospace" font-size="10" font-weight="700" letter-spacing="1.2">02 <tspan fill="#334155">/</tspan> <tspan fill="#22d3ee">CURRENT STREAK</tspan></text>
+  <text x="54" y="42" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="9.5" font-weight="600">OCT 17 – OCT 25, 2026</text>
+  <text x="18" y="86" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="32" font-weight="800" style="filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.35));">9 <tspan font-size="18" font-weight="700" fill="#93c5fd">DAYS</tspan></text>
+  <g transform="translate(142, 67)">
+    <rect width="118" height="20" rx="10" fill="#052e2b" stroke="#059669" stroke-width="1"/>
+    <circle cx="12" cy="10" r="3.5" fill="#10b981" class="beacon-dot"/>
+    <text x="22" y="13.5" fill="#34d399" font-family="system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="0.5">ACTIVE CONSISTENCY</text>
+  </g>
+  <text x="18" y="110" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="500">9 Consecutive Days with Verified Activity</text>
+</svg>

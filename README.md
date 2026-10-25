@@ -409,21 +409,82 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
 
 <br />
 
-<img src="assets/language-stats.svg" alt="Verified Public Codebase Language Distribution" width="100%" />
+<!-- ================================================================= -->
+<!-- ROW 1: TELEMETRY METRIC CARDS (TOTAL CONTRIBUTIONS, STREAKS)      -->
+<!-- ================================================================= -->
+
+<img src="assets/streak-metrics.svg" alt="GitHub Contribution Velocity &amp; Streak Analytics: 229 Total Contributions, 9-Day Current Streak, 9-Day Longest Streak" width="100%" />
 
 <br />
+
+<!-- ================================================================= -->
+<!-- ROW 2: SIDE-BY-SIDE ANALYTICS (GITHUB STATS & LANGUAGE AUDIT)     -->
+<!-- ================================================================= -->
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+  <img src="assets/github-stats.svg" alt="HAZIM BASHIR FAQEER — Verified GitHub Profile Telemetry &amp; Developer Metrics" width="100%" />
+</td>
+<td width="50%" valign="top">
+  <img src="assets/language-stats-card.svg" alt="Verified Public Codebase Language Distribution — 3.67 MB Analyzed Across 13 Repositories" width="100%" />
+</td>
+</tr>
+</table>
+
 <br />
+
+<!-- ================================================================= -->
+<!-- ROW 3: ANNUAL CONTRIBUTION ACTIVITY HEATMAP (365 DAYS)           -->
+<!-- ================================================================= -->
+
+<img src="assets/contribution-heatmap.svg" alt="Annual GitHub Contribution Activity Heatmap: 229 contributions across 365 days (Oct 26, 2025 – Oct 25, 2026)" width="100%" />
+
+<br />
+
+<!-- ================================================================= -->
+<!-- ROW 4: MONTHLY CONTRIBUTION VELOCITY & TREND TRAJECTORY          -->
+<!-- ================================================================= -->
+
+<img src="assets/monthly-trend.svg" alt="Monthly Contribution Velocity &amp; Activity Trajectory: 13-month progression showing peak 110 contributions in October 2026" width="100%" />
+
+<br />
+
+<!-- ================================================================= -->
+<!-- VERIFIED TELEMETRY AUDIT MATRIX                                  -->
+<!-- ================================================================= -->
+
+| Telemetry Dimension | Verified Metric | Audit Scope &amp; Source Verification |
+| :--- | :--- | :--- |
+| **Total Contributions** | **229 Activity Units** | Verified across 365 calendar days (Oct 26, 2025 – Present) |
+| **Current &amp; Longest Streak** | **9 Consecutive Days** | Active run: Oct 17 – Oct 25, 2026 (Verified streak record) |
+| **Total Author Commits** | **107 Commits** | Direct author commits across 13 public repository trees |
+| **Public Codebase Volume** | **3,674,654 Bytes (3.67 MB)** | HTML (63.26%), JavaScript ES6+ (32.49%), CSS3 (4.26%) |
+| **Repository Footprint** | **13 Public Repositories** | Pure client-side engines, in-browser utilities &amp; PWA apps |
+
+<br />
+
+<!-- ================================================================= -->
+<!-- DYNAMIC THIRD-PARTY TELEMETRY WIDGETS (FALLBACK ACCORDION)        -->
+<!-- ================================================================= -->
+
+<details>
+<summary><b>🔄 View Live Dynamic API Telemetry Badges (Third-Party Providers)</b></summary>
+<br />
+<p align="center">
+  <sub>These dynamic widgets query third-party Vercel and Demolab endpoints in real time. If external services experience rate-limits or cold-starts, refer to the high-reliability verified telemetry dashboard above.</sub>
+</p>
 
 <div align="center">
 
   <img 
-    src="https://github-readme-stats.vercel.app/api?username=officialhazim42&show_icons=true&hide_border=true&include_all_commits=true&bg_color=060b18&title_color=38bdf8&text_color=94a3b8&icon_color=3b82f6" 
+    src="https://github-readme-stats.vercel.app/api?username=officialhazim42&amp;show_icons=true&amp;hide_border=true&amp;include_all_commits=true&amp;bg_color=060b18&amp;title_color=38bdf8&amp;text_color=94a3b8&amp;icon_color=3b82f6" 
     alt="HAZIM BASHIR FAQEER GitHub Stats" 
     height="165" 
   />
   &nbsp;&nbsp;
   <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialhazim42&layout=compact&hide_border=true&bg_color=060b18&title_color=38bdf8&text_color=94a3b8" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialhazim42&amp;layout=compact&amp;hide_border=true&amp;bg_color=060b18&amp;title_color=38bdf8&amp;text_color=94a3b8" 
     alt="HAZIM BASHIR FAQEER Top Language Summary" 
     height="165" 
   />
@@ -432,12 +493,14 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
   <br />
 
   <img 
-    src="https://streak-stats.demolab.com?user=officialhazim42&theme=dark&background=060b18&border=1e3a5f&stroke=38bdf8&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&dates=94a3b8" 
+    src="https://streak-stats.demolab.com?user=officialhazim42&amp;theme=dark&amp;background=060b18&amp;border=1e3a5f&amp;stroke=38bdf8&amp;ring=38bdf8&amp;fire=38bdf8&amp;currStreakLabel=38bdf8&amp;dates=94a3b8" 
     alt="HAZIM BASHIR FAQEER GitHub Contribution &amp; Streak Activity" 
     height="165" 
   />
 
 </div>
+<br />
+</details>
 
 <br />
 
