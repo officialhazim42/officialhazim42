@@ -456,51 +456,11 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
 
 | Telemetry Dimension | Verified Metric | Audit Scope &amp; Source Verification |
 | :--- | :--- | :--- |
-| **Total Contributions** | **229 Activity Units** | Verified across 365 calendar days (Oct 26, 2025 – Present) |
-| **Current &amp; Longest Streak** | **9 Consecutive Days** | Active run: Oct 17 – Oct 25, 2026 (Verified streak record) |
-| **Total Author Commits** | **107 Commits** | Direct author commits across 13 public repository trees |
-| **Public Codebase Volume** | **3,674,654 Bytes (3.67 MB)** | HTML (63.26%), JavaScript ES6+ (32.49%), CSS3 (4.26%) |
-| **Repository Footprint** | **13 Public Repositories** | Pure client-side engines, in-browser utilities &amp; PWA apps |
-
-<br />
-
-<!-- ================================================================= -->
-<!-- DYNAMIC THIRD-PARTY TELEMETRY WIDGETS (FALLBACK ACCORDION)        -->
-<!-- ================================================================= -->
-
-<details>
-<summary><b>🔄 View Live Dynamic API Telemetry Badges (Third-Party Providers)</b></summary>
-<br />
-<p align="center">
-  <sub>These dynamic widgets query third-party Vercel and Demolab endpoints in real time. If external services experience rate-limits or cold-starts, refer to the high-reliability verified telemetry dashboard above.</sub>
-</p>
-
-<div align="center">
-
-  <img 
-    src="https://github-readme-stats.vercel.app/api?username=officialhazim42&amp;show_icons=true&amp;hide_border=true&amp;include_all_commits=true&amp;bg_color=060b18&amp;title_color=38bdf8&amp;text_color=94a3b8&amp;icon_color=3b82f6" 
-    alt="HAZIM BASHIR FAQEER GitHub Stats" 
-    height="165" 
-  />
-  &nbsp;&nbsp;
-  <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=officialhazim42&amp;layout=compact&amp;hide_border=true&amp;bg_color=060b18&amp;title_color=38bdf8&amp;text_color=94a3b8" 
-    alt="HAZIM BASHIR FAQEER Top Language Summary" 
-    height="165" 
-  />
-
-  <br />
-  <br />
-
-  <img 
-    src="https://streak-stats.demolab.com?user=officialhazim42&amp;theme=dark&amp;background=060b18&amp;border=1e3a5f&amp;stroke=38bdf8&amp;ring=38bdf8&amp;fire=38bdf8&amp;currStreakLabel=38bdf8&amp;dates=94a3b8" 
-    alt="HAZIM BASHIR FAQEER GitHub Contribution &amp; Streak Activity" 
-    height="165" 
-  />
-
-</div>
-<br />
-</details>
+| **Total Contributions**<br /><sub>ANNUAL VELOCITY</sub> | <code><b>229</b> Activity Units</code><br /><sub>Verified 365-Day Sum</sub> | Verified across 365 calendar days (Oct 26, 2025 – Present)<br /><sub>Direct GitHub contribution calendar audit • +110 in Oct 2026</sub> |
+| **Current &amp; Longest Streak**<br /><sub>ACTIVE CONSISTENCY</sub> | <code><b>9</b> Consecutive Days</code><br /><sub>Oct 17 – Oct 25, 2026</sub> | Active run: Oct 17 – Oct 25, 2026 (Verified streak record)<br /><sub>Continuous daily contribution sequence with zero missed intervals</sub> |
+| **Total Author Commits**<br /><sub>SOURCE CODE EDITS</sub> | <code><b>107</b> Commits</code><br /><sub>Direct Repository Pushes</sub> | Direct author commits across 13 public repository trees<br /><sub>Audited via GitHub Search API author query across public repositories</sub> |
+| **Public Codebase Volume**<br /><sub>BYTE DISTRIBUTION</sub> | <code><b>3,674,654</b> Bytes</code> <b>(3.67 MB)</b><br /><sub>HTML 63.3% • JS 32.5% • CSS 4.3%</sub> | HTML (63.26%), JavaScript ES6+ (32.49%), CSS3 (4.26%)<br /><sub>Comprehensive repository byte breakdown across all 13 public repositories</sub> |
+| **Repository Footprint**<br /><sub>PROJECT ECOSYSTEM</sub> | <code><b>13</b> Public Repositories</code><br /><sub>Standalone Suites</sub> | Pure client-side engines, in-browser utilities &amp; PWA apps<br /><sub>Zero server-upload client computing utilities &amp; cybersecurity learning platforms</sub> |
 
 <br />
 
