@@ -110,16 +110,20 @@
 
 <br />
 
+<img src="assets/table-filament.svg" alt="Technology Stack Matrix Accent" width="100%" height="4" />
+
+<br />
+
 | Domain Category | Core Technologies | Project Evidence &amp; Ecosystem Role |
 | :--- | :--- | :--- |
-| **Primary Languages** | JavaScript (ES6+), TypeScript, Python | Core web application logic, CyberGuard Next.js portal, utility scripts |
-| **Academic Base (CSE)** | C, C++, Java, Data Structures &amp; Algorithms | Polytechnic coursework, memory management, algorithms &amp; OOP foundations |
-| **Systems &amp; Exploring** | PHP, Go, Rust | Actively exploring modern concurrent systems, microservices &amp; tool safety |
-| **Markup &amp; Styling** | HTML5, CSS3, Tailwind CSS | Semantic accessible markup, dark-mode glassmorphism, responsive UI |
-| **Frontend Frameworks** | React 19, Next.js 16, Vite | Component architecture, SSR/Edge rendering, fast bundling workflows |
-| **Specialized Compute** | WebAssembly, HTML5 Canvas, pdf-lib, Tesseract.js | In-browser PDF processing, AVIF compression, client-side OCR |
-| **Backend &amp; Cloud** | Supabase (PostgreSQL, Auth), Netlify Edge, Vercel | Relational schema design, RLS security, global edge hosting |
-| **Tooling &amp; CLI** | Git, GitHub, VS Code, Termux Android Environment | Distributed version control, automation scripts &amp; on-device Linux CLI |
+| **Primary Languages**<br /><sub>WEB &amp; APP RUNTIME</sub> | <code>JavaScript (ES6+)</code> <code>TypeScript</code> <code>Python</code> | Core web application logic, CyberGuard Next.js portal, utility scripts |
+| **Academic Base (CSE)**<br /><sub>COMPUTER SCIENCE</sub> | <code>C</code> <code>C++</code> <code>Java</code> <code>Data Structures &amp; Algorithms</code> | Polytechnic coursework, memory management, algorithms &amp; OOP foundations |
+| **Systems &amp; Exploring**<br /><sub>CONCURRENCY &amp; SAFETY</sub> | <code>PHP</code> <code>Go</code> <code>Rust</code> | Actively exploring modern concurrent systems, microservices &amp; tool safety |
+| **Markup &amp; Styling**<br /><sub>RESPONSIVE INTERFACES</sub> | <code>HTML5</code> <code>CSS3</code> <code>Tailwind CSS</code> | Semantic accessible markup, dark-mode glassmorphism, responsive UI |
+| **Frontend Frameworks**<br /><sub>APPLICATION ARCHITECTURE</sub> | <code>React 19</code> <code>Next.js 16</code> <code>Vite</code> | Component architecture, SSR/Edge rendering, fast bundling workflows |
+| **Specialized Compute**<br /><sub>CLIENT-SIDE ENGINES</sub> | <code>WebAssembly</code> <code>HTML5 Canvas</code> <code>pdf-lib</code> <code>Tesseract.js</code> | In-browser PDF processing, AVIF compression, client-side OCR |
+| **Backend &amp; Cloud**<br /><sub>EDGE &amp; RELATIONAL DATA</sub> | <code>Supabase (PostgreSQL, Auth)</code> <code>Netlify Edge</code> <code>Vercel</code> | Relational schema design, RLS security, global edge hosting |
+| **Tooling &amp; CLI**<br /><sub>WORKFLOWS &amp; ENVIRONMENT</sub> | <code>Git</code> <code>GitHub</code> <code>VS Code</code> <code>Termux Android Environment</code> | Distributed version control, automation scripts &amp; on-device Linux CLI |
 
 <br />
 
