@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="26" viewBox="0 0 84 26" fill="none">
+  <defs>
+    <linearGradient id="live-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { r: 5px; opacity: 0.35; }
+        50% { r: 8px; opacity: 0.85; }
+      }
+      @keyframes pulseCore {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 1; }
+      }
+      .live-glow { animation: pulseGlow 2.2s ease-in-out infinite; }
+      .live-core { animation: pulseCore 2.2s ease-in-out infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        .live-glow, .live-core { animation: none; }
+      }
+    </style>
+  </defs>
+  <rect x="0.5" y="0.5" width="83" height="25" rx="5" fill="url(#live-bg)" stroke="#10b981" stroke-width="1.2" />
+  <circle class="live-glow" cx="15" cy="13" r="5" fill="#34d399" />
+  <circle class="live-core" cx="15" cy="13" r="3.2" fill="#10b981" />
+  <circle cx="15" cy="13" r="1.5" fill="#ecfdf5" />
+  <text x="27" y="17" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="800" letter-spacing="1px">LIVE</text>
+</svg>

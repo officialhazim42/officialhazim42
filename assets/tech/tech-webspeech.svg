@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="143" height="24" viewBox="0 0 143 24" fill="none">
+  <rect x="0.5" y="0.5" width="142" height="23" rx="4" fill="#0b1730" stroke="#1e3a5f" stroke-width="1"/>
+  <g transform="translate(8, 4)">
+    <path d="M2 5.5H5L8.5 2.5V13.5L5 10.5H2V5.5Z" fill="#38BDF8"/>
+<path d="M11 5C11.8 5.8 12.3 6.8 12.3 8C12.3 9.2 11.8 10.2 11 11" stroke="#38BDF8" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+<path d="M13 3C14.3 4.3 15 6.1 15 8C15 9.9 14.3 11.7 13 13" stroke="#38BDF8" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+  </g>
+  <text x="28" y="16" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="0.3px">Web Speech API</text>
+</svg>

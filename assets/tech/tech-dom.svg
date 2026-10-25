@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="158" height="24" viewBox="0 0 158 24" fill="none">
+  <rect x="0.5" y="0.5" width="157" height="23" rx="4" fill="#0b1730" stroke="#1e3a5f" stroke-width="1"/>
+  <g transform="translate(8, 4)">
+    <rect x="5.5" y="2" width="5" height="3" rx="1" fill="#38BDF8"/>
+<line x1="8" y1="5" x2="8" y2="8" stroke="#38BDF8" stroke-width="1.2"/>
+<line x1="3.5" y1="8" x2="12.5" y2="8" stroke="#38BDF8" stroke-width="1.2"/>
+<line x1="3.5" y1="8" x2="3.5" y2="11" stroke="#38BDF8" stroke-width="1.2"/>
+<line x1="12.5" y1="8" x2="12.5" y2="11" stroke="#38BDF8" stroke-width="1.2"/>
+<rect x="1" y="11" width="5" height="3" rx="1" fill="#38BDF8"/>
+<rect x="10" y="11" width="5" height="3" rx="1" fill="#38BDF8"/>
+  </g>
+  <text x="28" y="16" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="0.3px">DOM Architecture</text>
+</svg>

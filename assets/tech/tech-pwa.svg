@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="24" viewBox="0 0 82 24" fill="none">
+  <rect x="0.5" y="0.5" width="81" height="23" rx="4" fill="#0b1730" stroke="#1e3a5f" stroke-width="1"/>
+  <g transform="translate(8, 4)">
+    <rect width="16" height="16" rx="3" fill="#5A0FC8"/>
+<text x="1.5" y="11.5" fill="#ffffff" font-family="system-ui, sans-serif" font-size="7" font-weight="900">PWA</text>
+  </g>
+  <text x="28" y="16" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="0.3px">PWA</text>
+</svg>

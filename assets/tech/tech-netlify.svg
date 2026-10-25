@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" fill="none">
+  <rect x="0.5" y="0.5" width="127" height="23" rx="4" fill="#0b1730" stroke="#1e3a5f" stroke-width="1"/>
+  <g transform="translate(8, 4)">
+    <path d="M8 1L14.5 7.5L8 14L1.5 7.5L8 1Z" fill="#00C7B7"/>
+<path d="M8 4L11.5 7.5L8 11L4.5 7.5L8 4Z" fill="#ffffff"/>
+  </g>
+  <text x="28" y="16" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="0.3px">Netlify Edge</text>
+</svg>
