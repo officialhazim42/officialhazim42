@@ -5,15 +5,16 @@
 | Project | Number | Category | Status | Primary Stack | Live Demo | Repository |
 | :--- | :---: | :--- | :---: | :--- | :---: | :---: |
 | **[PDFHub](#01-pdfhub)** | `01` | Client-Side WebAssembly Suite | `LIVE` | JavaScript (ES6+), WebAssembly | [Launch Demo](https://pdfshub.netlify.app/) | [Source Code](https://github.com/officialhazim42/pdfshub) |
-| **[ImageHub](#02-imagehub)** | `02` | In-Browser Graphics Engine | `LIVE` | Pure JavaScript, HTML5 Canvas | [Launch Demo](https://imagehub.netlify.app/) | [Source Code](https://github.com/officialhazim42/imagehub) |
+| **[ImageHub](#02-imagehub)** | `02` | In-Browser Graphics Engine | `LIVE` | Pure JavaScript, HTML5 Canvas | [Launch Demo](https://images-hub.netlify.app/pages/index.html) | [Source Code](https://github.com/officialhazim42/imagehub) |
 | **[CyberGuard YUVA](#03-cyberguard-yuva)** | `03` | Cyber Defense Portal & Community | `LIVE` | Next.js 15+, React 19 | [Launch Demo](https://cyberguard-yuva.vercel.app/) | Private |
-| **[HabitsGrow (HabitFlow)](#04-habitsgrow)** | `04` | Productivity & Personal Growth PWA | `LIVE` | JavaScript (ES6+), PWA | [Launch Demo](https://habit-flow-ten-eta.vercel.app) | Private |
+| **[HabitsGrow](#04-habitsgrow)** | `04` | Productivity & Personal Growth PWA | `LIVE` | JavaScript (ES6+), PWA | [Launch Demo](https://habitsgrow.netlify.app/) | Private |
 | **[Advanced Image Compressor](#05-advance-image-compressor)** | `05` | Compression Utility | `LIVE` | HTML5, CSS3 | [Launch Demo](https://advance-images-compressor.netlify.app/) | [Source Code](https://github.com/officialhazim42/Advance-Image-Compressor) |
 | **[Termux Command Guide](#06-termux-command-guide)** | `06` | Technical Documentation Handbook | `REPOSITORY ONLY` | Shell / Bash, Markdown | — | [Source Code](https://github.com/officialhazim42/Termux-Command-Listbook) |
 | **[Passport Photo Maker](#07-passport-photo-maker)** | `07` | Client-Side Media Tool | `REPOSITORY ONLY` | HTML5, CSS3 | — | [Source Code](https://github.com/officialhazim42/Passportsize-photo-maker) |
 | **[Text to Audio Converter](#08-text-to-audio)** | `08` | Speech Synthesis Tool | `REPOSITORY ONLY` | HTML5, CSS3 | — | [Source Code](https://github.com/officialhazim42/Text-to-Audio-Converter) |
 | **[Student Task Manager](#09-student-task-manager)** | `09` | Academic Workflow Web Tool | `REPOSITORY ONLY` | HTML5, CSS3 | — | [Source Code](https://github.com/officialhazim42/week-3-student-task-manager) |
 | **[Deployment Dashboard](#10-deployment-dashboard)** | `10` | DevOps & Monitoring Prototype | `REPOSITORY ONLY` | HTML5, CSS3 | — | [Source Code](https://github.com/officialhazim42/week-5-deployment-production) |
+| **[Shop (Net Gallery Hb)](#11-shop)** | `11` | Digital & Printing Services Platform | `LIVE` | HTML5, CSS3, JavaScript | [Launch Demo](https://net-gallery-hb.netlify.app/) | Private |
 
 ---
 
@@ -57,7 +58,7 @@ A production-grade, client-side digital image manipulation platform running loca
 `Pure JavaScript` `HTML5 Canvas` `Web APIs` `CSS3` `Service Workers` `Netlify Edge`
 
 ### 🔗 Project Actions & Destinations
-[🌐 Launch Live Deployment](https://imagehub.netlify.app/) &nbsp;•&nbsp; [💻 View GitHub Repository](https://github.com/officialhazim42/imagehub) &nbsp;•&nbsp; [🪞 Mirror Deployment](https://imagehb.netlify.app/) &nbsp;•&nbsp; [← Back to Table of Contents](#-featured-projects-dossier--hazim-bashir-faqeer)
+[🌐 Launch Live Deployment](https://images-hub.netlify.app/pages/index.html) &nbsp;•&nbsp; [💻 View GitHub Repository](https://github.com/officialhazim42/imagehub) &nbsp;•&nbsp; [🪞 Mirror Deployment](https://imagehb.netlify.app/) &nbsp;•&nbsp; [← Back to Table of Contents](#-featured-projects-dossier--hazim-bashir-faqeer)
 
 ---
 
@@ -83,10 +84,10 @@ Official web portal and digital learning hub for CyberGuard YUVA, a youth-led cy
 
 ---
 
-## <a id="04-habitsgrow"></a>04 / HabitsGrow (HabitFlow) — Modern Routine Building & Consistency Tracking PWA
+## <a id="04-habitsgrow"></a>04 / HabitsGrow — Grow Better Every Day
 **Category:** Productivity & Personal Growth PWA &nbsp;|&nbsp; **Status:** `LIVE`
 
-<img src="assets/habitsgrow-preview.png" alt="HabitsGrow (HabitFlow) Preview" width="100%" style="max-width: 700px; border-radius: 8px; border: 1px solid #1e3a5f;" />
+<img src="assets/habitsgrow-preview.png" alt="HabitsGrow Preview" width="100%" style="max-width: 700px; border-radius: 8px; border: 1px solid #1e3a5f;" />
 
 ### 📌 About the Project
 A responsive, privacy-centric Progressive Web App designed to help individuals build positive routines, maintain completion consistency streaks, visualize progress analytics, and document mindfulness reflections.
@@ -101,7 +102,7 @@ A responsive, privacy-centric Progressive Web App designed to help individuals b
 `JavaScript (ES6+)` `PWA` `Service Workers` `HTML5/CSS3` `Supabase` `Vercel`
 
 ### 🔗 Project Actions & Destinations
-[🌐 Launch Live Deployment](https://habit-flow-ten-eta.vercel.app) &nbsp;•&nbsp; [← Back to Table of Contents](#-featured-projects-dossier--hazim-bashir-faqeer)
+[🌐 Launch Live Deployment](https://habitsgrow.netlify.app/) &nbsp;•&nbsp; [← Back to Table of Contents](#-featured-projects-dossier--hazim-bashir-faqeer)
 
 ---
 
@@ -236,3 +237,23 @@ A production deployment dashboard prototype demonstrating environment status, ap
 [💻 View GitHub Repository](https://github.com/officialhazim42/week-5-deployment-production) &nbsp;•&nbsp; [← Back to Table of Contents](#-featured-projects-dossier--hazim-bashir-faqeer)
 
 ---
+
+## <a id="11-shop"></a>11 / Shop (Net Gallery Hb) — Professional Digital & Local Printing Services Hub
+**Category:** Digital & Printing Services Platform &nbsp;|&nbsp; **Status:** `LIVE`
+
+<img src="assets/shop-preview.svg" alt="Net Gallery Hb Preview" width="100%" style="max-width: 700px; border-radius: 8px; border: 1px solid #1e3a5f;" />
+
+### 📌 About the Project
+A dedicated commercial service portal for Net Gallery Hb providing local citizens and students with official digital document processing, CSC governance services, custom photo merchandise, and on-demand professional printing.
+
+### ⚡ Key Capabilities & Verified Features
+- **Government & Citizen Services assistance:** CSC governance schemes, Ayushman Golden Card, PAN applications, Voter ID services & Driving Licence support
+- **Custom merchandise & framing:** Professional digital photo printing, personalized mobile back covers, photo framing & instant passport photos
+- **Seamless client engagement:** Responsive booking request forms, live dynamic pricing matrix, instant WhatsApp integration & UPI digital payment workflow
+- **High-availability deployment:** Ultra-fast static delivery hosted on Netlify Edge
+
+### 🛠️ Verified Technology Stack
+`HTML5` `CSS3` `JavaScript` `Responsive DOM` `Netlify Edge`
+
+### 🔗 Project Actions & Destinations
+[🌐 Launch Live Deployment](https://net-gallery-hb.netlify.app/) &nbsp;•&nbsp; [← Back to Table of Contents](#-featured-projects-dossier--hazim-bashir-faqeer)

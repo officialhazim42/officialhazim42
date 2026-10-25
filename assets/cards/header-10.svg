@@ -35,7 +35,7 @@
 
   <!-- Project Number Badge Pill -->
   <rect x="18" y="17" width="76" height="34" rx="6" fill="#081b38" stroke="#0284c7" stroke-width="1.3" />
-  <text x="25" y="39" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="800" letter-spacing="1px">10 / 10</text>
+  <text x="25" y="39" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="800" letter-spacing="1px">10 / 11</text>
 
   <!-- Project Vector Icon -->
   <g transform="translate(108, 17)">

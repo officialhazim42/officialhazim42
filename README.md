@@ -140,7 +140,7 @@
     <img src="https://img.shields.io/badge/📖_FULL_PROJECT_DOSSIER-0F2244?style=for-the-badge&logo=gitbook&logoColor=38BDF8" alt="Complete Project Dossier" />
   </a>
   &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/VERIFIED_PROJECTS-10_Active-0284C7?style=for-the-badge" alt="10 Verified Projects" />
+  <img src="https://img.shields.io/badge/VERIFIED_PROJECTS-11_Active-0284C7?style=for-the-badge" alt="11 Verified Projects" />
 </div>
 
 <p align="center">
@@ -156,7 +156,7 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-01.svg" alt="01 / 10 — PDFHub | CLIENT-SIDE WEBASSEMBLY SUITE (LIVE)" width="100%" />
+<img src="assets/cards/header-01.svg" alt="01 / 11 — PDFHub | CLIENT-SIDE WEBASSEMBLY SUITE (LIVE)" width="100%" />
 
 </td>
 </tr>
@@ -198,14 +198,14 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-02.svg" alt="02 / 10 — ImageHub | IN-BROWSER GRAPHICS ENGINE (LIVE)" width="100%" />
+<img src="assets/cards/header-02.svg" alt="02 / 11 — ImageHub | 13 FREE IN-BROWSER IMAGE TOOLS ONLINE (LIVE)" width="100%" />
 
 </td>
 </tr>
 <tr>
 <td width="36%" align="center" valign="middle">
 
-<a href="https://imagehub.netlify.app/"><img src="assets/imagehub-preview.svg" alt="ImageHub Graphics Engine Interface Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" /></a>
+<a href="https://images-hub.netlify.app/pages/index.html"><img src="assets/imagehub-preview.svg" alt="ImageHub Graphics Engine Interface Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" /></a>
 
 </td>
 <td width="64%" valign="top">
@@ -223,7 +223,7 @@
 
 <br /><br />
 
-<a href="https://imagehub.netlify.app/"><img src="assets/buttons/btn-live-demo.svg" height="34" alt="Launch Live Demo" /></a> &nbsp;&nbsp; <a href="https://github.com/officialhazim42/imagehub"><img src="assets/buttons/btn-view-repo.svg" height="34" alt="View GitHub Repository" /></a> &nbsp;&nbsp; <a href="PROJECTS.md#02-imagehub"><img src="assets/buttons/btn-project-specs.svg" height="34" alt="Read Technical Dossier" /></a>
+<a href="https://images-hub.netlify.app/pages/index.html"><img src="assets/buttons/btn-live-demo.svg" height="34" alt="Launch Live Demo" /></a> &nbsp;&nbsp; <a href="https://github.com/officialhazim42/imagehub"><img src="assets/buttons/btn-view-repo.svg" height="34" alt="View GitHub Repository" /></a> &nbsp;&nbsp; <a href="PROJECTS.md#02-imagehub"><img src="assets/buttons/btn-project-specs.svg" height="34" alt="Read Technical Dossier" /></a>
 
 </td>
 </tr>
@@ -240,7 +240,7 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-03.svg" alt="03 / 10 — CyberGuard YUVA | CYBER DEFENSE PORTAL & COMMUNITY (LIVE)" width="100%" />
+<img src="assets/cards/header-03.svg" alt="03 / 11 — CyberGuard YUVA | CYBER DEFENSE PORTAL & COMMUNITY (LIVE)" width="100%" />
 
 </td>
 </tr>
@@ -274,7 +274,7 @@
 <br />
 
 <!-- ================================================================= -->
-<!-- PROJECT 04 — COMPLETE CARD: HabitsGrow (HabitFlow)                       -->
+<!-- PROJECT 04 — COMPLETE CARD: HabitsGrow                                   -->
 <!-- ================================================================= -->
 
 <a id="04-habitsgrow"></a>
@@ -282,14 +282,14 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-04.svg" alt="04 / 10 — HabitsGrow (HabitFlow) | PRODUCTIVITY & PERSONAL GROWTH PWA (LIVE)" width="100%" />
+<img src="assets/cards/header-04.svg" alt="04 / 11 — HabitsGrow | GROW BETTER EVERY DAY (LIVE)" width="100%" />
 
 </td>
 </tr>
 <tr>
 <td width="36%" align="center" valign="middle">
 
-<a href="https://habit-flow-ten-eta.vercel.app"><img src="assets/habitsgrow-preview.png" alt="HabitsGrow Routine Tracker Interface Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" /></a>
+<a href="https://habitsgrow.netlify.app/"><img src="assets/habitsgrow-preview.png" alt="HabitsGrow Routine Tracker Interface Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" /></a>
 
 </td>
 <td width="64%" valign="top">
@@ -307,7 +307,7 @@
 
 <br /><br />
 
-<a href="https://habit-flow-ten-eta.vercel.app"><img src="assets/buttons/btn-live-demo.svg" height="34" alt="Launch Live Demo" /></a> &nbsp;&nbsp; <img src="assets/buttons/btn-private-codebase.svg" height="34" alt="Private Codebase" /> &nbsp;&nbsp; <a href="PROJECTS.md#04-habitsgrow"><img src="assets/buttons/btn-project-specs.svg" height="34" alt="Read Technical Dossier" /></a>
+<a href="https://habitsgrow.netlify.app/"><img src="assets/buttons/btn-live-demo.svg" height="34" alt="Launch Live Demo" /></a> &nbsp;&nbsp; <img src="assets/buttons/btn-private-codebase.svg" height="34" alt="Private Codebase" /> &nbsp;&nbsp; <a href="PROJECTS.md#04-habitsgrow"><img src="assets/buttons/btn-project-specs.svg" height="34" alt="Read Technical Dossier" /></a>
 
 </td>
 </tr>
@@ -324,7 +324,7 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-05.svg" alt="05 / 10 — Advanced Image Compressor | CLIENT-SIDE MULTI-FORMAT COMPRESSION UTILITY (LIVE)" width="100%" />
+<img src="assets/cards/header-05.svg" alt="05 / 11 — Advanced Image Compressor | CLIENT-SIDE MULTI-FORMAT COMPRESSION UTILITY (LIVE)" width="100%" />
 
 </td>
 </tr>
@@ -366,7 +366,7 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-06.svg" alt="06 / 10 — Termux Command Guide | TECHNICAL DOCUMENTATION HANDBOOK (REPOSITORY ONLY)" width="100%" />
+<img src="assets/cards/header-06.svg" alt="06 / 11 — Termux Command Guide | TECHNICAL DOCUMENTATION HANDBOOK (REPOSITORY ONLY)" width="100%" />
 
 </td>
 </tr>
@@ -408,7 +408,7 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-07.svg" alt="07 / 10 — Passport Photo Maker | CLIENT-SIDE MEDIA TOOL (REPOSITORY ONLY)" width="100%" />
+<img src="assets/cards/header-07.svg" alt="07 / 11 — Passport Photo Maker | CLIENT-SIDE MEDIA TOOL (REPOSITORY ONLY)" width="100%" />
 
 </td>
 </tr>
@@ -450,7 +450,7 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-08.svg" alt="08 / 10 — Text to Audio Converter | SPEECH SYNTHESIS TOOL (REPOSITORY ONLY)" width="100%" />
+<img src="assets/cards/header-08.svg" alt="08 / 11 — Text to Audio Converter | SPEECH SYNTHESIS TOOL (REPOSITORY ONLY)" width="100%" />
 
 </td>
 </tr>
@@ -492,7 +492,7 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-09.svg" alt="09 / 10 — Student Task Manager | ACADEMIC WORKFLOW WEB TOOL (REPOSITORY ONLY)" width="100%" />
+<img src="assets/cards/header-09.svg" alt="09 / 11 — Student Task Manager | ACADEMIC WORKFLOW WEB TOOL (REPOSITORY ONLY)" width="100%" />
 
 </td>
 </tr>
@@ -534,7 +534,7 @@
 <tr>
 <td colspan="2" align="left">
 
-<img src="assets/cards/header-10.svg" alt="10 / 10 — Deployment Dashboard | DEVOPS & MONITORING PROTOTYPE (REPOSITORY ONLY)" width="100%" />
+<img src="assets/cards/header-10.svg" alt="10 / 11 — Deployment Dashboard | DEVOPS & MONITORING PROTOTYPE (REPOSITORY ONLY)" width="100%" />
 
 </td>
 </tr>
@@ -560,6 +560,48 @@
 <br /><br />
 
 <a href="https://github.com/officialhazim42/week-5-deployment-production"><img src="assets/buttons/btn-view-repo.svg" height="34" alt="View GitHub Repository" /></a> &nbsp;&nbsp; <a href="PROJECTS.md#10-deployment-dashboard"><img src="assets/buttons/btn-project-specs.svg" height="34" alt="Read Technical Dossier" /></a>
+
+</td>
+</tr>
+</table>
+
+<br />
+
+<!-- ================================================================= -->
+<!-- PROJECT 11 — COMPLETE CARD: Shop (Net Gallery Hb)                        -->
+<!-- ================================================================= -->
+
+<a id="11-shop"></a>
+<table width="100%">
+<tr>
+<td colspan="2" align="left">
+
+<img src="assets/cards/header-11.svg" alt="11 / 11 — Shop (Net Gallery Hb) | DIGITAL & PRINTING SERVICES PLATFORM (LIVE)" width="100%" />
+
+</td>
+</tr>
+<tr>
+<td width="36%" align="center" valign="middle">
+
+<a href="https://net-gallery-hb.netlify.app/"><img src="assets/shop-preview.svg" alt="Net Gallery Hb Digital & Local Printing Services Preview" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" /></a>
+
+</td>
+<td width="64%" valign="top">
+
+> **Professional Digital & Local Printing Services Hub:** A dedicated commercial service portal for Net Gallery Hb providing local citizens and students with official digital document processing, CSC governance services, custom photo merchandise, and on-demand professional printing.
+>
+> 🔹 **Verified Capabilities:**
+> • Government & Citizen Services assistance (CSC, Golden Card, PAN, Voter ID, Driving Licence)
+> • Professional digital photo printing, custom phone covers, photo framing & passport photos
+> • Responsive booking requests, live pricing matrix, instant WhatsApp integration & UPI payments
+
+<br />
+
+<img src="assets/tech/tech-html5.svg" height="24" alt="HTML5" /> <img src="assets/tech/tech-css3.svg" height="24" alt="CSS3" /> <img src="assets/tech/tech-javascript.svg" height="24" alt="JavaScript" /> <img src="assets/tech/tech-dom.svg" height="24" alt="Responsive DOM" /> <img src="assets/tech/tech-netlify.svg" height="24" alt="Netlify Edge" />
+
+<br /><br />
+
+<a href="https://net-gallery-hb.netlify.app/"><img src="assets/buttons/btn-live-demo.svg" height="34" alt="Launch Live Demo" /></a> &nbsp;&nbsp; <img src="assets/buttons/btn-private-codebase.svg" height="34" alt="Private Codebase" /> &nbsp;&nbsp; <a href="PROJECTS.md#11-shop"><img src="assets/buttons/btn-project-specs.svg" height="34" alt="Read Technical Dossier" /></a>
 
 </td>
 </tr>

@@ -35,11 +35,11 @@ cards_data = [
         "id": "02-imagehub",
         "num": "02",
         "name": "ImageHub",
-        "tagline": "IN-BROWSER GRAPHICS ENGINE",
+        "tagline": "13 FREE IN-BROWSER IMAGE TOOLS ONLINE",
         "status": "LIVE",
         "preview": "assets/imagehub-preview.svg",
         "preview_alt": "ImageHub Graphics Engine Interface Preview",
-        "link_preview": "https://imagehub.netlify.app/",
+        "link_preview": "https://images-hub.netlify.app/pages/index.html",
         "desc_heading": "Production-Grade Client-Side Image Manipulation",
         "desc_body": "A production-grade, client-side digital image manipulation platform running locally in the web browser. Empowers users to compress, upscale, isolate subjects, crop, resize, and convert graphics without transmitting a single byte over the network.",
         "highlights": [
@@ -56,7 +56,7 @@ cards_data = [
             ("tech-netlify.svg", "Netlify Edge")
         ],
         "actions": [
-            ("btn-live-demo.svg", "https://imagehub.netlify.app/", "Launch Live Demo"),
+            ("btn-live-demo.svg", "https://images-hub.netlify.app/pages/index.html", "Launch Live Demo"),
             ("btn-view-repo.svg", "https://github.com/officialhazim42/imagehub", "View GitHub Repository"),
             ("btn-project-specs.svg", "PROJECTS.md#02-imagehub", "Read Technical Dossier")
         ]
@@ -93,12 +93,12 @@ cards_data = [
     {
         "id": "04-habitsgrow",
         "num": "04",
-        "name": "HabitsGrow (HabitFlow)",
-        "tagline": "PRODUCTIVITY & PERSONAL GROWTH PWA",
+        "name": "HabitsGrow",
+        "tagline": "GROW BETTER EVERY DAY",
         "status": "LIVE",
         "preview": "assets/habitsgrow-preview.png",
         "preview_alt": "HabitsGrow Routine Tracker Interface Preview",
-        "link_preview": "https://habit-flow-ten-eta.vercel.app",
+        "link_preview": "https://habitsgrow.netlify.app/",
         "desc_heading": "Privacy-Centric Routine & Streak Analytics",
         "desc_body": "A responsive, privacy-centric Progressive Web App designed to help individuals build positive routines, maintain completion consistency streaks, visualize progress analytics, and document mindfulness reflections.",
         "highlights": [
@@ -115,7 +115,7 @@ cards_data = [
             ("tech-css3.svg", "CSS3")
         ],
         "actions": [
-            ("btn-live-demo.svg", "https://habit-flow-ten-eta.vercel.app", "Launch Live Demo"),
+            ("btn-live-demo.svg", "https://habitsgrow.netlify.app/", "Launch Live Demo"),
             ("btn-private-codebase.svg", None, "Private Codebase"),
             ("btn-project-specs.svg", "PROJECTS.md#04-habitsgrow", "Read Technical Dossier")
         ]
@@ -284,6 +284,35 @@ cards_data = [
             ("btn-view-repo.svg", "https://github.com/officialhazim42/week-5-deployment-production", "View GitHub Repository"),
             ("btn-project-specs.svg", "PROJECTS.md#10-deployment-dashboard", "Read Technical Dossier")
         ]
+    },
+    {
+        "id": "11-shop",
+        "num": "11",
+        "name": "Shop (Net Gallery Hb)",
+        "tagline": "DIGITAL & PRINTING SERVICES PLATFORM",
+        "status": "LIVE",
+        "preview": "assets/shop-preview.svg",
+        "preview_alt": "Net Gallery Hb Digital & Local Printing Services Preview",
+        "link_preview": "https://net-gallery-hb.netlify.app/",
+        "desc_heading": "Professional Digital & Local Printing Services Hub",
+        "desc_body": "A dedicated commercial service portal for Net Gallery Hb providing local citizens and students with official digital document processing, CSC governance services, custom photo merchandise, and on-demand professional printing.",
+        "highlights": [
+            "Government & Citizen Services assistance (CSC, Golden Card, PAN, Voter ID, Driving Licence)",
+            "Professional digital photo printing, custom phone covers, photo framing & passport photos",
+            "Responsive booking requests, live pricing matrix, instant WhatsApp integration & UPI payments"
+        ],
+        "tech_badges": [
+            ("tech-html5.svg", "HTML5"),
+            ("tech-css3.svg", "CSS3"),
+            ("tech-javascript.svg", "JavaScript"),
+            ("tech-dom.svg", "Responsive DOM"),
+            ("tech-netlify.svg", "Netlify Edge")
+        ],
+        "actions": [
+            ("btn-live-demo.svg", "https://net-gallery-hb.netlify.app/", "Launch Live Demo"),
+            ("btn-private-codebase.svg", None, "Private Codebase"),
+            ("btn-project-specs.svg", "PROJECTS.md#11-shop", "Read Technical Dossier")
+        ]
     }
 ]
 
@@ -291,7 +320,7 @@ def render_markdown_section():
     chunks = []
     for c in cards_data:
         # Header banner
-        header_img = f'<img src="assets/cards/header-{c["num"]}.svg" alt="{c["num"]} / 10 — {c["name"]} | {c["tagline"]} ({c["status"]})" width="100%" />'
+        header_img = f'<img src="assets/cards/header-{c["num"]}.svg" alt="{c["num"]} / 11 — {c["name"]} | {c["tagline"]} ({c["status"]})" width="100%" />'
         
         # Thumbnail preview with border and container
         preview_markup = f'<a href="{c["link_preview"]}"><img src="{c["preview"]}" alt="{c["preview_alt"]}" width="100%" style="border-radius: 8px; border: 1px solid #1e3a5f;" /></a>'
@@ -313,7 +342,7 @@ def render_markdown_section():
         actions_markup = " &nbsp;&nbsp; ".join(action_parts)
         
         card_html = f"""<!-- ================================================================= -->
-<!-- PROJECT {c["num"]} — COMPLETE CARD: {c["name"]} {' ' * (45 - len(c["num"]) - len(c["name"]))} -->
+<!-- PROJECT {c["num"]} — COMPLETE CARD: {c["name"]} {' ' * max(0, 45 - len(c["num"]) - len(c["name"]))} -->
 <!-- ================================================================= -->
 
 <a id="{c["id"]}"></a>

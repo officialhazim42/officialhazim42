@@ -1,0 +1,13 @@
+Advance-Image-Compressor --> desc: 🔥 Advanced Web Image Compressor with AVIF, GIF detection, Smart Naming, Theme Toggle & Modern Glass UI. Built with Pure HTML, CSS & JavaScript. --> homepage: None
+hello-world --> desc: Week 1 internship Hello World project --> homepage: None
+imagehub --> desc: None --> homepage: https://imagehub-beta.vercel.app
+officialhazim42 --> desc: None --> homepage: None
+Passportsize-photo-maker --> desc: None --> homepage: None
+pdfshub --> desc: None --> homepage: https://pdfshub.smartstores.in/
+Termux-Command-Listbook --> desc: None --> homepage: None
+Text-to-Audio-Converter --> desc: None --> homepage: None
+week-2-interactive-quiz --> desc: Week 2 internship project – an interactive quiz app built with HTML, CSS, and JavaScript to practice core web development concepts, DOM manipulation, event handling, and basic programming logic. --> homepage: None
+week-3-student-task-manager --> desc: Week 3 practical implementation project – a responsive Student Task Manager built with HTML, CSS, and JavaScript, featuring task creation, completion tracking, filtering, deletion, local storage, and a clean user interface. --> homepage: None
+week-4-testing-quality-assurance --> desc: Week 4 internship project – a client-side form validation and testing application built with HTML, CSS, and JavaScript, demonstrating input validation, error handling, edge-case testing, debugging, and quality assurance practices. --> homepage: None
+week-5-deployment-production --> desc: Week 5 internship project – a production-ready deployment dashboard built with HTML, CSS, and JavaScript, demonstrating deployment readiness, environment status, application monitoring, performance metrics, logs, health checks, and production workflow concepts. --> homepage: None
+week-6-final-capstone-project --> desc: Week 6 final capstone project – a professional responsive student portfolio and project showcase website demonstrating planning, web development, responsive design, testing, optimization, documentation, Git/GitHub workflow, and deployment readiness. --> homepage: None
