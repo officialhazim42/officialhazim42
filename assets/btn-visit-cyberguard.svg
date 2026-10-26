@@ -1,70 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 42" width="240" height="42">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 42" width="250" height="42">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="btn-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="btn-bg-cg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0284c7" />
       <stop offset="50%" stop-color="#0369a1" />
       <stop offset="100%" stop-color="#0b1b3a" />
     </linearGradient>
-
-    <!-- Border Stroke Gradient -->
-    <linearGradient id="btn-border" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="btn-border-cg" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
       <stop offset="50%" stop-color="#60a5fa" />
       <stop offset="100%" stop-color="#38bdf8" />
     </linearGradient>
-
-    <!-- Subtle Glow Filter -->
-    <filter id="btn-glow" x="-15%" y="-30%" width="130%" height="160%">
+    <filter id="btn-glow-cg" x="-15%" y="-30%" width="130%" height="160%">
       <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0284c7" flood-opacity="0.45" />
     </filter>
-
     <style>
-      .btn-rect {
-        transition: all 0.25s ease;
-      }
-      .btn-rect:hover {
-        stroke: #67e8f9;
-        filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.65));
-      }
-      .btn-text {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-        font-size: 11px;
-        font-weight: 800;
-        fill: #ffffff;
-        letter-spacing: 1.2px;
-      }
-      .arrow-symbol {
-        font-family: system-ui, -apple-system, sans-serif;
-        font-size: 14px;
-        font-weight: 900;
-        fill: #38bdf8;
-        animation: arrowShift 2s ease-in-out infinite;
-      }
-      @keyframes arrowShift {
-        0%, 100% { transform: translateX(0); }
-        50% { transform: translateX(3px); }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .arrow-symbol { animation: none; }
-      }
+      .btn-rect { transition: all 0.25s ease; }
+      .btn-rect:hover { stroke: #67e8f9; filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.65)); }
+      .btn-text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; font-weight: 800; fill: #ffffff; letter-spacing: 1.1px; }
+      .arrow-symbol { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 900; fill: #38bdf8; animation: arrowShift 2s ease-in-out infinite; }
+      @keyframes arrowShift { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(3px); } }
+      @media (prefers-reduced-motion: reduce) { .arrow-symbol { animation: none; } }
     </style>
   </defs>
-
-  <!-- Button Container -->
-  <rect class="btn-rect" x="1.5" y="1.5" width="237" height="39" rx="8" fill="url(#btn-bg)" stroke="url(#btn-border)" stroke-width="1.5" filter="url(#btn-glow)" />
-
-  <!-- Shield Icon -->
+  <rect class="btn-rect" x="1.5" y="1.5" width="247" height="39" rx="8" fill="url(#btn-bg-cg)" stroke="url(#btn-border-cg)" stroke-width="1.5" filter="url(#btn-glow-cg)" />
   <g transform="translate(14, 12)">
     <path d="M 9 2 L 15 4.5 L 15 9 C 15 13 9 16 9 16 C 9 16 3 13 3 9 L 3 4.5 Z" stroke="#38bdf8" stroke-width="1.3" fill="#061226" stroke-linejoin="round" />
     <circle cx="9" cy="8.5" r="1.5" fill="#38bdf8" />
   </g>
-
-  <!-- Button Label -->
-  <text x="40" y="25" class="btn-text">VISIT OFFICIAL WEBSITE</text>
-
-  <!-- Directional Arrow with Micro-Shift -->
-  <g transform="translate(216, 25)">
+  <text x="38" y="25" class="btn-text">VISIT CYBERGUARD YUVA</text>
+  <g transform="translate(225, 25)">
     <text class="arrow-symbol">→</text>
   </g>
 </svg>
