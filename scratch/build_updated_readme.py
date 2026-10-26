@@ -1,5 +1,23 @@
 import os
 import re
+from typing import List, Tuple, Optional, TypedDict
+
+class ProjectCard(TypedDict):
+    num: str
+    id: str
+    old_id: str
+    name: str
+    tagline: str
+    status: str
+    preview: str
+    preview_alt: str
+    link_preview: str
+    desc_heading: str
+    desc_body: str
+    highlights: List[str]
+    tech_badges: List[Tuple[str, str]]
+    status_badge: str
+    actions: List[Tuple[str, Optional[str], str]]
 
 # The 11 projects data in the requested new order:
 # 01 - Shop (Net Gallery Hb)
@@ -14,7 +32,7 @@ import re
 # 10 - Student Task Manager
 # 11 - Deployment Dashboard
 
-projects = [
+projects: List[ProjectCard] = [
     {
         "num": "01",
         "id": "01-shop",
