@@ -48,8 +48,8 @@ assert 'href="https://github.com/officialhazim42/habit' not in readme
 assert 'assets/buttons/btn-private-codebase.svg' in readme
 print("Private codebases correctly display static private badge.")
 
-# Projects 06 to 10 must have REPOSITORY ONLY
-for i in range(6, 11):
+# Projects 07 to 11 must have REPOSITORY ONLY
+for i in range(7, 12):
     num_str = f"{i:02d}"
     hdr_file = f"assets/cards/header-{num_str}.svg"
     with open(hdr_file, "r", encoding="utf-8") as f_hdr:
@@ -57,8 +57,8 @@ for i in range(6, 11):
         assert "REPOSITORY ONLY" in hdr_txt
         assert "LIVE" not in hdr_txt
 
-# Projects 01, 02, 03, 04, 05, 11 must have LIVE
-for i in [1, 2, 3, 4, 5, 11]:
+# Projects 01 to 06 must have LIVE
+for i in range(1, 7):
     num_str = f"{i:02d}"
     hdr_file = f"assets/cards/header-{num_str}.svg"
     with open(hdr_file, "r", encoding="utf-8") as f_hdr:

@@ -4,8 +4,8 @@ import re
 with open("scratch/rendered_section_04.md", "r", encoding="utf-8") as f:
     content = f.read()
 
-# 1. Check all 10 project cards
-for i in range(1, 11):
+# 1. Check all 11 project cards
+for i in range(1, 12):
     num_str = f"{i:02d}"
     assert f"<!-- PROJECT {num_str} — COMPLETE CARD:" in content, f"Missing card comment for {num_str}"
     assert f'<a id="' in content, f"Missing anchor for {num_str}"
@@ -26,7 +26,7 @@ assert missing == 0, f"{missing} assets missing!"
 print("All referenced assets exist on disk!")
 
 # 3. Check status
-for i in range(1, 6):
+for i in range(1, 7):
     num_str = f"{i:02d}"
     with open(f"assets/cards/header-{num_str}.svg", "r", encoding="utf-8") as f_hdr:
         hdr_txt = f_hdr.read()
@@ -34,14 +34,14 @@ for i in range(1, 6):
         assert "#10b981" in hdr_txt, f"Expected green #10b981 in header-{num_str}.svg"
         assert "pulseGlow" in hdr_txt, f"Expected pulsing animation in header-{num_str}.svg"
 
-for i in range(6, 11):
+for i in range(7, 12):
     num_str = f"{i:02d}"
     with open(f"assets/cards/header-{num_str}.svg", "r", encoding="utf-8") as f_hdr:
         hdr_txt = f_hdr.read()
         assert "REPOSITORY ONLY" in hdr_txt, f"Expected REPOSITORY ONLY in header-{num_str}.svg"
         assert "#334155" in hdr_txt, f"Expected dark slate in header-{num_str}.svg"
 
-print("All status requirements verified (01-05 green pulsing LIVE, 06-10 REPOSITORY ONLY).")
+print("All status requirements verified (01-06 green pulsing LIVE, 07-11 REPOSITORY ONLY).")
 
 # 4. Check for unsupported scripts
 assert "<script" not in content.lower(), "Found <script> tag!"
