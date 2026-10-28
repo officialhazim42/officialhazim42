@@ -732,7 +732,7 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
 <!-- ROW 1: TELEMETRY METRIC CARDS (TOTAL CONTRIBUTIONS, STREAKS)      -->
 <!-- ================================================================= -->
 
-<img src="assets/streak-metrics.svg" alt="GitHub Contribution Velocity &amp; Streak Analytics: 229 Total Contributions, 9-Day Current Streak, 9-Day Longest Streak" width="100%" />
+<img src="assets/streak-metrics.svg" alt="GitHub Contribution Velocity &amp; Streak Analytics: 245 Total Contributions, 12-Day Current Streak, 12-Day Longest Streak" width="100%" />
 
 <br />
 
@@ -743,10 +743,10 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-  <img src="assets/github-stats.svg" alt="HAZIM BASHIR FAQEER — Verified GitHub Profile Telemetry &amp; Developer Metrics" width="100%" />
+  <img src="assets/github-stats.svg" alt="HAZIM BASHIR FAQEER &#8212; Verified GitHub Profile Telemetry &amp; Developer Metrics" width="100%" />
 </td>
 <td width="50%" valign="top">
-  <img src="assets/language-stats-card.svg" alt="Verified Public Codebase Language Distribution — 3.67 MB Analyzed Across 13 Repositories" width="100%" />
+  <img src="assets/language-stats-card.svg" alt="Verified Public Codebase Language Distribution &#8212; 3.81 MB Analyzed Across 13 Repositories" width="100%" />
 </td>
 </tr>
 </table>
@@ -754,10 +754,10 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
 <br />
 
 <!-- ================================================================= -->
-<!-- ROW 3: ANNUAL CONTRIBUTION ACTIVITY HEATMAP (365 DAYS)           -->
+<!-- ROW 3: ANNUAL CONTRIBUTION ACTIVITY HEATMAP (368 DAYS)           -->
 <!-- ================================================================= -->
 
-<img src="assets/contribution-heatmap.svg" alt="Annual GitHub Contribution Activity Heatmap: 229 contributions across 365 days (Oct 26, 2025 – Oct 25, 2026)" width="100%" />
+<img src="assets/contribution-heatmap.svg" alt="Annual GitHub Contribution Activity Heatmap: 245 contributions across 368 days (Oct 26, 2025 &#8211; Oct 28, 2026)" width="100%" />
 
 <br />
 
@@ -765,7 +765,7 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
 <!-- ROW 4: MONTHLY CONTRIBUTION VELOCITY & TREND TRAJECTORY          -->
 <!-- ================================================================= -->
 
-<img src="assets/monthly-trend.svg" alt="Monthly Contribution Velocity &amp; Activity Trajectory: 13-month progression showing peak 110 contributions in October 2026" width="100%" />
+<img src="assets/monthly-trend.svg" alt="Monthly Contribution Velocity &amp; Activity Trajectory: 13-month progression showing peak 126 contributions in October 2026" width="100%" />
 
 <br />
 
@@ -775,10 +775,10 @@ Co-founded **CyberGuard YUVA**, a youth-led cyber defense initiative and communi
 
 | Telemetry Dimension | Verified Metric | Audit Scope &amp; Source Verification |
 | :--- | :--- | :--- |
-| **Total Contributions**<br /><sub>ANNUAL VELOCITY</sub> | <code><b>229</b> Activity Units</code><br /><sub>Verified 365-Day Sum</sub> | Verified across 365 calendar days (Oct 26, 2025 – Present)<br /><sub>Direct GitHub contribution calendar audit • +110 in Oct 2026</sub> |
-| **Current &amp; Longest Streak**<br /><sub>ACTIVE CONSISTENCY</sub> | <code><b>9</b> Consecutive Days</code><br /><sub>Oct 17 – Oct 25, 2026</sub> | Active run: Oct 17 – Oct 25, 2026 (Verified streak record)<br /><sub>Continuous daily contribution sequence with zero missed intervals</sub> |
-| **Total Author Commits**<br /><sub>SOURCE CODE EDITS</sub> | <code><b>107</b> Commits</code><br /><sub>Direct Repository Pushes</sub> | Direct author commits across 13 public repository trees<br /><sub>Audited via GitHub Search API author query across public repositories</sub> |
-| **Public Codebase Volume**<br /><sub>BYTE DISTRIBUTION</sub> | <code><b>3,674,654</b> Bytes</code> <b>(3.67 MB)</b><br /><sub>HTML 63.3% • JS 32.5% • CSS 4.3%</sub> | HTML (63.26%), JavaScript ES6+ (32.49%), CSS3 (4.26%)<br /><sub>Comprehensive repository byte breakdown across all 13 public repositories</sub> |
+| **Total Contributions**<br /><sub>ANNUAL VELOCITY</sub> | <code><b>245</b> Activity Units</code><br /><sub>Verified 365-Day Sum</sub> | Verified across 368 calendar days (Oct 26, 2025 &#8211; Oct 28, 2026)<br /><sub>Direct GitHub contribution calendar audit &#8226; +126 in Oct 2026</sub> |
+| **Current &amp; Longest Streak**<br /><sub>ACTIVE CONSISTENCY</sub> | <code><b>12</b> Consecutive Days</code><br /><sub>Oct 17 &#8211; Oct 28, 2026</sub> | Active run: Oct 17 &#8211; Oct 28, 2026 (Verified streak record)<br /><sub>Continuous daily contribution sequence with zero missed intervals</sub> |
+| **Total Author Commits**<br /><sub>SOURCE CODE EDITS</sub> | <code><b>116</b> Commits</code><br /><sub>Direct Repository Pushes</sub> | Direct author commits across 13 public repository trees (232 commit search matches)<br /><sub>Audited via GitHub Search API author query across public repositories</sub> |
+| **Public Codebase Volume**<br /><sub>BYTE DISTRIBUTION</sub> | <code><b>3,806,304</b> Bytes</code> <b>(3.81 MB)</b><br /><sub>HTML 61.2% &#8226; JS 31.4% &#8226; CSS 4.1% &#8226; Python 3.3%</sub> | HTML (61.19%), JavaScript ES6+ (31.36%), CSS3 (4.11%), Python (3.34%)<br /><sub>Comprehensive repository byte breakdown across all 13 public repositories</sub> |
 | **Repository Footprint**<br /><sub>PROJECT ECOSYSTEM</sub> | <code><b>13</b> Public Repositories</code><br /><sub>Standalone Suites</sub> | Pure client-side engines, in-browser utilities &amp; PWA apps<br /><sub>Zero server-upload client computing utilities &amp; cybersecurity learning platforms</sub> |
 
 <br />

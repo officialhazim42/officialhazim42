@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 310" width="100%" height="310">
+  <defs>
+    <linearGradient id="langCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1329" stop-opacity="0.98"/>
+      <stop offset="60%" stop-color="#0c1833" stop-opacity="0.94"/>
+      <stop offset="100%" stop-color="#060b18" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <linearGradient id="langStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.75"/>
+      <stop offset="40%" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <radialGradient id="langGlow" cx="90%" cy="10%" r="55%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#0a1329" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="barHtml" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e34f26"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="barJs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <linearGradient id="barCss" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <style>
+      .lang-title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        fill: #f8fafc;
+        letter-spacing: 0.3px;
+      }
+      .lang-sub {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        fill: #94a3b8;
+      }
+      .row-title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        fill: #f8fafc;
+      }
+      .row-bytes {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 10px;
+        font-weight: 600;
+        fill: #94a3b8;
+      }
+      .row-pct {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+
+  <!-- Card Base -->
+  <rect width="428" height="308" rx="14" fill="url(#langCardBg)" stroke="url(#langStroke)" stroke-width="1.2" x="1" y="1"/>
+  <rect width="428" height="308" rx="14" fill="url(#langGlow)" x="1" y="1"/>
+
+  <!-- Top Accent Filament -->
+  <line x1="24" y1="1" x2="160" y2="1" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Header -->
+  <g transform="translate(20, 18)">
+    <rect width="32" height="32" rx="8" fill="#102344" stroke="#1e3a5f" stroke-width="1.2"/>
+    <path d="M12 22 L17 14 L20 18 L24 10 M21 10 H24 V13" stroke="#06b6d4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    
+    <text x="42" y="15" class="lang-title">MOST USED LANGUAGES</text>
+    <text x="42" y="29" class="lang-sub">3,674,654 bytes analyzed across 13 public repos</text>
+
+    <!-- Top Right Audit Badge -->
+    <g transform="translate(290, 4)">
+      <rect width="90" height="22" rx="11" fill="#0a2540" stroke="#06b6d4" stroke-width="1"/>
+      <circle cx="10" cy="11" r="3" fill="#10b981"/>
+      <text x="18" y="14.5" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="8.5" font-weight="700" letter-spacing="0.5">REPO AUDIT</text>
+    </g>
+  </g>
+
+  <!-- Multi-Segment Visual Progress Bar (Total width: 390px) -->
+  <!-- HTML: 63.26% = 247px | JS: 32.49% = 127px | CSS: 4.26% = 16px -->
+  <g transform="translate(20, 66)">
+    <rect width="390" height="14" rx="7" fill="#071126" stroke="#1e3a5f" stroke-width="1"/>
+    <clipPath id="cardBarClip">
+      <rect width="390" height="14" rx="7"/>
+    </clipPath>
+    <g clip-path="url(#cardBarClip)">
+      <rect x="0" y="0" width="247" height="14" fill="url(#barHtml)"/>
+      <rect x="247" y="0" width="127" height="14" fill="url(#barJs)"/>
+      <rect x="374" y="0" width="16" height="14" fill="url(#barCss)"/>
+    </g>
+  </g>
+
+  <!-- 3 Detailed Rows -->
+  <!-- Row 1: HTML5 -->
+  <g transform="translate(20, 92)">
+    <rect width="390" height="46" rx="8" fill="#08142b" stroke="#1e3a5f" stroke-width="1"/>
+    <circle cx="18" cy="23" r="6" fill="#e34f26"/>
+    <text x="32" y="20" class="row-title">HTML5 Markup</text>
+    <text x="32" y="34" class="row-bytes">2,324,434 bytes • PDFHub &amp; ImageHub UI</text>
+    <text x="372" y="27" fill="#f97316" class="row-pct" text-anchor="end">63.26%</text>
+  </g>
+
+  <!-- Row 2: JavaScript -->
+  <g transform="translate(20, 146)">
+    <rect width="390" height="46" rx="8" fill="#08142b" stroke="#1e3a5f" stroke-width="1"/>
+    <circle cx="18" cy="23" r="6" fill="#facc15"/>
+    <text x="32" y="20" class="row-title">JavaScript (ES6+)</text>
+    <text x="32" y="34" class="row-bytes">1,193,762 bytes • In-Browser Compute &amp; Canvas</text>
+    <text x="372" y="27" fill="#facc15" class="row-pct" text-anchor="end">32.49%</text>
+  </g>
+
+  <!-- Row 3: CSS3 -->
+  <g transform="translate(20, 200)">
+    <rect width="390" height="46" rx="8" fill="#08142b" stroke="#1e3a5f" stroke-width="1"/>
+    <circle cx="18" cy="23" r="6" fill="#38bdf8"/>
+    <text x="32" y="20" class="row-title">CSS3 Styling</text>
+    <text x="32" y="34" class="row-bytes">156,458 bytes • Glassmorphic Dark Systems</text>
+    <text x="372" y="27" fill="#38bdf8" class="row-pct" text-anchor="end">4.26%</text>
+  </g>
+
+  <!-- Footnote Panel: Extended Stack Context -->
+  <g transform="translate(20, 256)">
+    <rect width="390" height="38" rx="7" fill="#071224" stroke="#1e3a5f" stroke-width="1"/>
+    <circle cx="14" cy="19" r="7" fill="#0e223d" stroke="#06b6d4" stroke-width="1"/>
+    <text x="14" y="22" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="9" font-weight="800" text-anchor="middle">i</text>
+    <text x="28" y="16" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="8.5" font-weight="700">Extended Stack in Specialized &amp; Academic Work:</text>
+    <text x="28" y="28" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8">TypeScript (CyberGuard YUVA) • SQL (HabitsGrow) • C/C++ (CSE)</text>
+  </g>
+</svg>

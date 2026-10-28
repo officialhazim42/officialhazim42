@@ -5,35 +5,29 @@
       <stop offset="60%" stop-color="#0c1833" stop-opacity="0.94"/>
       <stop offset="100%" stop-color="#060b18" stop-opacity="0.98"/>
     </linearGradient>
-
     <linearGradient id="trendStroke" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.75"/>
       <stop offset="50%" stop-color="#1e3a5f" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#0284c7" stop-opacity="0.6"/>
     </linearGradient>
-
     <linearGradient id="activeBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8"/>
       <stop offset="50%" stop-color="#0284c7"/>
       <stop offset="100%" stop-color="#0f2b5c"/>
     </linearGradient>
-
     <linearGradient id="peakBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#67e8f9"/>
       <stop offset="40%" stop-color="#06b6d4"/>
       <stop offset="100%" stop-color="#0c4a6e"/>
     </linearGradient>
-
     <linearGradient id="trendAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#0a1329" stop-opacity="0"/>
     </linearGradient>
-
     <radialGradient id="trendGlow" cx="90%" cy="10%" r="50%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.14"/>
       <stop offset="100%" stop-color="#0a1329" stop-opacity="0"/>
     </radialGradient>
-
     <style>
       .trend-title {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -61,23 +55,16 @@
     </style>
   </defs>
 
-  <!-- Panel Base -->
   <rect width="878" height="228" rx="14" fill="url(#trendBg)" stroke="url(#trendStroke)" stroke-width="1.2" x="1" y="1"/>
   <rect width="878" height="228" rx="14" fill="url(#trendGlow)" x="1" y="1"/>
-
-  <!-- Top Accent Filament -->
   <line x1="28" y1="1" x2="220" y2="1" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
 
-  <!-- Header -->
   <g transform="translate(26, 18)">
     <rect width="32" height="32" rx="8" fill="#102344" stroke="#1e3a5f" stroke-width="1.2"/>
-    <!-- Velocity / Wave Icon -->
     <path d="M 8 22 L 14 14 L 18 18 L 24 10" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    
     <text x="42" y="15" class="trend-title">MONTHLY CONTRIBUTION VELOCITY &amp; TREND</text>
-    <text x="42" y="29" class="trend-sub">13-Month Contribution Activity Trajectory (Oct 2025 – Oct 2026) • 229 Verified Contributions</text>
+    <text x="42" y="29" class="trend-sub">13-Month Activity Trajectory (Oct 2025 &#8211; Oct 2026) &#8226; 245 Verified Contributions</text>
 
-    <!-- Top-Right Badge -->
     <g transform="translate(680, 4)">
       <rect width="144" height="24" rx="12" fill="#042f2e" stroke="#2dd4bf" stroke-width="1"/>
       <circle cx="12" cy="12" r="3.5" fill="#2dd4bf"/>
@@ -86,23 +73,63 @@
   </g>
 
   <!-- Gridlines -->
-  <line x1="80" y1="148.8" x2="830" y2="148.8" stroke="#162e52" stroke-width="1" stroke-dasharray="3,3"/><text x="68" y="152.2" fill="#64748b" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="end">30</text><line x1="80" y1="122.5" x2="830" y2="122.5" stroke="#162e52" stroke-width="1" stroke-dasharray="3,3"/><text x="68" y="126.0" fill="#64748b" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="end">60</text><line x1="80" y1="96.2" x2="830" y2="96.2" stroke="#162e52" stroke-width="1" stroke-dasharray="3,3"/><text x="68" y="99.8" fill="#64748b" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="end">90</text><line x1="80" y1="70.0" x2="830" y2="70.0" stroke="#162e52" stroke-width="1" stroke-dasharray="3,3"/><text x="68" y="73.5" fill="#64748b" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="end">120</text>
+  <line x1="80" y1="148.8" x2="830" y2="148.8" stroke="#162e52" stroke-width="1" stroke-dasharray="3,3"/><text x="68" y="152.2" fill="#64748b" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="end">30</text>
+  <line x1="80" y1="122.5" x2="830" y2="122.5" stroke="#162e52" stroke-width="1" stroke-dasharray="3,3"/><text x="68" y="126.0" fill="#64748b" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="end">60</text>
+  <line x1="80" y1="96.2" x2="830" y2="96.2" stroke="#162e52" stroke-width="1" stroke-dasharray="3,3"/><text x="68" y="99.8" fill="#64748b" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="end">90</text>
+  <line x1="80" y1="70.0" x2="830" y2="70.0" stroke="#162e52" stroke-width="1" stroke-dasharray="3,3"/><text x="68" y="73.5" fill="#64748b" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="end">120</text>
 
-  <!-- Baseline -->
   <line x1="80" y1="175" x2="830" y2="175" stroke="#1e3a5f" stroke-width="1.2"/>
 
-  <!-- Area Gradient Fill -->
-  <path d="M 99.0 175.0 C 128.7 175.0, 128.7 175.0, 158.3 175.0 C 188.0 175.0, 188.0 124.2, 217.7 124.2 C 247.3 124.2, 247.3 168.0, 277.0 168.0 C 306.7 168.0, 306.7 156.6, 336.3 156.6 C 366.0 156.6, 366.0 175.0, 395.7 175.0 C 425.3 175.0, 425.3 175.0, 455.0 175.0 C 484.7 175.0, 484.7 175.0, 514.3 175.0 C 544.0 175.0, 544.0 173.2, 573.7 173.2 C 603.3 173.2, 603.3 175.0, 633.0 175.0 C 662.7 175.0, 662.7 175.0, 692.3 175.0 C 722.0 175.0, 722.0 148.8, 751.7 148.8 C 781.3 148.8, 781.3 78.8, 811.0 78.8 L 811.0 175 L 99.0 175 Z" fill="url(#trendAreaGrad)"/>
-
   <!-- Bars -->
-  <rect x="80.0" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/><text x="99.0" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text><text x="99.0" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Oct '25</text><rect x="139.3" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/><text x="158.3" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text><text x="158.3" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Nov '25</text><rect x="198.7" y="124.2" width="38" height="50.8" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/><line x1="200.7" y1="124.2" x2="234.7" y2="124.2" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/><text x="217.7" y="118.2" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">58</text><text x="217.7" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Dec '25</text><rect x="258.0" y="168.0" width="38" height="7.0" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/><line x1="260.0" y1="168.0" x2="294.0" y2="168.0" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/><text x="277.0" y="162.0" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">8</text><text x="277.0" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Jan '26</text><rect x="317.3" y="156.6" width="38" height="18.4" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/><line x1="319.3" y1="156.6" x2="353.3" y2="156.6" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/><text x="336.3" y="150.6" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">21</text><text x="336.3" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Feb '26</text><rect x="376.7" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/><text x="395.7" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text><text x="395.7" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Mar '26</text><rect x="436.0" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/><text x="455.0" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text><text x="455.0" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Apr '26</text><rect x="495.3" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/><text x="514.3" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text><text x="514.3" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">May '26</text><rect x="554.7" y="173.2" width="38" height="1.8" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/><line x1="556.7" y1="173.2" x2="590.7" y2="173.2" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/><text x="573.7" y="167.2" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">2</text><text x="573.7" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Jun '26</text><rect x="614.0" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/><text x="633.0" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text><text x="633.0" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Jul '26</text><rect x="673.3" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/><text x="692.3" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text><text x="692.3" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Aug '26</text><rect x="732.7" y="148.8" width="38" height="26.2" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/><line x1="734.7" y1="148.8" x2="768.7" y2="148.8" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/><text x="751.7" y="142.8" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">30</text><text x="751.7" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Sep '26</text><rect x="792.0" y="78.8" width="38" height="96.2" rx="4" fill="url(#peakBarGrad)" stroke="#67e8f9" stroke-width="1"/><line x1="794.0" y1="78.8" x2="828.0" y2="78.8" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/><g transform="translate(811.0, 66.8)">
-          <rect x="-38" y="-14" width="76" height="18" rx="9" fill="#042f2e" stroke="#2dd4bf" stroke-width="1"/>
-          <text x="0" y="-2" fill="#2dd4bf" font-family="ui-monospace, monospace" font-size="9" font-weight="800" text-anchor="middle">★ PEAK: 110</text>
-        </g><text x="811.0" y="193.0" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="9.5" font-weight="800" text-anchor="middle">Oct '26</text>
+  <rect x="80.0" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/>
+      <text x="99.0" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text>
+      <text x="99.0" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Oct '25</text>
+    <rect x="139.3" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/>
+      <text x="158.3" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text>
+      <text x="158.3" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Nov '25</text>
+    <rect x="198.7" y="130.4" width="38" height="44.6" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/>
+      <line x1="200.7" y1="130.4" x2="234.7" y2="130.4" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="217.7" y="124.4" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">58</text>
+      <text x="217.7" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Dec '25</text>
+    <rect x="258.0" y="168.8" width="38" height="6.2" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/>
+      <line x1="260.0" y1="168.8" x2="294.0" y2="168.8" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="277.0" y="162.8" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">8</text>
+      <text x="277.0" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Jan '26</text>
+    <rect x="317.3" y="158.8" width="38" height="16.2" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/>
+      <line x1="319.3" y1="158.8" x2="353.3" y2="158.8" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="336.3" y="152.8" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">21</text>
+      <text x="336.3" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Feb '26</text>
+    <rect x="376.7" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/>
+      <text x="395.7" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text>
+      <text x="395.7" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Mar '26</text>
+    <rect x="436.0" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/>
+      <text x="455.0" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text>
+      <text x="455.0" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Apr '26</text>
+    <rect x="495.3" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/>
+      <text x="514.3" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text>
+      <text x="514.3" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">May '26</text>
+    <rect x="554.7" y="172.5" width="38" height="2.5" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/>
+      <line x1="556.7" y1="172.5" x2="590.7" y2="172.5" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="573.7" y="166.5" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">2</text>
+      <text x="573.7" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Jun '26</text>
+    <rect x="614.0" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/>
+      <text x="633.0" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text>
+      <text x="633.0" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Jul '26</text>
+    <rect x="673.3" y="172.5" width="38" height="2.5" rx="4" fill="#08162e" stroke="#152a4a" stroke-width="1"/>
+      <text x="692.3" y="169.0" fill="#334155" font-family="ui-monospace, monospace" font-size="9" font-weight="600" text-anchor="middle">0</text>
+      <text x="692.3" y="193.0" fill="#64748b" font-family="system-ui, sans-serif" font-size="9.5" font-weight="500" text-anchor="middle">Aug '26</text>
+    <rect x="732.7" y="151.9" width="38" height="23.1" rx="4" fill="url(#activeBarGrad)" stroke="#38bdf8" stroke-width="1"/>
+      <line x1="734.7" y1="151.9" x2="768.7" y2="151.9" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="751.7" y="145.9" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700" text-anchor="middle">30</text>
+      <text x="751.7" y="193.0" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Sep '26</text>
+    <rect x="792.0" y="78.1" width="38" height="96.9" rx="4" fill="url(#peakBarGrad)" stroke="#67e8f9" stroke-width="1"/>
+      <line x1="794.0" y1="78.1" x2="828.0" y2="78.1" stroke="#bae6fd" stroke-width="1.8" stroke-linecap="round"/>
+      <g transform="translate(811.0, 66.1)">
+        <rect x="-42" y="-10" width="84" height="20" rx="10" fill="#042f2e" stroke="#2dd4bf" stroke-width="1"/>
+        <text x="0" y="4" fill="#2dd4bf" font-family="ui-monospace, monospace" font-size="9" font-weight="800" text-anchor="middle">&#9733; PEAK: 126</text>
+      </g>
+      <text x="811.0" y="193.0" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="9.5" font-weight="800" text-anchor="middle">Oct '26</text>
 
-  <!-- Spline Curve Overlay -->
-  <path d="M 99.0 175.0 C 128.7 175.0, 128.7 175.0, 158.3 175.0 C 188.0 175.0, 188.0 124.2, 217.7 124.2 C 247.3 124.2, 247.3 168.0, 277.0 168.0 C 306.7 168.0, 306.7 156.6, 336.3 156.6 C 366.0 156.6, 366.0 175.0, 395.7 175.0 C 425.3 175.0, 425.3 175.0, 455.0 175.0 C 484.7 175.0, 484.7 175.0, 514.3 175.0 C 544.0 175.0, 544.0 173.2, 573.7 173.2 C 603.3 173.2, 603.3 175.0, 633.0 175.0 C 662.7 175.0, 662.7 175.0, 692.3 175.0 C 722.0 175.0, 722.0 148.8, 751.7 148.8 C 781.3 148.8, 781.3 78.8, 811.0 78.8" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" class="spline-line"/>
-
-  <!-- Point Dots on Spline -->
-  <circle cx="217.7" cy="124.2" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="277.0" cy="168.0" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="336.3" cy="156.6" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="573.7" cy="173.2" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="751.7" cy="148.8" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="811.0" cy="78.8" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+  <!-- Spline Dots -->
+  <circle cx="217.7" cy="130.4" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="277.0" cy="168.8" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="336.3" cy="158.8" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="573.7" cy="172.5" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="751.7" cy="151.9" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/><circle cx="811.0" cy="78.1" r="3" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
 </svg>

@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 128" width="100%" height="128">
+  <defs>
+    <!-- Card Gradients -->
+    <linearGradient id="metricCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1329" stop-opacity="0.98"/>
+      <stop offset="60%" stop-color="#0c1833" stop-opacity="0.94"/>
+      <stop offset="100%" stop-color="#060b18" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <linearGradient id="strokeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#1e3a5f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <linearGradient id="strokeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#2563eb" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="accentPill1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+
+    <linearGradient id="accentPill2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <radialGradient id="glowGlow" cx="90%" cy="15%" r="65%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0a1329" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      .metric-badge {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+      }
+      .metric-val {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+        font-size: 32px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+      .metric-sub {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        fill: #94a3b8;
+      }
+      .metric-range {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 9.5px;
+        font-weight: 600;
+        fill: #38bdf8;
+      }
+      .beacon-dot {
+        animation: pulseBeacon 2.5s infinite ease-in-out;
+      }
+      @keyframes pulseBeacon {
+        0%, 100% { opacity: 0.8; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.2); filter: drop-shadow(0 0 4px #22d3ee); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .beacon-dot { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <!-- CARD 01: TOTAL CONTRIBUTIONS -->
+  <g transform="translate(0, 0)">
+    <rect width="280" height="126" rx="12" fill="url(#metricCardBg)" stroke="url(#strokeGrad1)" stroke-width="1.2"/>
+    <rect width="280" height="126" rx="12" fill="url(#glowGlow)"/>
+    <rect x="0" y="14" width="3.5" height="32" rx="1.75" fill="url(#accentPill1)"/>
+
+    <!-- Icon: Git Commit / Activity -->
+    <g transform="translate(18, 18)">
+      <circle cx="14" cy="14" r="14" fill="#08142b" stroke="#1e3a5f" stroke-width="1.2"/>
+      <circle cx="14" cy="14" r="4.5" fill="#38bdf8"/>
+      <path d="M 5 14 L 9.5 14 M 18.5 14 L 23 14" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Header Label -->
+    <text x="54" y="27" fill="#60a5fa" class="metric-badge">01 <tspan fill="#334155">/</tspan> <tspan fill="#38bdf8">TOTAL CONTRIBUTIONS</tspan></text>
+    <text x="54" y="42" class="metric-range">OCT 26, 2025 – PRESENT</text>
+
+    <!-- Big Number -->
+    <text x="18" y="86" fill="#ffffff" class="metric-val">229</text>
+    <g transform="translate(92, 67)">
+      <rect width="90" height="20" rx="10" fill="#0b2447" stroke="#1e3a5f" stroke-width="1"/>
+      <text x="45" y="13.5" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="9" font-weight="700" text-anchor="middle">+110 OCT '26</text>
+    </g>
+
+    <!-- Supporting Text -->
+    <text x="18" y="110" class="metric-sub">Past 365 Days • 100% Verified Telemetry</text>
+  </g>
+
+  <!-- CARD 02: CURRENT STREAK -->
+  <g transform="translate(300, 0)">
+    <rect width="280" height="126" rx="12" fill="url(#metricCardBg)" stroke="url(#strokeGrad2)" stroke-width="1.2"/>
+    <rect width="280" height="126" rx="12" fill="url(#glowGlow)"/>
+    <rect x="0" y="14" width="3.5" height="32" rx="1.75" fill="url(#accentPill2)"/>
+
+    <!-- Icon: Flame / Pulse Beacon -->
+    <g transform="translate(18, 18)">
+      <circle cx="14" cy="14" r="14" fill="#08142b" stroke="#1e3a5f" stroke-width="1.2"/>
+      <path d="M14 6 C12 10, 8 13, 8 17 C8 20.3, 10.7 23, 14 23 C17.3 23, 20 20.3, 20 17 C20 13.5, 17 11, 14 6 Z" fill="none" stroke="#22d3ee" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M14 14 C13 16, 11 17, 11 18.5 C11 20, 12.3 21, 14 21 C15.7 21, 17 20, 17 18.5 C17 17, 15.5 16, 14 14 Z" fill="#22d3ee"/>
+    </g>
+
+    <!-- Header Label -->
+    <text x="54" y="27" fill="#60a5fa" class="metric-badge">02 <tspan fill="#334155">/</tspan> <tspan fill="#22d3ee">CURRENT STREAK</tspan></text>
+    <text x="54" y="42" class="metric-range">OCT 17 – OCT 25, 2026</text>
+
+    <!-- Big Number with Cyan Highlight -->
+    <text x="18" y="86" fill="#38bdf8" class="metric-val" style="filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.35));">9 <tspan font-size="18" font-weight="700" fill="#93c5fd">DAYS</tspan></text>
+    <g transform="translate(142, 67)">
+      <rect width="118" height="20" rx="10" fill="#052e2b" stroke="#059669" stroke-width="1"/>
+      <circle cx="12" cy="10" r="3.5" fill="#10b981" class="beacon-dot"/>
+      <text x="22" y="13.5" fill="#34d399" font-family="system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="0.5">ACTIVE CONSISTENCY</text>
+    </g>
+
+    <!-- Supporting Text -->
+    <text x="18" y="110" class="metric-sub">9 Consecutive Days with Verified Activity</text>
+  </g>
+
+  <!-- CARD 03: LONGEST STREAK -->
+  <g transform="translate(600, 0)">
+    <rect width="280" height="126" rx="12" fill="url(#metricCardBg)" stroke="url(#strokeGrad1)" stroke-width="1.2"/>
+    <rect width="280" height="126" rx="12" fill="url(#glowGlow)"/>
+    <rect x="0" y="14" width="3.5" height="32" rx="1.75" fill="url(#accentPill1)"/>
+
+    <!-- Icon: Trophy / Achievement -->
+    <g transform="translate(18, 18)">
+      <circle cx="14" cy="14" r="14" fill="#08142b" stroke="#1e3a5f" stroke-width="1.2"/>
+      <path d="M9 8 H19 V14 C19 16.8 16.8 19 14 19 C11.2 19 9 16.8 9 14 Z" fill="none" stroke="#38bdf8" stroke-width="1.6"/>
+      <path d="M9 10 H6 C4.9 10 4 10.9 4 12 C4 13.1 4.9 14 6 14 H9" stroke="#38bdf8" stroke-width="1.4" fill="none"/>
+      <path d="M19 10 H22 C23.1 10 24 10.9 24 12 C24 13.1 23.1 14 22 14 H19" stroke="#38bdf8" stroke-width="1.4" fill="none"/>
+      <path d="M12 19 V21 H16 V19" stroke="#38bdf8" stroke-width="1.5"/>
+    </g>
+
+    <!-- Header Label -->
+    <text x="54" y="27" fill="#60a5fa" class="metric-badge">03 <tspan fill="#334155">/</tspan> <tspan fill="#38bdf8">LONGEST STREAK</tspan></text>
+    <text x="54" y="42" class="metric-range">OCT 17 – OCT 25, 2026</text>
+
+    <!-- Big Number -->
+    <text x="18" y="86" fill="#ffffff" class="metric-val">9 <tspan font-size="18" font-weight="700" fill="#94a3b8">DAYS</tspan></text>
+    <g transform="translate(132, 67)">
+      <rect width="128" height="20" rx="10" fill="#0f2244" stroke="#0284c7" stroke-width="1"/>
+      <polygon points="12,6 13.8,9.7 17.8,10.3 14.9,13.1 15.6,17.1 12,15.2 8.4,17.1 9.1,13.1 6.2,10.3 10.2,9.7" fill="#facc15"/>
+      <text x="24" y="13.5" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="0.4">ALL-TIME MILESTONE</text>
+    </g>
+
+    <!-- Supporting Text -->
+    <text x="18" y="110" class="metric-sub">Peak Consistency Record • Active Benchmark</text>
+  </g>
+</svg>
