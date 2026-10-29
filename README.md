@@ -210,24 +210,15 @@
 <tr>
 <td align="left">
 
-<img src="assets/cards/header-02.svg" alt="02 / 11 — CyberGuard YUVA | CYBER DEFENSE PORTAL & COMMUNITY (LIVE)" width="100%" />
+<img src="assets/cards/header-02.svg" alt="02 / 11 — CyberGuard YUVA | Youth Cyber Defense &amp; Awareness Platform" width="100%" />
 
 <br /><br />
 
-> **Defensive Cyber Literacy & Student Safety Initiative:** Official web portal and digital learning hub for CyberGuard YUVA, a youth-led cyber defense initiative dedicated to cultivating defensive technical literacy, student privacy hygiene, and safe digital practices across schools and universities.
->
-> 🔹 **Verified Capabilities:**
-> • Interactive student manuals, phishing resistance playbooks & threat hygiene matrices
-> • Modern SSR & Edge computing architecture engineered with Next.js 15+ and React 19
-> • Campus awareness programs, CTF preparation sessions & student cyber literacy
+<img src="assets/cards/cyberguard-panel.svg" alt="CyberGuard YUVA — Youth Cyber Defense &amp; Awareness Platform | Mission &amp; Focus Areas: Cyber Awareness, Digital Safety, Youth Education, Responsible Internet Use" width="100%" />
 
-<br />
+<br /><br />
 
 <img src="assets/tech/tech-nextjs.svg" height="24" alt="Next.js 15+" /> <img src="assets/tech/tech-react.svg" height="24" alt="React 19" /> <img src="assets/tech/tech-typescript.svg" height="24" alt="TypeScript" /> <img src="assets/tech/tech-tailwindcss.svg" height="24" alt="Tailwind CSS" /> <img src="assets/tech/tech-vercel.svg" height="24" alt="Vercel Edge" />
-
-<br /><br />
-
-<img src="assets/badge-live.svg" height="26" alt="Status: LIVE" />
 
 <br /><br />
 

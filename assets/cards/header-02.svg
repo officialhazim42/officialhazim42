@@ -12,32 +12,39 @@
     </linearGradient>
     <style>
       @keyframes pulseGlow {
-        0%, 15% { r: 4px; opacity: 0.15; fill: #059669; }
-        25% { r: 4.5px; opacity: 0.3; fill: #10b981; }
-        40% { r: 5px; opacity: 0.4; fill: #10b981; }
-        55%, 70% { r: 8px; opacity: 0.85; fill: #34d399; }
-        85% { r: 8.5px; opacity: 0.35; fill: #10b981; }
-        100% { r: 4px; opacity: 0.15; fill: #059669; }
+        0%, 20% { r: 6px; opacity: 0.70; fill: #ffffff; filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.85)); }
+        25%, 45% { r: 4.8px; opacity: 0.40; fill: #059669; filter: drop-shadow(0 0 3px rgba(5, 150, 105, 0.55)); }
+        50%, 70% { r: 6.2px; opacity: 0.75; fill: #10b981; filter: drop-shadow(0 0 5px rgba(16, 185, 129, 0.80)); }
+        75%, 95% { r: 7.2px; opacity: 0.90; fill: #6ee7b7; filter: drop-shadow(0 0 6px rgba(110, 231, 183, 0.90)); }
+        100% { r: 6px; opacity: 0.70; fill: #ffffff; filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.85)); }
       }
       @keyframes pulseCore {
-        0%, 15% { fill: #047857; opacity: 0.9; }
-        25% { fill: #065f46; opacity: 1; }
-        40%, 50% { fill: #047857; opacity: 1; }
-        60%, 75% { fill: #10b981; opacity: 1; }
-        90%, 100% { fill: #047857; opacity: 0.9; }
+        0%, 20% { fill: #ffffff; }
+        25%, 45% { fill: #047857; }
+        50%, 70% { fill: #10b981; }
+        75%, 95% { fill: #34d399; }
+        100% { fill: #ffffff; }
       }
       @keyframes pulseHighlight {
-        0%, 10% { opacity: 0; r: 1px; }
-        20%, 30% { opacity: 1; r: 1.8px; }
-        45% { opacity: 0.4; r: 1.4px; }
-        60%, 75% { opacity: 0.9; r: 1.6px; }
-        90%, 100% { opacity: 0.1; r: 1px; }
+        0%, 20% { opacity: 1; fill: #ffffff; r: 1.6px; }
+        25%, 45% { opacity: 0.45; fill: #6ee7b7; r: 1.2px; }
+        50%, 70% { opacity: 0.85; fill: #ffffff; r: 1.4px; }
+        75%, 95% { opacity: 1; fill: #ffffff; r: 1.6px; }
+        100% { opacity: 1; fill: #ffffff; r: 1.6px; }
+      }
+      @keyframes pulseText {
+        0%, 20% { fill: #f8fafc; filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.5)); }
+        25%, 45% { fill: #34d399; filter: none; }
+        50%, 70% { fill: #34d399; filter: drop-shadow(0 0 2px rgba(16, 185, 129, 0.5)); }
+        75%, 95% { fill: #6ee7b7; filter: drop-shadow(0 0 3px rgba(110, 231, 183, 0.6)); }
+        100% { fill: #f8fafc; filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.5)); }
       }
       .live-glow { animation: pulseGlow 2.8s ease-in-out infinite; }
       .live-core { animation: pulseCore 2.8s ease-in-out infinite; }
       .live-highlight { animation: pulseHighlight 2.8s ease-in-out infinite; }
+      .live-text { animation: pulseText 2.8s ease-in-out infinite; }
       @media (prefers-reduced-motion: reduce) {
-        .live-glow, .live-core, .live-highlight { animation: none; }
+        .live-glow, .live-core, .live-highlight, .live-text { animation: none; }
       }
     </style>
   </defs>
@@ -55,20 +62,33 @@
   <!-- Project Vector Icon -->
   <g transform="translate(108, 17)">
     <path d="M11 2L19 5.5V11C19 16 11 20 11 20C11 20 3 16 3 11V5.5L11 2Z" stroke="#38bdf8" stroke-width="1.5" fill="#081b38" stroke-linejoin="round"/>
-<circle cx="11" cy="10" r="2.5" fill="#38bdf8"/>
+    <circle cx="11" cy="10" r="2.5" fill="#38bdf8"/>
   </g>
 
   <!-- Project Title -->
   <text x="138" y="34" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="0.3px">CyberGuard YUVA</text>
 
   <!-- Project Tagline -->
-  <text x="139" y="51" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="700" letter-spacing="1.2px">CYBER DEFENSE PORTAL &amp; COMMUNITY</text>
+  <text x="139" y="51" fill="#38bdf8" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="700" letter-spacing="1.2px">YOUTH CYBER DEFENSE &amp; AWARENESS PLATFORM</text>
 
+  <!-- Top Banner LIVE Status Pill -->
   <g transform="translate(778, 20)">
     <rect width="84" height="28" rx="5" fill="#022c22" stroke="#10b981" stroke-width="1.2" />
-    <circle class="live-glow" cx="16" cy="14" r="5" fill="#34d399" />
-    <circle class="live-core" cx="16" cy="14" r="3.2" fill="#10b981" />
-    <circle class="live-highlight" cx="16" cy="14" r="1.5" fill="#ffffff" />
-    <text x="28" y="18.5" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="800" letter-spacing="1px">LIVE</text>
+    <circle class="live-glow" cx="16" cy="14" r="6" fill="#ffffff" opacity="0.70">
+      <animate attributeName="fill" values="#ffffff;#ffffff;#059669;#059669;#10b981;#10b981;#6ee7b7;#6ee7b7;#ffffff" keyTimes="0;0.20;0.25;0.45;0.50;0.70;0.75;0.95;1" dur="2.8s" repeatCount="indefinite" />
+      <animate attributeName="r" values="6;6;4.8;4.8;6.2;6.2;7.2;7.2;6" keyTimes="0;0.20;0.25;0.45;0.50;0.70;0.75;0.95;1" dur="2.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.70;0.70;0.40;0.40;0.75;0.75;0.90;0.90;0.70" keyTimes="0;0.20;0.25;0.45;0.50;0.70;0.75;0.95;1" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <circle class="live-core" cx="16" cy="14" r="3.2" fill="#ffffff">
+      <animate attributeName="fill" values="#ffffff;#ffffff;#047857;#047857;#10b981;#10b981;#34d399;#34d399;#ffffff" keyTimes="0;0.20;0.25;0.45;0.50;0.70;0.75;0.95;1" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <circle class="live-highlight" cx="16" cy="14" r="1.5" fill="#ffffff">
+      <animate attributeName="fill" values="#ffffff;#ffffff;#6ee7b7;#6ee7b7;#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" keyTimes="0;0.20;0.25;0.45;0.50;0.70;0.75;0.95;1" dur="2.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;1;0.45;0.45;0.85;0.85;1;1;1" keyTimes="0;0.20;0.25;0.45;0.50;0.70;0.75;0.95;1" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <text class="live-text" x="28" y="18.5" fill="#34d399" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="800" letter-spacing="1px">
+      LIVE
+      <animate attributeName="fill" values="#f8fafc;#f8fafc;#34d399;#34d399;#34d399;#34d399;#6ee7b7;#6ee7b7;#f8fafc" keyTimes="0;0.20;0.25;0.45;0.50;0.70;0.75;0.95;1" dur="2.8s" repeatCount="indefinite" />
+    </text>
   </g>
 </svg>
